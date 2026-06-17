@@ -1,0 +1,172 @@
+{
+  "topic": "DeFi TVL by category over time",
+  "summary": "Total Value Locked (TVL) in DeFi grew from under ~$1B at the start of 2020 to a first all-time high of ~$177.5B on 2021-11-09 (DefiLlama 'headline' DeFi TVL, which excludes liquid-staking, double-counted assets, and certain RWA to avoid double counting). The 2022 bear market (Terra/UST collapse May 2022, 3AC, FTX Nov 2022) crushed headline TVL to ~$38B by year-end 2022. Recovery followed: ~$53B EOY 2023, ~$116B EOY 2024, with the 2025 cycle re-peaking at ~$171B on 2025-10-07 (just below the 2021 ATH). A sharp correction into 2026 brought headline DeFi TVL down to ~$74.5B by 2026-06-16. The category MIX shifted dramatically: in 2020-2021 DEXes, lending and CDP/MakerDAO dominated; from 2023 onward LIQUID STAKING (Lido-led) became the single largest application category, with its broad TVL hitting a record ~$86B on 2025-08-14 (>50% of the broad total-DeFi TVL of ~$164B at the time). RESTAKING (EigenLayer) exploded from ~0 in early 2024 to a ~$20-22B peak (mid-2024 and again Aug 2025) then collapsed to ~$5B by mid-2026. RWA and stablecoin-yield (Ethena) emerged as major 2024-2026 categories. NOTE on methodology: DefiLlama reports two different aggregates. (a) The 'headline' DeFi TVL series (api.llama.fi/v2/historicalChainTvl) EXCLUDES liquid staking, double-counted and RWA to avoid double counting. (b) The per-category sums from api.llama.fi/protocols are GROSS and include liquid staking, bridges (e.g. WBTC), basis trading and RWA, so they sum far higher (~$246B currently). Category time-series below are reconstructed from the historical TVL of the dominant (leader) protocols in each category via api.llama.fi/protocol/{slug}; they are therefore LOWER BOUNDS / proxies for full category totals, not the full category aggregate. Current full-category totals (gross) are given separately in key_facts and top_entities.",
+  "series": [
+    {
+      "label": "Total DeFi TVL (DefiLlama headline; excludes liquid staking & double-counted & RWA)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl", "https://defillama.com/"],
+      "points": [
+        {"period": "2020-12-31", "value": 15.1, "note": "EOY 2020 headline DeFi TVL"},
+        {"period": "2021-11-09", "value": 177.5, "note": "All-time high of headline DeFi TVL (peak of 2021 cycle)"},
+        {"period": "2021-12-31", "value": 163.3, "note": "EOY 2021"},
+        {"period": "2022-12-31", "value": 38.3, "note": "EOY 2022 after Terra/UST, 3AC, FTX collapses"},
+        {"period": "2023-12-31", "value": 52.8, "note": "EOY 2023, early recovery"},
+        {"period": "2024-12-31", "value": 115.9, "note": "EOY 2024 (2024 intra-year peak ~$133B on 2024-12-17)"},
+        {"period": "2025-10-07", "value": 171.0, "note": "2025-cycle peak, just below the 2021 ATH"},
+        {"period": "2025-12-31", "value": 113.5, "note": "EOY 2025 after Q4 2025 correction began"},
+        {"period": "2026-06-16", "value": 74.5, "note": "Latest value; deep 2026 correction"}
+      ]
+    },
+    {
+      "label": "DEXes TVL (leaders: Uniswap, Curve, PancakeSwap, Balancer; proxy/lower bound)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/uniswap", "https://api.llama.fi/protocol/curve-dex", "https://api.llama.fi/protocol/pancakeswap-amm", "https://api.llama.fi/protocol/balancer", "https://defillama.com/categories"],
+      "points": [
+        {"period": "2020-12-31", "value": 4.2, "note": "Leader-protocol sum; full DEX category higher"},
+        {"period": "2021-12-31", "value": 39.3, "note": "DEX summer peak era"},
+        {"period": "2022-12-31", "value": 10.0, "note": "Bear market"},
+        {"period": "2023-12-31", "value": 7.6, "note": ""},
+        {"period": "2024-12-31", "value": 10.6, "note": ""},
+        {"period": "2025-12-31", "value": 8.2, "note": ""},
+        {"period": "2026-06-16", "value": 11.8, "note": "Full DEXes category gross total (current), per api.llama.fi/protocols"}
+      ]
+    },
+    {
+      "label": "Lending TVL (leaders: Aave, Compound, Morpho, JustLend, Venus; proxy/lower bound)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/aave", "https://api.llama.fi/protocol/compound-finance", "https://api.llama.fi/protocol/morpho", "https://api.llama.fi/protocol/venus", "https://defillama.com/categories"],
+      "points": [
+        {"period": "2020-12-31", "value": 3.7, "note": "Leader-protocol sum"},
+        {"period": "2021-12-31", "value": 27.1, "note": ""},
+        {"period": "2022-12-31", "value": 8.8, "note": ""},
+        {"period": "2023-12-31", "value": 16.8, "note": "Recovery led by Aave"},
+        {"period": "2024-12-31", "value": 34.1, "note": "Aave + Morpho growth"},
+        {"period": "2025-12-31", "value": 43.4, "note": "Lending leaders near cycle highs (Aave peaked ~$45.8B 2025-10-07)"},
+        {"period": "2026-06-16", "value": 38.1, "note": "Full Lending category gross total (current), per api.llama.fi/protocols"}
+      ]
+    },
+    {
+      "label": "Liquid Staking TVL (leaders: Lido, Rocket Pool, Binance staked ETH, Jito; proxy)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/lido", "https://api.llama.fi/protocol/rocket-pool", "https://api.llama.fi/protocol/jito", "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption"],
+      "points": [
+        {"period": "2020-12-31", "value": 0.01, "note": "Category barely existed"},
+        {"period": "2021-12-31", "value": 12.4, "note": "Pre-Merge; Lido emerging"},
+        {"period": "2022-12-31", "value": 6.4, "note": ""},
+        {"period": "2023-12-31", "value": 25.4, "note": "Post-Merge/Shapella growth; became largest category"},
+        {"period": "2024-12-31", "value": 43.9, "note": ""},
+        {"period": "2025-08-14", "value": 86.0, "note": "Full-category record per DefiLlama/The Defiant; >50% of broad total DeFi TVL (~$164B)"},
+        {"period": "2025-12-31", "value": 40.1, "note": "Leader sum (Lido peaked ~$42.5B 2025-08-23)"},
+        {"period": "2026-06-16", "value": 33.9, "note": "Full Liquid Staking category gross total (current), per api.llama.fi/protocols"}
+      ]
+    },
+    {
+      "label": "Restaking TVL (EigenLayer-dominant, ~85%+ of category)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/eigenlayer", "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time"],
+      "points": [
+        {"period": "2023-12-31", "value": 1.3, "note": "EigenLayer launch; category did not exist before 2023"},
+        {"period": "2024-06", "value": 20.0, "note": "EigenLayer first surpassed $20B (mid-2024) per The Block"},
+        {"period": "2024-12-31", "value": 14.9, "note": "Leader sum after airdrop-driven decline"},
+        {"period": "2025-08-14", "value": 22.1, "note": "EigenLayer all-time peak ~$22.06B"},
+        {"period": "2025-12-31", "value": 12.6, "note": ""},
+        {"period": "2026-06-17", "value": 5.0, "note": "EigenLayer current ~$4.99B; sharp 2026 unwind"}
+      ]
+    },
+    {
+      "label": "CDP / Stablecoin-issuance TVL (leaders: MakerDAO/Sky, Liquity; proxy)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/makerdao", "https://api.llama.fi/protocol/sky-lending", "https://api.llama.fi/protocol/liquity", "https://defillama.com/categories"],
+      "points": [
+        {"period": "2020-12-31", "value": 5.6, "note": "MakerDAO-dominated (DAI)"},
+        {"period": "2021-12-31", "value": 37.0, "note": "MakerDAO peak era"},
+        {"period": "2022-12-31", "value": 12.6, "note": ""},
+        {"period": "2023-12-31", "value": 12.2, "note": ""},
+        {"period": "2024-12-31", "value": 13.7, "note": "Maker rebrands to Sky"},
+        {"period": "2025-12-31", "value": 11.8, "note": ""},
+        {"period": "2026-06-16", "value": 8.5, "note": "Full CDP category gross total (current), per api.llama.fi/protocols"}
+      ]
+    },
+    {
+      "label": "RWA (Real World Assets) TVL — DefiLlama category (leaders: Ethena, BUIDL, Usual, Ondo)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/ethena", "https://api.llama.fi/protocol/ondo-finance", "https://defillama.com/categories", "https://app.rwa.xyz/networks"],
+      "points": [
+        {"period": "2023-12-31", "value": 0.3, "note": "Category nascent (leader sum)"},
+        {"period": "2024-12-31", "value": 8.7, "note": "Ethena + tokenized treasuries surge"},
+        {"period": "2025-12-31", "value": 10.6, "note": "Leader sum (Ethena peaked ~$15B 2025-10-03)"},
+        {"period": "2026-06-16", "value": 26.2, "note": "Full DefiLlama RWA category gross total (current). NOTE: RWA.xyz reports tokenized-asset value excl. stablecoins of ~$32B (May 2026), a different metric"}
+      ]
+    },
+    {
+      "label": "Yield TVL (DefiLlama Yield + Yield Aggregator categories; current only)",
+      "unit": "USD billions",
+      "sources": ["https://defillama.com/categories", "https://api.llama.fi/protocols"],
+      "points": [
+        {"period": "2026-06-16", "value": 6.2, "note": "Yield (~$4.96B) + Yield Aggregator (~$1.28B), gross current. Historical yield-category series not separately reliable; lower confidence"}
+      ]
+    },
+    {
+      "label": "Bridge TVL (leader proxy: WBTC; plus current full category)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/wbtc", "https://defillama.com/categories", "https://api.llama.fi/protocols"],
+      "points": [
+        {"period": "2020-12-31", "value": 3.3, "note": "WBTC proxy (custodial BTC bridge)"},
+        {"period": "2021-12-31", "value": 12.2, "note": ""},
+        {"period": "2022-12-31", "value": 3.1, "note": ""},
+        {"period": "2023-12-31", "value": 6.7, "note": ""},
+        {"period": "2024-12-31", "value": 12.3, "note": ""},
+        {"period": "2025-12-31", "value": 10.9, "note": ""},
+        {"period": "2026-06-16", "value": 46.7, "note": "Full Bridge category gross total (current); inflated by wrapped BTC/ETH which double-count underlying assets"}
+      ]
+    },
+    {
+      "label": "Derivatives / Perps TVL (leaders: GMX, dYdX, Hyperliquid; proxy)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/gmx", "https://api.llama.fi/protocol/dydx", "https://api.llama.fi/protocol/hyperliquid", "https://defillama.com/categories"],
+      "points": [
+        {"period": "2020-12-31", "value": 0.06, "note": "Leader sum; category tiny"},
+        {"period": "2021-12-31", "value": 1.1, "note": ""},
+        {"period": "2022-12-31", "value": 0.9, "note": ""},
+        {"period": "2023-12-31", "value": 1.0, "note": ""},
+        {"period": "2024-12-31", "value": 3.0, "note": "Hyperliquid emerges"},
+        {"period": "2025-12-31", "value": 4.7, "note": ""},
+        {"period": "2026-06-16", "value": 2.1, "note": "Full DefiLlama Derivatives category gross total (current). Note: perp DEX VOLUMES are far larger than TVL; Hyperliquid dominates volume"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "All-time high of DefiLlama headline DeFi TVL", "value": "177.5", "as_of": "2021-11-09", "source_name": "DefiLlama API (historicalChainTvl)", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "2025-cycle peak of headline DeFi TVL (just below 2021 ATH)", "value": "171.0", "as_of": "2025-10-07", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "Current headline DeFi TVL (latest)", "value": "74.5", "as_of": "2026-06-16", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "EOY 2022 headline DeFi TVL (post Terra/3AC/FTX trough year)", "value": "38.3", "as_of": "2022-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "Liquid staking category record TVL (>50% of broad total DeFi TVL of ~$164B)", "value": "86", "as_of": "2025-08-14", "source_name": "The Defiant / DefiLlama", "source_url": "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption", "confidence": "high"},
+    {"claim": "Lido all-time-high TVL (largest single DeFi application)", "value": "42.5", "as_of": "2025-08-23", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/lido", "confidence": "high"},
+    {"claim": "EigenLayer (restaking) all-time-high TVL", "value": "22.1", "as_of": "2025-08-14", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/eigenlayer", "confidence": "high"},
+    {"claim": "EigenLayer first surpassed $20B (restaking category emergence in 2024)", "value": "20", "as_of": "2024-06", "source_name": "The Block", "source_url": "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time", "confidence": "high"},
+    {"claim": "EigenLayer current TVL (deep 2026 unwind)", "value": "5.0", "as_of": "2026-06-17", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/eigenlayer", "confidence": "high"},
+    {"claim": "Aave (largest lending protocol) all-time-high TVL", "value": "45.8", "as_of": "2025-10-07", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/aave", "confidence": "high"},
+    {"claim": "Tokenized RWA on-chain value excluding stablecoins (different metric than DefiLlama RWA category)", "value": "32", "as_of": "2026-05", "source_name": "RWA.xyz (via PYMNTS / Tech4Impact)", "source_url": "https://app.rwa.xyz/networks", "confidence": "medium"},
+    {"claim": "DefiLlama RWA category TVL (gross, current)", "value": "26.2", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
+    {"claim": "Current gross Lending category TVL (largest non-staking category)", "value": "38.1", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
+    {"claim": "Current gross Liquid Staking category TVL", "value": "33.9", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
+    {"claim": "Mix shift: liquid staking overtook DEX/lending as the single largest DeFi category from ~2023 onward (Lido became #1 application by TVL)", "value": "qualitative", "as_of": "2024-Q1", "source_name": "Messari State of Lido / The Defiant", "source_url": "https://messari.io/report/state-of-lido-q1-2024", "confidence": "high"},
+    {"claim": "EOY 2020 headline DeFi TVL (early DeFi Summer aftermath)", "value": "15.1", "as_of": "2020-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "medium"},
+    {"claim": "EOY 2023 headline DeFi TVL", "value": "52.8", "as_of": "2023-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "EOY 2024 headline DeFi TVL", "value": "115.9", "as_of": "2024-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Liquid Staking (category)", "metric": "gross category TVL, current", "value": "$33.9B (record $86B on 2025-08-14)", "source_url": "https://defillama.com/categories"},
+    {"name": "Lending (category)", "metric": "gross category TVL, current", "value": "$38.1B", "source_url": "https://defillama.com/categories"},
+    {"name": "Bridge (category, incl. wrapped BTC/ETH double-count)", "metric": "gross category TVL, current", "value": "$46.7B", "source_url": "https://defillama.com/categories"},
+    {"name": "RWA (category)", "metric": "gross category TVL, current", "value": "$26.2B", "source_url": "https://defillama.com/categories"},
+    {"name": "DEXes (category)", "metric": "gross category TVL, current", "value": "$11.8B", "source_url": "https://defillama.com/categories"},
+    {"name": "Restaking + Liquid Restaking (category)", "metric": "gross category TVL, current", "value": "$13.3B (peak ~$22B Aug 2025)", "source_url": "https://defillama.com/categories"},
+    {"name": "CDP / stablecoin-issuance (category)", "metric": "gross category TVL, current", "value": "$8.5B", "source_url": "https://defillama.com/categories"},
+    {"name": "Lido", "metric": "single protocol TVL (largest DeFi app)", "value": "ATH $42.5B (2025-08-23); current $16.1B (2026-06-17)", "source_url": "https://defillama.com/protocol/lido"},
+    {"name": "Aave", "metric": "largest lending protocol TVL", "value": "ATH $45.8B (2025-10-07); current $13.2B (2026-06-17)", "source_url": "https://defillama.com/protocol/aave"},
+    {"name": "EigenLayer", "metric": "dominant restaking protocol TVL (~85% of category)", "value": "ATH $22.1B (2025-08-14); current $5.0B (2026-06-17)", "source_url": "https://defillama.com/protocol/eigenlayer"},
+    {"name": "Ethena", "metric": "leading synthetic-dollar/RWA-yield protocol", "value": "ATH $15.0B (2025-10-03); current $4.8B (2026-06-17)", "source_url": "https://defillama.com/protocol/ethena"}
+  ]
+}

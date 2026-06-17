@@ -1,0 +1,93 @@
+{
+  "name": "Consensus by CoinDesk",
+  "edition": "Consensus Miami 2026 (primary in-window edition). Note: two Consensus editions fell inside the June 2025 - June 2026 window - Consensus Hong Kong 2026 (Feb 10-12, 2026, Hong Kong Convention and Exhibition Centre) and the larger Consensus Miami 2026 (May 5-7, 2026). Consensus Hong Kong 2025 (Feb 18-20, 2025) was just BEFORE the window. This record focuses on Consensus Miami 2026.",
+  "location": "Miami Beach Convention Center, Miami Beach, Florida, USA",
+  "dates": "May 5-7, 2026 (Consensus Miami 2026). Companion in-window edition: Consensus Hong Kong 2026, February 10-12, 2026.",
+  "in_window": true,
+  "attendance": "Marketed/expected at 20,000+ attendees from 100+ countries (some recaps cite a 15,000-20,000 range), including representatives from 200+ Fortune 500 companies. Program scale: 6 stages, 3-4 summits, 6 content tracks, 200+ sessions, and 500+ speakers. Institutional Summit (May 5) was application-only; previous editions cited participants representing roughly $4 trillion+ in AUM, with one recap estimating ~35% of attendees from institutional capital. Exact independently audited headcount not published.",
+  "defi_themes": [
+    "Stablecoins as core financial infrastructure - dedicated multi-day Stablecoin Track / 'Stablecoin University'; reserve management, yield-bearing stablecoin products, cross-border payments and remittances, regulatory uncertainty, competition with CBDCs",
+    "Real-world asset (RWA) tokenization - real estate, treasury bills, bonds, private equity, commodities; fractional ownership and near-instant 24/7 settlement; RWA market cited crossing ~$31B (ex-stablecoins); 'Internet Capital Markets' framing",
+    "Institutional DeFi / TradFi-DeFi convergence - JPMorgan (Kinexys), Morgan Stanley, DTCC, Fidelity, Mastercard, State Street as sponsors/speakers; old 'TradFi vs DeFi' framing largely absent",
+    "AI agents in DeFi / 'Agentic Commerce' - autonomous agents executing on-chain transactions, managing liquidity positions, automating trading; programmable spending controls; standards like x402; agentic economy sized at $3-5T by 2030 across panels",
+    "DeFi & trading market structure - a stage dedicated to 'AI, DeFi & Trading' covering algorithmic/high-frequency strategies, decentralized exchanges (DEXs), liquidity and security challenges",
+    "Prediction markets and equity tokenization as institutional allocation themes",
+    "DeFi/stablecoin regulation and policy - SEC, CFTC and White House engagement; stablecoin legislation status",
+    "Privacy and accountability on public blockchains - hybrid blockchain architecture and address-level monitoring (compliance-friendly DeFi)"
+  ],
+  "notable_panels": [
+    {
+      "title": "The RWA Engine and Institutional Frontier",
+      "topic": "Institutional real-world-asset tokenization: building the infrastructure to bring traditional assets on-chain",
+      "speakers": "Dennis Bree (Head of Institutional, Morpho), Angus Fletcher (Global Head of Digital Asset Solutions, State Street), Duane Block (Managing Director, Alvarez & Marsal Crypto Advisory)"
+    },
+    {
+      "title": "Stablecoin Track / Stablecoin University (multi-day program)",
+      "topic": "Full arc of stablecoins: regulatory discussion, reserve management, yield-bearing products, cross-border payments/remittances, enterprise adoption, and competition with CBDCs",
+      "speakers": "Included PayPal (May Zabaneh, VP & GM of Crypto), MoneyGram, Circle, and MoonPay (CoinDesk University workshops led by Circle and MoonPay); Tether and Visa representatives also cited"
+    },
+    {
+      "title": "AI, DeFi & Trading stage sessions",
+      "topic": "Algorithmic and high-frequency trading, decentralized exchanges (DEXs), liquidity provisioning, security, and the regulatory landscape for on-chain markets",
+      "speakers": "Not individually attributed in available coverage"
+    },
+    {
+      "title": "Agentic Commerce track / Agentic University",
+      "topic": "Autonomous AI agents executing on-chain transactions, managing liquidity, and automating trading; standards such as x402 and programmable spending controls",
+      "speakers": "Not individually attributed; keynote on x402 listed on agenda"
+    },
+    {
+      "title": "Institutional Summit (May 5, application-only)",
+      "topic": "How institutional investors allocate into digital assets - tokenized assets, prediction markets, equity tokenization; 350+ one-on-one TradFi/crypto meetings",
+      "speakers": "Asset allocators, hedge fund managers and banking executives (e.g., Morgan Stanley's Amy Oldenburg)"
+    },
+    {
+      "title": "Privacy and accountability on public blockchains",
+      "topic": "Argued privacy and compliance can coexist via hybrid blockchain architecture and address-level monitoring",
+      "speakers": "Panelists from Moody's Ratings and ChangeNOW (per recap coverage)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Brad Garlinghouse", "affiliation": "CEO, Ripple"},
+    {"name": "Anatoly Yakovenko", "affiliation": "Co-founder, Solana"},
+    {"name": "Michael Saylor", "affiliation": "Executive Chairman, Strategy (formerly MicroStrategy)"},
+    {"name": "Mike Novogratz", "affiliation": "CEO, Galaxy Digital"},
+    {"name": "Charles Hoskinson", "affiliation": "Founder, Cardano / Input Output"},
+    {"name": "Amy Oldenburg", "affiliation": "Head of Digital Asset Strategy, Morgan Stanley"},
+    {"name": "May Zabaneh", "affiliation": "VP & GM of Crypto, PayPal"},
+    {"name": "Joe Vietri", "affiliation": "Digital Assets, Charles Schwab"},
+    {"name": "Stephanie Cohen", "affiliation": "Chief Strategy Officer, Cloudflare"},
+    {"name": "Dennis Bree", "affiliation": "Head of Institutional, Morpho"},
+    {"name": "Angus Fletcher", "affiliation": "Global Head of Digital Asset Solutions, State Street"},
+    {"name": "Duane Block", "affiliation": "Managing Director, Alvarez & Marsal Crypto Advisory"},
+    {"name": "Paul Atkins", "affiliation": "Chairman, U.S. Securities and Exchange Commission (SEC)"},
+    {"name": "Michael Selig", "affiliation": "Chairman, U.S. Commodity Futures Trading Commission (CFTC)"},
+    {"name": "Patrick Witt", "affiliation": "White House (digital assets policy advisor)"},
+    {"name": "Ashley Moody", "affiliation": "U.S. Senator (Florida)"},
+    {"name": "Eric Trump", "affiliation": "American Bitcoin"}
+  ],
+  "key_takeaways": [
+    "Consensus Miami 2026 (May 5-7, Miami Beach Convention Center) was framed around 'Internet Capital Markets' - moving beyond speculation toward the technical and regulatory frameworks to host trillions in real-world assets on-chain.",
+    "Wall Street arrived in force: JPMorgan (Kinexys), Morgan Stanley, Fidelity, DTCC, Mastercard, State Street and others sponsored/spoke, and the old 'TradFi vs DeFi' dichotomy was largely absent - the dominant DeFi story was institutional convergence.",
+    "Stablecoins were positioned as the bridge between TradFi and crypto, with a dedicated multi-day track covering reserves, yield-bearing products, cross-border payments and CBDC competition; recaps noted settlement volume now rivaling major card networks, but stablecoin legislation timing/specifics remained unresolved.",
+    "RWA tokenization was a headline DeFi theme - real estate, treasury bills, bonds and private equity moving on-chain for fractional ownership and 24/7 settlement; the RWA market (ex-stablecoins) was cited crossing ~$31B, with institutional panels (Morpho, State Street) detailing the infrastructure.",
+    "'Agentic Commerce' - autonomous AI agents transacting, managing liquidity and trading on-chain via standards like x402 - emerged as the breakout new theme, repeatedly tied to a projected $3-5T agentic economy by 2030.",
+    "Heavy regulatory presence (SEC Chair Paul Atkins, CFTC Chair Michael Selig, White House advisor Patrick Witt, Senator Ashley Moody) signaled a shift from oversight to infrastructure-building dialogue, though stablecoin/DeFi rule clarity was still seen as a work in progress.",
+    "Classic permissionless DeFi primitives (lending protocols, perps, restaking, on-chain treasuries, yield farming) were present mainly through an 'AI, DeFi & Trading' stage and institutional lending (e.g., Morpho), but the overall DeFi narrative skewed toward stablecoins, RWA, institutional integration and AI agents rather than retail yield.",
+    "Two Consensus editions fell inside the research window: the Asia-focused Consensus Hong Kong 2026 (Feb 10-12, 2026) and the flagship Consensus Miami 2026 (May 5-7, 2026) - confirming the event is in-window."
+  ],
+  "sources": [
+    "https://consensus.coindesk.com/agenda-at-a-glance/",
+    "https://consensus2026.coindesk.com/",
+    "https://consensus-hongkong.coindesk.com/register/",
+    "https://www.cryptotimes.io/2026/05/02/20000-expected-in-miami-the-wall-street-crypto-convergence-at-consensus-2026/",
+    "https://www.theblockverse.co/consensus-miami/",
+    "https://beincrypto.com/consensus-miami-2026-speaker-lineup/",
+    "https://www.kucoin.com/blog/consensus-Miami-2026",
+    "https://www.kucoin.com/blog/consensus-miami-2026-finance-and-autonomous-ai",
+    "https://www.coindesk.com/opinion/2026/04/29/wall-street-is-coming-to-consensus-miami-and-it-s-not-just-to-watch",
+    "https://stablecoininsider.org/coindesk-agenda-for-consensus-miami-2026/",
+    "https://www.prnewswire.com/news-releases/coindesk-unveils-consensus-hong-kong-2025-302083599.html"
+  ],
+  "confidence": "medium"
+}

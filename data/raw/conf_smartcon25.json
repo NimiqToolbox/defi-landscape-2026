@@ -1,0 +1,132 @@
+{
+  "name": "Chainlink SmartCon 2025",
+  "edition": "SmartCon 2025 (annual flagship Chainlink conference; first return to New York City since 2022)",
+  "location": "Metropolitan Pavilion, Manhattan, New York City, USA",
+  "dates": "November 4-5, 2025",
+  "in_window": true,
+  "attendance": "~1,700 in-person attendees (reported 1,701 confirmed guests); Chainlink cited 275+ speakers, thousands of registrations, and millions of online views. (Note: the official agenda page lists overlapping session times across multiple stages, consistent with a multi-track event.)",
+  "defi_themes": [
+    "TradFi-DeFi convergence ('AllFi') and institutional adoption of onchain finance",
+    "Real-world asset (RWA) tokenization (funds, securities, treasuries) at institutional scale",
+    "Stablecoins for payments and as a financial-stack primitive",
+    "Institutional DeFi lending and money markets (Aave Horizon, tokenized-asset collateral)",
+    "Onchain compliance as infrastructure (Chainlink ACE + 20+ compliance providers)",
+    "Cross-chain interoperability and settlement via CCIP (DvP, cross-chain lending, liquidity)",
+    "Derivatives and perpetuals (the 'perp economy', Hyperliquid, Injective)",
+    "Liquid staking and restaking (LSTs, restaking security for BTC)",
+    "Bitcoin DeFi / BTCFi (SolvBTC, Lombard interchain Bitcoin)",
+    "Onchain yield and next-gen asset management (asset managers going onchain)",
+    "Proof of Reserve and trusted onchain data / pricing & NAV (DataLink)",
+    "Privacy for institutional DeFi (Chainlink Confidential Compute)",
+    "Regulation and the U.S. digital-asset policy landscape ('From Crypto to Capitol Hill')"
+  ],
+  "notable_panels": [
+    {
+      "title": "What's Next for DeFi",
+      "topic": "How DeFi has evolved into resilient financial infrastructure; future of decentralized finance",
+      "speakers": "Stani Kulechov (Founder, Aave), Sergey Nazarov (Co-Founder, Chainlink), Aaron Arnold (Host, Altcoin Daily)"
+    },
+    {
+      "title": "What's Next for RWAs and Tokenization",
+      "topic": "Outlook for real-world-asset tokenization and onchain liquidity",
+      "speakers": "Galaxy, DRW / Cumberland, Chainlink Labs"
+    },
+    {
+      "title": "Next-Gen Asset Management: Reinventing Infrastructure for the Onchain Economy",
+      "topic": "Institutional asset managers moving funds and operations onchain",
+      "speakers": "Wellington, Fidelity, WisdomTree, Invesco, Chainlink Labs"
+    },
+    {
+      "title": "Powering the Perp Economy",
+      "topic": "Perpetuals / derivatives market infrastructure in DeFi",
+      "speakers": "Injective Foundation, Decibel by Aptos Labs, Monaco Research, Chainlink Labs"
+    },
+    {
+      "title": "Stablecoins and the Evolving Financial Stack",
+      "topic": "Stablecoins as core financial-stack primitives",
+      "speakers": "Mento Labs, OpenEden, Avant, Tokenized Asset Coalition"
+    },
+    {
+      "title": "How Stablecoins Unlock a New Era for Payments",
+      "topic": "Stablecoin-based payments",
+      "speakers": "Polygon Labs, The Network Firm, Linea, f(x) Protocol, Dune"
+    },
+    {
+      "title": "Building Cross-Chain Lending Powered by CCIP",
+      "topic": "Cross-chain DeFi lending via Chainlink CCIP",
+      "speakers": "Folks Finance"
+    },
+    {
+      "title": "Powering the Next Generation of Onchain Yield",
+      "topic": "Onchain yield products and infrastructure",
+      "speakers": "Katana, GSR, Chainlink Labs"
+    },
+    {
+      "title": "Modular Security in Motion: Restaking and Real-Time Monitoring for SolvBTC",
+      "topic": "Restaking security and monitoring for Bitcoin DeFi",
+      "speakers": "Solv, Symbiotic, Chainlink"
+    },
+    {
+      "title": "DvP in Practice: From PoC to Production",
+      "topic": "Delivery-vs-Payment settlement of tokenized assets across public/private chains",
+      "speakers": "WisdomTree, Seturion / BX Digital, Kinexys by JPMorgan, Chainlink Labs"
+    },
+    {
+      "title": "Bridging TradFi and DeFi to Create AllFi",
+      "topic": "Convergence of traditional and decentralized finance",
+      "speakers": "Edward Woodford (Zero Hash)"
+    },
+    {
+      "title": "TradFi x Crypto: Building Winning Products in a Converging World",
+      "topic": "Building products at the TradFi/DeFi intersection",
+      "speakers": "Pointsville, Maple Finance, Spiko, Chainlink"
+    },
+    {
+      "title": "Executive Perspectives: Architecting the Onchain Financial Systems",
+      "topic": "Institutional architecture for onchain RWA markets",
+      "speakers": "Ondo Finance, Tradable, Superstate, Balcony, VanEck"
+    },
+    {
+      "title": "Convergence in Motion: Where Crypto and Capital Markets Collide",
+      "topic": "Crypto meets capital markets",
+      "speakers": "eToro, Crypto Finance | Deutsche Boerse Group, Robinhood, Token Relations"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Sergey Nazarov", "affiliation": "Co-Founder, Chainlink (Nov 4 keynote)" },
+    { "name": "Stani Kulechov", "affiliation": "Founder, Aave" },
+    { "name": "Apurva Joshi", "affiliation": "Chief Product Officer, Chainlink Labs" },
+    { "name": "Thomas Zschach", "affiliation": "Chief Innovation Officer, Swift" },
+    { "name": "Mike Dargan", "affiliation": "Group Chief Operations & Technology Officer, UBS" },
+    { "name": "Patrick Witt", "affiliation": "Executive Director, White House Digital Assets Council" },
+    { "name": "Aaron Arnold", "affiliation": "Host, Altcoin Daily" },
+    { "name": "Edward Woodford", "affiliation": "CEO, Zero Hash" },
+    { "name": "Matthew Sigel", "affiliation": "Head of Digital Assets Research, VanEck" },
+    { "name": "Jeremy Ng", "affiliation": "Co-Founder/CEO, OpenEden" },
+    { "name": "Chris Perry", "affiliation": "President, Broadridge Financial Solutions" },
+    { "name": "Jakov Buratovic", "affiliation": "Lido" }
+  ],
+  "key_takeaways": [
+    "TradFi-DeFi convergence was the dominant narrative: major institutions (UBS, Swift, JPMorgan/Kinexys, Mastercard, Fidelity, Wellington, WisdomTree, Invesco, VanEck) showcased production onchain finance, framed as 'AllFi'.",
+    "Chainlink positioned the Chainlink Runtime Environment (CRE) as the all-in-one orchestration layer to connect TradFi, DeFi, and tokenized assets, presented as live for institutional-grade workflows.",
+    "Compliance is becoming embedded infrastructure: the Automated Compliance Engine (ACE) launched a 20+ provider partner ecosystem (incl. Chainalysis cross-chain compliance workflows), with Aave Horizon adopting ACE for institutional lending against tokenized assets.",
+    "RWA tokenization moved from pilots to production: UBS demonstrated a first end-to-end production tokenized fund workflow using a Digital Transfer Agent standard with Chainlink; Securitize, Ondo, Superstate, VanEck and others featured heavily.",
+    "Stablecoins were treated as a core primitive for payments and the broader financial stack, with multiple dedicated 'how to create a stablecoin' and payments sessions.",
+    "Cross-chain settlement (Delivery-vs-Payment) between public and private chains via CCIP was a recurring institutional theme (WisdomTree, JPMorgan Kinexys, BX Digital).",
+    "DeFi-native verticals were well represented: perpetuals/derivatives (Injective, Hyperliquid), liquid staking/restaking (stake.link, Solv/Symbiotic), Bitcoin DeFi (Lombard, SolvBTC), and onchain yield (Katana, GSR).",
+    "Privacy was flagged as a key institutional adoption barrier; Chainlink Confidential Compute was announced (Early Access early 2026).",
+    "U.S. policy/regulation was front-and-center under the 'From Crypto to Capitol Hill' theme, including a White House Digital Assets Council speaker.",
+    "Proof of Reserve and trusted onchain data (DataLink, S&P Global pricing/NAV) were emphasized as the trust layer for collateralization of RWAs and stablecoins."
+  ],
+  "sources": [
+    "https://chain.link/blog/smartcon-2025-recap",
+    "https://smartcon.chain.link/agenda",
+    "https://chainlinktoday.com/chainlink-previews-smartcon-2025-agenda/",
+    "https://chainlinktoday.com/chainlinks-smartcon-returns-to-nyc-in-2025/",
+    "https://www.panewslab.com/en/articles/60f6ab14-ff2d-47e3-9342-c46b5672fe3a",
+    "https://x.com/chainlink/status/1986483616902185140",
+    "https://vendelux.com/insights/smartcon-2025-attendee-list/",
+    "https://phemex.com/news/article/chainlink-smartcon-2025-to-explore-tradfi-and-defi-convergence-in-nyc-32437"
+  ],
+  "confidence": "high"
+}

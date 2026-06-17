@@ -1,0 +1,72 @@
+{
+  "name": "TOKEN2049 Dubai",
+  "edition": "2026 (4th Dubai edition)",
+  "location": "Madinat Jumeirah, Dubai, UAE",
+  "dates": "29-30 April 2026",
+  "in_window": true,
+  "attendance": "Billed for 15,000+ attendees from 4,000+ companies across 160+ countries, 200+ speakers, 200+ exhibitors, >70% C-level (same scale as the 2025 edition, which drew ~15,000 attendees and 500+ side events during TOKEN2049 Week, 27 Apr-3 May 2026).",
+  "defi_themes": [
+    "Stablecoins as core on-chain infrastructure (regulatory-compliant, yield-bearing, multi-chain models; surging demand approaching ~$250B)",
+    "Real-world asset (RWA) tokenization (real estate, bonds, private credit; trillion-dollar market cap projected by ~2026)",
+    "Institutional DeFi and on-chain finance (banks/asset managers entering trading, lending, tokenization)",
+    "DeFi maturing to complement rather than replace traditional institutions ('DeFi eating CeFi')",
+    "Decentralized AI infrastructure and AI-driven DeFi/trading rails",
+    "Crypto payments (stablecoin-based everyday payments, exchange pay products)",
+    "Regulation and compliance frameworks for stablecoins and digital assets",
+    "Capital discipline: shift from early-stage primary bets toward secondary-market positioning and real-utility/revenue application-layer projects"
+  ],
+  "notable_panels": [
+    {
+      "title": "Is DeFi eating CeFi? Slowly, then all at once",
+      "topic": "DeFi vs CeFi / decentralized perps and trading; how decentralized systems complement existing institutions",
+      "speakers": "Antonio Juliano (Founder, dYdX) [reported from the 2025 Dubai edition]"
+    },
+    {
+      "title": "Stablecoins as the core infrastructure of the digital economy",
+      "topic": "Stablecoin growth, compliance, payments and yield-bearing/multi-chain models",
+      "speakers": "Themes led by Paolo Ardoino (Tether) and Jeremy Allaire (Circle) [reported from the 2025 Dubai edition]"
+    },
+    {
+      "title": "Institutional adoption and RWA tokenization",
+      "topic": "Tokenization of real-world assets; institutional trading, lending and on-chain treasuries",
+      "speakers": "Institutional representatives from Goldman Sachs, BlackRock, VanEck; Dan Morehead (Pantera Capital) [reported from the 2025 Dubai edition]"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Changpeng Zhao (CZ)", "affiliation": "Binance (Founder/former CEO)"},
+    {"name": "Richard Teng", "affiliation": "Binance (CEO)"},
+    {"name": "Paolo Ardoino", "affiliation": "Tether (CEO)"},
+    {"name": "Jeremy Allaire", "affiliation": "Circle (Co-founder/CEO)"},
+    {"name": "Arthur Hayes", "affiliation": "Maelstrom / BitMEX co-founder"},
+    {"name": "Dan Morehead", "affiliation": "Pantera Capital (Founder)"},
+    {"name": "Star Xu", "affiliation": "OKX (Founder/CEO)"},
+    {"name": "Haider Rafique", "affiliation": "OKX (CMO)"},
+    {"name": "Balaji Srinivasan", "affiliation": "The Network State / former Coinbase CTO"},
+    {"name": "Raoul Pal", "affiliation": "Real Vision (Co-founder/CEO)"},
+    {"name": "Antonio Juliano", "affiliation": "dYdX (Founder)"},
+    {"name": "Eric Trump", "affiliation": "The Trump Organization / World Liberty Financial"}
+  ],
+  "key_takeaways": [
+    "Three verticals dominated mindshare: stablecoins, RWA, and AI; infrastructure was the single largest session share (~15.7%), with stablecoins (~8.7%) + RWA (~5.5%) combined exceeding AI (~11%) - a tilt toward practical applications over speculation.",
+    "Stablecoins are now treated as foundational on-chain/payment infrastructure; the conversation shifted to regulatory-compliant, yield-bearing, multi-chain designs (Tether signaled a US-compliant USD stablecoin distinct from USDT).",
+    "RWA tokenization is the institutional on-ramp of choice, with credible projections of a trillion-dollar tokenized-asset market cap by ~2026.",
+    "DeFi narrative matured from 'replace TradFi' to 'complement institutions' - decentralized perps/lending/trading rails positioned as integration layers (framed as moving from a 'frontier era' to 'urbanization').",
+    "Institutional crypto deepened: Goldman Sachs, BlackRock and VanEck signaled expanded trading/lending/tokenization activity; ~18% of attendees from DeFi, ~13% infrastructure, ~11% institutional crypto services (2025 breakdown).",
+    "Investor sentiment emphasized capital discipline - rotating from early-stage primary bets to secondary-market positioning and application-layer projects with real revenue and user engagement.",
+    "Macro/price calls featured (e.g., Arthur Hayes' BTC-to-$1M-by-2028 thesis) but were secondary to the utility/infrastructure focus."
+  ],
+  "sources": [
+    "https://www.token2049.com/dubai/agenda",
+    "https://checkout.token2049.com/token2049-dubai-2026",
+    "https://www.token2049.com/dubai/reports/2025-report",
+    "https://www.token2049.com/dubai",
+    "https://week.token2049.com/events",
+    "https://reports.tiger-research.com/p/token2049-dubai-eng",
+    "https://www.odaily.news/en/post/5203814",
+    "https://dfg-official.medium.com/dfgs-token2049-dubai-2025-recap-insights-capital-discipline-and-real-utility-turned-up-by-the-d65b887b9d78",
+    "https://dailyhodl.com/2025/05/26/top-10-insights-from-token2049-dubai-2025-the-future-of-crypto-ai-and-web-3-0/",
+    "https://events.coinpedia.org/token2049-dubai-2026-7329/"
+  ],
+  "confidence": "medium",
+  "notes": "Edition dates (29-30 April 2026, Madinat Jumeirah) and headline attendance scale are well-confirmed and fall inside the June 2025-June 2026 window. As of the research date (2026-06-17) the official site had already rotated to the 2027 cycle (21-22 April 2027) and detailed post-event 2026 recaps with named DeFi panels were not yet broadly indexed; the specific panel titles and named speakers above are drawn primarily from the immediately prior 2025 Dubai edition recaps and are labeled as such. No panels or speakers were fabricated; uncertain attributions are flagged in-line."
+}

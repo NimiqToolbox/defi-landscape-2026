@@ -1,0 +1,82 @@
+{
+  "name": "Cardano Summit 2025",
+  "edition": "2025 (annual flagship Cardano Foundation summit)",
+  "location": "Gasometer Schöneberg, Berlin, Germany (Day Zero hackathon/pitch on 11 November at w3.hub Berlin)",
+  "dates": "12-13 November 2025 (Day Zero: 11 November 2025)",
+  "in_window": true,
+  "attendance": "~800 in-person attendees from 70+ countries, 140 speakers, and 25,000+ online participants",
+  "defi_themes": [
+    "Stablecoins for institutional finance (cross-border payments, payroll, treasury management, trading)",
+    "DeFi liquidity expansion as a 2026 Cardano roadmap priority",
+    "Real-world asset (RWA) tokenization for enterprise adoption",
+    "Tier-1 stablecoin issuance and stablecoin diversity on Cardano (Brale regulated-stablecoin partnership)",
+    "Institutional DeFi adoption and traditional-bank 'FOMO' under supportive regulation (MiCA / regulatory alignment)",
+    "Tokenized commodities infrastructure (Toto Finance / LCX)",
+    "Centralized exchange (CEX) listings to deepen DeFi liquidity",
+    "Zero-knowledge proofs enabling selective disclosure / privacy for on-chain finance",
+    "DeFi as an extension of established finance requiring trust, education and institutional alignment"
+  ],
+  "notable_panels": [
+    {
+      "title": "Stablecoins & payment rails panel",
+      "topic": "Stablecoins solving real issues beyond cross-border payments: payroll, treasury management, trading and DeFi applications; 'more optionality now than ever with payments'",
+      "speakers": "Christian Rau (Mastercard), Kwon Park (Crypto.com), Vanessa Fernandes (Aeonic Digital)"
+    },
+    {
+      "title": "RWA tokenization & 2026 DeFi priorities",
+      "topic": "Real-world asset tokenization, tier-1 stablecoins, improved DeFi liquidity and CEX listings as enterprise-adoption priorities for 2026",
+      "speakers": "Phillip Pon (EMURGO CEO)"
+    },
+    {
+      "title": "Toto Finance / tokenized commodities announcement",
+      "topic": "Initiative integrating Cardano into tokenized commodities infrastructure",
+      "speakers": "Monty Metzger (LCX CEO)"
+    },
+    {
+      "title": "Brale regulated-stablecoin partnership announcement",
+      "topic": "Cardano Foundation partnership with Brale to increase regulated stablecoin diversity on the network",
+      "speakers": "Cardano Foundation"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Frederik Gregaard", "affiliation": "Cardano Foundation (CEO)" },
+    { "name": "Giorgio Zinetti", "affiliation": "Cardano Foundation (CTO)" },
+    { "name": "Christian Rau", "affiliation": "Mastercard" },
+    { "name": "Kwon Park", "affiliation": "Crypto.com" },
+    { "name": "Vanessa Fernandes", "affiliation": "Aeonic Digital" },
+    { "name": "Phillip Pon", "affiliation": "EMURGO (CEO)" },
+    { "name": "Monty Metzger", "affiliation": "LCX (CEO) / Toto Finance" },
+    { "name": "Tim Draper", "affiliation": "Venture capitalist (Draper Associates)" },
+    { "name": "Bernhard Kronfellner", "affiliation": "Boston Consulting Group" },
+    { "name": "Joachim Schwerin", "affiliation": "European Commission (Principal Economist)" },
+    { "name": "Robby Yung", "affiliation": "Animoca Brands" },
+    { "name": "Don Tapscott", "affiliation": "Blockchain Research Institute" },
+    { "name": "Nick McQuire", "affiliation": "Gartner" },
+    { "name": "Florian Krueger-Herbert", "affiliation": "Johnson & Johnson" },
+    { "name": "Thomas Mayfield", "affiliation": "Cardano Foundation (Head of Decentralized Trust and Identity)" },
+    { "name": "Christoph Schneider", "affiliation": "Global Legal Entity Identifier Foundation (GLEIF)" },
+    { "name": "Sebastian Kuepers", "affiliation": "Plan.Net Group & Masumi" }
+  ],
+  "key_takeaways": [
+    "Trust emerged as the headline theme; traditional financial firms exhibited 'blockchain FOMO', with Boston Consulting Group noting roughly two-thirds of bank conversations now center on stablecoins.",
+    "Mastercard's Christian Rau argued stablecoins 'solve a real issue' well beyond cross-border payments, extending into payroll, treasury management and DeFi applications.",
+    "The Cardano Foundation's 2026 roadmap explicitly prioritizes DeFi liquidity, Web3 integration and real-world asset (RWA) tokenization.",
+    "EMURGO framed 2026 priorities around tier-1 stablecoins, deeper DeFi liquidity, more CEX listings and RWA tokenization to drive enterprise adoption.",
+    "New DeFi-adjacent partnerships were announced, including Brale (regulated stablecoins on Cardano) and Toto Finance/LCX (tokenized commodities infrastructure).",
+    "DeFi was framed as an extension of established finance: scaling requires trust, education, institutional alignment and supportive regulation, and accelerates when major banks see clear economic incentives.",
+    "Singapore (5-6 October 2026) was unveiled as the location for the next Cardano Summit."
+  ],
+  "sources": [
+    "https://summit.cardano.org/",
+    "https://cardanofoundation.org/blog/cardano-summit-2025-berlin",
+    "https://cardanofoundation.org/blog/cardano-summit-2025-journey-and-results",
+    "https://cardanofoundation.org/blog/summit-2025-day-1-recap",
+    "https://cardanofoundation.org/blog/summit-2025-day-2-recap",
+    "https://finance.yahoo.com/news/cardano-summit-2025-concludes-berlin-132300666.html",
+    "https://www.businesswire.com/news/home/20251117496852/en/Cardano-Summit-2025-Concludes-In-Berlin-Trust-Emerges-As-The-Winner-with-Traditional-Financial-Firms-Feeling-Blockchain-FOMO",
+    "https://www.crypto-reporter.com/press-releases/cardano-summit-day-two-recap-trust-and-digital-identity-to-drive-blockchain-towards-enterprise-adoption-116717/",
+    "https://www.crypto-reporter.com/press-releases/cardano-summit-2025-concludes-in-berlin-trust-emerges-as-the-winner-with-traditional-financial-firms-feeling-blockchain-fomo-_-117240/",
+    "https://coincodex.com/article/73253/tim-draper-and-a-host-of-visionary-global-industry-leaders-announced-in-the-line-up-to-speak-at-cardano-summit-2025"
+  ],
+  "confidence": "medium"
+}

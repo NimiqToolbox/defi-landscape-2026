@@ -1,0 +1,92 @@
+{
+  "topic": "DeFi users / active addresses over time (2020 to 2026)",
+  "summary": "DeFi participation, measured by cumulative unique wallet addresses, grew from roughly 1 million (Dec 2020) to over 330 million by mid-2026 according to Richard Chen's widely cited Dune Analytics dashboard. CRITICAL CAVEAT: that dashboard counts CUMULATIVE unique addresses ever to interact with tracked DeFi apps across all chains, and explicitly notes 'Users = unique addresses; since a user can have multiple addresses, these graphs are overestimates.' The number of real PEOPLE is far smaller. a16z's State of Crypto reports estimate only 30-70 million monthly ACTIVE crypto users worldwide (out of ~716 million crypto owners), and that DeFi accounts for roughly a third of daily on-chain activity. Total crypto monthly active ADDRESSES (all activity, not just DeFi) peaked at an all-time high of ~220 million in September 2024 per a16z, then settled to ~181 million by 2025 (down 18% YoY) as the Solana-driven memecoin surge cooled. Headline takeaways: (1) cumulative DeFi addresses grew ~330x from 2020 to 2026; (2) addresses are NOT people and overstate the user base substantially; (3) growth accelerated sharply in 2024-2025, driven heavily by low-fee chains (Solana, Base, BNB, Tron). Different methodologies produce very different numbers, so cross-source comparison requires care.",
+  "series": [
+    {
+      "label": "Cumulative unique DeFi addresses ('users') - all chains, milestone/EOY",
+      "unit": "millions of unique addresses (cumulative)",
+      "sources": [
+        "https://dune.com/rchen8/defi-users-over-time",
+        "https://cryptobriefing.com/defi-million-users-ethereum-surging/",
+        "https://cryptoslate.com/defi-ecosystem-now-exceeds-2-million-unique-addresses/",
+        "https://cryptobriefing.com/ethereum-defi-ecosystem-has-hit-3m-users/",
+        "https://coinquora.com/defi-unique-addresses-exceeds-4-million-up-233-in-2021/"
+      ],
+      "points": [
+        {"period": "2019", "value": 0.02, "note": "~19,673 cumulative addresses end of 2019 (Dune rchen8 dashboard). Pre-DeFi-Summer baseline."},
+        {"period": "2020", "value": 1.0, "note": "1,001,461 unique DeFi addresses reached Dec 4-5, 2020 (Dune Analytics / Richard Chen). EOY ~0.85M on later dashboard revision; ~1M is the contemporaneous reported milestone."},
+        {"period": "2021", "value": 20.9, "note": "End-of-2021 cumulative ~20.9M on current Dune dashboard. Milestones during 2021: 2M (Apr 25), 3M (Jul 13), 4M (Nov 21, +233% YoY). Higher EOY figure reflects multi-chain expansion vs Ethereum-only early counts."},
+        {"period": "2022", "value": 35.8, "note": "~35.8M cumulative addresses end of 2022 (Dune rchen8). Growth slowed during bear market / FTX collapse."},
+        {"period": "2023", "value": 50.4, "note": "~50.4M cumulative addresses end of 2023 (Dune rchen8)."},
+        {"period": "2024", "value": 150.8, "note": "~150.8M cumulative addresses end of 2024 (Dune rchen8). Sharp acceleration driven by low-fee chains (Solana, Base, BNB)."},
+        {"period": "2025", "value": 332.6, "note": "~332.6M cumulative addresses (latest data point dated Jun 6, 2026 on Dune rchen8). This is the all-time-high cumulative count and current value. OVERESTIMATE of real users."},
+        {"period": "2026-06", "value": 332.6, "note": "Current value as of latest dashboard snapshot (Jun 6, 2026). Cumulative metric - only goes up over time."}
+      ]
+    },
+    {
+      "label": "Total crypto monthly active addresses (all on-chain activity, not DeFi-only)",
+      "unit": "millions of monthly active addresses",
+      "sources": [
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/",
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/",
+        "https://blockleaders.io/a16-2024-state-of-crypto-report-finds-ath-of-220m-monthly-active-addresses/"
+      ],
+      "points": [
+        {"period": "2023", "value": 65.0, "note": "Approximate end-of-2023 level; a16z states Sept 2024 figure 'more than tripled since end of 2023', implying roughly ~65-70M at end 2023. Estimated/derived."},
+        {"period": "2024-09", "value": 220.0, "note": "All-time-high: 220M addresses interacted with a blockchain at least once in Sept 2024 (a16z State of Crypto 2024). Breakdown: Solana ~100M, NEAR 31M, Base 22M, Tron 14M, Bitcoin 11M, BNB 10M, Ethereum 6M."},
+        {"period": "2025", "value": 181.0, "note": "181M monthly active addresses (a16z State of Crypto 2025), down 18% YoY from the 2024 peak as the Solana memecoin surge cooled. Current/latest value for this metric."}
+      ]
+    },
+    {
+      "label": "Estimated monthly ACTIVE crypto users worldwide (real people, all crypto)",
+      "unit": "millions of people",
+      "sources": [
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/",
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/"
+      ],
+      "points": [
+        {"period": "2024", "value": 45.0, "note": "a16z estimates 30-60M active crypto users worldwide (midpoint ~45M), only 5-10% of ~617M total crypto owners (Crypto.com, Jun 2024). DeFi = 34% of daily active addresses."},
+        {"period": "2025", "value": 55.0, "note": "a16z estimates 40-70M active crypto users (midpoint ~55M), up ~10M YoY, out of 716M total crypto owners (+16% YoY). Not DeFi-only; DeFi is a large subset."}
+      ]
+    },
+    {
+      "label": "Total crypto owners worldwide (context, not active users)",
+      "unit": "millions of people",
+      "sources": [
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/",
+        "https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/"
+      ],
+      "points": [
+        {"period": "2024", "value": 617.0, "note": "~617M global crypto owners (Crypto.com data cited by a16z, June 2024). Only 5-10% are monthly active."},
+        {"period": "2025", "value": 716.0, "note": "716M crypto owners, up 16% YoY (a16z State of Crypto 2025). Of these only ~40-70M are monthly active."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "DeFi crossed 1 million cumulative unique addresses on Dec 4-5, 2020", "value": "1,001,461 addresses", "as_of": "2020-12-05", "source_name": "Crypto Briefing / Dune Analytics (Richard Chen)", "source_url": "https://cryptobriefing.com/defi-million-users-ethereum-surging/", "confidence": "high"},
+    {"claim": "DeFi crossed 2 million cumulative unique addresses on Apr 25, 2021 (doubled in ~4.5 months)", "value": "2 million addresses", "as_of": "2021-04-25", "source_name": "CryptoSlate / Dune Analytics", "source_url": "https://cryptoslate.com/defi-ecosystem-now-exceeds-2-million-unique-addresses/", "confidence": "high"},
+    {"claim": "DeFi crossed 3 million cumulative unique addresses (24 tracked apps) on Jul 13, 2021", "value": "3,004,620 addresses", "as_of": "2021-07-13", "source_name": "Crypto Briefing / Dune Analytics", "source_url": "https://cryptobriefing.com/ethereum-defi-ecosystem-has-hit-3m-users/", "confidence": "high"},
+    {"claim": "DeFi unique addresses exceeded 4 million on Nov 21, 2021, up 233% in 2021", "value": "4 million addresses", "as_of": "2021-11-21", "source_name": "CoinQuora / Dune Analytics", "source_url": "https://coinquora.com/defi-unique-addresses-exceeds-4-million-up-233-in-2021/", "confidence": "high"},
+    {"claim": "Cumulative unique DeFi addresses reached ~332.6 million (all-time high, current value) - explicit OVERESTIMATE of real users", "value": "332.6 million addresses", "as_of": "2026-06-06", "source_name": "Dune Analytics (rchen8 'DeFi users over time')", "source_url": "https://dune.com/rchen8/defi-users-over-time", "confidence": "medium"},
+    {"claim": "Total crypto monthly active addresses hit all-time high of 220 million in Sept 2024 (more than tripled vs end-2023)", "value": "220 million", "as_of": "2024-09", "source_name": "a16z State of Crypto 2024", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/", "confidence": "high"},
+    {"claim": "Total crypto monthly active addresses fell to 181 million in 2025, down 18% YoY", "value": "181 million", "as_of": "2025", "source_name": "a16z State of Crypto 2025", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/", "confidence": "high"},
+    {"claim": "Estimated 30-60 million monthly active crypto users worldwide (2024), only 5-10% of 617M crypto owners", "value": "30-60 million active users", "as_of": "2024", "source_name": "a16z State of Crypto 2024", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/", "confidence": "high"},
+    {"claim": "Estimated 40-70 million monthly active crypto users worldwide (2025), out of 716M crypto owners", "value": "40-70 million active users", "as_of": "2025", "source_name": "a16z State of Crypto 2025", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2025/", "confidence": "high"},
+    {"claim": "DeFi represented 34% of daily crypto usage by share of daily active addresses (2024) - the single largest category", "value": "34% of daily active addresses", "as_of": "2024", "source_name": "a16z State of Crypto 2024", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/", "confidence": "high"},
+    {"claim": "Monthly active addresses interacting with DeFi protocols fluctuated between ~300M and ~390M for most of 2025 (broader crawl methodology, differs from a16z)", "value": "300-390 million monthly", "as_of": "2025", "source_name": "CryptoRank Q3 2025 recap", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025", "confidence": "low"},
+    {"claim": "DeFi captured roughly 20-25% of all spot trading volume (DEX share) by 2025, up from ~4% in 2024", "value": "~20-25% of spot trading", "as_of": "2025", "source_name": "a16z State of Crypto 2025 / DL News State of DeFi 2025", "source_url": "https://www.dlnews.com/research/internal/state-of-defi-2025/", "confidence": "high"},
+    {"claim": "METHODOLOGY CAVEAT: addresses are NOT people. One person can control many wallets, and one wallet (smart contract / exchange) can represent many people. Dune cumulative counts only grow over time and overestimate users.", "value": "addresses != people", "as_of": "2026-06-17", "source_name": "Dune Analytics dashboard note + a16z", "source_url": "https://dune.com/rchen8/defi-users-over-time", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Solana", "metric": "monthly active addresses (Sept 2024)", "value": "~100 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "NEAR", "metric": "monthly active addresses (Sept 2024)", "value": "31 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "Base", "metric": "monthly active addresses (Sept 2024)", "value": "22 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "Tron", "metric": "monthly active addresses (Sept 2024)", "value": "14 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "Bitcoin", "metric": "monthly active addresses (Sept 2024)", "value": "11 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "BNB Chain", "metric": "monthly active addresses (Sept 2024)", "value": "10 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "Ethereum", "metric": "monthly active addresses (Sept 2024)", "value": "6 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
+    {"name": "Solana (2025)", "metric": "monthly active addresses (2025, most active network)", "value": "~68 million (+14%)", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025"},
+    {"name": "BNB Chain (2025)", "metric": "monthly active addresses (2025)", "value": "~58 million", "source_url": "https://blockchainreporter.net/bnb-chain-leads-blockchain-rankings-with-58m-monthly-active-addresses"},
+    {"name": "Ethereum (2025)", "metric": "monthly active addresses (2025)", "value": "~13 million (+53%)", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025"}
+  ]
+}

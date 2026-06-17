@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>The DeFi Landscape — Historical & Current State (2017–2026)</title>
+<meta name="description" content="A data-rich overview of decentralized finance: TVL, volumes, users, stablecoins, perps, RWA, cycles, the protocol map, and 12 months of conferences." />
+<meta name="theme-color" content="#F4F4F4" />
+<meta name="color-scheme" content="light" />
+<link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav">
+  <div class="nav-inner">
+    <div class="brand">The <span>DeFi</span> Landscape</div>
+    <a class="navlink" href="#overview">Overview</a>
+    <a class="navlink" href="#cycles">Cycles</a>
+    <a class="navlink" href="#chains">Chains</a>
+    <a class="navlink" href="#categories">Categories</a>
+    <a class="navlink" href="#dex">DEXs</a>
+    <a class="navlink" href="#stablecoins">Stablecoins</a>
+    <a class="navlink" href="#perps">Perps</a>
+    <a class="navlink" href="#staking">Staking</a>
+    <a class="navlink" href="#rwa">RWA</a>
+    <a class="navlink" href="#money">Fees</a>
+    <a class="navlink" href="#security">Security</a>
+    <a class="navlink" href="#map">Protocol map</a>
+    <a class="navlink" href="#conferences">Conferences</a>
+    <a class="navlink" href="#methodology">Sources</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="overview">
+  <div class="tag">Research compiled 17 Jun 2026 · data as of 16 Jun 2026 · ~50 sourced datasets</div>
+  <h1>The <span class="grad">DeFi landscape</span>, end-to-end:<br/>how the money moved, 2017 → 2026.</h1>
+  <p class="lead">Decentralized finance went from a ~$0.6B science project at the end of 2019 to a <span class="hl">$177.5B</span> all-time high in November 2021, survived the Terra/FTX implosion that erased ~78% of it, re-approached its peak at <span class="hl">~$171B</span> in October 2025, and sits at <span class="hl">~$74.5B</span> today after a sharp 2026 drawdown. Beneath the headline TVL, the <em>composition</em> changed completely: liquid staking, restaking, perps, stablecoins and real-world assets reshaped what DeFi actually is. This page assembles the hard numbers, the cycle story, the protocol map, and what the last 12 months of conferences were actually about.</p>
+
+  <div class="kpis" id="kpis"><!-- populated by app.js --></div>
+  <p class="muted">Headline series follow DefiLlama's consistent cross-chain methodology; other trackers cite higher peaks (e.g. ~$202–237B) under broader inclusion rules. Every chart links to its underlying raw file. See <a href="#methodology">sources &amp; methodology</a>.</p>
+</header>
+
+<hr class="div"/>
+
+<!-- ================= CYCLES ================= -->
+<section id="cycles">
+  <div class="section-head">
+    <div class="eyebrow">The arc</div>
+    <h2>Total value locked &amp; the four cycles</h2>
+    <p class="lead">One curve tells most of the story — but the same dollar peak in 2021 and 2025 hides a total turnover in what was underneath it.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Total DeFi TVL</h3>
+      <div class="cap">USD billions · year-end values with intra-year peaks · DefiLlama</div>
+      <div id="c-tvl" class="chart tall"></div>
+      <div class="note">All-time high <b>$177.5B on 9 Nov 2021</b>. The 2022 unwind (Terra→3AC→Celsius→FTX) cut TVL ~78% to ~$38B. Recovery reached <b>~$171B in Oct-2025</b> before a H1-2026 selloff (and ~$746M of Q2-2026 exploits) pulled it to ~$74.5B.</div>
+      <div class="src">Raw: <a href="data/raw/quant_total_tvl.json">quant_total_tvl.json</a> · DefiLlama API</div>
+    </div>
+    <div class="card">
+      <h3>The six eras of DeFi</h3>
+      <div class="cap">Key events 2017 → 2026</div>
+      <div class="timeline" id="timeline"><!-- populated --></div>
+      <div class="src">Raw: <a href="data/raw/narrative_timeline.json">narrative_timeline.json</a></div>
+    </div>
+  </div>
+  <div class="callout" style="margin-top:18px">
+    <b>The headline that matters:</b> dollar TVL re-approached its 2021 high in 2025, but the <em>mix</em> inverted. In 2020–21 DEXs, lending and MakerDAO dominated. From 2023 on, <b>liquid staking became the single largest category</b> (a record ~$86B in Aug-2025, >50% of all DeFi TVL), restaking went 0→$22B→back down, and RWAs + yield-bearing stablecoins emerged as wholly new verticals.
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= CHAINS ================= -->
+<section id="chains">
+  <div class="section-head">
+    <div class="eyebrow">Where it lives</div>
+    <h2>TVL by blockchain</h2>
+    <p class="lead">Ethereum has always anchored DeFi — ~96% of TVL in 2020, ~53% today — but the rest of the field is now a bunched, specialized middle: BSC for DEX flow, Tron for stablecoin settlement, Solana for trading, Base for consumer apps, and Bitcoin DeFi as a 2024 newcomer.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>DeFi TVL by chain</h3>
+      <div class="cap">USD billions · year-end · stacked · top 9 chains</div>
+      <div id="c-chain-stack" class="chart tall"></div>
+      <div class="src">Raw: <a href="data/raw/quant_tvl_by_chain.json">quant_tvl_by_chain.json</a></div>
+    </div>
+    <div class="card">
+      <h3>Chain market share today</h3>
+      <div class="cap">USD billions · 16 Jun 2026</div>
+      <div id="c-chain-pie" class="chart tall"></div>
+      <div class="note">Ethereum ~53.4% (near multi-year lows). New entrants: Hyperliquid's app-chain (~$1.65B) and Plasma climbed fast; Arbitrum, Polygon, Avalanche and Sui faded from prior peaks.</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Ethereum's share of DeFi TVL</h3>
+    <div class="cap">percent · year-end</div>
+    <div id="c-eth-dom" class="chart short"></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= CATEGORIES ================= -->
+<section id="categories">
+  <div class="section-head">
+    <div class="eyebrow">What it is</div>
+    <h2>TVL by category — the composition flip</h2>
+    <p class="lead">The clearest structural change in DeFi: the application mix. Lending and liquid staking now dwarf DEX TVL, and RWA went from nothing to a top-5 category.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Category leaders over time</h3>
+      <div class="cap">USD billions · leader-protocol proxy (lower bound)</div>
+      <div id="c-cat-proxy" class="chart tall"></div>
+      <div class="note">Reconstructed from each category's dominant protocols; true category totals are higher. Note liquid staking's 2023 takeover and RWA's 2024–26 emergence.</div>
+    </div>
+    <div class="card">
+      <h3>Category mix today (gross)</h3>
+      <div class="cap">USD billions · 16 Jun 2026 · DefiLlama category sums</div>
+      <div id="c-cat-now" class="chart tall"></div>
+      <div class="note">Gross sums double-count where assets are wrapped/restaked — Bridge (★) is inflated by wrapped BTC/ETH; restaking + LRTs overlap. Treat as upper bounds.</div>
+    </div>
+  </div>
+  <div class="src">Raw: <a href="data/raw/quant_tvl_by_category.json">quant_tvl_by_category.json</a></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= DEX ================= -->
+<section id="dex">
+  <div class="section-head">
+    <div class="eyebrow">Trading</div>
+    <h2>Decentralized exchanges</h2>
+    <p class="lead">DEX spot volume hit a record <span class="hl">~$4.9T in 2025</span>, and the DEX-to-CEX spot ratio more than tripled in five years — peaking at <span class="hl">37.4%</span> in Jun-2025. On-chain trading is no longer a niche.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Annual DEX spot volume</h3>
+      <div class="cap">USD trillions</div>
+      <div id="c-dex-vol" class="chart"></div>
+    </div>
+    <div class="card">
+      <h3>DEX-to-CEX spot volume ratio</h3>
+      <div class="cap">percent</div>
+      <div id="c-dexcex" class="chart"></div>
+      <div class="note">ATH 37.4% (Jun-2025) on Solana memecoin mania; settled ~21% by Nov-2025, ~29% in 2026.</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Spot DEX market share</h3>
+    <div class="cap">percent of monthly spot volume · Aug-2025 snapshot</div>
+    <div id="c-dex-share" class="chart short"></div>
+    <div class="note">Uniswap &amp; PancakeSwap have led for years, but Solana venues (Raydium, Jupiter routing) and Base's Aerodrome surged in 2025 — Raydium briefly overtook Uniswap on monthly volume in Nov-2025.</div>
+    <div class="src">Raw: <a href="data/raw/quant_dex_volume.json">quant_dex_volume.json</a> · <a href="data/raw/map_dex.json">map_dex.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= LENDING ================= -->
+<section id="lending">
+  <div class="section-head">
+    <div class="eyebrow">Credit</div>
+    <h2>Lending markets</h2>
+    <p class="lead">Aave is the entrenched incumbent (~60–63% of lending), peaking at <span class="hl">$45.8B</span> TVL in Oct-2025. The growth story is modular: Morpho went 0 → top-3 in two years.</p>
+  </div>
+  <div class="card">
+    <h3>Lending protocol TVL</h3>
+    <div class="cap">USD billions · year-end · DefiLlama</div>
+    <div id="c-lending" class="chart tall"></div>
+    <div class="note">MakerDAO led the 2021 cycle ($19.8B ATH) then externalized lending into Spark and rebranded to Sky. Compound stagnated. Morpho Blue (immutable, isolated markets) is the face of the modular shift.</div>
+    <div class="src">Raw: <a href="data/raw/quant_lending.json">quant_lending.json</a> · <a href="data/raw/map_lending.json">map_lending.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= STABLECOINS ================= -->
+<section id="stablecoins">
+  <div class="section-head">
+    <div class="eyebrow">The base layer</div>
+    <h2>Stablecoins</h2>
+    <p class="lead">The quiet giant of the cycle: total supply reached an all-time high of <span class="hl">~$321B</span> (May-2026) and ~$313B today. A USDT/USDC duopoly holds ~83% — but in 2024 stablecoin transfer volume (~$18.4T adjusted) exceeded Visa and Mastercard.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Total stablecoin supply</h3>
+      <div class="cap">USD billions · year-end · DefiLlama</div>
+      <div id="c-stable-total" class="chart"></div>
+    </div>
+    <div class="card">
+      <h3>Supply by issuer today</h3>
+      <div class="cap">USD billions · 16 Jun 2026</div>
+      <div id="c-stable-pie" class="chart"></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Issuer trajectories — rise, fall &amp; reset</h3>
+    <div class="cap">USD billions · year-end</div>
+    <div id="c-stable-issuers" class="chart tall"></div>
+    <div class="note">USDT's steady climb, USDC's 2023 SVB-depeg dip, BUSD's regulatory wind-down to ~zero, and Ethena's USDe spike (peaked ~$14.8B Oct-2025) tell the whole sector's risk story.</div>
+    <div class="src">Raw: <a href="data/raw/quant_stablecoins.json">quant_stablecoins.json</a> · <a href="data/raw/map_stablecoins.json">map_stablecoins.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= PERPS ================= -->
+<section id="perps">
+  <div class="section-head">
+    <div class="eyebrow">Derivatives</div>
+    <h2>Perpetuals — the breakout vertical</h2>
+    <p class="lead">On-chain perps went from a rounding error to a multi-trillion-dollar market: <span class="hl">~$6.4–7.9T in 2025</span>, with monthly volume first crossing $1T in Oct-2025. One protocol — Hyperliquid — did most of it.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Annual perp-DEX volume</h3>
+      <div class="cap">USD trillions</div>
+      <div id="c-perp-vol" class="chart"></div>
+      <div class="note">2025 figure ranges $6.38T (CoinGecko) to ~$7.9T (DefiLlama-derived) by methodology.</div>
+    </div>
+    <div class="card">
+      <h3>Hyperliquid's share of on-chain perps</h3>
+      <div class="cap">percent</div>
+      <div id="c-hl-share" class="chart"></div>
+      <div class="note">Peaked ~70–80% mid-2025; compressed to ~36% by Jan-2026 as Aster, Lighter and edgeX rose, then rebounded toward ~44%.</div>
+    </div>
+  </div>
+  <div class="src">Raw: <a href="data/raw/quant_perps.json">quant_perps.json</a> · <a href="data/raw/map_perps_derivs.json">map_perps_derivs.json</a></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= STAKING ================= -->
+<section id="staking">
+  <div class="section-head">
+    <div class="eyebrow">Yield foundation</div>
+    <h2>Liquid staking &amp; restaking</h2>
+    <p class="lead">Liquid staking is DeFi's biggest category; restaking was its most dramatic boom-and-bust. Much of the USD swing is ETH price — the count of staked ETH kept rising to ~33% of supply.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Liquid staking TVL</h3>
+      <div class="cap">USD billions · year-end · Lido / Rocket Pool / Jito</div>
+      <div id="c-lst" class="chart"></div>
+      <div class="note">Whole category record ~$86B (Aug-2025). Lido leads (~$16B) but its share of staked ETH fell from >32% to ~24%.</div>
+    </div>
+    <div class="card">
+      <h3>ETH staked &amp; staking ratio</h3>
+      <div class="cap">million ETH (bars) · % of supply (line)</div>
+      <div id="c-ethstaked" class="chart"></div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Restaking: the 2024 boom and the 2026 unwind</h3>
+    <div class="cap">USD billions · EigenLayer &amp; ether.fi</div>
+    <div id="c-restake" class="chart"></div>
+    <div class="note">EigenLayer 0 → ~$22B ATH (Aug-2025) → ~$5B now as points/airdrops ended, slashing went live (Apr-2025), and real AVS yields lagged the thesis.</div>
+    <div class="src">Raw: <a href="data/raw/quant_liquid_staking.json">quant_liquid_staking.json</a> · <a href="data/raw/quant_restaking.json">quant_restaking.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= RWA ================= -->
+<section id="rwa">
+  <div class="section-head">
+    <div class="eyebrow">Wall Street on-chain</div>
+    <h2>Real-world assets</h2>
+    <p class="lead">The institutional gateway. Tokenized RWAs (ex-stablecoins) grew from ~$5B (2022) to <span class="hl">~$32.6B</span> today, led by tokenized US Treasuries and private credit — and led increasingly by TradFi names (BlackRock, Franklin, Circle) over DeFi-native originators.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Tokenized RWA value on-chain</h3>
+      <div class="cap">USD billions · ex-stablecoins · RWA.xyz</div>
+      <div id="c-rwa" class="chart"></div>
+    </div>
+    <div class="card">
+      <h3>Leading RWA products today</h3>
+      <div class="cap">USD billions · 16 Jun 2026</div>
+      <div id="c-rwa-leaders" class="chart"></div>
+      <div class="note">Circle's USYC overtook BlackRock's BUIDL in Mar-2026. Tokenized gold (Tether Gold, PAXG) surged on the 2025 metals rally.</div>
+    </div>
+  </div>
+  <div class="src">Raw: <a href="data/raw/quant_rwa.json">quant_rwa.json</a> · <a href="data/raw/map_rwa.json">map_rwa.json</a></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= YIELD + BRIDGES ================= -->
+<section id="yield">
+  <div class="section-head">
+    <div class="eyebrow">Plumbing</div>
+    <h2>Yield products &amp; bridges</h2>
+    <p class="lead">Yield leadership turned over completely — from auto-compounders to yield-tokenization. Bridges pivoted from custody-heavy lock-and-mint (and a 2022 hack crisis) to messaging + intents.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Yield: the generational shift</h3>
+      <div class="cap">USD billions · year-end · Pendle / Convex / Yearn</div>
+      <div id="c-yield" class="chart"></div>
+      <div class="note">Convex peaked at ~$21B in the 2022 Curve Wars; Pendle (yield tokenization) led the 2024–25 cycle, peaking ~$13.4B before a 2026 retrace.</div>
+    </div>
+    <div class="card">
+      <h3>Bridge category leaders today</h3>
+      <div class="cap">USD billions · 16 Jun 2026 · DefiLlama</div>
+      <div id="c-bridges" class="chart"></div>
+      <div class="note">Total ~$46.7B mixes custodial/wrapped bridges. Multichain (ATH $10.5B) collapsed in 2023; bridges were ~69% of all 2022 crypto theft.</div>
+    </div>
+  </div>
+  <div class="src">Raw: <a href="data/raw/quant_yield.json">quant_yield.json</a> · <a href="data/raw/quant_bridges.json">quant_bridges.json</a></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= MONEY: USERS / FEES ================= -->
+<section id="money">
+  <div class="section-head">
+    <div class="eyebrow">Users &amp; economics</div>
+    <h2>Users, builders &amp; the money DeFi makes</h2>
+    <p class="lead">DeFi fees hit a record <span class="hl">$27.2B in 2025</span> ($14.6B kept as protocol revenue). User counts look enormous but need care — addresses are not people.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>DeFi fees &amp; protocol revenue</h3>
+      <div class="cap">USD billions · annual · DefiLlama</div>
+      <div id="c-fees" class="chart"></div>
+      <div class="note">All-time cumulative: ~$111B fees / ~$61B revenue. Stablecoin issuers (Tether, Circle) are ~39% of current fees; Hyperliquid, Aave and Lido lead the rest.</div>
+    </div>
+    <div class="card">
+      <h3>Developers: monthly active</h3>
+      <div class="cap">count · Electric Capital</div>
+      <div id="c-devs" class="chart"></div>
+      <div class="note">Peaked ~26k (mid-2022); experienced devs now write ~70% of code. Solana led NEW devs in 2024; India became the #1 source of new developers.</div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Users — with the right caveats</h3>
+    <div class="cap">cumulative unique DeFi addresses (M) vs. real monthly-active users</div>
+    <div id="c-users" class="chart short"></div>
+    <div class="disclaimer">⚠ Cumulative addresses (Dune) only ever rise and <b>overstate</b> the user base — one person can hold many wallets. a16z estimates just ~40–70M monthly-active crypto users worldwide (of 716M owners), with DeFi ≈ 34% of daily on-chain activity.</div>
+    <div class="src">Raw: <a href="data/raw/quant_fees_revenue.json">quant_fees_revenue.json</a> · <a href="data/raw/quant_developers.json">quant_developers.json</a> · <a href="data/raw/quant_users.json">quant_users.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= SECURITY ================= -->
+<section id="security">
+  <div class="section-head">
+    <div class="eyebrow">Risk</div>
+    <h2>Hacks &amp; exploits</h2>
+    <p class="lead">2025 set a record for total crypto theft (~$3.4B) — but almost entirely because of the single ~$1.5B Bybit hack. DeFi-protocol losses specifically have <em>fallen</em> as on-chain security matured.</p>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>Annual crypto theft vs. DeFi-only losses</h3>
+      <div class="cap">USD billions · Chainalysis (all) &amp; Immunefi (DeFi-only)</div>
+      <div id="c-hacks" class="chart"></div>
+      <div class="note">DeFi-protocol losses fell from a $2.62B peak (2022) to ~$0.68B (2025); median loss per incident is down ~75%. Theft shifted toward CEXs and wallets.</div>
+    </div>
+    <div class="card">
+      <h3>Largest single incidents</h3>
+      <div class="cap">USD millions</div>
+      <div id="c-bighacks" class="chart"></div>
+      <div class="note">North Korea's Lazarus Group is tied to the largest events (Bybit, Ronin). Poly Network and Euler funds were largely returned.</div>
+    </div>
+  </div>
+  <div class="src">Raw: <a href="data/raw/quant_hacks.json">quant_hacks.json</a></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= PROTOCOL MAP ================= -->
+<section id="map">
+  <div class="section-head">
+    <div class="eyebrow">The field today</div>
+    <h2>Protocol &amp; category map</h2>
+    <p class="lead">Who leads each vertical now — and how leadership shifted across the cycles.</p>
+  </div>
+  <div class="grid g2" id="map-cards"><!-- populated --></div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= REGULATION ================= -->
+<section id="regulation">
+  <div class="section-head">
+    <div class="eyebrow">Policy &amp; macro</div>
+    <h2>Regulation: from enforcement to a US pivot</h2>
+    <p class="lead">The macro/regulatory backdrop drove the cycle as much as code did — from Fed tightening and the Tornado Cash sanctions to MiCA, ETF approvals, and the 2025 US policy reversal that delivered the GENIUS stablecoin law.</p>
+  </div>
+  <div class="card">
+    <div class="timeline" id="regulation-timeline"><!-- populated --></div>
+    <div class="src">Raw: <a href="data/raw/narrative_regulation.json">narrative_regulation.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= CONFERENCES ================= -->
+<section id="conferences">
+  <div class="section-head">
+    <div class="eyebrow">The discourse · Jun 2025 → Jun 2026</div>
+    <h2>What DeFi actually talked about</h2>
+    <p class="lead">Across 20+ major and regional flagship conferences in the last 12 months, four themes dominated every stage: <span class="hl">stablecoins</span>, <span class="hl">RWA/tokenization</span>, <span class="hl">institutional DeFi</span>, and <span class="hl">AI agents (DeFAI)</span>. The recurring phrase: "less degen, more boardroom."</p>
+  </div>
+  <div class="card">
+    <h3>Theme frequency across conferences</h3>
+    <div class="cap">number of surveyed conferences foregrounding each DeFi theme (editor's tally)</div>
+    <div id="c-conf-themes" class="chart"></div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>The 12-month conference circuit</h3>
+    <div class="cap">major + regional flagships · DeFi themes &amp; headline speakers · ✓ in window / ✗ adjacent</div>
+    <div class="tablewrap"><table id="conf-table"><!-- populated --></table></div>
+    <div class="src">Raw: per-event files in <a href="https://github.com/NimiqToolbox/defi-landscape-2026/tree/main/data/raw">data/raw/conf_*.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= METHODOLOGY ================= -->
+<section id="methodology">
+  <div class="section-head">
+    <div class="eyebrow">Trust, but verify</div>
+    <h2>Sources, methodology &amp; caveats</h2>
+  </div>
+  <div class="grid g2">
+    <div class="card">
+      <h3>How this was built</h3>
+      <p>This page was compiled from a multi-agent deep-research run (98 agents, ~2.7M tokens) that fanned out across the open web, extracted falsifiable claims with source URLs and as-of dates, and adversarially fact-checked the load-bearing numbers (3-vote verification). Each topic's findings are saved as JSON in <a href="https://github.com/NimiqToolbox/defi-landscape-2026/tree/main/data/raw">data/raw/</a>; the cleaned chart series live in <a href="data/defi_data.js">data/defi_data.js</a>.</p>
+      <p class="muted">Downloadable: <a href="data/timeseries_long.csv">timeseries_long.csv</a> (all numeric series, tidy format) · <a href="data/conferences.csv">conferences.csv</a> · <a href="data/defi_data.js">defi_data.js</a></p>
+    </div>
+    <div class="card">
+      <h3>Primary data providers</h3>
+      <div class="pills">
+        <span class="pill">DefiLlama (TVL, fees, stablecoins, per-protocol)</span>
+        <span class="pill">CoinGecko Research</span>
+        <span class="pill">The Block</span>
+        <span class="pill">Messari</span>
+        <span class="pill">Token Terminal</span>
+        <span class="pill">RWA.xyz</span>
+        <span class="pill">Artemis</span>
+        <span class="pill">a16z State of Crypto</span>
+        <span class="pill">Electric Capital</span>
+        <span class="pill">Chainalysis · CertiK · Immunefi</span>
+        <span class="pill">official conference agendas</span>
+      </div>
+    </div>
+  </div>
+  <div class="card" style="margin-top:18px">
+    <h3>Read these caveats before quoting a number</h3>
+    <ul style="color:var(--text-dim); font-size:14px;">
+      <li><b>Methodology divergence.</b> The headline TVL series uses DefiLlama's consistent cross-chain methodology (ATH ~$177.5B). Other trackers cite ~$202–237B for the 2021/2025 peaks under broader inclusion/double-counting rules.</li>
+      <li><b>Gross category sums double-count.</b> Per-category totals (e.g. Bridge ~$46.7B, restaking + LRTs) include wrapped/restaked assets that count the same underlying ETH/BTC more than once. Treat them as upper bounds.</li>
+      <li><b>TVL is price-driven.</b> Much of the 2026 USD drawdown reflects falling ETH/SOL prices, not mass withdrawals — staked-ETH <em>counts</em> kept rising even as USD TVL fell.</li>
+      <li><b>Addresses ≠ people.</b> Cumulative-address user counts (~333M) massively overstate real users (~40–70M monthly active worldwide).</li>
+      <li><b>Volume figures vary by source/scope</b> (spot-only vs. incl. perps; CoinGecko vs. DefiLlama). Ranges are given where sources disagree.</li>
+      <li><b>Conference detail confidence varies</b> — future-dated 2026 events and events with thin public agendas are lower-confidence; speakers/panels are never fabricated, and adjacent-but-out-of-window events are flagged.</li>
+    </ul>
+  </div>
+</section>
+
+<footer>
+  <p><b>The DeFi Landscape</b> · overview compiled 17 Jun 2026 from ~50 sourced datasets · data as of 16 Jun 2026. Built for research/educational purposes — not investment advice. Figures are best-available estimates with the caveats above; verify against primary sources before relying on any single number.</p>
+</footer>
+
+</div><!-- /wrap -->
+
+<!-- ECharts: vendored locally, CDN fallback -->
+<script src="assets/echarts.min.js"></script>
+<script>
+  if (!window.echarts) {
+    document.write('<script src="https://cdn.jsdelivr.net/npm/echarts@5.5.1/dist/echarts.min.js"><\/script>');
+  }
+</script>
+<script src="data/defi_data.js"></script>
+<script src="assets/app.js"></script>
+</body>
+</html>

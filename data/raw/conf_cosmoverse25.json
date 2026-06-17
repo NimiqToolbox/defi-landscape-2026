@@ -1,0 +1,77 @@
+{
+  "name": "Cosmoverse 2025",
+  "edition": "5th edition (Cosmoverse Balkans / Split)",
+  "location": "Le Méridien Lav, Split, Croatia",
+  "dates": "October 30 - November 1, 2025",
+  "in_window": true,
+  "attendance": "Marketing pre-event materials cited 10,000+ attendees and 500+ speakers; post-event recaps describe 60+ curated sessions across ~10 tracks plus a 100-builder Hackmos x DoraHacks hackathon. Exact verified headcount not published in independent coverage.",
+  "defi_themes": [
+    "Stablecoins and institutional stablecoin infrastructure (Visa pilot for a stablecoin liquidity and funding model with global banks)",
+    "CBDCs / Digital Euro and on-chain finance (ECB and Croatian National Bank; Cosmos Labs building two Latin American CBDCs)",
+    "Real-world asset (RWA) tokenization across banking, gaming, government, and asset management",
+    "Convergence of traditional finance (TradFi) and DeFi / institutional DeFi",
+    "Sovereign and neutral blockchain infrastructure as a base layer for regulated finance",
+    "Interoperability and cross-chain finance (IBC, EVM interoperability) for institutional users",
+    "Regulation and policy dialogue with central banks and securities commissions",
+    "ATOM and Cosmos Stack positioned for enterprise / Fortune 500 financial deployments"
+  ],
+  "notable_panels": [
+    {
+      "title": "Digital Euro in the Age of On-Chain Finance",
+      "topic": "CBDC / Digital Euro institutional design and 2029 implementation roadmap; intersection of central bank money and on-chain finance",
+      "speakers": "Jurgen Schaaf (European Central Bank), Linardo Martincevic (Croatian National Bank)"
+    },
+    {
+      "title": "Stablecoin liquidity and funding model pilot (Visa announcement)",
+      "topic": "Visa revealed a pilot for a stablecoin liquidity and funding model with global banks",
+      "speakers": "Onur Ozdemir (Visa)"
+    },
+    {
+      "title": "Tokenization Track sessions",
+      "topic": "Enterprise RWA tokenization across banking, gaming, government, and asset management",
+      "speakers": "Not individually attributed in available coverage"
+    },
+    {
+      "title": "Executive / institutional finance integration sessions",
+      "topic": "How sovereign on-chain infrastructure supports public-private financial innovation and Fortune 500 deployments",
+      "speakers": "Not individually attributed in available coverage"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Jurgen Schaaf", "affiliation": "Advisor, Market Infrastructure and Payments, European Central Bank"},
+    {"name": "Linardo Martincevic", "affiliation": "Advisor, Croatian National Bank; Eurosystem CBDC Task Force"},
+    {"name": "Onur Ozdemir", "affiliation": "Visa"},
+    {"name": "Maghnus Mareneck", "affiliation": "Co-CEO, Cosmos Labs"},
+    {"name": "Barry Plunkett", "affiliation": "Co-CEO, Cosmos Labs"},
+    {"name": "Ethan Buchman", "affiliation": "Co-Founder, Cosmos; CEO, Informal Systems"},
+    {"name": "Humayun Sheikh", "affiliation": "Founder, Fetch.ai"},
+    {"name": "Andrius Biceika", "affiliation": "Supervisory Council Member, Revolut"},
+    {"name": "Dr. Bernhard Kronfellner", "affiliation": "Partner / Associate Director, Boston Consulting Group"},
+    {"name": "Anina Milanovic", "affiliation": "Head of International Cooperation and Development, Serbian Securities Commission"},
+    {"name": "Bojan Petrovic", "affiliation": "Advisor, Securities Commission of the Federation of Bosnia and Herzegovina"},
+    {"name": "Prof. Dragan Primorac", "affiliation": "Former Croatian Minister of Science, Education and Sports"},
+    {"name": "Zac Wickstrom", "affiliation": "Founder, VALT (Cosmos Ventures pitching competition winner)"},
+    {"name": "Michael 'Cryptocito'", "affiliation": "Founder, Cosmoverse"}
+  ],
+  "key_takeaways": [
+    "Cosmoverse 2025 marked a clear pivot toward institutional and regulated finance, branded around the convergence of TradFi, central banks, and sovereign Cosmos infrastructure rather than retail DeFi.",
+    "Central bank participation was the headline DeFi-adjacent story: the ECB and Croatian National Bank discussed a Digital Euro roadmap (targeting ~2029) in the 'Digital Euro in the Age of On-Chain Finance' session.",
+    "Stablecoins moved into the institutional spotlight, with Visa disclosing a pilot for a stablecoin liquidity and funding model with global banks.",
+    "Cosmos Labs confirmed it is building two CBDCs in Latin America, positioning the Cosmos Stack as government-grade financial infrastructure.",
+    "RWA / tokenization was a core track, framed around enterprise adoption (banking, asset management, government, gaming) rather than speculative yield.",
+    "Theme of 'sovereign' and neutral blockchain infrastructure dominated: Cosmos pitched IBC interoperability and app-chains as the settlement layer for regulated institutional finance.",
+    "At the closing ceremony, Cosmoverse 2026 was announced for Hong Kong (Nov 4-6, 2026), alongside Hong Kong FinTech Week, deepening the institutional/Asia finance focus.",
+    "Coverage was light on classic DeFi primitives (DEXs, lending, perps, restaking, on-chain treasuries); the DeFi narrative was overwhelmingly stablecoins, CBDCs, tokenization, and institutional integration."
+  ],
+  "sources": [
+    "https://www.cosmoverse.org/",
+    "https://crypto.news/cosmoverse-2025-set-a-new-standard-for-web3-conferences-as-sovereign-chains-central-banks-and-cosmos-converged-in-split/",
+    "https://www.crypto-reporter.com/press-releases/cosmoverse-2025-heads-to-split-croatia-connecting-global-web3-leaders-with-institutional-voices-in-southeast-europe-111693/",
+    "https://en.cryptonomist.ch/2025/12/06/cosmoverse-2025-web3-conferences/",
+    "https://en.cryptonomist.ch/2025/09/14/cosmoverse-2025-split-croatia/",
+    "https://beincrypto.com/cosmoverse-2025-split-croatia/",
+    "https://beincrypto.com/cosmoverse-2025-web3-finance-convergence/",
+    "https://events.coinpedia.org/cosmoverse-balkans-2025-7095/"
+  ],
+  "confidence": "medium"
+}

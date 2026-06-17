@@ -1,0 +1,100 @@
+{
+  "name": "Stablecon",
+  "edition": "Stablecon EMEA 2026 (Amsterdam) is the edition falling inside the June 2025-June 2026 window. The original/flagship Stablecon NYC 2025 (May 29, 2025) sits just BEFORE the window but is included as context and is the source of the most detailed DeFi-panel content.",
+  "location": "In-window edition: IPG Mediabrands Netherlands, 7 Peter van Anrooystraat, Amsterdam, Noord-Holland 1076 DA, Netherlands. (Original Stablecon NYC 2025: Metropolitan Pavilion, 125 W 18th St, New York, NY 10011, USA.)",
+  "dates": "Stablecon EMEA 2026: May 19-20, 2026 (in window). Stablecon NYC 2025: May 29, 2025 (just before the window). For reference, the next edition is Stablecon USA 2026: September 9-11, 2026, National Harbor Resort, Washington DC (after the window).",
+  "in_window": true,
+  "attendance": "Conflicting figures. Promotional materials for both editions claim 1,500+ attendees, 750+ C-suite leaders, and 100-125+ speakers. Independent sources are lower: a Turnkey recap of Stablecon NYC 2025 cited 460+ attendees, and an Ark Republic recap of Stablecon EMEA 2026 cited 'nearly 600 registrants.' The EMEA 2026 published speaker list contains roughly 100 named speakers, consistent with the 100+ speaker claim.",
+  "defi_themes": [
+    "Convergence of TradFi and crypto/DeFi - banks and institutions integrating stablecoins rather than competing ('the future of finance was not crypto vs institutions, it was their convergence')",
+    "Stablecoins as programmable global payment rails and 'invisible financial infrastructure' rather than speculative crypto assets",
+    "Yield-bearing stablecoins and yield embedded 'under the hood' of fintech apps (typically 4-8% USD-denominated yield)",
+    "Real-World Asset (RWA) tokenization, tokenized Treasuries, tokenized bonds and collateral, and private credit as the bridge between TradFi and DeFi",
+    "On-chain / enterprise treasury operations and corporate adoption of stablecoins for cash management",
+    "Institutional DeFi and programmable money enabling new capital-formation and lending models",
+    "Stablecoin regulation as a product enabler - MiCA (EU), UK stablecoin frameworks, US policy, and Middle East/Africa regulatory approaches",
+    "Cross-border payments and settlement - reducing multi-country transfers from days to minutes",
+    "Liquidity automation, multi-chain interoperability, and bridge/cross-chain infrastructure ('infrastructure built to bend')",
+    "Local-currency / non-dollar stablecoins and monetary sovereignty (notably emerging markets and Africa)",
+    "Custodial vs non-custodial key management and the regulatory grey areas of non-custodial DeFi solutions",
+    "Commoditization of stablecoin issuance and competitive pressure on net-interest-margin business models"
+  ],
+  "notable_panels": [
+    {
+      "title": "The Stablecoin Regulatory Map",
+      "topic": "Regulatory frameworks across regions, compliance challenges, and fragmented global policy for stablecoins (Stablecon NYC 2025)",
+      "speakers": "Moderator: Laura Sanders (Senior Counsel, Blockchain Association); Sinclair Toffa (Co-founder/CEO, MuralPay); Kevin Lehtiniitty (CEO, Borderless.xyz)"
+    },
+    {
+      "title": "Shipping Stablecoins",
+      "topic": "Technical infrastructure, build-vs-buy decisions, and custodial vs non-custodial wallets (Stablecon NYC 2025)",
+      "speakers": "Moderator: Arnaud Brousseau (Founding Engineer, Turnkey); Chuk Okpalugo (Product Leader, Paxos); Drake Evans (Co-founder/CTO, Agora)"
+    },
+    {
+      "title": "The Stablecoin Economy",
+      "topic": "Revenue models, issuance/distribution, and value distribution across ecosystem layers; yield-bearing assets and embedded fintech models (Stablecon NYC 2025)",
+      "speakers": "Moderator: Hannah Arnold (COO, Turnkey); Mike Giampapa (General Partner, Galaxy); Greg Prisco (Co-founder, M0)"
+    },
+    {
+      "title": "Accelerating Stablecoin Infrastructure",
+      "topic": "Stablecoins as foundational finance infrastructure and global money movement ('it is materially cheaper to build on stablecoins; you get a ledger free') (Stablecon NYC 2025)",
+      "speakers": "Moderator: Bryce Ferguson (CEO, Turnkey); Zach Abrams (CEO/Co-founder, Bridge)"
+    },
+    {
+      "title": "Monetary sovereignty / local-currency stablecoins panel (Stablecon EMEA 2026)",
+      "topic": "Non-dollar stablecoins, monetary sovereignty, and stablecoin adoption in Africa and emerging markets. Note: exact session title was not published; reconstructed from the Ark Republic EMEA 2026 recap.",
+      "speakers": "Mimi Kufuor (KoinKoin); Jannah Patchay (Global Digital Finance); Kene Ezeji-Okoye (Ubyx); Kwadwo Botwe (Bank of Ghana)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Sabih Behzad", "affiliation": "Deutsche Bank (MD, Digital Assets & Currencies Transformation) - EMEA 2026"},
+    {"name": "Maike Hornung", "affiliation": "Visa - EMEA 2026"},
+    {"name": "Ronit Ghose", "affiliation": "Citi Global Insights - EMEA 2026"},
+    {"name": "Christian Rau", "affiliation": "Mastercard - EMEA 2026"},
+    {"name": "Matthew Osborne", "affiliation": "Ripple - EMEA 2026"},
+    {"name": "Keith Grose", "affiliation": "Coinbase UK - EMEA 2026"},
+    {"name": "Peter Shenk", "affiliation": "Coinbase - EMEA 2026"},
+    {"name": "Larry Cooke", "affiliation": "Binance - EMEA 2026"},
+    {"name": "Ilan Gitter", "affiliation": "Solana Foundation - EMEA 2026"},
+    {"name": "Ivar Wiersma", "affiliation": "LayerZero - EMEA 2026"},
+    {"name": "Jess Houlgrave", "affiliation": "WalletConnect - EMEA 2026"},
+    {"name": "Omer Amsel", "affiliation": "Fireblocks - EMEA 2026"},
+    {"name": "Lex Sokolin", "affiliation": "Generative Ventures - EMEA 2026"},
+    {"name": "Ian Horne", "affiliation": "Ubyx (CMO; author of 'Why DeFi Matters') - EMEA 2026"},
+    {"name": "Joao Reginatto", "affiliation": "M0 - EMEA 2026"},
+    {"name": "Kevin Lehtiniitty", "affiliation": "Borderless.xyz (CEO) - NYC 2025 and EMEA 2026"},
+    {"name": "Bart Garre", "affiliation": "Euroclear - EMEA 2026"},
+    {"name": "Gbenga Ajayi", "affiliation": "QED Investors (Partner) - EMEA 2026"},
+    {"name": "Kwadwo Botwe", "affiliation": "Bank of Ghana (Fintech & Innovation Office) - EMEA 2026"},
+    {"name": "Zach Abrams", "affiliation": "Bridge (CEO/Co-founder) - NYC 2025"},
+    {"name": "Mike Giampapa", "affiliation": "Galaxy (General Partner) - NYC 2025"},
+    {"name": "Greg Prisco", "affiliation": "M0 (Co-founder) - NYC 2025"},
+    {"name": "Drake Evans", "affiliation": "Agora (Co-founder/CTO) - NYC 2025"},
+    {"name": "Chuk Okpalugo", "affiliation": "Paxos / This Week in Fintech - NYC 2025"},
+    {"name": "Adrienne Harris", "affiliation": "NYS Department of Financial Services (Superintendent) - NYC 2025"},
+    {"name": "Cuy Sheffield", "affiliation": "Visa (Head of Crypto) - NYC 2025"},
+    {"name": "Edward Woodford", "affiliation": "Zero Hash (Founder/CEO) - NYC 2025 / EMEA 2026"}
+  ],
+  "key_takeaways": [
+    "The framing of stablecoins has fundamentally shifted from speculative crypto tools to institutional financial infrastructure ('invisible financial infrastructure' / programmable global payment rails); the dominant theme was TradFi-DeFi convergence rather than competition.",
+    "Regulatory clarity is the key unlock for institutional adoption. MiCA (EU), UK frameworks, and US policy are treated as product enablers ('policy is product'), while non-custodial DeFi solutions still operate in regulatory grey areas.",
+    "Yield is moving on-chain and embedded: builders increasingly ship fintech-style apps with yield-bearing stablecoins 'under the hood,' and RWA tokenization (Treasuries, bonds, private credit) is the bridge solving the 'dormant collateral' problem and connecting TradFi to DeFi.",
+    "Stablecoin issuance is commoditizing, pressuring net-interest-margin models; the predicted end state is a layered ecosystem where branded stablecoins (USDC, USDT) coexist with proprietary platform/enterprise coins, with value capture shifting up the stack to distribution and applications.",
+    "Cross-border payments and emerging markets are the killer use case - especially Africa, where stablecoins address correspondent-banking inefficiencies and currency volatility; local-currency / non-dollar stablecoins and monetary sovereignty were major EMEA 2026 threads even as dollar dominance persists.",
+    "The primary bottleneck to adoption is educational, not technical (per Zach Abrams of Bridge); infrastructure must remain abstracted from end users, and enterprise adoption (treasury, B2B payments) is expected to drive growth more than consumer demand."
+  ],
+  "sources": [
+    "https://stablecon.com/faq/",
+    "https://stablecon.com/emea/",
+    "https://stablecon.com/speakers-emea/",
+    "https://stablecon.com/2026-themes-topics/",
+    "https://events.coinpedia.org/stablecon-amesterdam-2026-7840/",
+    "https://www.gdf.io/events/stablecon/",
+    "https://www.arkrepublic.com/2026/05/27/a-seat-at-stablecon/",
+    "https://www.turnkey.com/blog/stablecon-recap-stablecoin-emerging-markets",
+    "https://x.com/thestablecon/status/1923389727476011489",
+    "https://vendelux.com/insights/stablecon-2025-attendee-list/",
+    "https://www.fintechfutures.com/press-releases/stablecon-2025-a-groundbreaking-conference-on-stablecoins-and-digital-finance-launches-in-new-york-city-today"
+  ],
+  "confidence": "medium"
+}

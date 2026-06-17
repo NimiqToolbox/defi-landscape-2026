@@ -1,0 +1,39 @@
+{
+  "name": "Mainnet 2025 (Messari)",
+  "edition": "Mainnet 2025 (4th annual edition)",
+  "location": "New York City, USA — Pier 36 (299 South Street, Manhattan)",
+  "dates": "September 30 – October 2, 2025 (3-day summit; some aggregators list Sept 30 – Oct 3, 2025)",
+  "in_window": true,
+  "attendance": "Not verifiable for 2025. Billed as 'the largest annual crypto event in New York.' Prior-edition benchmark: Mainnet 2024 drew 3,000+ attendees and 200+ speakers (not confirmed for 2025).",
+  "defi_themes": [
+    "DeFi listed by Messari as a core focus area of the summit (alongside macro, regulation, and infrastructure)",
+    "Regulation / regulatory clarity for digital assets (stablecoin frameworks, custody, market structure)",
+    "Stablecoins (including the rise of yield-bearing stablecoins)",
+    "Real-world assets (RWA) and tokenization, with tokenized US Treasuries as leading collateral",
+    "Institutional adoption of crypto / institutional DeFi and on-chain capital flows",
+    "Restaking (repricing of restaking through 2025 per Messari research)",
+    "On-chain credit and yield maturation"
+  ],
+  "notable_panels": [],
+  "notable_speakers": [],
+  "key_takeaways": [
+    "Mainnet is Messari's flagship annual New York summit and, in 2025, was held in its 4th year at Pier 36 in Manhattan, positioned as NYC's largest annual crypto event bringing together crypto, Wall Street, and Washington.",
+    "Messari publicly framed the 2025 program around four focus areas: macro, regulation, DeFi, and infrastructure — confirming DeFi as a headline track even though a granular, attributable session list could not be verified.",
+    "Adjacent Messari research over the same window indicates the dominant DeFi narratives of 2025 were: RWAs (on-chain RWA value reportedly more than tripling from ~$5.6B to ~$18.7B, with US Treasuries ~$8.5B / ~half the market), the rapid rise of yield-bearing stablecoins, restaking being repriced, and institutions formally entering the ecosystem via ETFs, stablecoins and tokenization.",
+    "No authoritative, attributable 2025 agenda (specific panel/talk titles) or confirmed 2025 speaker roster could be located. The detailed 'speaker lineup' content circulating on third-party aggregators (e.g., Bitget Academy) reads as speculative/AI-generated rather than a published agenda, and a frequently surfaced Polygon speaker listing (Sandeep Nailwal, Dean Thomas) actually corresponds to the 2021 Mainnet, not 2025 — so neither was used as a 2025 source.",
+    "The official microsite (events.messari.io/mainnet2025) and the mainnet.events domain were not retrievable post-event (404 / redirect to the 2024 site), which limited primary-source verification of the 2025 agenda and attendance."
+  ],
+  "sources": [
+    "https://events.messari.io/mainnet2025 (official Mainnet 2025 event site; not retrievable / 404 at time of research)",
+    "https://io.net/events/messari-mainnet-2025 (event listing: New York; focus 'Macro, regulation, DeFi, infra'; links official site)",
+    "https://silicon.nyc/mainnet-an-immersive-trend-setting-crypto-summit-in-nyc-sept-21-23/ (NYC summit, dates header 'Sept 30 - Oct 2nd')",
+    "https://luma.com/mainnet (Mainnet calendar: New York City, Sept 30 – Oct 2; host @messaricrypto)",
+    "https://pier36nyc.com/private-events/messari-mainnet/ (venue: Pier 36 NYC hosts Messari Mainnet)",
+    "https://cryptopanic.com/news/19955804/Messari-Mainnet-Returns-as-New-Yorks-Largest-Annual-Crypto-Event ('largest annual crypto event in New York', 4th year)",
+    "https://10times.com/e1zp-5sf9-d2r6 (Mainnet conference listing, New York)",
+    "https://messari.io/report/in-the-stables-the-rise-of-yield-bearing-stablecoins (Messari research: yield-bearing stablecoins)",
+    "https://messari.io/report/rwas-and-stablecoins-defining-the-future (Messari research: RWAs and stablecoins)",
+    "https://www.dlnews.com/research/internal/state-of-defi-2025/ (State of DeFi 2025 context)"
+  ],
+  "confidence": "low"
+}

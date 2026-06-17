@@ -1,0 +1,97 @@
+{
+  "name": "EthCC (Ethereum Community Conference)",
+  "edition": "EthCC[8] (8th edition)",
+  "location": "Palais des Festivals et des Congres, Cannes, France",
+  "dates": "June 30 - July 3, 2025",
+  "in_window": true,
+  "attendance": "~6,400-6,500 accredited attendees at the main conference; ~10,000 total participants across EthCC Week including ~250-300 parallel/side events. 390-400+ speakers and 64-72 sponsors.",
+  "defi_themes": [
+    "Stablecoins as core financial infrastructure (payments, settlement, lending, cash management) with regulatory clarity (MiCA, US CLARITY/GENIUS context) driving institutional adoption",
+    "Institutional DeFi / 'onchain finance' - traditional banks and TradFi firms moving their own business on-chain (first-time official participation by Bloomberg, S&P Global, BNP Paribas, Euroclear, Amundi, Societe Generale-Forge, Tradeweb)",
+    "Real-World Asset (RWA) tokenization moving from concept to implementation - tokenized treasuries, RWA-collateralized lending, tokenized stocks/ETFs (dedicated RWA Summit)",
+    "DeFi 'renaissance'/revival after ~2 years of contraction, refocused on security, efficiency, interoperability and institutional-grade compliance over short-term yield chasing",
+    "Lending innovation - Aave V4 'hub-and-spoke' unified liquidity layer, cross-chain lending, dynamic interest rates, soft liquidation, structured credit and fixed-rate products",
+    "AI agents in DeFi (DeFAI) - autonomous agents optimizing liquidity provision, hedging, cross-chain/cross-protocol stablecoin yield and RWA allocation",
+    "Restaking / liquid staking integration into lending (Lido, EtherFi, Kelp, Ethena, Lombard as Aave V4 spoke partners)",
+    "Tokenized equities and on-chain brokerage (Robinhood L2 on Arbitrum Orbit, 200+ tokenized US stocks/ETFs in EU)",
+    "Regulatory frameworks as enabler rather than barrier - shift from 'whether to build' to 'which chain, which products, at what speed'"
+  ],
+  "notable_panels": [
+    {
+      "title": "DeFi Summer Day",
+      "topic": "Dedicated DeFi-focused side event covering DEXs, lending, and DeFi protocol momentum",
+      "speakers": "Organized/hosted by Aave and dYdX"
+    },
+    {
+      "title": "RWA Summit (EthCC 8)",
+      "topic": "Real-world asset tokenization, tokenized treasuries, compliant DeFi, ETF landscape, regulatory frameworks, institutional onchain infrastructure",
+      "speakers": "Multiple institutional and protocol speakers (parallel summit)"
+    },
+    {
+      "title": "The Agora",
+      "topic": "Exclusive institutional forum on the future of onchain finance - tokenization, market structure evolution, institutional trading infrastructure; bankers discussing moving their own business on-chain",
+      "speakers": "Curated by Kaiko; ~600 participants and 60+ expert speakers"
+    },
+    {
+      "title": "Aave V4 launch / presentation",
+      "topic": "Unified hub-and-spoke liquidity layer, cross-chain lending, dynamic interest rates, RWA-collateralized and institutional lending; spoke partners Lido, EtherFi, Kelp, Ethena, Lombard; assets USDT, USDC, EURC, XAUt, cbBTC",
+      "speakers": "Aave / Stani Kulechov (Founder, Aave Labs)"
+    },
+    {
+      "title": "Stable Summit",
+      "topic": "Stablecoins and tokenized deposits in cross-border payments and settlement",
+      "speakers": "Satellite/side event"
+    },
+    {
+      "title": "The AI-Powered Financial Stack: Building the Infrastructure of DeFAI",
+      "topic": "DeFAI adoption barriers, autonomous agent tokenization, ethical design for DeFi+AI",
+      "speakers": "Moderated by Geng Kai (DFG Head of Research); DeFAI breakfast by Epic Web3, June 29"
+    },
+    {
+      "title": "The Onchain AI Stack: Agents, Models, and Infra",
+      "topic": "Infrastructure scalability, interoperability, agent reliability, verifiable AI for onchain finance",
+      "speakers": "Moderated by Geng Kai (DFG); Multichain Day, featuring NEAR and ZetaChain"
+    },
+    {
+      "title": "To Catch a Token (Robinhood event)",
+      "topic": "Robinhood Layer 2 (Arbitrum Orbit) and tokenized US stocks/ETFs for Europe",
+      "speakers": "Vlad Tenev (Co-founder & CEO, Robinhood)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Vitalik Buterin", "affiliation": "Co-founder, Ethereum / Ethereum Foundation"},
+    {"name": "Stani Kulechov", "affiliation": "Founder & CEO, Aave Labs (Aave)"},
+    {"name": "Sergey Nazarov", "affiliation": "Co-founder, Chainlink"},
+    {"name": "Jean-Marc Stenger", "affiliation": "CEO, Societe Generale-Forge (SG-Forge)"},
+    {"name": "Vlad Tenev", "affiliation": "Co-founder & CEO, Robinhood"},
+    {"name": "Jerome de Tychey", "affiliation": "Founder/President, Ethereum France (EthCC organizer)"},
+    {"name": "Terry Culver", "affiliation": "President, DFG"},
+    {"name": "Geng Kai", "affiliation": "Head of Research, DFG"},
+    {"name": "Otto Jacobsson", "affiliation": "CEO, YAP Global"}
+  ],
+  "key_takeaways": [
+    "Institutionalization/professionalization was the dominant narrative - TradFi firms (BNP Paribas, Societe Generale-Forge, Euroclear, Amundi, S&P Global, Bloomberg, Tradeweb) attended as official participants for the first time, signaling a shift from 'what we are building' to 'who is using it and under what compliant framework.'",
+    "Stablecoins emerged as the foundational layer of onchain finance - not just a medium of exchange but the base for lending, payments, settlement and RWA, boosted by regulatory clarity (MiCA in EU, US stablecoin/CLARITY momentum) and Circle's NYSE listing.",
+    "DeFi is in a 'renaissance' - after ~2 years of contraction, renewed momentum with rising DEX and lending volumes in Q2 2025, now emphasizing security, efficiency, interoperability and institutional-grade compliance over speculative yield.",
+    "Aave V4's hub-and-spoke architecture was a marquee DeFi product reveal, pushing unified cross-chain liquidity, RWA-collateralized lending, and dedicated institutional lending environments.",
+    "RWA tokenization moved from concept to implementation, with a dedicated RWA Summit and tokenized treasuries/stocks (e.g., Robinhood's tokenized US equities on an Arbitrum L2) taking center stage.",
+    "AI agents (DeFAI) emerged as a forward theme - autonomous agents automating liquidity, hedging, and cross-chain stablecoin/RWA yield optimization.",
+    "Regulation reframed as an enabler: institutions' question shifted from 'whether' to 'which chain, which products, at what speed.'"
+  ],
+  "sources": [
+    "https://ethcc.io/",
+    "https://en.palaisdesfestivals.com/press-area/press-releases/the-ethereum-community-conference-chooses-cannes-for-its-8th-edition-from-30-june-to-3-july-2025/",
+    "https://www.mexc.com/learn/article/ethcc-cannes-everything-you-need-to-know-about-the-ethereum-conference/1",
+    "https://dfg-official.medium.com/dfgs-ethcc8-recap-insights-ai-agents-stablecoins-and-the-defi-renaissance-fd8c25a9437e",
+    "https://www.aicoin.com/en/article/473355",
+    "https://www.odaily.news/en/post/5210058",
+    "https://www.dwf-labs.com/research/crypto-vcs-key-highlights-from-ethcc-cannes-2025",
+    "https://dubai-media.tv/2025/07/02/crypto-vcs-key-highlights-from-ethcc-cannes-2025/",
+    "https://www.mexc.com/news/live-ethcc-8-rwa-summit-day-two-real-world-assets-take-center-stage/29037",
+    "https://www.ainvest.com/news/ethereum-community-conference-8-unites-global-blockchain-experts-cannes-2506/",
+    "https://www.dlnews.com/research/internal/ethcc8-moves-cannes-ethereum-community-critical-moment-growth-resilience/",
+    "https://thedefiant.io/newsletter/defi-daily/robinhoods-cannes-token-festival",
+    "https://beincrypto.com/robinhood-crypto-staking-tokenized-stocks-ethcc-2025/"
+  ],
+  "confidence": "medium-high (dates, edition, location, attendance, and high-level DeFi themes are corroborated by multiple authoritative sources including the official Palais des Festivals press release and EthCC.io; some specific side-event panel titles/speaker attributions rest on single recaps (e.g., DFG) and are labeled accordingly)"
+}

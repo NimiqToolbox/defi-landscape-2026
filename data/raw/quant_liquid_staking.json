@@ -1,0 +1,126 @@
+{
+  "topic": "Liquid staking over time",
+  "summary": "Liquid staking grew from near-zero in 2020 into the single largest DeFi category. Lido has dominated throughout. Lido TVL rose from ~$0.01B (end 2020) to ~$11.7B (end 2021), fell to ~$5.9B (end 2022, post-UST/Terra collapse), recovered to ~$21.4B (end 2023), ~$32.5B (end 2024), and peaked at an all-time high of ~$42.5B on 2025-08-23 before retracing to ~$16.1B by mid-June 2026 amid an ETH price drawdown (much of the TVL swing is ETH price, not unstaking). The whole Liquid Staking category set a record of ~$86B on 2025-08-14 (per DefiLlama via The Defiant) and stood at ~$33.9B as of 2026-06-16. On Solana, Jito's liquid staking peaked at ~$3.9B (Jan 2025). Rocket Pool peaked at ~$3.2B (Aug 2025). Coinbase cbETH peaked at ~$0.81B (Mar 2024). Separately, total ETH staked rose steadily from ~2.1M ETH (Nov 2020) to ~8.8M (end 2021), ~15.9M (end 2022), ~29.7M (end 2023), ~34M (end 2024/Jan 2025), ~36.1M (end 2025) and ~39.5M (mid-2026), lifting the ETH staking ratio from ~1.9% (2020) to ~13% (2022), ~15.6% (Apr 2023), to an all-time-high ~33% by 2025-2026. NOTE: TVL is denominated in USD and is heavily driven by the ETH/SOL price; staked-token counts are a cleaner measure of adoption. Confidence: Lido/Rocket Pool/cbETH/Jito series are high (direct DefiLlama API, as-of 2026-06-16). Category-total historical series is medium (Lido-anchored estimates + documented landmarks). ETH-staked series is high-to-medium (CoinGecko, Everstake, The Block).",
+  "series": [
+    {
+      "label": "Lido TVL (all chains)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/lido", "https://defillama.com/protocol/lido"],
+      "points": [
+        {"period": "2020-12-30", "value": 0.01, "note": "Year-end 2020; Lido launched Dec 2020. DefiLlama API."},
+        {"period": "2021-12-31", "value": 11.74, "note": "Year-end 2021. DefiLlama API."},
+        {"period": "2022-12-31", "value": 5.88, "note": "Year-end 2022, after UST/Terra collapse and bear market. DefiLlama API."},
+        {"period": "2023-12-31", "value": 21.44, "note": "Year-end 2023. DefiLlama API. (Press reported ~$22B ATH on Dec 9, 2023.)"},
+        {"period": "2024-12-31", "value": 32.52, "note": "Year-end 2024. DefiLlama API."},
+        {"period": "2025-08-23", "value": 42.52, "note": "All-time high. DefiLlama API."},
+        {"period": "2025-12-31", "value": 26.09, "note": "Year-end 2025; retraced from August ATH as ETH price fell. DefiLlama API."},
+        {"period": "2026-06-16", "value": 16.13, "note": "Latest / current value. DefiLlama API as-of 2026-06-16."}
+      ]
+    },
+    {
+      "label": "Rocket Pool TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/rocket-pool", "https://defillama.com/protocol/rocket-pool"],
+      "points": [
+        {"period": "2021-12-31", "value": 0.625, "note": "Year-end 2021. DefiLlama API."},
+        {"period": "2022-12-31", "value": 0.503, "note": "Year-end 2022. DefiLlama API."},
+        {"period": "2023-12-31", "value": 1.567, "note": "Year-end 2023. DefiLlama API."},
+        {"period": "2024-12-31", "value": 2.5, "note": "Year-end 2024. DefiLlama API."},
+        {"period": "2025-08-14", "value": 3.172, "note": "All-time high. DefiLlama API."},
+        {"period": "2025-12-31", "value": 1.736, "note": "Year-end 2025. DefiLlama API."},
+        {"period": "2026-06-16", "value": 0.961, "note": "Latest / current value. DefiLlama API as-of 2026-06-16."}
+      ]
+    },
+    {
+      "label": "Coinbase Wrapped Staked ETH (cbETH) TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/coinbase-wrapped-staked-eth", "https://defillama.com/protocol/coinbase-wrapped-staked-eth"],
+      "points": [
+        {"period": "2023-12-31", "value": 0.478, "note": "Year-end 2023. DefiLlama API tracks this protocol slug from Oct 2023; cbETH itself launched Aug 2022. Earlier years not covered by this series."},
+        {"period": "2024-03-12", "value": 0.807, "note": "All-time high in DefiLlama-tracked period. DefiLlama API."},
+        {"period": "2024-12-31", "value": 0.574, "note": "Year-end 2024. DefiLlama API."},
+        {"period": "2025-12-31", "value": 0.379, "note": "Year-end 2025. DefiLlama API."},
+        {"period": "2026-06-16", "value": 0.284, "note": "Latest / current value. DefiLlama API as-of 2026-06-16."}
+      ]
+    },
+    {
+      "label": "Jito Liquid Staking TVL (Solana, jitoSOL)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/jito-liquid-staking", "https://defillama.com/protocol/jito-liquid-staking"],
+      "points": [
+        {"period": "2022-12-31", "value": 0.004, "note": "Year-end 2022; early stage. DefiLlama API."},
+        {"period": "2023-12-31", "value": 0.648, "note": "Year-end 2023. DefiLlama API."},
+        {"period": "2024-12-31", "value": 2.78, "note": "Year-end 2024. DefiLlama API."},
+        {"period": "2025-01-26", "value": 3.91, "note": "All-time high. DefiLlama API."},
+        {"period": "2025-12-31", "value": 1.78, "note": "Year-end 2025. DefiLlama API."},
+        {"period": "2026-06-16", "value": 0.723, "note": "Latest / current value. DefiLlama API as-of 2026-06-16."}
+      ]
+    },
+    {
+      "label": "Total Liquid Staking category TVL (all protocols, all chains)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocols", "https://defillama.com/protocols/Liquid%20Staking", "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption", "https://cryptoslate.com/liquid-staking-tvl-now-second-largest-among-defi-protocols/"],
+      "points": [
+        {"period": "2021-12-31", "value": 14, "note": "Estimate. Lido alone ~$11.7B; category roughly Lido/~0.8 share. MEDIUM confidence."},
+        {"period": "2022-12-31", "value": 8, "note": "Estimate; Lido ~$5.9B. MEDIUM confidence."},
+        {"period": "2023-02-28", "value": 14.09, "note": "Documented landmark: liquid staking derivatives reached $14.09B, second-largest DeFi category (CryptoSlate citing DefiLlama, Feb 2023). HIGH confidence for this point."},
+        {"period": "2023-12-31", "value": 27, "note": "Estimate; Lido ~$21.4B at ~0.8 share. MEDIUM confidence."},
+        {"period": "2024-12-31", "value": 45, "note": "Estimate; Lido ~$32.5B + Jito/Rocket Pool/Binance etc. MEDIUM confidence."},
+        {"period": "2025-08-14", "value": 86, "note": "All-time high; record ~$86B reported by The Defiant citing DefiLlama (2025-08-14), >50% of total DeFi TVL. HIGH confidence for this point."},
+        {"period": "2026-06-16", "value": 33.88, "note": "Current value: sum of all 284 Liquid Staking protocols. DefiLlama /protocols API as-of 2026-06-16. HIGH confidence."}
+      ]
+    },
+    {
+      "label": "Total ETH staked (Beacon Chain / consensus layer)",
+      "unit": "millions of ETH",
+      "sources": ["https://www.coingecko.com/research/publications/ethereum-staking-statistics", "https://everstake.one/resources/crypto-reports/ethereum-staking-insights-protocol-analysis-annual-2025", "https://www.theblock.co/post/276654/ether-supply-staked", "https://beaconcha.in/charts/staked_ether"],
+      "points": [
+        {"period": "2020-11", "value": 2.1, "note": "~2.1M ETH (~1.9% of supply) shortly after Beacon Chain deposits opened Nov/Dec 2020. CoinGecko."},
+        {"period": "2021-12-31", "value": 8.8, "note": "End 2021, +307% YoY. CoinGecko."},
+        {"period": "2022-12-31", "value": 15.9, "note": "End 2022, +79% YoY. CoinGecko."},
+        {"period": "2023-12-31", "value": 29.7, "note": "End 2023 (~29.7M per ultrasound.money; ~30M widely cited). Post-Shapella withdrawals enabled Apr 2023."},
+        {"period": "2024-12-31", "value": 34, "note": "End 2024 / early Jan 2025 ~34M ETH (~28% of supply). Everstake / The Defiant."},
+        {"period": "2025-12-31", "value": 36.08, "note": "End 2025: ~36.08M ETH, ~29.3% staking ratio. Everstake Annual 2025 report."},
+        {"period": "2026-06-15", "value": 39.5, "note": "Latest / current ~39.5M ETH, ~32.7% staking ratio (mid-June 2026). Coinlaw / aggregated."}
+      ]
+    },
+    {
+      "label": "ETH staking ratio (% of ETH supply staked)",
+      "unit": "percent of ETH supply",
+      "sources": ["https://www.coingecko.com/research/publications/ethereum-staking-statistics", "https://www.theblock.co/post/276654/ether-supply-staked", "https://cryptobriefing.com/ethereum-staking-ratio-all-time-high/", "https://everstake.one/resources/crypto-reports/ethereum-staking-insights-protocol-analysis-annual-2025"],
+      "points": [
+        {"period": "2020-11", "value": 1.9, "note": "~1.9% at Beacon Chain launch. CoinGecko."},
+        {"period": "2022-12-31", "value": 13.1, "note": "End 2022. CoinGecko."},
+        {"period": "2023-04-30", "value": 15.6, "note": "Apr 2023, ~18-19M ETH. CoinGecko."},
+        {"period": "2024-11", "value": 25, "note": "Crossed 25% of supply staked (The Block / BeInCrypto, late 2024)."},
+        {"period": "2025-06-30", "value": 29, "note": "Record ~29% mid-2025 (~35.3M ETH). Everstake H1 2025."},
+        {"period": "2025-12-31", "value": 29.3, "note": "End 2025. Everstake Annual 2025."},
+        {"period": "2026-06-15", "value": 33, "note": "All-time-high ~33% (mid-2026); reported peak staking ratio. Crypto Briefing / Coinlaw."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Lido all-time-high TVL", "value": "~$42.5B", "as_of": "2025-08-23", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/lido", "confidence": "high"},
+    {"claim": "Lido current TVL", "value": "~$16.1B", "as_of": "2026-06-16", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/lido", "confidence": "high"},
+    {"claim": "Liquid Staking category record TVL (whole sector)", "value": "~$86B (>50% of all DeFi TVL)", "as_of": "2025-08-14", "source_name": "The Defiant citing DefiLlama", "source_url": "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption", "confidence": "high"},
+    {"claim": "Liquid Staking category current total TVL", "value": "~$33.9B across 284 protocols", "as_of": "2026-06-16", "source_name": "DefiLlama /protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
+    {"claim": "Lido is the dominant liquid staking protocol", "value": "~$16.1B of ~$33.9B category (~48% currently; historically 60-90%)", "as_of": "2026-06-16", "source_name": "DefiLlama", "source_url": "https://defillama.com/protocols/Liquid%20Staking", "confidence": "high"},
+    {"claim": "Jito (Solana) all-time-high TVL", "value": "~$3.9B", "as_of": "2025-01-26", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/jito-liquid-staking", "confidence": "high"},
+    {"claim": "Rocket Pool all-time-high TVL", "value": "~$3.2B", "as_of": "2025-08-14", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/rocket-pool", "confidence": "high"},
+    {"claim": "Coinbase cbETH all-time-high TVL", "value": "~$0.81B", "as_of": "2024-03-12", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/coinbase-wrapped-staked-eth", "confidence": "medium"},
+    {"claim": "Total ETH staked, end of 2025", "value": "~36.08M ETH (~29.3% of supply)", "as_of": "2025-12-31", "source_name": "Everstake Annual 2025 report", "source_url": "https://everstake.one/resources/crypto-reports/ethereum-staking-insights-protocol-analysis-annual-2025", "confidence": "high"},
+    {"claim": "ETH staking ratio all-time high", "value": "~33% of supply (~39.5M ETH)", "as_of": "2026-06", "source_name": "Crypto Briefing / Coinlaw", "source_url": "https://cryptobriefing.com/ethereum-staking-ratio-all-time-high/", "confidence": "medium"},
+    {"claim": "Lido share of staked ETH, end 2025", "value": "~8.6M ETH staked (lost ~1M ETH during 2025)", "as_of": "2025-12-31", "source_name": "Everstake Annual 2025 report", "source_url": "https://everstake.one/resources/crypto-reports/ethereum-staking-insights-protocol-analysis-annual-2025", "confidence": "medium"},
+    {"claim": "TVL is USD-denominated and price-driven", "value": "Mid-2026 USD TVL drop largely reflects ETH price decline, not mass unstaking; staked-ETH count kept rising", "as_of": "2026-06-17", "source_name": "Analysis (DefiLlama TVL vs beaconcha.in staked count)", "source_url": "https://beaconcha.in/charts/staked_ether", "confidence": "medium"}
+  ],
+  "top_entities": [
+    {"name": "Lido", "metric": "TVL (current)", "value": "~$16.1B", "source_url": "https://defillama.com/protocol/lido"},
+    {"name": "Binance staked ETH", "metric": "TVL (current)", "value": "~$6.6B", "source_url": "https://defillama.com/protocols/Liquid%20Staking"},
+    {"name": "Sanctum Validator LSTs (Solana)", "metric": "TVL (current)", "value": "~$1.12B", "source_url": "https://defillama.com/protocols/Liquid%20Staking"},
+    {"name": "Kinetiq kHYPE (Hyperliquid)", "metric": "TVL (current)", "value": "~$1.11B", "source_url": "https://defillama.com/protocols/Liquid%20Staking"},
+    {"name": "Rocket Pool", "metric": "TVL (current)", "value": "~$0.96B", "source_url": "https://defillama.com/protocol/rocket-pool"},
+    {"name": "Jito Liquid Staking (Solana)", "metric": "TVL (current)", "value": "~$0.72B", "source_url": "https://defillama.com/protocol/jito-liquid-staking"},
+    {"name": "Liquid Collective", "metric": "TVL (current)", "value": "~$0.62B", "source_url": "https://defillama.com/protocol/liquid-collective"},
+    {"name": "Coinbase Wrapped Staked ETH (cbETH)", "metric": "TVL (current)", "value": "~$0.28B", "source_url": "https://defillama.com/protocol/coinbase-wrapped-staked-eth"}
+  ]
+}

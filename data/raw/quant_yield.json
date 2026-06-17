@@ -1,0 +1,217 @@
+{
+  "topic": "Yield products & aggregators over time",
+  "summary": "Historical and current TVL for the major DeFi yield aggregators and yield-trading protocols, sourced primarily from the DefiLlama protocol TVL API (as-of 2026-06-17). The sector's first wave (Yearn, Convex, Beefy) peaked in the 2021 bull market and then bled TVL: Yearn peaked at ~$6.9B (Dec 2021) and is ~$0.15B today; Convex peaked at ~$21.2B (Jan 2022, as the dominant Curve/CRV liquidity layer) and is ~$0.53B today; Beefy peaked at ~$1.3B (Nov 2021) and is ~$0.11B today. The second wave is dominated by yield-trading and curated-vault designs: Pendle (yield/PT-YT tokenization) grew explosively in 2024 (from ~$0.27B in Jan 2024 to a ~$4.4B year-end), set an all-time high of ~$13.4B on 2025-09-19, but has since fallen sharply to ~$1.18B by mid-June 2026 amid a 2026 market drawdown and the wind-down of points/airdrop farming cycles. Morpho (curated lending vaults / Morpho Blue) rose from ~$0.18B (end-2022) to ~$3.25B (end-2024) to a ~$8.5B ATH (Sep 2025), supported by integrations such as Coinbase USDC lending; DefiLlama net TVL is ~$7.1B now (note: Morpho's reported total deposits/supply figures of $10-13B exceed DefiLlama net TVL because they count gross supplied + collateral). All values are USD; series are stated in USD billions. Confidence is high for DefiLlama-derived series (direct API extraction) and medium for third-party deposit/market-share claims.",
+  "series": [
+    {
+      "label": "Pendle TVL (yield trading)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/pendle",
+        "https://defillama.com/protocol/pendle"
+      ],
+      "points": [
+        {"period": "2021-12-31", "value": 0.034, "note": "Early stage; DefiLlama API as-of 2026-06-17"},
+        {"period": "2022-12-31", "value": 0.015, "note": "Bear market trough"},
+        {"period": "2023-12-31", "value": 0.234, "note": "End of 2023"},
+        {"period": "2024-06-10", "value": 6.72, "note": "2024 intra-year peak (points/restaking farming wave)"},
+        {"period": "2024-12-31", "value": 4.42, "note": "End of 2024; up ~17x from Jan 2024 (~$0.27B)"},
+        {"period": "2025-09-19", "value": 13.39, "note": "ALL-TIME HIGH (DefiLlama API). News earlier in Sep cited ~$12.1B before the peak"},
+        {"period": "2025-12-31", "value": 3.73, "note": "End of 2025 after retracement from ATH"},
+        {"period": "2026-06-17", "value": 1.18, "note": "CURRENT; steady decline through 2026 (~$3.69B on Jan 1 -> ~$1.18B)"}
+      ]
+    },
+    {
+      "label": "Convex Finance TVL (Curve/CRV yield aggregator)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/convex-finance",
+        "https://defillama.com/protocol/convex-finance"
+      ],
+      "points": [
+        {"period": "2021-12-31", "value": 19.19, "note": "Launched May 2021; dominant Curve boosting layer by year-end"},
+        {"period": "2022-01-05", "value": 21.17, "note": "ALL-TIME HIGH"},
+        {"period": "2022-12-31", "value": 3.00, "note": "Collapse with CRV price / bear market"},
+        {"period": "2023-12-31", "value": 1.86, "note": "End of 2023"},
+        {"period": "2024-12-31", "value": 1.24, "note": "End of 2024"},
+        {"period": "2025-12-31", "value": 0.92, "note": "End of 2025"},
+        {"period": "2026-06-17", "value": 0.53, "note": "CURRENT"}
+      ]
+    },
+    {
+      "label": "Yearn Finance TVL (vault yield aggregator)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/yearn-finance",
+        "https://defillama.com/protocol/yearn-finance"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 0.609, "note": "First full year (yVaults launched 2020)"},
+        {"period": "2021-12-04", "value": 6.91, "note": "ALL-TIME HIGH"},
+        {"period": "2021-12-31", "value": 4.09, "note": "End of 2021"},
+        {"period": "2022-12-31", "value": 0.358, "note": "Bear market"},
+        {"period": "2023-12-31", "value": 0.333, "note": "End of 2023"},
+        {"period": "2024-12-31", "value": 0.243, "note": "End of 2024"},
+        {"period": "2025-12-31", "value": 0.395, "note": "End of 2025 (modest recovery, v3 vaults)"},
+        {"period": "2026-06-17", "value": 0.151, "note": "CURRENT"}
+      ]
+    },
+    {
+      "label": "Beefy Finance TVL (multi-chain yield optimizer)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/beefy",
+        "https://defillama.com/protocol/beefy"
+      ],
+      "points": [
+        {"period": "2021-11-26", "value": 1.30, "note": "ALL-TIME HIGH"},
+        {"period": "2021-12-31", "value": 1.14, "note": "End of 2021"},
+        {"period": "2022-12-31", "value": 0.229, "note": "Bear market"},
+        {"period": "2023-12-31", "value": 0.189, "note": "End of 2023"},
+        {"period": "2024-12-31", "value": 0.273, "note": "End of 2024"},
+        {"period": "2025-12-31", "value": 0.202, "note": "End of 2025"},
+        {"period": "2026-06-17", "value": 0.113, "note": "CURRENT"}
+      ]
+    },
+    {
+      "label": "Morpho TVL (curated lending vaults / Morpho Blue)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/morpho",
+        "https://api.llama.fi/protocol/morpho-blue",
+        "https://defillama.com/protocol/morpho"
+      ],
+      "points": [
+        {"period": "2022-12-31", "value": 0.182, "note": "Early Optimizer era"},
+        {"period": "2023-12-31", "value": 0.599, "note": "End of 2023; Morpho Blue launched late 2023"},
+        {"period": "2024-12-31", "value": 3.25, "note": "End of 2024; vaults scale up"},
+        {"period": "2025-09-17", "value": 8.55, "note": "ALL-TIME HIGH (DefiLlama net TVL)"},
+        {"period": "2025-12-31", "value": 5.68, "note": "End of 2025"},
+        {"period": "2026-06-17", "value": 7.14, "note": "CURRENT (DefiLlama net TVL; reported total deposits/supply higher, ~$10B+)"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {
+      "claim": "Pendle all-time-high TVL",
+      "value": "~$13.39B on 2025-09-19",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Pendle)",
+      "source_url": "https://api.llama.fi/protocol/pendle"
+    },
+    {
+      "claim": "Pendle current TVL",
+      "value": "~$1.18B",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Pendle)",
+      "source_url": "https://api.llama.fi/protocol/pendle"
+    },
+    {
+      "claim": "Pendle 2024 growth: from ~$0.27B (Jan 2024) to ~$6.72B intra-year peak (Jun 2024) to ~$4.42B year-end",
+      "value": "~16x over 2024",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Pendle)",
+      "source_url": "https://api.llama.fi/protocol/pendle"
+    },
+    {
+      "claim": "Pendle is described as the largest yield-trading platform in crypto with >50% market share in EVM fixed-yield",
+      "value": ">50% EVM fixed-yield share",
+      "as_of": "2025",
+      "confidence": "medium",
+      "source_name": "Greythorn / Chainwire coverage",
+      "source_url": "https://0xgreythorn.medium.com/pendle-2025-building-defis-fixed-income-layer-175a5eeb10fd"
+    },
+    {
+      "claim": "Convex all-time-high TVL",
+      "value": "~$21.17B on 2022-01-05",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Convex)",
+      "source_url": "https://api.llama.fi/protocol/convex-finance"
+    },
+    {
+      "claim": "Convex current TVL",
+      "value": "~$0.53B",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Convex)",
+      "source_url": "https://api.llama.fi/protocol/convex-finance"
+    },
+    {
+      "claim": "Yearn all-time-high TVL",
+      "value": "~$6.91B on 2021-12-04",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Yearn)",
+      "source_url": "https://api.llama.fi/protocol/yearn-finance"
+    },
+    {
+      "claim": "Yearn current TVL",
+      "value": "~$0.151B",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Yearn)",
+      "source_url": "https://api.llama.fi/protocol/yearn-finance"
+    },
+    {
+      "claim": "Beefy all-time-high TVL",
+      "value": "~$1.30B on 2021-11-26",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Beefy)",
+      "source_url": "https://api.llama.fi/protocol/beefy"
+    },
+    {
+      "claim": "Beefy current TVL",
+      "value": "~$0.113B",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Beefy)",
+      "source_url": "https://api.llama.fi/protocol/beefy"
+    },
+    {
+      "claim": "Morpho all-time-high net TVL (DefiLlama)",
+      "value": "~$8.55B on 2025-09-17",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Morpho)",
+      "source_url": "https://api.llama.fi/protocol/morpho"
+    },
+    {
+      "claim": "Morpho current net TVL (DefiLlama)",
+      "value": "~$7.14B",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (Morpho / Morpho Blue)",
+      "source_url": "https://api.llama.fi/protocol/morpho"
+    },
+    {
+      "claim": "Morpho reported total deposits scaled from ~$5B (start 2025) to ~$13B (Q4 2025); driven by Coinbase USDC lending and institutional integrations (Apollo, Bitwise, Societe Generale). Note: deposits/supply > DefiLlama net TVL",
+      "value": "~$5B -> ~$13B deposits in 2025",
+      "as_of": "2025-Q4",
+      "confidence": "medium",
+      "source_name": "Quantify Crypto / CryptoNewsNavigator coverage",
+      "source_url": "https://quantifycrypto.com/research-reports/morpho"
+    },
+    {
+      "claim": "First-wave yield aggregators (Yearn, Convex, Beefy) all peaked in the 2021/early-2022 bull market and remain far below ATH; second-wave designs (Pendle yield-trading, Morpho curated vaults) led the 2024-2025 cycle",
+      "value": "structural shift in yield TVL leadership",
+      "as_of": "2026-06-17",
+      "confidence": "high",
+      "source_name": "DefiLlama API (multiple protocols)",
+      "source_url": "https://defillama.com/protocols/yield"
+    }
+  ],
+  "top_entities": [
+    {"name": "Morpho", "metric": "current TVL (DefiLlama net)", "value": "~$7.14B", "source_url": "https://api.llama.fi/protocol/morpho"},
+    {"name": "Pendle", "metric": "current TVL", "value": "~$1.18B", "source_url": "https://api.llama.fi/protocol/pendle"},
+    {"name": "Convex Finance", "metric": "current TVL", "value": "~$0.53B", "source_url": "https://api.llama.fi/protocol/convex-finance"},
+    {"name": "Yearn Finance", "metric": "current TVL", "value": "~$0.151B", "source_url": "https://api.llama.fi/protocol/yearn-finance"},
+    {"name": "Beefy Finance", "metric": "current TVL", "value": "~$0.113B", "source_url": "https://api.llama.fi/protocol/beefy"},
+    {"name": "Pendle", "metric": "all-time-high TVL", "value": "~$13.39B (2025-09-19)", "source_url": "https://api.llama.fi/protocol/pendle"},
+    {"name": "Convex Finance", "metric": "all-time-high TVL", "value": "~$21.17B (2022-01-05)", "source_url": "https://api.llama.fi/protocol/convex-finance"},
+    {"name": "Morpho", "metric": "all-time-high TVL", "value": "~$8.55B (2025-09-17)", "source_url": "https://api.llama.fi/protocol/morpho"}
+  ]
+}

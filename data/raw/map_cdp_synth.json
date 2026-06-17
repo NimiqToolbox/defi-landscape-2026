@@ -1,0 +1,96 @@
+{
+  "category": "CDP & synthetics",
+  "summary": "The CDP (collateralized-debt-position stablecoin) and synthetic-asset sector is overwhelmingly dominated by MakerDAO's successor, Sky. As of mid-June 2026, Sky Lending holds ~$5.85B TVL (CDP category #1), and its USDS stablecoin (~$8.2B circulating) plus legacy DAI (~$4.4B) make it by far the largest decentralized stable issuer. Tron's USDD is a distant #2 CDP at ~$1.28B TVL / ~$1.37B circulating. The rest of the field is small and fragmented: Avalon USDa (~$357M), Lista CDP (~$341M), Liquity V1 (~$134M) and V2/BOLD (~$78M), Frankencoin (~$65M), and crvUSD (~$52M TVL / ~$223M circulating). Pure 'synthetic asset' protocols have largely faded: DefiLlama's Synthetics category is now led by tiny players (Alchemix V3 ~$32M, Metronome ~$20M), while Synthetix abandoned synthetic assets entirely and pivoted to perps (Synthetix V3 ~$35M TVL, now categorized under Derivatives; its old v1/v2 synth book is effectively zero). Abracadabra's MIM, a 2021 CDP star, has collapsed to ~$6M TVL / ~$25M MIM circulating. Figures are from DefiLlama's protocols and stablecoins APIs (as of 2026-06-17) and primary news sources for historical context.",
+  "leaders": [
+    {
+      "name": "Sky (formerly MakerDAO) - Sky Lending",
+      "chain": "Ethereum (USDS also on Solana, Base via bridges)",
+      "metric": "TVL (CDP category #1); stablecoin circulating supply",
+      "value": "~$5.85B TVL; USDS ~$8.2B + DAI ~$4.4B circulating (~$12.6B combined)",
+      "note": "Undisputed category leader. MakerDAO rebranded to Sky on 2024-09-18, launching USDS (1:1 upgrade of DAI) and SKY (24,000 SKY per MKR). DAI remains immutable and live; DAI->USDS migration accelerated in April 2026. The clear #1 decentralized stable issuer and the third-largest stablecoin overall after USDT and USDC."
+    },
+    {
+      "name": "USDD (TRON)",
+      "chain": "Tron, Ethereum, BNB Chain",
+      "metric": "TVL (CDP category #2); circulating supply",
+      "value": "~$1.28B TVL; ~$1.37B circulating",
+      "note": "Tron-ecosystem crypto-backed stablecoin, a distant second to Sky in the CDP category. Far smaller footprint in Ethereum DeFi than its size suggests."
+    },
+    {
+      "name": "Avalon USDa",
+      "chain": "BNB Chain, Ethereum, Klaytn, Berachain",
+      "metric": "TVL (CDP category)",
+      "value": "~$357M TVL",
+      "note": "Newer multi-chain CDP stablecoin; one of the larger 'new wave' issuers, ahead of most legacy names by TVL."
+    },
+    {
+      "name": "Lista CDP",
+      "chain": "BNB Chain",
+      "metric": "TVL (CDP category)",
+      "value": "~$341M TVL",
+      "note": "BNB-Chain-native CDP protocol (lisUSD), a leading non-Ethereum CDP venue."
+    },
+    {
+      "name": "Liquity V1",
+      "chain": "Ethereum",
+      "metric": "TVL (CDP category); LUSD supply",
+      "value": "~$134M TVL; LUSD ~$28M circulating",
+      "note": "Immutable, 0%-interest, ETH-only borrowing protocol issuing LUSD. Once a flagship decentralized CDP (LUSD peaked near ~$300M+ supply in 2022-2023); now a smaller but still trusted, fully on-chain alternative."
+    },
+    {
+      "name": "Liquity V2 (BOLD)",
+      "chain": "Ethereum",
+      "metric": "TVL (CDP category); BOLD supply",
+      "value": "~$78M TVL; BOLD ~$32M circulating",
+      "note": "Launched 2025-01-23. Adds user-set interest rates and LST collateral (wstETH, rETH) to Liquity's immutable model. Steady recent growth (+~10% 7d) but still early-stage."
+    },
+    {
+      "name": "Frankencoin (ZCHF)",
+      "chain": "Ethereum",
+      "metric": "TVL (CDP category)",
+      "value": "~$65M TVL",
+      "note": "Swiss-franc-denominated decentralized CDP stablecoin; a notable niche/non-USD issuer."
+    },
+    {
+      "name": "crvUSD (Curve)",
+      "chain": "Ethereum",
+      "metric": "TVL (CDP category); circulating supply",
+      "value": "~$52M TVL; ~$223M circulating",
+      "note": "Curve's CDP stablecoin using the LLAMMA soft-liquidation AMM and PegKeeper. Grew strongly through 2024-2025 (crvUSD-related lending tx more than doubled, top-5 stablecoin by 24h volume by Dec 2025), though its DefiLlama CDP-page TVL slipped recently (-15% 7d). Circulating supply far exceeds the narrowly-defined CDP TVL because much crvUSD sits in lending markets and pools."
+    },
+    {
+      "name": "Synthetix",
+      "chain": "Base, Ethereum, Arbitrum (consolidating to Base/Ethereum)",
+      "metric": "TVL (now Derivatives, not Synthetics)",
+      "value": "Synthetix V3 ~$35M TVL; legacy v1/v2 synth book ~$0",
+      "note": "The original DeFi synthetic-asset protocol (sETH, sBTC, etc.), TVL leader of the sector in 2020-2021 (peaked well over $1B during DeFi Summer). In 2025 it deprecated sUSD minting against SNX and non-USD spot synths after sUSD depegged as low as ~$0.68 (April 2025, post-SIP-420), and pivoted entirely to perpetual futures. Now tracked under Derivatives; effectively exited the synthetic-asset category it created."
+    },
+    {
+      "name": "Abracadabra (MIM)",
+      "chain": "Arbitrum, Ethereum, BNB Chain (multi-chain)",
+      "metric": "TVL (CDP category); MIM supply",
+      "value": "~$6M TVL; MIM ~$25M circulating",
+      "note": "Magic Internet Money was a top CDP/leverage protocol in 2021 (multi-billion TVL, ~$3.24B collateral by March 2022). Hit hard by the May/June 2022 Terra/UST collapse (MIM briefly to ~$0.91, ~$12M bad debt) and a later ~$6.5M exploit. Now a small remnant of its former scale."
+    }
+  ],
+  "leadership_shift": "2020-2021 (DeFi Summer / bull run): The sector split between MakerDAO (DAI), the dominant CDP stablecoin, and Synthetix (sUSD + synthetic stocks/commodities/crypto), the dominant synthetic-asset platform; both were top-10 DeFi protocols. Abracadabra's MIM exploded in late 2021 as a leveraged-yield CDP darling, briefly reaching multi-billion TVL (~$3.24B collateral by early 2022). 2022-2023 (Terra collapse and bear market): The May 2022 UST implosion shattered confidence in algorithmic/leveraged stables. Abracadabra/MIM depegged and never recovered scale; Synthetix's synth model stagnated as it shifted toward derivatives. MakerDAO/DAI consolidated leadership and pivoted into real-world-asset and US-Treasury collateral. Liquity (LUSD, immutable 0%-interest) emerged as the credible 'pure decentralized' alternative (LUSD ~$300M+). Curve launched crvUSD in mid-2023, quickly becoming the most-watched new CDP entrant. 2024-2026 (now): MakerDAO became Sky (Sept 2024), launching USDS; Sky is now overwhelmingly #1 (~$5.85B TVL, >$12B USDS+DAI). crvUSD scaled through 2024-2025 (~$223M circ). Liquity shipped V2/BOLD (Jan 2025). Synthetix abandoned synthetic assets entirely in 2025 (deprecated sUSD minting after a ~31% depeg) and reinvented as a perps DEX, vacating the synthetics throne. The 'Synthetics' category itself has shrunk to small players (Alchemix V3, Metronome). Net: a one-giant (Sky) CDP market with a long tail of smaller decentralized issuers, while the classic synthetic-asset thesis has largely dissolved into derivatives/perps.",
+  "sources": [
+    "https://api.llama.fi/protocols",
+    "https://stablecoins.llama.fi/stablecoins",
+    "https://defillama.com/protocols/cdp",
+    "https://defillama.com/protocols/synthetics",
+    "https://defillama.com/protocol/sky-lending",
+    "https://defillama.com/protocol/crvusd",
+    "https://defillama.com/protocol/synthetix",
+    "https://www.coindesk.com/business/2024/08/27/makerdao-is-now-sky-as-7b-crypto-lender-rolls-out-new-stablecoin-governance-token",
+    "https://www.theblock.co/post/313235/makerdao-mkr-sky-dai-stablecoin-usds",
+    "https://blockeden.xyz/blog/2026/04/03/dai-usds-migration-makerdao-sky-protocol-stablecoin-rebrand/",
+    "https://cointelegraph.com/news/magic-internet-money-token-depegs-as-terra-luna-domino-effect-persists",
+    "https://cointelegraph.com/explained/what-happened-to-susd-how-a-crypto-collateralized-stablecoin-depegged",
+    "https://www.theblock.co/post/295074/synthetix-susd-depeg",
+    "https://blog.synthetix.io/rebuilding-susd/",
+    "https://www.theblock.co/post/333973/synthetix-sunsets-v3-perps-on-arbitrum-to-focus-solely-on-base",
+    "https://blog.defisaver.com/liqity-v2-is-coming-to-defi-saver/",
+    "https://news.curve.finance/curve-2025-year-in-review/"
+  ]
+}

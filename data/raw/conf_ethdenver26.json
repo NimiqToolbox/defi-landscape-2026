@@ -1,0 +1,87 @@
+{
+  "name": "ETHDenver",
+  "edition": "ETHDenver 2026 (\"New #BUIDL City\")",
+  "location": "Denver, Colorado, USA — LVC at the National Western Center / Stockyards Event Center, 4850 National Western Dr, Denver, CO 80216",
+  "dates": "Main event Feb 18-21, 2026 (some sources cite Feb 17-21); BUIDLWeek + Camp BUIDL Feb 15-17; SporkDAO Community Mountain Retreat Feb 22-27",
+  "in_window": true,
+  "attendance": "Reported 25,000+ participants from 125+ countries (organizer/recap figures); however post-event coverage emphasized a notably smaller, more intimate event than prior years — side events dropped roughly 68-85% (from ~668 in 2025 to ~215 in 2026) and international attendance declined (Lunar New Year timing, industry cooling, competing events).",
+  "defi_themes": [
+    "Stablecoins as payment rails and cross-border infrastructure (legislation, GENIUS-style provisions, institutional adoption)",
+    "Real-world assets (RWA) tokenization and RealFi",
+    "Institutional DeFi / institutional ETH and Wall Street + Main Street adoption (\"less degen, more boardroom\")",
+    "TradFi moving onto Ethereum infrastructure (tokenized assets, institutional products; JPMorgan, BlackRock attention)",
+    "On-chain treasuries / treasury companies (\"Treasury Cos\")",
+    "Crypto policy, regulation, market structure, and compliance/AML (SEC and White House engagement)",
+    "Decentralized stablecoin design and DeFi resilience to market crashes (Vitalik's framing: benchmark beyond USD, capture-resistant oracles, staking-yield vs stablecoin tension)",
+    "Layer-2 consolidation and DeFi liquidity fragmentation (Base cited as a dominant L2 candidate)",
+    "Exchanges and on-ramp/off-ramp adoption",
+    "AI x DeFi / agentic finance (AI agents transacting on-chain) — dominant cross-cutting theme of the edition"
+  ],
+  "notable_panels": [
+    {
+      "title": "The Next Epoch of Ethereum (Vitalik Buterin keynote)",
+      "topic": "Main-stage keynote on AI's impact on Ethereum, 'perfect markets', disintermediation and decentralized governance; touches on DeFi needing stable money independent of single issuers",
+      "speakers": "Vitalik Buterin (Ethereum co-founder)"
+    },
+    {
+      "title": "New France Village — 'The Future of Finance' stage (DeFi Day track)",
+      "topic": "Dedicated finance stage covering DeFi, TradFi, Stables, Policy, Regs, Compliance/AML, RWA, RealFi, Treasury Cos, Institutional ETH, Exchanges, Main Street and Wall Street adoption",
+      "speakers": "Multiple; finance/policy/institutional focus"
+    },
+    {
+      "title": "Accelerating Your Stablecoin Strategy (New France Village, Day 1, session ~1105)",
+      "topic": "Stablecoin strategy, adoption and rails (recorded ETHDenver 2026 New France Village session)",
+      "speakers": "Not individually verified"
+    },
+    {
+      "title": "Day 3 policy / market-structure discussion",
+      "topic": "Stablecoin provisions, crypto market structure legislation, and a 'rules-first' regulatory approach",
+      "speakers": "Patrick Witt (White House, President's Council of Advisors for Digital Assets); Hester Peirce (SEC Commissioner)"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Vitalik Buterin", "affiliation": "Ethereum co-founder" },
+    { "name": "Hester Peirce", "affiliation": "Commissioner, U.S. Securities and Exchange Commission (SEC)" },
+    { "name": "Paul Atkins", "affiliation": "Chairman, U.S. SEC (listed)" },
+    { "name": "Patrick Witt", "affiliation": "Executive Director, President's Council of Advisors for Digital Assets, The White House" },
+    { "name": "Bo Hines", "affiliation": "Strategic Advisor for Digital Assets and U.S. Strategy, Tether" },
+    { "name": "Tung Chan", "affiliation": "Commissioner, Colorado Division of Securities" },
+    { "name": "Joe Lubin", "affiliation": "Co-founder, Consensys" },
+    { "name": "Caitlin Long", "affiliation": "Founder & CEO, Custodia Bank" },
+    { "name": "Jesse Pollak", "affiliation": "Creator of Base (Coinbase)" },
+    { "name": "Tomasz Stanczak", "affiliation": "Co-Executive Director, Ethereum Foundation" },
+    { "name": "Zak Cole", "affiliation": "President, Ethereum Community Foundation" },
+    { "name": "Austin Griffith", "affiliation": "Ethereum Foundation (developer education)" },
+    { "name": "Jared Polis", "affiliation": "Governor of Colorado (opening ceremony)" },
+    { "name": "Martin Derka", "affiliation": "Co-founder, Zircuit" },
+    { "name": "Rob Z", "affiliation": "Co-founder, TrebleSwap" }
+  ],
+  "key_takeaways": [
+    "The edition marked a clear institutional shift in DeFi — 'less degen, more boardroom', with TradFi (JPMorgan, BlackRock attention) and tokenized/RWA products moving onto Ethereum rails.",
+    "Stablecoins were the dominant finance narrative: framed as payment infrastructure / cross-border rails rather than trading tools, with heavy policy and compliance focus driven by SEC and White House presence.",
+    "Unusually strong public-sector engagement: SEC Commissioner Hester Peirce ('rules-first' approach) and White House digital-assets lead Patrick Witt addressed stablecoin and market-structure policy — reportedly the first sitting SEC Commissioner to speak officially at ETHDenver.",
+    "AI x crypto (agentic finance, AI agents transacting on-chain) overshadowed pure DeFi, with the AI/DePIN 'Futurllama' stage drawing the largest crowds.",
+    "Vitalik Buterin's keynote 'The Next Epoch of Ethereum' centered on AI and 'perfect markets'; separately he argued DeFi still lacks stable money truly independent of single issuers (need for a non-USD benchmark, capture-resistant oracles, staking-yield vs stablecoin tension) and is rethinking DeFi resilience to market crashes.",
+    "Layer-2 consolidation was a recurring DeFi-adjacent theme, with Base frequently cited as a dominant L2 for institutional/on-chain finance.",
+    "The conference was smaller and more builder-focused: side events fell sharply (~68-85% vs 2025), BUIDLathon compressed to 4 in-person days with added online stages, and hackathon prize pools shrank dramatically (~$1.03M in 2025 to ~$132K in 2026), with sponsor money concentrating on AI.",
+    "Finance content was organized under the 'New France Village' stage ('The Future of Finance') covering DeFi, stablecoins, RWA/RealFi, institutional ETH, treasury companies, exchanges, and regulation/compliance."
+  ],
+  "sources": [
+    "https://ethdenver.com/",
+    "https://ethdenver.com/venue/",
+    "https://nationalwesterncenter.com/event/ethdenver-2026/2026-02-21/",
+    "https://events.coinpedia.org/ethdenver-2026-7876/",
+    "https://blockchainreporter.net/eth-denver/",
+    "https://wublockchain.medium.com/ethdenver-2026-observations-side-events-halved-ai-explosion-builders-searching-for-new-paradigms-696c8f0a970f",
+    "https://cryptonews.net/news/ethereum/32514342/",
+    "https://marketacross.com/ethdenver-2026/",
+    "https://crypto.news/ethdenver-2026-fewer-side-events-more-ai-agents-and-builder-focus/",
+    "https://www.okx.com/en-us/learn/ethdenver-2026-day1",
+    "https://www.cryptotimes.io/2026/02/18/ethdenver-2026-vitalik-buterin-discusses-ai-and-perfect-markets/",
+    "https://cointelegraph.com/explained/vitalik-s-take-on-decentralized-stablecoins-what-it-means-for-defi",
+    "https://www.coindesk.com/tech/2026/06/01/ethereum-s-vitalik-buterin-is-rethinking-how-defi-handles-market-crashes",
+    "https://www.youtube.com/watch?v=LOr_5Ka1KRY",
+    "https://www.kucoin.com/news/flash/ethdenver-2026-side-events-drop-by-85-amid-industry-cooling"
+  ],
+  "confidence": "medium"
+}

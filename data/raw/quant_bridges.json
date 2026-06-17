@@ -1,0 +1,131 @@
+{
+  "topic": "Cross-chain bridges over time",
+  "summary": "Cross-chain bridges scaled from near-zero in early 2020 to a peak of well over $50B in locked value during the 2021-Q1 2022 bull market, dominated by Multichain (peak ~$10.5B Jan 2022), Wormhole/Portal (~$4.6B Apr 2022) and Synapse (~$1.2B Jan 2022). The 2022 bear market plus a wave of catastrophic exploits (Ronin $624M, Wormhole $326M, Nomad $190M, Harmony $100M, BNB Bridge ~$570M minted/~$100M net) collapsed lock-up bridge TVL; Multichain shut down entirely in mid-2023. The modern bridge landscape pivoted toward (a) intent/liquidity-network bridges with low TVL but high throughput (Across, Stargate, Synapse), (b) generalized messaging (LayerZero, Wormhole, Chainlink CCIP), and (c) custodial / wrapped-asset and exchange bridges (WBTC, Coinbase Bridge, exchange BTC bridges, Hyperliquid Bridge, USDT0) which now dominate DefiLlama's 'Bridge' category TVL. As of 2026-06-16 DefiLlama's Bridge category holds ~$46.7B across 166 protocols, but this figure mixes custodial wrapped-asset bridges with true cross-chain transfer bridges, so it is not directly comparable to the 2021-2022 'lock-and-mint' TVL peaks. Cross-chain bridges were the single largest crypto theft vector in 2022 (~$2B / ~69% of all funds stolen per Chainalysis); cumulatively bridges have lost well over $2.8B to exploits. NOTE: category-level historical TVL/volume on DefiLlama is behind a paid API; protocol-level series below are from the free DefiLlama protocol API and are the most rigorous historical points available here.",
+  "series": [
+    {
+      "label": "DefiLlama Bridge category total TVL (current snapshot)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocols", "https://defillama.com/protocols/Bridge"],
+      "points": [
+        {"period": "2026-06-16", "value": 46.7, "note": "Sum of all 166 protocols in DefiLlama 'Bridge' category, as-of 2026-06-16 via api.llama.fi/protocols. Includes custodial/wrapped-asset & exchange bridges (WBTC, Coinbase Bridge, exchange BTC bridges, Hyperliquid Bridge, USDT0), so NOT comparable to 2021-22 lock-and-mint TVL. Confidence: high for the number, medium that it represents 'bridge TVL' in the classic sense."}
+      ]
+    },
+    {
+      "label": "Wormhole / Portal token bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/portal", "https://defillama.com/protocol/portal"],
+      "points": [
+        {"period": "2021", "value": 0.94, "note": "Year-end 2021-12-31 (peak 0.95B)"},
+        {"period": "2022", "value": 0.25, "note": "Year-end 2022-12-31; in-year peak 4.62B (Apr 2022, pre-bear). Hacked Feb 2022 for $326M but TVL backstopped by Jump Crypto."},
+        {"period": "2023", "value": 1.00, "note": "Year-end 2023-12-31 (peak 1.01B)"},
+        {"period": "2024", "value": 4.20, "note": "Year-end 2024-12-31; all-time-high 5.49B on 2024-12-07"},
+        {"period": "2025", "value": 1.54, "note": "Year-end 2025-12-31; in-year peak 5.18B"},
+        {"period": "2026", "value": 2.14, "note": "Latest 2026-06-16; in-year peak 2.45B"}
+      ]
+    },
+    {
+      "label": "Multichain (Anyswap) bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/multichain", "https://defillama.com/protocol/multichain"],
+      "points": [
+        {"period": "2021", "value": 5.13, "note": "Year-end 2021-12-31 (peak 5.63B)"},
+        {"period": "2022", "value": 1.24, "note": "Year-end 2022-12-31; all-time-high 10.46B on 2022-01-21 (largest single bridge by TVL at the time)"},
+        {"period": "2023", "value": 0.18, "note": "Year-end 2023-12-31; in-year peak 1.89B. Protocol collapsed mid-2023 (CEO arrest in China, ~$1.5B+ user funds frozen/lost). Effectively defunct."},
+        {"period": "2024", "value": 0.14, "note": "Year-end 2024-12-31; residual/stuck funds only"},
+        {"period": "2025", "value": 0.09, "note": "Last data point 2025-06-11; residual only"},
+        {"period": "2026", "value": 0.04, "note": "Latest 2026-06-16; residual only"}
+      ]
+    },
+    {
+      "label": "Synapse Protocol bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/synapse", "https://defillama.com/protocol/synapse"],
+      "points": [
+        {"period": "2021", "value": 0.85, "note": "Year-end 2021-12-31 (peak 0.89B)"},
+        {"period": "2022", "value": 0.14, "note": "Year-end 2022-12-31; all-time-high 1.16B on 2022-01-26"},
+        {"period": "2023", "value": 0.11, "note": "Year-end 2023-12-31 (in-year peak 0.25B)"},
+        {"period": "2024", "value": 0.10, "note": "Year-end 2024-12-31 (in-year peak 0.35B)"},
+        {"period": "2025", "value": 0.022, "note": "Year-end 2025-12-31 (in-year peak 0.11B)"},
+        {"period": "2026", "value": 0.012, "note": "Latest 2026-06-16"}
+      ]
+    },
+    {
+      "label": "Stargate Finance (LayerZero) bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/stargate-finance", "https://defillama.com/protocol/stargate-finance"],
+      "points": [
+        {"period": "2022", "value": 0.39, "note": "Launched Mar 2022. Year-end 2022-12-31; all-time-high 4.17B on 2022-04-06 (launch liquidity-mining spike)"},
+        {"period": "2023", "value": 0.33, "note": "Year-end 2023-12-31 (in-year peak 0.48B)"},
+        {"period": "2024", "value": 0.43, "note": "Year-end 2024-12-31 (in-year peak 0.53B)"},
+        {"period": "2025", "value": 0.19, "note": "Year-end 2025-12-31; in-year peak 1.60B. Subject of competing acquisition bids in Aug 2025 (LayerZero $110M, Wormhole higher)."},
+        {"period": "2026", "value": 0.083, "note": "Latest 2026-06-16"}
+      ]
+    },
+    {
+      "label": "Across Protocol bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/across", "https://defillama.com/protocol/across"],
+      "points": [
+        {"period": "2022", "value": 0.046, "note": "Year-end 2022-12-31 (in-year peak 0.082B). Across is an intent/relayer bridge -> structurally low TVL relative to volume."},
+        {"period": "2023", "value": 0.10, "note": "Year-end 2023-12-31"},
+        {"period": "2024", "value": 0.19, "note": "Year-end 2024-12-31; all-time-high 0.249B on 2024-12-09. ~ $11.6B bridge volume in 2024."},
+        {"period": "2025", "value": 0.043, "note": "Year-end 2025-12-31 (in-year peak 0.21B)"},
+        {"period": "2026", "value": 0.022, "note": "Latest 2026-06-16"}
+      ]
+    },
+    {
+      "label": "Hop Protocol bridge TVL (year-end & peak)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/hop-protocol", "https://defillama.com/protocol/hop-protocol"],
+      "points": [
+        {"period": "2021", "value": 0.12, "note": "Year-end 2021-12-31 (peak 0.13B)"},
+        {"period": "2022", "value": 0.066, "note": "Year-end 2022-12-31; all-time-high 0.149B on 2022-04-04"},
+        {"period": "2023", "value": 0.060, "note": "Year-end 2023-12-31"},
+        {"period": "2024", "value": 0.038, "note": "Year-end 2024-12-31"},
+        {"period": "2025", "value": 0.0047, "note": "Year-end 2025-12-31"},
+        {"period": "2026", "value": 0.0032, "note": "Latest 2026-06-16"}
+      ]
+    },
+    {
+      "label": "Cumulative value stolen from cross-chain bridge hacks (running total)",
+      "unit": "USD billions",
+      "sources": ["https://www.chainalysis.com/blog/cross-chain-bridge-hacks-2022/", "https://www.coindesk.com/business/2022/08/04/chainalysis-estimates-2b-stolen-from-cross-chain-bridge-hacks-this-year", "https://yellow.com/research/cross-chain-bridge-exploits-security-risks-2026"],
+      "points": [
+        {"period": "2021", "value": 0.61, "note": "Poly Network $611M (Aug 2021) — at the time the largest DeFi hack ever; nearly all funds were later returned by the attacker."},
+        {"period": "2022", "value": 2.0, "note": "Chainalysis: ~$2B stolen across 13 separate bridge hacks in 2022, = ~69% of all crypto funds stolen that year. Major events: Ronin $624M, Wormhole $326M, Nomad $190M, Harmony Horizon $100M, BNB Bridge ~$570M minted (~$100M net after freeze). North Korea (Lazarus) tied to roughly half."},
+        {"period": "2024", "value": 1.19, "note": "Immunefi: bridges + cross-chain messaging accounted for ~$1.19B of 2024 losses (per-year, not cumulative)."},
+        {"period": "2026", "value": 0.0286, "note": "May 2026 alone: ~$28.6M of ~$70M total monthly crypto exploit losses (42%) were bridge-related, per Yellow research."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "DefiLlama 'Bridge' category total TVL", "value": "~$46.7B across 166 protocols", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high (number); medium (definition mixes custodial/wrapped bridges)"},
+    {"claim": "Largest single bridge by TVL at the 2021-22 peak", "value": "Multichain (Anyswap) all-time-high ~$10.46B on 2022-01-21", "as_of": "2022-01-21", "source_name": "DefiLlama Multichain", "source_url": "https://api.llama.fi/protocol/multichain", "confidence": "high"},
+    {"claim": "Largest cross-chain bridge hack ever", "value": "Ronin Bridge $624-625M (173,600 ETH + 25.5M USDC), attributed to Lazarus Group / North Korea", "as_of": "2022-03-23", "source_name": "CoinDesk / Halborn / Chainalysis", "source_url": "https://www.coindesk.com/tech/2022/03/29/axie-infinitys-ronin-network-suffers-625m-exploit", "confidence": "high"},
+    {"claim": "Wormhole bridge hack", "value": "$326M (~120k wETH); backstopped/replenished by Jump Crypto", "as_of": "2022-02-02", "source_name": "CertiK / multiple", "source_url": "https://www.certik.com/blog/GuBAYoHdhrS1mK9Nyfyto-cross-chain-vulnerabilities-and-bridge-exploits-in-2022", "confidence": "high"},
+    {"claim": "Nomad bridge hack", "value": "~$190M drained in a permissionless free-for-all exploit", "as_of": "2022-08-01", "source_name": "CPO Magazine / Elliptic", "source_url": "https://www.elliptic.co/blog/analysis/over-1-billion-stolen-from-bridges-so-far-in-2022-as-harmony-s-horizon-bridge-becomes-latest-victim-in-100-million-hack", "confidence": "high"},
+    {"claim": "Harmony Horizon bridge hack", "value": "~$100M, attributed to Lazarus Group", "as_of": "2022-06-23", "source_name": "Fortune / Elliptic", "source_url": "https://fortune.com/2022/06/24/hackers-steal-100-million-in-crypto-from-harmony-horizon-bridge-ethereum-binance", "confidence": "high"},
+    {"claim": "BNB Chain (BSC Token Hub) bridge hack", "value": "~$570M (2M BNB) minted; ~$430M frozen by validator halt -> ~$100-110M net loss", "as_of": "2022-10-06", "source_name": "CNBC / Halborn", "source_url": "https://www.halborn.com/blog/post/explained-the-bnb-chain-hack-october-2022", "confidence": "high"},
+    {"claim": "Poly Network hack", "value": "~$611-612M (largest DeFi hack at the time); attacker returned ~all funds within ~15 days", "as_of": "2021-08-10", "source_name": "Chainalysis / The Block", "source_url": "https://www.chainalysis.com/blog/poly-network-hack-august-2021/", "confidence": "high"},
+    {"claim": "Bridges as theft vector in 2022", "value": "~$2B stolen across 13 bridge hacks = ~69% of all crypto funds stolen in 2022", "as_of": "2022-08-04", "source_name": "Chainalysis", "source_url": "https://www.chainalysis.com/blog/cross-chain-bridge-hacks-2022/", "confidence": "high"},
+    {"claim": "Stargate (LayerZero) July 2025 bridge volume", "value": "$4B/month (cited as ~10x year-over-year); TVL $345M; treasury ~$147M", "as_of": "2025-07", "source_name": "CoinDesk", "source_url": "https://www.coindesk.com/markets/2025/08/21/stargate-draws-second-acquisition-bid-with-wormhole-topping-layerzero-s-usd110m-buy-offer", "confidence": "medium-high"},
+    {"claim": "Stargate acquisition bids (Aug 2025)", "value": "LayerZero offered $110M; Wormhole Foundation countered higher", "as_of": "2025-08-21", "source_name": "CoinDesk / Unchained", "source_url": "https://unchainedcrypto.com/wormhole-foundation-to-counter-layerzeros-bid-for-stargate/", "confidence": "high"},
+    {"claim": "Across 2024 bridge volume", "value": "~$11.6B transferred in 2024; ~2-min average transfer time (vs 5-7 min for peers)", "as_of": "2024", "source_name": "Gate Learn / PANews", "source_url": "https://www.gate.com/learn/articles/our-across-thesis/1232", "confidence": "medium"},
+    {"claim": "Top DefiLlama 'Bridge' category protocols by TVL", "value": "LayerZero V2 $7.6B, WBTC $7.5B, Hyperliquid Bridge $5.9B, Coinbase Bridge $5.6B, Binance Bitcoin $4.5B, USDT0 $3.7B, Portal/Wormhole $2.1B, JustCryptos $2.0B, Chainlink CCIP $1.3B", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
+    {"claim": "2024 bridge / cross-chain messaging exploit losses", "value": "~$1.19B (Immunefi)", "as_of": "2024", "source_name": "Immunefi via Yellow research", "source_url": "https://yellow.com/research/cross-chain-bridge-exploits-security-risks-2026", "confidence": "medium"}
+  ],
+  "top_entities": [
+    {"name": "LayerZero V2", "metric": "Bridge category TVL (DefiLlama)", "value": "$7.61B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "WBTC (wrapped BTC bridge)", "metric": "Bridge category TVL", "value": "$7.49B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "Hyperliquid Bridge", "metric": "Bridge category TVL", "value": "$5.91B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "Coinbase Bridge (Base native bridge)", "metric": "Bridge category TVL", "value": "$5.59B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "Binance Bitcoin bridge", "metric": "Bridge category TVL", "value": "$4.48B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "USDT0 (LayerZero USDT bridge)", "metric": "Bridge category TVL", "value": "$3.66B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "Wormhole / Portal token bridge", "metric": "Bridge category TVL", "value": "$2.14B as-of 2026-06-16 (ATH $5.49B Dec 2024)", "source_url": "https://api.llama.fi/protocol/portal"},
+    {"name": "Chainlink CCIP", "metric": "Bridge category TVL", "value": "$1.26B as-of 2026-06-16", "source_url": "https://api.llama.fi/protocols"},
+    {"name": "Multichain (Anyswap)", "metric": "Historical peak TVL (defunct since 2023)", "value": "ATH ~$10.46B on 2022-01-21", "source_url": "https://api.llama.fi/protocol/multichain"},
+    {"name": "Stargate Finance", "metric": "Bridge TVL / volume", "value": "TVL $0.083B (2026-06-16); $4B/mo volume Jul 2025; ATH TVL $4.17B Apr 2022", "source_url": "https://api.llama.fi/protocol/stargate-finance"},
+    {"name": "Across Protocol", "metric": "Bridge TVL / volume", "value": "TVL $0.022B (2026-06-16); ATH TVL $0.249B Dec 2024; ~$11.6B volume 2024", "source_url": "https://api.llama.fi/protocol/across"},
+    {"name": "Ronin Bridge", "metric": "Largest bridge hack", "value": "$624-625M stolen 2022-03-23 (Lazarus Group)", "source_url": "https://www.coindesk.com/tech/2022/03/29/axie-infinitys-ronin-network-suffers-625m-exploit"}
+  ]
+}

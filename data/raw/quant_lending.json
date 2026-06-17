@@ -1,0 +1,327 @@
+{
+  "topic": "DeFi lending markets over time",
+  "summary": "Historical and current quantitative data for the major DeFi lending/borrowing protocols, sourced primarily from the DefiLlama API (per-protocol historical TVL and 'borrowed' series), corroborated by The Block, The Defiant, Statista and industry coverage. Values are end-of-year (closest data point to Dec 31) unless marked as a peak/ATH/current. Units are USD billions. Key narrative: the sector peaked in the 2021 bull market (Aave family TVL ~$14B Dec-2021, Compound ~$9B, MakerDAO ~$17.6B), collapsed ~75-90% through the 2022 bear market (Terra/3AC/FTX), bottomed in 2023, then recovered strongly in 2024-2025. A new all-time high for lending TVL was set in Oct-2025 led by Aave V3 (parent Aave family ~$45.8B TVL, ~$30.6B borrowed). Morpho emerged from zero (2024) to become a top-3 lending protocol. As of mid-June 2026 the market is in a drawdown from the late-2025 peak (Aave family ~$12.8B TVL, ~$10.1B borrowed). Note: MakerDAO/Sky is a CDP (mints DAI/USDS) so its 'borrowed' is reported as DAI/USDS outstanding rather than a DefiLlama 'borrowed' series. All-time DeFi-wide TVL peak (all categories) was ~$177-180B in Nov-2021. Confidence is HIGH for DefiLlama API-derived numbers; year-end snapshots are point-in-time and volatile, so prefer them as round figures.",
+  "series": [
+    {
+      "label": "Aave (family: V1+V2+V3) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/aave-v3",
+        "https://api.llama.fi/protocol/aave-v2",
+        "https://api.llama.fi/protocol/aave-v1",
+        "https://defillama.com/protocol/aave-v3"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 1.68, "note": "End of year; V1+V2"},
+        {"period": "2021-12-31", "value": 14.19, "note": "End of year; bull-market era"},
+        {"period": "2022-12-31", "value": 3.70, "note": "End of year; post-Terra/FTX bear"},
+        {"period": "2023-12-31", "value": 6.61, "note": "End of year; V3 migration underway"},
+        {"period": "2024-12-31", "value": 20.39, "note": "End of year; strong recovery"},
+        {"period": "2025-12-31", "value": 30.09, "note": "End of year (off the Oct peak)"},
+        {"period": "2025-10-07", "value": 45.81, "note": "All-time-high family TVL"},
+        {"period": "2026-06-16", "value": 12.79, "note": "Current; mid-2026 drawdown"}
+      ]
+    },
+    {
+      "label": "Aave (family V2+V3) active borrows (outstanding debt)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/aave-v3",
+        "https://api.llama.fi/protocol/aave-v2"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 0.05, "note": "End of year"},
+        {"period": "2021-12-31", "value": 12.01, "note": "End of year; bull-market borrows"},
+        {"period": "2022-12-31", "value": 1.84, "note": "End of year; deleveraging"},
+        {"period": "2023-12-31", "value": 3.40, "note": "End of year"},
+        {"period": "2024-12-31", "value": 14.47, "note": "End of year"},
+        {"period": "2025-12-31", "value": 21.47, "note": "End of year"},
+        {"period": "2025-09-19", "value": 30.58, "note": "Peak active borrows"},
+        {"period": "2026-06-16", "value": 10.06, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Compound (family V2+V3) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/compound-v2",
+        "https://api.llama.fi/protocol/compound-v3"
+      ],
+      "points": [
+        {"period": "2019-12-31", "value": 0.08, "note": "End of year; V1/V2 launch era"},
+        {"period": "2020-12-31", "value": 1.98, "note": "End of year; DeFi Summer"},
+        {"period": "2021-12-31", "value": 9.07, "note": "End of year; bull peak era"},
+        {"period": "2022-12-31", "value": 1.65, "note": "End of year"},
+        {"period": "2023-12-31", "value": 2.28, "note": "End of year; V3 growing"},
+        {"period": "2024-12-31", "value": 2.70, "note": "End of year"},
+        {"period": "2025-12-31", "value": 1.90, "note": "End of year"},
+        {"period": "2021-11-09", "value": 12.31, "note": "All-time-high family TVL"},
+        {"period": "2026-06-16", "value": 1.20, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Compound (family V2+V3) active borrows",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/compound-v2",
+        "https://api.llama.fi/protocol/compound-v3"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 1.81, "note": "End of year"},
+        {"period": "2021-12-31", "value": 6.31, "note": "End of year"},
+        {"period": "2022-12-31", "value": 0.66, "note": "End of year"},
+        {"period": "2023-12-31", "value": 0.94, "note": "End of year"},
+        {"period": "2024-12-31", "value": 1.04, "note": "End of year"},
+        {"period": "2025-12-31", "value": 0.89, "note": "End of year"},
+        {"period": "2021-09-07", "value": 9.33, "note": "Peak active borrows"},
+        {"period": "2026-06-16", "value": 0.57, "note": "Current"}
+      ]
+    },
+    {
+      "label": "MakerDAO / Sky TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/makerdao",
+        "https://defillama.com/protocol/makerdao"
+      ],
+      "points": [
+        {"period": "2019-12-31", "value": 0.31, "note": "End of year"},
+        {"period": "2020-12-31", "value": 2.79, "note": "End of year"},
+        {"period": "2021-12-31", "value": 17.60, "note": "End of year; largest DeFi protocol at the time"},
+        {"period": "2022-12-31", "value": 6.07, "note": "End of year"},
+        {"period": "2023-12-31", "value": 5.73, "note": "End of year"},
+        {"period": "2024-12-31", "value": 6.66, "note": "End of year; rebrand to Sky"},
+        {"period": "2025-12-31", "value": 5.74, "note": "End of year (DefiLlama 'makerdao' legacy entry)"},
+        {"period": "2021-12-01", "value": 19.82, "note": "All-time-high TVL"},
+        {"period": "2026-06-16", "value": 5.85, "note": "Current (legacy makerdao entry; Sky Lending parent ~$6.06B)"}
+      ]
+    },
+    {
+      "label": "Morpho (Morpho Blue) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/morpho-blue",
+        "https://defillama.com/protocol/morpho-blue"
+      ],
+      "points": [
+        {"period": "2024-12-31", "value": 2.85, "note": "End of first full year; Morpho Blue launched 2024"},
+        {"period": "2025-12-31", "value": 5.68, "note": "End of year"},
+        {"period": "2025-09-17", "value": 8.38, "note": "All-time-high TVL"},
+        {"period": "2026-06-16", "value": 7.14, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Morpho (Morpho Blue) active borrows",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/morpho-blue"],
+      "points": [
+        {"period": "2024-12-31", "value": 1.89, "note": "End of year"},
+        {"period": "2025-12-31", "value": 3.03, "note": "End of year"},
+        {"period": "2025-09-17", "value": 4.74, "note": "Peak active borrows"},
+        {"period": "2026-06-16", "value": 3.63, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Spark (SparkLend) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/sparklend",
+        "https://defillama.com/protocol/sparklend"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 1.64, "note": "End of first year; launched 2023 (MakerDAO/Sky-affiliated)"},
+        {"period": "2024-12-31", "value": 3.84, "note": "End of year"},
+        {"period": "2025-12-31", "value": 3.22, "note": "End of year"},
+        {"period": "2025-10-09", "value": 6.37, "note": "All-time-high SparkLend TVL"},
+        {"period": "2026-06-16", "value": 3.49, "note": "Current (SparkLend only; Spark parent incl. Liquidity Layer/Savings ~$6.97B)"}
+      ]
+    },
+    {
+      "label": "Spark (SparkLend) active borrows",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/sparklend"],
+      "points": [
+        {"period": "2023-12-31", "value": 1.02, "note": "End of year"},
+        {"period": "2024-12-31", "value": 2.26, "note": "End of year"},
+        {"period": "2025-12-31", "value": 1.35, "note": "End of year"},
+        {"period": "2024-12-09", "value": 3.18, "note": "Peak active borrows"},
+        {"period": "2026-06-16", "value": 1.61, "note": "Current"}
+      ]
+    },
+    {
+      "label": "JustLend (Tron) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/justlend",
+        "https://defillama.com/protocol/justlend"
+      ],
+      "points": [
+        {"period": "2021-12-31", "value": 1.80, "note": "End of first year"},
+        {"period": "2022-12-31", "value": 2.66, "note": "End of year"},
+        {"period": "2023-12-31", "value": 6.43, "note": "End of year"},
+        {"period": "2024-12-31", "value": 5.96, "note": "End of year"},
+        {"period": "2025-12-31", "value": 3.71, "note": "End of year"},
+        {"period": "2024-12-04", "value": 9.27, "note": "All-time-high TVL"},
+        {"period": "2026-06-16", "value": 3.10, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Kamino (Kamino Lend, Solana) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/kamino-lend",
+        "https://defillama.com/protocol/kamino-lend"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 0.14, "note": "End of first year"},
+        {"period": "2024-12-31", "value": 1.82, "note": "End of year"},
+        {"period": "2025-12-31", "value": 1.87, "note": "End of year"},
+        {"period": "2025-10-07", "value": 3.37, "note": "All-time-high Kamino Lend TVL"},
+        {"period": "2026-06-16", "value": 1.11, "note": "Current (Kamino Lend; Kamino Finance parent ~$1.24B)"}
+      ]
+    },
+    {
+      "label": "Kamino (Kamino Lend) active borrows",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/protocol/kamino-lend"],
+      "points": [
+        {"period": "2023-12-31", "value": 0.07, "note": "End of year"},
+        {"period": "2024-12-31", "value": 1.12, "note": "End of year"},
+        {"period": "2025-12-31", "value": 1.21, "note": "End of year"},
+        {"period": "2025-09-19", "value": 1.91, "note": "Peak active borrows"},
+        {"period": "2026-06-16", "value": 0.96, "note": "Current"}
+      ]
+    },
+    {
+      "label": "Sum of 8 major lending families TVL (Aave+Compound+Maker/Sky+Morpho+Spark+JustLend+Kamino)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocols",
+        "https://defillama.com/protocols/lending"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 6.45, "note": "End of year; aggregate of tracked families"},
+        {"period": "2021-12-31", "value": 42.66, "note": "End of year; bull-market era"},
+        {"period": "2022-12-31", "value": 14.08, "note": "End of year; bear market"},
+        {"period": "2023-12-31", "value": 22.82, "note": "End of year"},
+        {"period": "2024-12-31", "value": 44.22, "note": "End of year; recovery"},
+        {"period": "2025-12-31", "value": 52.19, "note": "End of year"},
+        {"period": "2025-10-07", "value": 77.68, "note": "Aggregate peak of tracked families"},
+        {"period": "2026-06-16", "value": 34.68, "note": "Current; mid-2026 drawdown. NOTE: lower bound — excludes 370+ smaller lending protocols"}
+      ]
+    },
+    {
+      "label": "DeFi-wide active loans (industry aggregate, all lending protocols)",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.fxstreet.com/amp/cryptocurrencies/news/defi-is-waking-up-again-active-loans-return-to-2022-levels-202408011033",
+        "https://defillama.com/protocols/lending"
+      ],
+      "points": [
+        {"period": "2021-bull-peak", "value": 22.2, "note": "Industry-wide active loans peak during 2021 bull run (per IntoTheBlock/FXStreet)"},
+        {"period": "2022-03", "value": 10.0, "note": "Around March 2022 before further decline"},
+        {"period": "2023-01", "value": 3.1, "note": "January 2023 cycle low"},
+        {"period": "2024-08", "value": 13.3, "note": "Aug 2024; returned to early-2022 levels"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {
+      "claim": "All-time-high DeFi-wide TVL (all categories, not just lending) was ~$177-180 billion",
+      "value": "~177-180 USD billions",
+      "as_of": "2021-11",
+      "source_name": "DefiLlama / multiple",
+      "source_url": "https://defillama.com/",
+      "confidence": "high"
+    },
+    {
+      "claim": "Aave family (V1+V2+V3) all-time-high TVL",
+      "value": "45.81 USD billions",
+      "as_of": "2025-10-07",
+      "source_name": "DefiLlama API",
+      "source_url": "https://api.llama.fi/protocol/aave-v3",
+      "confidence": "high"
+    },
+    {
+      "claim": "Aave family all-time-high active borrows (outstanding debt)",
+      "value": "30.58 USD billions",
+      "as_of": "2025-09-19",
+      "source_name": "DefiLlama API (borrowed series)",
+      "source_url": "https://api.llama.fi/protocol/aave-v3",
+      "confidence": "high"
+    },
+    {
+      "claim": "Aave is the dominant DeFi lender; reached ~1/5 of all DeFi TVL in 2025",
+      "value": "~20% of total DeFi TVL",
+      "as_of": "2025",
+      "source_name": "The Defiant",
+      "source_url": "https://thedefiant.io/news/defi/aave-now-commands-a-fifth-of-total-defi-tvl",
+      "confidence": "medium"
+    },
+    {
+      "claim": "MakerDAO was the largest DeFi protocol in the 2021 cycle with all-time-high TVL ~$19.8B",
+      "value": "19.82 USD billions",
+      "as_of": "2021-12-01",
+      "source_name": "DefiLlama API",
+      "source_url": "https://api.llama.fi/protocol/makerdao",
+      "confidence": "high"
+    },
+    {
+      "claim": "Morpho Blue launched in 2024 and rose to a top-3 lending protocol, ATH TVL ~$8.4B",
+      "value": "8.38 USD billions",
+      "as_of": "2025-09-17",
+      "source_name": "DefiLlama API",
+      "source_url": "https://api.llama.fi/protocol/morpho-blue",
+      "confidence": "high"
+    },
+    {
+      "claim": "JustLend (Tron) all-time-high TVL",
+      "value": "9.27 USD billions",
+      "as_of": "2024-12-04",
+      "source_name": "DefiLlama API",
+      "source_url": "https://api.llama.fi/protocol/justlend",
+      "confidence": "high"
+    },
+    {
+      "claim": "DefiLlama tracks 380+ active lending protocols across 80+ chains; top 10 hold ~78% of deposits",
+      "value": "380+ protocols",
+      "as_of": "2026-04",
+      "source_name": "eco.com (citing DefiLlama)",
+      "source_url": "https://eco.com/support/en/articles/15254000-best-defi-lending-protocols-2026-tvl-rates-risk-compared",
+      "confidence": "medium"
+    },
+    {
+      "claim": "~84% of outstanding DeFi debt is denominated in stablecoins (USDC/USDT/USDS/DAI/FDUSD)",
+      "value": "~84% stablecoin-denominated borrows",
+      "as_of": "2026-04",
+      "source_name": "eco.com (citing DefiLlama)",
+      "source_url": "https://eco.com/support/en/articles/15254000-best-defi-lending-protocols-2026-tvl-rates-risk-compared",
+      "confidence": "low"
+    },
+    {
+      "claim": "DeFi-wide active loans peaked at ~$22.2B in the 2021 bull run, bottomed at ~$3.1B in Jan 2023, recovered to ~$13.3B by Aug 2024",
+      "value": "22.2 -> 3.1 -> 13.3 USD billions",
+      "as_of": "2021/2023/2024",
+      "source_name": "FXStreet (citing IntoTheBlock)",
+      "source_url": "https://www.fxstreet.com/amp/cryptocurrencies/news/defi-is-waking-up-again-active-loans-return-to-2022-levels-202408011033",
+      "confidence": "medium"
+    },
+    {
+      "claim": "Current mid-2026 market is in a drawdown from the Oct/Nov 2025 peak (Aave family TVL ~$12.8B vs ~$45.8B ATH)",
+      "value": "12.79 USD billions",
+      "as_of": "2026-06-16",
+      "source_name": "DefiLlama API",
+      "source_url": "https://api.llama.fi/protocol/aave-v3",
+      "confidence": "high"
+    }
+  ],
+  "top_entities": [
+    {"name": "Aave (V3 + family)", "metric": "Lending TVL", "value": "~$12.8B current / $45.8B ATH (Oct 2025); active borrows ~$10.1B current / $30.6B ATH", "source_url": "https://defillama.com/protocol/aave-v3"},
+    {"name": "Morpho (Morpho Blue)", "metric": "Lending TVL", "value": "~$7.1B current / $8.4B ATH (Sep 2025); active borrows ~$3.6B", "source_url": "https://defillama.com/protocol/morpho-blue"},
+    {"name": "Spark (SparkLend)", "metric": "Lending TVL", "value": "~$3.5B SparkLend current / $6.4B ATH; Spark parent ~$7.0B", "source_url": "https://defillama.com/protocol/sparklend"},
+    {"name": "MakerDAO / Sky", "metric": "CDP TVL", "value": "~$5.9B current (legacy entry) / Sky parent ~$6.1B; $19.8B ATH (Dec 2021)", "source_url": "https://defillama.com/protocol/makerdao"},
+    {"name": "JustLend (Tron)", "metric": "Lending TVL", "value": "~$3.1B current / $9.3B ATH (Dec 2024)", "source_url": "https://defillama.com/protocol/justlend"},
+    {"name": "Compound (V3 + family)", "metric": "Lending TVL", "value": "~$1.2B current / $12.3B ATH (Nov 2021); active borrows ~$0.57B", "source_url": "https://defillama.com/protocol/compound-v3"},
+    {"name": "Kamino (Solana)", "metric": "Lending TVL", "value": "~$1.1B Kamino Lend current / $3.4B ATH (Oct 2025); active borrows ~$1.0B", "source_url": "https://defillama.com/protocol/kamino-lend"}
+  ]
+}

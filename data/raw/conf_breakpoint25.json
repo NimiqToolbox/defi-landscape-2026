@@ -1,0 +1,96 @@
+{
+  "name": "Solana Breakpoint",
+  "edition": "Breakpoint 2025",
+  "location": "Etihad Arena, Yas Island, Abu Dhabi, UAE (first Breakpoint held in the Middle East)",
+  "dates": "December 11-13, 2025",
+  "in_window": true,
+  "attendance": "7,000+ attendees from 100+ countries (sold out; ~1,800 founders present) — the largest Breakpoint to date",
+  "defi_themes": [
+    "Stablecoins (USDC dominance on Solana; new yield-bearing stablecoins JupUSD, Streamflow USD+, Abra USDAF)",
+    "Institutional DeFi / TradFi convergence ('Everything Chain' / 'Revenue and Returns' framing)",
+    "Real-world asset (RWA) tokenization (>$2B tokenized RWAs by end-2025; gold, uranium, equities, domains, sovereign reserves)",
+    "On-chain capital markets (JPMorgan commercial paper, Galaxy Digital, State Street SWEEP fund, Figure native IPO, Paxos clearing agency)",
+    "Lending / credit (Jupiter Lend $1B supply in 8 days; Kamino institutional yield layer; Huma, Tala emerging-market credit)",
+    "Perpetuals / derivatives (Ellipsis Labs Phoenix Perps; dYdX spot on Solana)",
+    "DEXs and market microstructure (Jupiter Terminal, Coinbase DEX integration, Multicoin's ACE single global liquidity pool)",
+    "Yield infrastructure and institutional vaults (Kamino, RockawayX curated vaults, native treasury yield)",
+    "On-chain treasury / treasury management (Altitude CFO tools, Lightspeed IR platform, DAT / digital asset treasury trend)",
+    "Prediction markets going wallet-native (Phantom + Kalshi, dFlow)",
+    "Stablecoin / DeFi regulation (GENIUS Act compliance, OSL USDGO, Circle regulatory milestones)"
+  ],
+  "notable_panels": [
+    {
+      "title": "Circle Fireside Chat with Jeremy Allaire",
+      "speakers": "Jeremy Allaire (Circle CEO)",
+      "topic": "Stablecoins / institutional DeFi — USDC volume on Solana outpacing other chains, regulatory compliance, blockchain-AI integration"
+    },
+    {
+      "title": "Jupiter ecosystem updates — JupUSD launch and DeFi upgrades",
+      "speakers": "Jupiter team",
+      "topic": "Stablecoins, lending, perps — JupUSD (backed ~90% BlackRock BUIDL, 10% USDC, native treasury yield, Ethena Labs collaboration); Jupiter Lend $1B supply in 8 days; Jupiter Terminal pro trading; Rain.fi acquisition for universal money market"
+    },
+    {
+      "title": "Phoenix Perpetuals launch (Ellipsis Labs)",
+      "speakers": "Eugene Chen (CEO, Ellipsis Labs)",
+      "topic": "Perpetual futures / derivatives — fully on-chain derivatives exchange with Prop AMM design for tighter spreads vs. offchain venues; closed beta launched Dec 11, 2025"
+    },
+    {
+      "title": "Keel Finance Tokenization Regatta",
+      "speakers": "Sian Bretnach (Matariki Labs)",
+      "topic": "RWA tokenization / lending — $500M fund to stimulate native tokenized real-world assets; ~40 interested counterparties"
+    },
+    {
+      "title": "Institutional RWAs on Solana (R3 Corda)",
+      "speakers": "R3 representatives",
+      "topic": "Institutional RWA — Corda regulated RWA marketplace built on Solana for issuers and investors, launching early 2026"
+    },
+    {
+      "title": "Coinbase x Solana DEX integration",
+      "speakers": "Andrew Ellen, Sabs Sachdeva (Coinbase)",
+      "topic": "DEX — Coinbase integrating Solana into its DEX service to trade unlisted tokens directly in-app"
+    },
+    {
+      "title": "Multicoin / ACE (Application-Controlled Execution)",
+      "speakers": "Kyle Samani, Tushar Jain (Multicoin Capital)",
+      "topic": "Market microstructure / DeFi liquidity — custom sorting rules over a single global liquidity pool to reduce DeFi fragmentation"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Anatoly Yakovenko", "affiliation": "Solana Labs (co-founder)" },
+    { "name": "Raj Gokal", "affiliation": "Solana Labs (co-founder)" },
+    { "name": "Lily Liu", "affiliation": "Solana Foundation (President)" },
+    { "name": "Dan Albert", "affiliation": "Solana Foundation (Executive Director / CEO; closing remarks)" },
+    { "name": "Jeremy Allaire", "affiliation": "Circle (CEO)" },
+    { "name": "Charles Cascarilla", "affiliation": "Paxos (CEO)" },
+    { "name": "Kyle Samani", "affiliation": "Multicoin Capital (co-founder)" },
+    { "name": "Tushar Jain", "affiliation": "Multicoin Capital (co-founder)" },
+    { "name": "Eugene Chen", "affiliation": "Ellipsis Labs (CEO) — Phoenix Perps" },
+    { "name": "Michael Marcantonio", "affiliation": "Galaxy Digital (institutional capital)" },
+    { "name": "Yat Siu", "affiliation": "Animoca Brands (co-founder)" },
+    { "name": "Ben Zhou", "affiliation": "Bybit (CEO)" },
+    { "name": "Gracie Chen", "affiliation": "Bitget (CEO)" },
+    { "name": "Lucas Bruder", "affiliation": "Jito (BAM programmable infrastructure)" }
+  ],
+  "key_takeaways": [
+    "Capital convergence was the dominant DeFi narrative: TradFi assets and DeFi rails merging into a unified global on-chain ledger, framed as 'Everything Chain' / 'Revenue and Returns' — Breakpoint shifted from crypto-native gathering toward an institutional finance summit.",
+    "Yield-bearing stablecoins were a marquee theme: Jupiter's JupUSD (backed ~90% by BlackRock's BUIDL fund + USDC, with Ethena Labs, returning native treasury yield) plus Streamflow USD+ and Abra's USDAF/sUSDAF; Circle reported USDC volume on Solana outpacing all other chains.",
+    "RWA tokenization went mainstream: tokenized RWAs surpassed ~$2B by end of 2025, with launches spanning gold (Oro StGOLD, Bhutan $TER, Singapore physical gold fund), uranium (Uranium Digital), equities (xStocks/WisdomTree), and domains (Doma), plus R3 Corda's regulated RWA marketplace.",
+    "On-chain institutional capital markets matured fast: JPMorgan arranged commercial paper for Galaxy Digital on mainnet, State Street launched a tokenized SWEEP liquidity fund (via PayPal PYUSD), Paxos filed for SEC clearing-agency status, and Figure filed for a native on-chain IPO — JPMorgan's own 'zero probability one year ago' framing underscored the speed.",
+    "DeFi lending and yield infrastructure scaled rapidly: Jupiter Lend hit $1B in supplied assets in 8 days (fastest on Solana); Kamino evolved into a full-stack institutional yield layer (fixed rates, private credit, RWA DEX); RockawayX launched curated institutional vaults.",
+    "On-chain derivatives and market structure advanced toward CEX parity: Ellipsis Labs' Phoenix Perps (Prop AMM for tighter spreads), dYdX bringing its first spot product to Solana, and Multicoin's ACE proposing a single global liquidity pool to reduce DeFi fragmentation.",
+    "Treasury/CFO tooling and DAT (digital asset treasury) themes emerged: Altitude (on-chain payroll, treasury, bookkeeping) and Lightspeed (first investor-relations/standardized-reporting platform for public blockchains).",
+    "Regulation/compliance underpinned institutional DeFi: GENIUS Act-compliant stablecoins (OSL USDGO), Circle's regulatory milestones, and Paxos/Figure SEC filings signaled DeFi moving into regulated capital-markets infrastructure.",
+    "Next edition announced: Breakpoint 2026 will be held in London, positioned in a major global financial hub."
+  ],
+  "sources": [
+    "https://solana.com/news/solana-breakpoint-2025",
+    "https://solanacompass.com/learn/breakpoint-25/see-you-at-breakpoint-2026-solana-foundation",
+    "https://incrypted.com/en/solana-breakpoint-2025-key-announcements-and-speeches-from-day-one/",
+    "https://incrypted.com/en/solana-breakpoint-2025-key-announcements-and-speeches-of-the-second-day/",
+    "https://coinpedia.org/news/jupiter-unveils-jupusd-stablecoin-and-major-defi-upgrades-at-solana-breakpoint-2025/",
+    "https://www.coindesk.com/web3/2025/10/08/solana-s-jupiter-to-develop-jupusd-stablecoin-with-backing-from-ethena-labs",
+    "https://solanafloor.com/news/solana-breakpoint-2025-heres-what-expect",
+    "https://www.rootdata.com/news/464155"
+  ],
+  "confidence": "high"
+}

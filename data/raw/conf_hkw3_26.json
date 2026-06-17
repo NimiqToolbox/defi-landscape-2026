@@ -1,0 +1,98 @@
+{
+  "name": "Hong Kong Web3 Festival",
+  "edition": "2026 (4th edition)",
+  "location": "Hong Kong Convention and Exhibition Centre (HKCEC), Hong Kong",
+  "dates": "April 20-23, 2026",
+  "in_window": true,
+  "attendance": "20,000+ attendees (200+ speakers, 100+ partners, 4 stages, 20+ sessions); billed as Asia's largest crypto event",
+  "defi_themes": [
+    "TradFi x crypto finance convergence / institutional adoption",
+    "Stablecoins and cross-border / Web3 payments",
+    "Real-World Assets (RWA) and compliant asset tokenization",
+    "Institutional digital wealth / on-chain asset management",
+    "On-chain finance infrastructure",
+    "AI x crypto as next-gen financial infrastructure / agent economies",
+    "Hong Kong regulatory framework for digital assets"
+  ],
+  "notable_panels": [
+    {
+      "title": "TradFi x Crypto Finance: Convergence",
+      "topic": "Convergence of traditional and crypto finance; stablecoins, cross-border payments, asset digitization",
+      "speakers": "Co-organized by Binance, OKX, Sharplink, Stable, J.P. Morgan; speakers incl. Yi He & Richard Teng (Binance), Lennix Lai (OKX), Akhil Devmurari (J.P. Morgan)"
+    },
+    {
+      "title": "Get to the Bottom of RWA",
+      "topic": "Compliant real-world asset tokenization from legal, financial and institutional perspectives",
+      "speakers": "BlackRock, J.P. Morgan, CICC, Ondo Finance"
+    },
+    {
+      "title": "Stablecoins and Web3 Payment Revolution",
+      "topic": "Stablecoins and the emergence of a new global payment system",
+      "speakers": "Co-organized by RD Technologies; incl. Brian Mehler (Stable CEO), Leonard Hoh (Bitstamp by Robinhood)"
+    },
+    {
+      "title": "Tokenisation: Bridging the Real World with the Digital Economy",
+      "topic": "Tokenization of real-world assets as a bridge between traditional finance and the digital economy",
+      "speakers": "Co-organized by Anvita; participants incl. Animoca Brands, MSX, Kaspa Foundation, Plume, ZAN"
+    },
+    {
+      "title": "AI x Crypto: The Next Financial Infrastructure",
+      "topic": "AI-driven / agent economies as next financial infrastructure",
+      "speakers": "Solana Foundation, Mysten Labs, TRON, Pantera Capital"
+    },
+    {
+      "title": "Institutional Digital Wealth Management Summit 2026",
+      "topic": "Institutional digital asset / on-chain wealth management (Day 4)",
+      "speakers": "Institutional finance leaders"
+    },
+    {
+      "title": "HashKey On-Chain Finance Summit 2026",
+      "topic": "On-chain finance frameworks and infrastructure (Day 4)",
+      "speakers": "HashKey Group ecosystem (Xiao Feng, Chairman & CEO)"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Vitalik Buterin", "affiliation": "Co-Founder, Ethereum" },
+    { "name": "Yi He", "affiliation": "Co-Founder / Co-CEO, Binance" },
+    { "name": "Richard Teng", "affiliation": "Co-CEO, Binance" },
+    { "name": "Lily Liu", "affiliation": "President, Solana Foundation" },
+    { "name": "Justin Sun", "affiliation": "Founder, TRON (Advisor, HTX / B.AI)" },
+    { "name": "Lennix Lai", "affiliation": "Chief Commercial Officer, OKX Global" },
+    { "name": "Min Lin", "affiliation": "Managing Director, Global Business Development, Ondo Finance" },
+    { "name": "Abdelhamid Bizid", "affiliation": "Managing Director, BlackRock" },
+    { "name": "Akhil Devmurari", "affiliation": "Fintech Sector Head, APAC Payments, J.P. Morgan" },
+    { "name": "Franklin Bi", "affiliation": "General Partner, Pantera Capital" },
+    { "name": "John Cahill", "affiliation": "COO, Galaxy Digital Asia" },
+    { "name": "Brian Mehler", "affiliation": "CEO, Stable" },
+    { "name": "Leonard Hoh", "affiliation": "President, Bitstamp by Robinhood" },
+    { "name": "Adeniyi Abiodun", "affiliation": "Co-Founder & Chief Product Officer, Mysten Labs" },
+    { "name": "Joseph Chalom", "affiliation": "CEO, Sharplink" },
+    { "name": "Xiao Feng", "affiliation": "Chairman, Wanxiang Blockchain; Chairman & CEO, HashKey Group" },
+    { "name": "Yat Siu", "affiliation": "Co-Founder & Chairman, Animoca Brands" },
+    { "name": "Cynthia Wu", "affiliation": "Founding Partner, Matrixport" },
+    { "name": "Michael Faulkender", "affiliation": "Professor of Finance, University of Maryland; former U.S. Treasury Deputy Secretary" },
+    { "name": "Paul Chan Mo-po", "affiliation": "Financial Secretary, Government of Hong Kong SAR" },
+    { "name": "Joseph H. L. Chan", "affiliation": "Under Secretary for Financial Services and the Treasury, Hong Kong" },
+    { "name": "Dr. Yip Chee Hang", "affiliation": "Executive Director, Securities and Futures Commission (SFC), Hong Kong" },
+    { "name": "Lu Weiding", "affiliation": "Chairman & CEO, Wanxiang Group" },
+    { "name": "Duncan Chiu", "affiliation": "Legislative Council Member (Technology & Innovation), Hong Kong" }
+  ],
+  "key_takeaways": [
+    "The convergence of traditional finance and crypto was the dominant DeFi narrative, with major TradFi institutions (BlackRock, J.P. Morgan, CICC, Galaxy) sharing stages with crypto-native exchanges (Binance, OKX) on institutional on-chain finance.",
+    "Stablecoins and Web3 payments were a full-day track, framed as the foundation of a new global cross-border payment system, reflecting momentum around Hong Kong's stablecoin regulatory regime.",
+    "RWA / real-world asset tokenization emerged as the central bridge between TradFi and the digital economy, with a strong emphasis on compliant tokenization (Ondo Finance, BlackRock, CICC).",
+    "Institutional DeFi matured into dedicated summits (Institutional Digital Wealth Management Summit, HashKey On-Chain Finance Summit) focused on on-chain asset management and wealth products.",
+    "AI x crypto was positioned as the next financial infrastructure layer (agent economies, autonomous on-chain economic activity), with Solana, Mysten Labs, TRON and Pantera.",
+    "Hong Kong reinforced its positioning as a regulated digital-asset hub, with senior government and SFC officials (Paul Chan, Joseph H. L. Chan, Yip Chee Hang) signaling continued refinement of the digital-asset regulatory framework."
+  ],
+  "sources": [
+    "https://www.web3festival.org/hongkong2026/",
+    "https://www.globenewswire.com/news-release/2026/04/13/3272776/0/en/Hong-Kong-Web3-Festival-Unveils-2026-Full-Schedule-4-Days-of-Insight-Driven-Forums-with-Vitalik-Yi-He-Justin-Sun-Lily-Liu-and-More.html",
+    "https://www.globenewswire.com/news-release/2026/03/23/3260401/0/en/Web3-Festival-Unveils-2026-Speaker-Lineup-Featuring-Leaders-from-BlackRock-OKX-Solana-Sharplink-and-Ondo.html",
+    "https://www.mexc.com/news/1022836",
+    "https://milantribune.com/hong-kong-web3-festival-2026-concludes-a-resounding-success-for-global-web3-collaboration/",
+    "https://www.streetinsider.com/Binary+News+Network/Hong+Kong+Web3+Festival+2026+Concludes:+A+Resounding+Success+for+Global+Web3+Collaboration/26464330.html",
+    "https://cryptobriefing.com/hong-kong-web3-festival-unveils-2026-full-schedule-4-days-of-insight-driven-forums-with-vitalik-yi-he-justin-sun-lily-liu-and-more-2/"
+  ],
+  "confidence": "medium-high"
+}

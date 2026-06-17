@@ -1,0 +1,109 @@
+{
+  "category": "RWA & tokenization",
+  "summary": "As of June 2026 the on-chain RWA category sits around $17B+ TVL on DefiLlama (the sum of all 149 RWA-tagged protocols is ~$26B including tokenized gold), having overtaken DEXs to become roughly the fifth-largest DeFi sector. The category is dominated by tokenized U.S. Treasuries / money-market funds, with tokenized gold (Tether Gold, Paxos Gold), tokenized private credit (Centrifuge, Maple), tokenized funds, and tokenized stocks (xStocks, Superstate Opening Bell) as the other pillars. The defining 2026 event was Circle's USYC (the former Hashnote fund Circle acquired in Jan 2025) overtaking BlackRock's BUIDL in mid-March 2026 to become the single largest tokenized-Treasury product. Current leaders by TVL: Circle USYC ~$3.08B, Tether Gold ~$3.07B, BlackRock BUIDL ~$3.03B, Ondo (Yield Assets ~$2.62B + Global Markets ~$1.04B), Paxos Gold ~$1.97B, Centrifuge ~$1.64B. Net yields on top Treasury funds run ~4-5.25% APY. Figures are live DefiLlama API values as of 2026-06-17; AUM figures from issuer/press coverage are dated where applicable.",
+  "leaders": [
+    {
+      "name": "Circle USYC (ex-Hashnote)",
+      "chain": "BNB Chain, Ethereum, Noble, Near, Solana",
+      "metric": "TVL / tokenized money-market AUM",
+      "value": "~$3.08B TVL (DefiLlama, 2026-06-17); ~$3B AUM per rwa.xyz mid-2026",
+      "note": "Largest tokenized Treasury/MMF product on-chain. USYC = on-chain Hashnote Short Duration Yield Fund; Circle acquired Hashnote Jan 2025. Overtook BUIDL on ~March 13, 2026 (then ~$2.2B vs BUIDL ~$2.0B). Much of its growth came from Binance using USYC as collateral for institutional derivatives on BNB Chain (~$1.84B of supply on BNB)."
+    },
+    {
+      "name": "Tether Gold (XAUₜ)",
+      "chain": "Ethereum, Monad, Plasma, Avalanche",
+      "metric": "TVL (tokenized commodity / gold)",
+      "value": "~$3.07B TVL (DefiLlama, 2026-06-17)",
+      "note": "Largest tokenized-gold product; not a Treasury but the top tokenized-commodity RWA. The 2025 gold/silver rally pulled significant capital into tokenized commodities, lifting it near the top of the RWA category."
+    },
+    {
+      "name": "BlackRock BUIDL (w/ Securitize)",
+      "chain": "Ethereum, Aptos, Solana, Avalanche, Polygon, Arbitrum, Optimism",
+      "metric": "TVL / tokenized Treasury fund AUM",
+      "value": "~$3.03B TVL (DefiLlama, 2026-06-17)",
+      "note": "BlackRock USD Institutional Digital Liquidity Fund, issued via Securitize. Launched March 2024, grew to ~$522M by Sept 2024 and became the #1 tokenized Treasury fund for ~2 years. Lost the top spot to Circle USYC in March 2026; its market share fell to ~18% from a ~46% peak. Reserve asset behind Ethena's USDtb."
+    },
+    {
+      "name": "Ondo Finance (OUSG, USDY, Global Markets)",
+      "chain": "Ethereum, Stellar, Ripple, Sei, Solana, BNB Chain",
+      "metric": "TVL across products",
+      "value": "Ondo Yield Assets ~$2.62B + Ondo Global Markets ~$1.04B = ~$3.65B combined TVL (DefiLlama, 2026-06-17)",
+      "note": "Founded 2021 by ex-Goldman Nathan Allman. Launched OUSG (accredited/US, partly fed into BUIDL) in early 2023 — the launch widely credited with igniting the tokenized-Treasury boom. USDY (non-US retail) ~$2.1B AUM Q1 2026; OUSG ~$625M Q1 2026. Ondo Global Markets adds tokenized stocks/securities. Collectively among the very top RWA franchises by combined TVL."
+    },
+    {
+      "name": "Paxos Gold (PAXG)",
+      "chain": "Ethereum",
+      "metric": "TVL (tokenized commodity / gold)",
+      "value": "~$1.97B TVL (DefiLlama, 2026-06-17)",
+      "note": "Second-largest tokenized-gold product after Tether Gold; regulated NYDFS issuer. Benefited from the 2025 precious-metals rally."
+    },
+    {
+      "name": "Centrifuge",
+      "chain": "Ethereum, Avalanche, Base, Plume, Celo, BNB Chain",
+      "metric": "TVL (tokenized private/structured credit & funds)",
+      "value": "~$1.64B TVL (DefiLlama, 2026-06-17)",
+      "note": "Originator of on-chain private credit — launched Tinlake during DeFi Summer 2020/2021, birthing the RWA-lending market (invoices, mortgages, receivables, now Treasuries & CLOs). Was an early RWA leader (esp. via MakerDAO collateral) before Treasury funds dominated. Anemoy Capital (~$867M, its tokenized T-bill fund) sits in the same Centrifuge ecosystem."
+    },
+    {
+      "name": "Maple Finance (SYRUP / syrupUSDC)",
+      "chain": "Ethereum, Solana, Base",
+      "metric": "TVL (tokenized institutional credit)",
+      "value": "~$2.15B TVL (DefiLlama, 2026-06-17; tagged 'Lending')",
+      "note": "Leading on-chain institutional/private-credit originator. syrupUSDC reached ~$3.02B and syrupUSDT ~$1.12B AUM by end-2025 (~10x growth); yield from real loan interest, not emissions. Launched syrupUSDC on Base Jan 2026. Private credit is the breakout RWA use case alongside Treasuries."
+    },
+    {
+      "name": "Spiko",
+      "chain": "Stellar, Arbitrum, Polygon, Ethereum",
+      "metric": "TVL (tokenized money-market funds, EU)",
+      "value": "~$1.12B TVL (DefiLlama, 2026-06-17)",
+      "note": "European tokenized money-market funds (EU T-bills / US T-bills). One of the fastest-growing non-US-issuer Treasury/MMF products in the category."
+    },
+    {
+      "name": "Ethena USDtb",
+      "chain": "Ethereum (plus Base, Solana, Arbitrum via LayerZero)",
+      "metric": "TVL / stablecoin backed by tokenized Treasuries",
+      "value": "~$0.92B TVL (DefiLlama, 2026-06-17)",
+      "note": "Stablecoin built by Ethena with Securitize, holding ~90% of reserves in BlackRock's BUIDL (rest in stablecoins/tokenized T-bills). Went live late 2024 / early 2025. Represents the 'RWA-backed stablecoin' wrapper around BUIDL; demand for USDtb feeds BUIDL AUM."
+    },
+    {
+      "name": "Invesco USTB (ex-Superstate USTB)",
+      "chain": "Ethereum, Plume, Solana",
+      "metric": "TVL / tokenized Treasury fund AUM",
+      "value": "~$0.84B TVL (DefiLlama, 2026-06-17); ~$967M AUM at handover",
+      "note": "Superstate's USTB — founded by Compound creator Robert Leshner — a top-5 tokenized Treasury fund. In Q2 2026 Invesco took over portfolio management (renamed Invesco Short Duration US Government Securities Fund, same USTB ticker/token), the first independent asset manager on Superstate's tokenization rails. Superstate also runs Opening Bell, tokenizing SEC-registered NASDAQ stocks on Solana (e.g. Forward Industries / FWDI)."
+    },
+    {
+      "name": "Franklin Templeton BENJI (FOBXX)",
+      "chain": "Stellar, Polygon, Ethereum, Aptos, Arbitrum, Base, Solana",
+      "metric": "tokenized government MMF AUM",
+      "value": "~$700M AUM (press, 2026; appears under 'WisdomTree'/issuer trackers, not a standalone DefiLlama RWA leader at this size)",
+      "note": "Pioneer: FOBXX/BENJI was the first US-registered mutual fund on a public blockchain (launched 2021). An early RWA leader and still a core tokenized-MMF player, now one of several within the BUIDL/USYC/Ondo/Franklin group that together hold the majority of the tokenized-Treasury market."
+    },
+    {
+      "name": "xStocks (Backed)",
+      "chain": "Solana, Arbitrum",
+      "metric": "TVL (tokenized equities / stocks)",
+      "value": "~$0.51B TVL (DefiLlama, 2026-06-17)",
+      "note": "Leading tokenized-stocks product (Backed-issued), the largest pure tokenized-equity offering in the RWA category and the bellwether for the emerging on-chain stocks segment."
+    }
+  ],
+  "leadership_shift": "2020-2021 (origination era): Centrifuge (Tinlake) pioneered on-chain private credit and, together with MakerDAO's RWA collateral program (at peak >60% of DAI backing was RWAs), defined the first wave of RWA — invoices, receivables and credit lines rather than Treasuries. Franklin Templeton launched BENJI/FOBXX in 2021 as the first US-registered mutual fund on a public chain. 2023 (Treasury inflection): With T-bill yields spiking, Ondo's OUSG launch (early 2023) brought institutional-grade Treasury yield on-chain and ignited the tokenized cash & fixed-income boom; the tokenized-Treasury market grew from ~$380M in Q1 2023. 2024 (institutional arrival): BlackRock's BUIDL (March 2024, via Securitize) rapidly became the #1 tokenized Treasury fund and the institutional reference asset, with Ondo (OUSG/USDY) and Franklin Templeton alongside it; together the top issuers held ~80% of the market. 2025-2026 (the great flip): Circle acquired Hashnote/USYC (Jan 2025); USYC — boosted by Binance adopting it as BNB-Chain derivatives collateral — overtook BUIDL around March 13, 2026 to become the largest tokenized-Treasury product, with BUIDL's share falling from a ~46% peak to ~18%. Today (June 2026) leadership is a near-three-way tie among Circle USYC, Tether Gold and BlackRock BUIDL (~$3B each), with Ondo's combined franchise also near $3.6B; tokenized commodities (gold) surged into the top tier on the 2025 metals rally; Maple led a private-credit breakout; and Superstate's USTB transitioned to Invesco management — marking the shift from DeFi-native originators (Centrifuge/MakerDAO) toward TradFi giants (BlackRock, Franklin Templeton, Invesco, Circle) and stablecoin issuers as the category's leaders.",
+  "sources": [
+    "https://defillama.com/protocols/RWA",
+    "https://api.llama.fi/protocols",
+    "https://defillama.com/rwa",
+    "https://www.cryptopolitan.com/rwa-displace-dex-defi-tvl-rankings/",
+    "https://www.coindesk.com/markets/2026/03/13/circle-overtakes-blackrock-in-tokenized-treasuries-as-market-hits-record-usd11-billion",
+    "https://www.circle.com/pressroom/circle-announces-acquisition-of-hashnote-and-usyc-tokenized-money-market-fund-alongside-strategic-partnership-with-global-trading-firm-drw",
+    "https://www.cryptotimes.io/2026/05/02/circle-vs-blackrock-15b-tokenized-treasury-market-enters-new-phase/",
+    "https://www.altrady.com/blog/cryptocurrency/ondo-finance-tokenized-treasuries-guide",
+    "https://eco.com/support/en/articles/15210582-top-tokenized-treasury-funds-2026-buidl-ousg-usdy-benji-compared",
+    "https://genfinity.io/2026/06/04/maple-finance-institutional-credit-on-chain-fee-compression/",
+    "https://fensory.com/intelligence/rwa/private-credit-rwa-tokenization-analysis-february-2026",
+    "https://www.blockhead.co/2026/03/25/invesco-takes-over-management-of-superstates-967m-tokenized-treasury-fund/",
+    "https://www.theblock.co/post/331013/ethenas-much-anticipated-usdtb-stablecoin-backed-by-blackrocks-buidl-token-goes-live",
+    "https://www.ledgerinsights.com/franklin-templeton-backed-protocol-ethena-to-launch-stablecoin-with-buidl-as-reserves/",
+    "https://info.arkm.com/research/the-total-value-of-tokenized-u-s-treasuries-is-now-more-than-10b",
+    "https://en.cryptonomist.ch/2026/03/26/tokenization-rwa-standards-report/"
+  ]
+}

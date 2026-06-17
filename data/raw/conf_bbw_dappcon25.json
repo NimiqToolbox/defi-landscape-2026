@@ -1,0 +1,78 @@
+{
+  "name": "DappCon (Berlin Blockchain Week)",
+  "edition": "DappCon 2025 (6th edition), the cornerstone/flagship event of Berlin Blockchain Week 2025 (BBW ran ~June 8-22, 2025)",
+  "location": "Radialsystem, Holzmarktstrasse 33, 10243 Berlin, Germany (Friedrichshain-Kreuzberg)",
+  "dates": "June 16-18, 2025",
+  "in_window": true,
+  "attendance": "~800-1,000+ builders/attendees, 80+ speakers, 15+ sessions (sources vary: Coinpedia cites 800+ attendees/80+ speakers; multiple listings cite 900+ builders; one Gnosis-ecosystem recap cites 1,000+ builders and 100+ speakers). Hosted/organized by Gnosis.",
+  "defi_themes": [
+    "DEX / AMM liquidity infrastructure and capital efficiency (Balancer V3 modular architecture, ReCLAMM concentrated liquidity)",
+    "Lending protocol evolution and multi-protocol capital coordination (Aave V4)",
+    "Protocol composability and liquidity routing across DeFi venues (Aave + Balancer + KPK)",
+    "Regulated / compliant stablecoins and on-chain fiat (Monerium EURe)",
+    "Smart-contract customization and extensibility for DeFi pools (Balancer V3 Hooks)",
+    "Open financial tools and open infrastructure for an 'Open Internet' (overarching conference theme)",
+    "DeFi as a core pillar alongside scalability, privacy, and user adoption"
+  ],
+  "notable_panels": [
+    {
+      "title": "Fireside Chat: Aave V4",
+      "topic": "Multi-protocol coordination and capital efficiency across Aave, Balancer and KPK; how protocols align when capital efficiency is the goal, Aave V4 technical upgrades affecting liquidity routing, and Balancer V3's modular architecture. June 17, 10:30-11:00, Consensus Layer (HALLE).",
+      "speakers": "Stani Kulechov (Aave founder), Marcus (Balancer Labs CEO), Claberus/Marcelo (KPK)"
+    },
+    {
+      "title": "ReCLAMMs: A Passive Approach to Concentrated Liquidity",
+      "topic": "A new approach to concentrated liquidity that minimizes overhead without giving up precision. June 17, 08:30-08:50, Consensus Layer (HALLE).",
+      "speakers": "Fabio Mendes (Balancer)"
+    },
+    {
+      "title": "Balancer V3 Hooks in Action (Workshop)",
+      "topic": "Practical examples of Balancer V3 Hooks: customizing pool behavior, implementing access control, and experimenting with logic extensions. June 18, 11:45-12:45, Execution Layer (Workshop Room).",
+      "speakers": "Fabio Mendes (Balancer), John Grant (Balancer)"
+    },
+    {
+      "title": "Building Regulated Stablecoins",
+      "topic": "Issuing compliant, regulated stablecoins / on-chain fiat (Monerium EURe e-money model). June 17, DappCon25.",
+      "speakers": "Monerium (speaker listed by Monerium as a DappCon25 session)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Stani Kulechov", "affiliation": "Aave (founder)"},
+    {"name": "Marcus", "affiliation": "Balancer Labs (CEO)"},
+    {"name": "Fabio Mendes", "affiliation": "Balancer"},
+    {"name": "John Grant", "affiliation": "Balancer"},
+    {"name": "Claberus / Marcelo", "affiliation": "KPK"},
+    {"name": "Adam Levi", "affiliation": "Backed Finance (tokenized RWA / xStocks)"},
+    {"name": "Martin Koppelmann", "affiliation": "Gnosis (co-founder)"},
+    {"name": "Joseph Lubin", "affiliation": "Consensys (founder)"},
+    {"name": "Lukas Schor", "affiliation": "Safe (co-founder)"},
+    {"name": "Dankrad Feist", "affiliation": "Ethereum Foundation (researcher)"},
+    {"name": "Vitalik Buterin", "affiliation": "Ethereum Foundation (listed across DappCon coverage)"},
+    {"name": "Eva Beylin", "affiliation": "Optimism Foundation (board member)"},
+    {"name": "Jordi Baylina", "affiliation": "Polygon Labs (CTO)"},
+    {"name": "Zachary Williamson", "affiliation": "Aztec (CEO)"},
+    {"name": "Nick Dodson", "affiliation": "Fuel Labs (founder)"},
+    {"name": "Pedro Gomes", "affiliation": "WalletConnect Foundation (founder)"},
+    {"name": "Brenda Loya", "affiliation": "Tellor (oracle / DeFi data)"}
+  ],
+  "key_takeaways": [
+    "Capital efficiency was the headline DeFi theme: leading lending (Aave V4) and AMM/DEX (Balancer V3) protocols framed the next cycle around multi-protocol coordination and shared liquidity rather than siloed pools.",
+    "AMM design is shifting toward 'passive' concentrated liquidity (Balancer's ReCLAMM) that aims to retain precision while reducing LP management overhead.",
+    "Extensibility/customization (Balancer V3 Hooks) signals DeFi infrastructure becoming modular and developer-programmable at the pool level.",
+    "Regulated stablecoins / on-chain fiat (Monerium EURe) featured as a compliance-forward bridge between TradFi and DeFi, reflecting the broader 2025 push toward institutionally legible, regulated euro/dollar settlement rails.",
+    "DeFi was positioned as one of the core pillars of the conference's 'Applications & Infrastructure for an Open Internet' theme, alongside open-source infrastructure, scalability, privacy and user adoption.",
+    "Tokenized real-world assets had representation via Backed Finance (Adam Levi), consistent with 2025's broad RWA growth narrative, though DappCon's DeFi programming skewed more toward DEX/lending infrastructure than RWA."
+  ],
+  "sources": [
+    "https://dappcon.io/",
+    "https://cryptoevents.global/dappcon-25/",
+    "https://events.coinpedia.org/dappcon-2025-6389/",
+    "https://icoholder.com/en/events/dappcon-berlin-2025-29269",
+    "https://medium.com/@balancer.ballers/balancer-at-dappcon-berlin-2025-942f1cdfdd82",
+    "https://monerium.com/events/",
+    "https://2025.blockchainweek.berlin/",
+    "https://luma.com/bbw2025",
+    "https://gnosis.ghost.io/"
+  ],
+  "confidence": "medium"
+}

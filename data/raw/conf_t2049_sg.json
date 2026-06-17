@@ -1,0 +1,88 @@
+{
+  "name": "TOKEN2049 Singapore",
+  "edition": "2025 (Singapore edition)",
+  "location": "Marina Bay Sands Expo & Convention Centre, Singapore",
+  "dates": "October 1-2, 2025",
+  "in_window": true,
+  "attendance": "Record ~25,000 attendees from 160+ countries; sold out. ~500 exhibitors, 300+ speakers. Surrounding TOKEN2049 Week (Sep 29 - Oct 5) featured 500+ side events.",
+  "defi_themes": [
+    "Stablecoins as financial infrastructure / cross-border settlement rails (>$45T in annual stablecoin transaction volume cited; market cap ~$300B, up ~50% in 2025)",
+    "Real-world asset (RWA) tokenization going mainstream (tokenized US Treasuries from BlackRock/Franklin Templeton; tokenized equities and real-world debt instruments)",
+    "Institutional DeFi: move from speculative yield farms to institutional-grade infrastructure (custody, audited proof-of-reserves, compliance, regulatory wrappers)",
+    "Decentralized perpetual exchanges (perps) scaling and competing on zero/low-fee models (Hyperliquid prominent)",
+    "On-chain treasuries / Digital Asset Treasuries (DATs) as new standard for on-chain capital deployment and yield optimization",
+    "DeFi lending drivers: institutional adoption, RWAs, yield loops, decentralized stablecoins",
+    "Sustainable yield via structured products (covered calls, options) rather than mercenary yield farming",
+    "Regulation & compliance: MiCA, regulatory clarity, compliant stablecoin design, oracle and liquidity-fragmentation risk",
+    "AI + crypto convergence (DeAI) as an adjacent infrastructure theme",
+    "Liquidity fragmentation and settlement mismatch cited as the biggest obstacles to scaling tokenization"
+  ],
+  "notable_panels": [
+    {
+      "title": "RWAs: Bringing Global Markets On-Chain",
+      "topic": "Real-world asset tokenization, bringing global markets / treasuries / debt on-chain",
+      "speakers": "Industry panel (RWA-focused)"
+    },
+    {
+      "title": "Curve Finance Stablecoin Summit (TOKEN2049 Week)",
+      "topic": "Stablecoins, decentralized stablecoin design and DeFi",
+      "speakers": "Hosted by the Curve Finance team"
+    },
+    {
+      "title": "World Liberty Financial (WLFI) session",
+      "topic": "USD1 stablecoin (described as fully backed by US Treasuries, audited monthly) and DeFi",
+      "speakers": "Donald Trump Jr., Zach Witkoff (World Liberty Financial)"
+    },
+    {
+      "title": "DeFi lending / next wave of DeFi discussion",
+      "topic": "DeFi lending drivers in 2025: institutional adoption, RWAs, yield loops, decentralized stablecoins; covered calls/options for sustainable yield",
+      "speakers": "Piers Ridyard (RDX Works / Radix CEO) among speakers"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Stani Kulechov", "affiliation": "Aave Labs (Founder) - DeFi lending"},
+    {"name": "Jeff Yan", "affiliation": "Hyperliquid Labs (CEO) - perps DEX"},
+    {"name": "Paolo Ardoino", "affiliation": "Tether (CEO) - stablecoins"},
+    {"name": "Kain Warwick", "affiliation": "Infinex (Founder); Synthetix founder - DeFi"},
+    {"name": "Jesse Pollak", "affiliation": "Base / Coinbase (Creator of Base)"},
+    {"name": "Joseph Lubin", "affiliation": "Consensys (Founder & CEO) / SharpLink (Chairman)"},
+    {"name": "Richard Teng", "affiliation": "Binance (CEO)"},
+    {"name": "Star Xu", "affiliation": "OKX (Founder & CEO)"},
+    {"name": "Arthur Hayes", "affiliation": "Maelstrom (CIO); BitMEX co-founder"},
+    {"name": "Vlad Tenev", "affiliation": "Robinhood (Chairman & CEO)"},
+    {"name": "Sandeep Nailwal", "affiliation": "Polygon Foundation (Co-Founder & CEO)"},
+    {"name": "Emin Gun Sirer", "affiliation": "Ava Labs / Avalanche (Founder & CEO)"},
+    {"name": "Justin Sun", "affiliation": "TRON (Founder)"},
+    {"name": "Haseeb Qureshi", "affiliation": "Dragonfly (Managing Partner) - VC"},
+    {"name": "Hunter Horsley", "affiliation": "Bitwise Asset Management (Co-Founder & CEO)"},
+    {"name": "Charles Hoskinson", "affiliation": "Input Output / Cardano (CEO)"},
+    {"name": "Tomasz Stanczak", "affiliation": "Ethereum Foundation (Co-Executive Director)"},
+    {"name": "Donald Trump Jr.", "affiliation": "World Liberty Financial (Co-Founder) - USD1 stablecoin / DeFi"},
+    {"name": "Bo Hines", "affiliation": "Tether USA (CEO)"},
+    {"name": "Piers Ridyard", "affiliation": "RDX Works / Radix (CEO) - DeFi lending"},
+    {"name": "James Wo", "affiliation": "Digital Finance Group / DFG (Founder & CEO)"}
+  ],
+  "key_takeaways": [
+    "Dominant narrative was the shift from speculation to institutional adoption and maturity: DeFi positioned as institutional-grade financial infrastructure, not speculative yield farming.",
+    "Stablecoins emerged as the central 'bridge' / Trojan horse asset for crypto into mainstream finance, with massive transaction volume (>$45T cited) and growing market cap; compliant, audited, Treasury-backed designs (e.g., USD1) emphasized.",
+    "RWA tokenization moved from experiment to mainstream story, led by tokenized US Treasuries (BlackRock, Franklin Templeton) and tokenized equities/debt; liquidity fragmentation and settlement mismatch remain the key obstacles.",
+    "Perpetual DEXs (Hyperliquid and others) are scaling and competing on zero/low-fee models, shifting profitability toward LP mechanisms; on-chain perps gaining institutional attention.",
+    "Digital Asset Treasuries (DATs) and on-chain treasuries highlighted as a new standard for capital deployment and yield optimization.",
+    "Compliance and regulatory readiness (MiCA, audited proof-of-reserves, custody) framed as the differentiator for the next wave of DeFi winners over hype/community metrics.",
+    "Asia (and Singapore) reinforced as a leading hub for digital-asset innovation and institutional capital.",
+    "Sustainable yield via structured products (covered calls, options) discussed as the path beyond mercenary yield farming."
+  ],
+  "sources": [
+    "https://www.token2049.com/singapore",
+    "https://www.token2049.com/singapore/speakers",
+    "https://www.marinabaysands.com/expo-and-convention/gallery/event-highlights/2025/10/highlights-from-token2049-singapore-2025.html",
+    "https://www.drofa-ra.com/insider/token2049-singapore-2025-takeaways-stablecoins-tokenization-and-rwas",
+    "https://dfg-official.medium.com/dfgs-token2049-singapore-2025-recap-insights-asia-s-web3-maturity-from-hype-to-institutional-3d391782193d",
+    "https://www.coinrank.io/market/%E3%80%90token2049-singapore%E3%80%91rwas-bringing-global-markets-on-chain/",
+    "https://cryptoindustry.com/blog/token2049-singapore-2025-recap",
+    "https://www.altcoinbuzz.io/cryptocurrency-news/day-1-highlights-token2049-singapore-2025-kicks-off/",
+    "https://www.radixdlt.com/blog/recap-token2049-singapore",
+    "https://safeheron.com/blog/token2049-singapore-2025-agenda-schedule-key-dates-details/"
+  ],
+  "confidence": "medium"
+}

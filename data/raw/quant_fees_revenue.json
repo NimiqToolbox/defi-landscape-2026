@@ -1,0 +1,105 @@
+{
+  "topic": "DeFi fees & revenue over time",
+  "summary": "Aggregate DeFi fees (total fees paid by users, equivalent to gross revenue) and protocol revenue (the subset retained by protocols/token holders) have grown roughly 100x since 2020. Per DefiLlama (as-of 2026-06-17), cumulative all-time DeFi fees are ~$111.1B and all-time protocol revenue ~$60.7B. Annual fees rose from ~$0.32B (2020) to ~$7.4B (2021), plateaued ~$7.6B-$9.0B through 2022-2023, then surged to ~$17.4B (2024) and a record ~$27.2B (2025). 2026 is at ~$9.7B through mid-June. Trailing-12-month fees are ~$24.9B and TTM revenue ~$14.0B. Current 30-day run-rate is ~$1.66B fees / ~$1.04B revenue (~$20B/$12.5B annualized). IMPORTANT CAVEAT: DefiLlama's aggregate 'fees' includes stablecoin issuers (Tether, Circle) and L1/L2 chains. Stablecoin issuers alone are ~39% of current 30d fees and chains ~8%; excluding both, 'pure' DeFi-protocol fees are ~$0.97B/30d (~$11.7B annualized). The largest fee generators today are stablecoin issuers Tether and Circle, followed by Hyperliquid (perps), Aave (lending), Lido (liquid staking), and DEXs (Uniswap, PumpSwap). Peak single-month fees were ~$3.26B in January 2025; ATH single day ~$238.7M on 2025-01-20. Confidence is high for DefiLlama-sourced figures (methodology consistent); medium for cross-source comparisons given differing definitions of what counts as 'DeFi'.",
+  "series": [
+    {
+      "label": "Aggregate DeFi fees (total fees paid by users) - annual sum",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/overview/fees",
+        "https://defillama.com/fees"
+      ],
+      "points": [
+        {"period": "2020", "value": 0.32, "note": "Sum of daily fees; DeFi Summer era. DefiLlama daily chart aggregated by year."},
+        {"period": "2021", "value": 7.37, "note": "Bull-market surge (~23x YoY)."},
+        {"period": "2022", "value": 7.58, "note": "Plateau through bear market / Terra & FTX collapses."},
+        {"period": "2023", "value": 8.96, "note": "Gradual recovery."},
+        {"period": "2024", "value": 17.38, "note": "~94% YoY jump (memecoins, Hyperliquid, stablecoin issuers added)."},
+        {"period": "2025", "value": 27.2, "note": "Record annual total."},
+        {"period": "2026-YTD", "value": 9.73, "note": "Through ~2026-06-17 (partial year)."},
+        {"period": "TTM", "value": 24.9, "note": "Trailing 12 months as-of 2026-06-17 (total1y field)."},
+        {"period": "all-time-cumulative", "value": 111.05, "note": "totalAllTime cumulative fees as-of 2026-06-17."}
+      ]
+    },
+    {
+      "label": "Aggregate DeFi protocol revenue (fees retained by protocols/holders) - annual sum",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/overview/fees?dataType=dailyRevenue",
+        "https://defillama.com/revenue"
+      ],
+      "points": [
+        {"period": "2020", "value": 0.017, "note": "Most fees went to LPs, not protocols."},
+        {"period": "2021", "value": 2.65, "note": "Bull-market surge."},
+        {"period": "2022", "value": 4.03, "note": "Higher protocol take-rate as stablecoin issuer/chain revenue grows."},
+        {"period": "2023", "value": 6.19, "note": ""},
+        {"period": "2024", "value": 10.06, "note": "First year above $10B."},
+        {"period": "2025", "value": 14.59, "note": "Record annual revenue."},
+        {"period": "2026-YTD", "value": 5.96, "note": "Through ~2026-06-17 (partial year)."},
+        {"period": "TTM", "value": 14.04, "note": "Trailing 12 months as-of 2026-06-17 (total1y revenue field)."},
+        {"period": "all-time-cumulative", "value": 60.66, "note": "totalAllTime cumulative revenue as-of 2026-06-17."}
+      ]
+    },
+    {
+      "label": "Current run-rate: DeFi fees & revenue (rolling windows, as-of 2026-06-17)",
+      "unit": "USD millions",
+      "sources": [
+        "https://api.llama.fi/overview/fees",
+        "https://api.llama.fi/overview/fees?dataType=dailyRevenue"
+      ],
+      "points": [
+        {"period": "fees-24h", "value": 54.3, "note": "Daily fees, 2026-06-17."},
+        {"period": "fees-7d", "value": 358.7, "note": "7-day fees."},
+        {"period": "fees-30d", "value": 1664.1, "note": "30-day fees (~$20B annualized)."},
+        {"period": "revenue-24h", "value": 34.5, "note": "Daily protocol revenue."},
+        {"period": "revenue-7d", "value": 234.1, "note": "7-day revenue."},
+        {"period": "revenue-30d", "value": 1043.9, "note": "30-day revenue (~$12.5B annualized)."},
+        {"period": "fees-30d-defi-only", "value": 974.8, "note": "Excludes stablecoin issuers (~39%) and chains (~8%); 'pure' DeFi-protocol fees."}
+      ]
+    },
+    {
+      "label": "Peak fee periods (records)",
+      "unit": "USD millions",
+      "sources": [
+        "https://api.llama.fi/overview/fees"
+      ],
+      "points": [
+        {"period": "ATH-single-day", "value": 238.7, "note": "All-time-high single day on 2025-01-20."},
+        {"period": "ATH-single-month", "value": 3259.0, "note": "Peak month = January 2025 (~$3.26B)."},
+        {"period": "2nd-peak-month", "value": 2870.1, "note": "October 2025."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Cumulative all-time DeFi fees paid by users", "value": "111.05", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API (totalAllTime)", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "Cumulative all-time DeFi protocol revenue (retained)", "value": "60.66", "as_of": "2026-06-17", "source_name": "DefiLlama Revenue API (totalAllTime)", "source_url": "https://api.llama.fi/overview/fees?dataType=dailyRevenue", "confidence": "high"},
+    {"claim": "Trailing-12-month DeFi fees", "value": "24.9 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API (total1y)", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "Trailing-12-month DeFi protocol revenue", "value": "14.04 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama Revenue API (total1y)", "source_url": "https://api.llama.fi/overview/fees?dataType=dailyRevenue", "confidence": "high"},
+    {"claim": "2025 full-year fees (record)", "value": "27.2 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama daily fees chart, summed by year", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "2024 full-year fees", "value": "17.38 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama daily fees chart, summed by year", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "2025 full-year protocol revenue (record)", "value": "14.59 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama daily revenue chart, summed by year", "source_url": "https://api.llama.fi/overview/fees?dataType=dailyRevenue", "confidence": "high"},
+    {"claim": "Current 30-day fees (run-rate ~$20B annualized)", "value": "1.664 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API (total30d)", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "Current 30-day protocol revenue (run-rate ~$12.5B annualized)", "value": "1.044 USD billions", "as_of": "2026-06-17", "source_name": "DefiLlama Revenue API (total30d)", "source_url": "https://api.llama.fi/overview/fees?dataType=dailyRevenue", "confidence": "high"},
+    {"claim": "Stablecoin issuers share of current 30d fees", "value": "~39% (Tether + Circle dominate)", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API, category breakdown", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "L1/L2 chains share of current 30d fees", "value": "~8%", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API, category breakdown", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "Peak month of DeFi fees", "value": "~3.26 USD billions in January 2025", "as_of": "2026-06-17", "source_name": "DefiLlama daily fees chart, monthly aggregation", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"},
+    {"claim": "ATH single-day DeFi fees", "value": "~238.7 USD millions on 2025-01-20", "as_of": "2026-06-17", "source_name": "DefiLlama daily fees chart", "source_url": "https://api.llama.fi/overview/fees", "confidence": "medium"},
+    {"claim": "DeFi share of all on-chain fees (H1 2025)", "value": "~63% of all fees; on-chain economy on track for ~$19.8B fees in 2025", "as_of": "2025", "source_name": "1kx / CoinGecko Research (secondary corroboration)", "source_url": "https://www.coingecko.com/research/publications/blockchain-fee-earnings", "confidence": "medium"},
+    {"claim": "L1/L2 blockchain transaction fees 2024 (context)", "value": "$6.89B total; Ethereum $2.48B; Tron $2.15B", "as_of": "2024", "source_name": "CoinGecko Research", "source_url": "https://www.coingecko.com/research/publications/blockchain-fee-earnings", "confidence": "medium"},
+    {"claim": "Top fee category currently is Stablecoin Issuers ($707M/30d), then DEXs ($159M), Chains ($146M), Derivatives ($133M), Lending ($115M)", "value": "see values", "as_of": "2026-06-17", "source_name": "DefiLlama Fees API, category breakdown", "source_url": "https://api.llama.fi/overview/fees", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Tether (USDT issuer)", "metric": "30d fees / revenue (Stablecoin Issuer)", "value": "$491.5M (30d); $5.94B (1y); $18.07B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "Circle (USDC issuer)", "metric": "30d fees / revenue (Stablecoin Issuer)", "value": "$193.0M (30d); $2.36B (1y); $6.80B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "Hyperliquid (Perps)", "metric": "30d fees (Derivatives/DEX)", "value": "$75.3M (30d); $996M (1y); top non-stablecoin DeFi protocol", "source_url": "https://defillama.com/fees"},
+    {"name": "Aave V3", "metric": "30d fees (Lending)", "value": "$41.2M (30d); $939.6M (1y); $1.74B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "Lido", "metric": "30d fees (Liquid Staking)", "value": "$37.5M (30d); $764.6M (1y); $3.22B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "PumpSwap", "metric": "30d fees (DEX)", "value": "$36.4M (30d); $546.6M (1y)", "source_url": "https://defillama.com/fees"},
+    {"name": "Sky Lending (ex-MakerDAO)", "metric": "30d fees (CDP)", "value": "$31.3M (30d); $411.0M (1y); $1.16B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "Uniswap (V4 + V3)", "metric": "30d fees (DEX)", "value": "V4 $30.1M + V3 $21.6M (30d); V3 alone $3.50B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "pump.fun", "metric": "30d fees (Launchpad)", "value": "$24.6M (30d); $406.3M (1y); $1.12B all-time", "source_url": "https://defillama.com/fees"},
+    {"name": "Morpho Blue", "metric": "30d fees (Lending)", "value": "$19.5M (30d); $204.1M (1y)", "source_url": "https://defillama.com/fees"},
+    {"name": "Ethena (USDe)", "metric": "30d fees (Basis Trading)", "value": "$15.4M (30d); $363.1M (1y)", "source_url": "https://defillama.com/fees"},
+    {"name": "Axiom", "metric": "30d fees (Trading App)", "value": "$15.7M (30d); $490.5M (1y)", "source_url": "https://defillama.com/fees"}
+  ]
+}

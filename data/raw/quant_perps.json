@@ -1,0 +1,156 @@
+{
+  "topic": "Perpetuals & derivatives DEX volume over time",
+  "summary": "On-chain perpetual/derivatives DEX trading volume has grown from a near-rounding-error share of crypto derivatives in 2020-2021 into a multi-trillion-dollar annual market. Early leaders were dYdX (orderbook perps, peaked 2021-2022) and GMX (Arbitrum, rose in the 2022 bear market). Total perp-DEX annual volume was roughly $647.6B in 2023 and ~$1.5 trillion in 2024 (+138% YoY, per CoinGecko/Cointelegraph using DefiLlama data). 2025 was the breakout year: cumulative lifetime perp-DEX volume reached ~$12.09T by year end, up from ~$4.1T at the start of 2025, meaning roughly $7.9T (~65% of all-time volume) was traded in 2025 alone, with H2 2025 (~$5.74T) dwarfing H1 (~$2.1T). Monthly volume first crossed $1 trillion in October 2025. The dominant story of 2024-2026 is Hyperliquid, which overtook dYdX/GMX/Jupiter in late 2024 (66% on-chain share in Dec 2024), traded ~$1.57T in its first ~12 months and ~$2.9T in full-year 2025, peaking near 70-80% of on-chain perp-DEX share in mid-2025 before competition from Aster, Lighter, edgeX, Pacifica, Extended and Variational compressed its share to roughly 34-44% by early 2026. NOTE ON CONFLICTS: 2025 totals differ by source/methodology (Cointelegraph/DefiLlama ~$7.9T for calendar 2025; CoinGecko's State of Crypto Perpetuals 2026 restates 2025 perp-DEX volume as $6.38T and 2024 as $1.50T). Market-share figures also differ by denominator: ~3.9% (Hyperliquid vs ALL perp exchanges incl. CEXes, CoinGecko 2026) vs ~34-44% (Hyperliquid vs on-chain perp DEXes only, 2026). DefiLlama's free API moved fully behind a paid plan (HTTP 402) during this research, so figures rely on reputable secondary reporting that cites DefiLlama, plus CoinGecko Research and The Block. Treat single-source 2026 monthly snapshots as medium confidence.",
+  "series": [
+    {
+      "label": "Total perpetual/derivatives DEX volume (annual, all protocols)",
+      "unit": "USD trillions",
+      "sources": [
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024",
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026",
+        "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth",
+        "https://www.tradingview.com/news/cointelegraph:9642104b5094b:0-perp-dexs-almost-triple-volume-in-2025-as-onchain-derivatives-mature/"
+      ],
+      "points": [
+        {"period": "2020", "value": 0.01, "note": "Approximate / negligible. Perp DEXs barely existed; dYdX perpetuals launched 2020 and DEXs were ~1% of global perp trading. Low confidence, rough order of magnitude."},
+        {"period": "2021", "value": 0.4, "note": "Approximate. dYdX cumulative ~$322B by end-2021 plus smaller GMX/Perpetual Protocol volume; dYdX weekly volume ~$10B after Aug 2021 airdrop. Low-medium confidence."},
+        {"period": "2022", "value": 0.6, "note": "Approximate. dYdX alone did $466.3B in 2022; GMX rose in the bear market. Rough sector estimate, low-medium confidence."},
+        {"period": "2023", "value": 0.6476, "note": "$647.6B = top-10 decentralized perp exchanges full-year 2023 (CoinGecko State of Crypto Perpetuals 2024). High confidence."},
+        {"period": "2024", "value": 1.5, "note": "$1.5T for top-10 perp DEXs, +138.1% YoY vs 2023 (CoinGecko/Cointelegraph, DefiLlama data). CoinGecko 2026 report restates 2024 as $1.50T. High confidence."},
+        {"period": "2025", "value": 7.9, "note": "~$7.9T traded in calendar 2025 per DefiLlama via Cointelegraph (~65% of all-time lifetime volume). CONFLICT: CoinGecko State of Crypto Perpetuals 2026 reports 2025 perp-DEX volume as $6.38T. Medium-high confidence; use range $6.4T-$7.9T."},
+        {"period": "2026-04", "value": 0.4818, "note": "April 2026 monthly perp-DEX volume = $481.84B; Jan 2026 = $751.59B; Jan-Apr 2026 monthly average $611.57B (CoinGecko State of Crypto Perpetuals 2026). This is a MONTHLY value (not annual) for the latest 2026 data point. Medium confidence."}
+      ]
+    },
+    {
+      "label": "Total perpetual/derivatives DEX cumulative lifetime volume",
+      "unit": "USD trillions",
+      "sources": [
+        "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth",
+        "https://www.tradingview.com/news/cointelegraph:9642104b5094b:0-perp-dexs-almost-triple-volume-in-2025-as-onchain-derivatives-mature/"
+      ],
+      "points": [
+        {"period": "2025-01", "value": 4.1, "note": "~$4.1T cumulative lifetime perp-DEX volume at the start of 2025 (DefiLlama via Cointelegraph). Medium-high confidence."},
+        {"period": "2025-12", "value": 12.09, "note": "~$12.09T cumulative lifetime perp-DEX volume by end of 2025; ~$7.9T (65%) traded in 2025 alone. All-time-high cumulative. Medium-high confidence."}
+      ]
+    },
+    {
+      "label": "Total perpetual/derivatives DEX volume (monthly)",
+      "unit": "USD billions",
+      "sources": [
+        "https://coinmarketcap.com/academy/article/dex-perps-trading-volume-1-trillion-monthly",
+        "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth",
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026"
+      ],
+      "points": [
+        {"period": "2025-10", "value": 1000, "note": "First-ever month above $1 trillion in on-chain perp-DEX volume (October 2025). Oct/Nov/Dec 2025 each exceeded $1T. Medium-high confidence."},
+        {"period": "2026-01", "value": 751.59, "note": "January 2026 monthly perp-DEX volume (CoinGecko 2026 report). Medium confidence."},
+        {"period": "2026-04", "value": 481.84, "note": "April 2026 monthly perp-DEX volume; declined from Jan as the late-2025 frenzy cooled. Medium confidence."}
+      ]
+    },
+    {
+      "label": "Hyperliquid perpetual volume (annual / trailing)",
+      "unit": "USD trillions",
+      "sources": [
+        "https://www.theblock.co/post/360239/hyperliquid-volume-revenue",
+        "https://cryptobriefing.com/hyperliquid-strong-growth-2025-revenue-metrics/",
+        "https://phemex.com/news/article/hyperliquids-perpetual-trading-volume-projected-to-hit-29-trillion-by-2025-88647"
+      ],
+      "points": [
+        {"period": "2024", "value": 1.571, "note": "~$1.571T perps volume over trailing ~12 months reported by The Block; Hyperliquid's monthly volume doubled from ~$75B (Nov) to ~$150B (Dec 2024) around its HYPE airdrop. High confidence (trailing-12mo as of early 2025)."},
+        {"period": "2025", "value": 2.9, "note": "~$2.9T full-year 2025 (ASXN data via CryptoBriefing; ~$2.95T per Phemex), avg ~$83.4B/day. NOTE: a Lookonchain post citing '~$30 trillion' appears to be an error/typo. High confidence at ~$2.9T."}
+      ]
+    },
+    {
+      "label": "Hyperliquid market share of on-chain perp-DEX volume",
+      "unit": "percent",
+      "sources": [
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024",
+        "https://www.theblock.co/post/360239/hyperliquid-volume-revenue",
+        "https://yellow.com/news/hyperliquid-perpetual-dex-volume-share",
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026"
+      ],
+      "points": [
+        {"period": "2024-12", "value": 66, "note": "Hyperliquid reached a high of 66% on-chain perp-DEX market share in December 2024 (>55% for Q4). High confidence."},
+        {"period": "2025-05", "value": 71, "note": "~71% on-chain perp-DEX share in May 2025 (peak dominance). Medium-high confidence."},
+        {"period": "2025-08", "value": 75, "note": "70-80% on-chain perp-DEX share by Aug 2025; >$350B monthly, frequently >$30B/day. Medium confidence (range)."},
+        {"period": "2025-12", "value": 38, "note": "Fell to ~38% by late 2025 as Aster, Lighter, edgeX gained share. Medium confidence."},
+        {"period": "2026-01", "value": 36.4, "note": "~36.4% of on-chain perp-DEX volume in January 2026. Medium confidence."},
+        {"period": "2026-04", "value": 44, "note": "Climbed back to ~44% of on-chain perp-DEX volume by ~April 2026 (only major perp exchange to gain share in 2026). NOTE: vs ALL perp exchanges incl. CEXes, Hyperliquid was ~3.9% (CoinGecko 2026, $190.28B April). Medium confidence; denominator-sensitive."}
+      ]
+    },
+    {
+      "label": "dYdX cumulative / annual trading volume",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.theblock.co/post/207083/dydx-users-traded-466-billion-in-crypto-derivatives-during-2022",
+        "https://coincu.com/163638-dydx-records-466-3-billion-in-transaction/",
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024"
+      ],
+      "points": [
+        {"period": "2021", "value": 322, "note": "~$322B cumulative volume by end-2021 (dYdX weekly volume ~$10B after Aug 2021 airdrop). Medium confidence."},
+        {"period": "2022", "value": 466.3, "note": "$466.3B traded in 2022 with $137.8M fees, ~33,900 traders; +140% YoY. dYdX was the clear perp-DEX leader (>70% share early 2023). High confidence."}
+      ]
+    },
+    {
+      "label": "dYdX market share of on-chain perp-DEX volume",
+      "unit": "percent",
+      "sources": [
+        "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024",
+        "https://cointelegraph.com/news/gmx-and-dydx-go-head-to-head-for-the-top-decentralized-derivatives-position"
+      ],
+      "points": [
+        {"period": "2023-01", "value": 73, "note": "~73% on-chain perp-DEX market share in January 2023 (dominant leader). High confidence."},
+        {"period": "2024-12", "value": 7, "note": "Declined to ~7% by December 2024 as Hyperliquid and Jupiter took share. High confidence."}
+      ]
+    },
+    {
+      "label": "GMX cumulative all-time trading volume",
+      "unit": "USD billions",
+      "sources": [
+        "https://defillama.com/protocol/gmx-v2-perps",
+        "https://www.datawallet.com/crypto/best-decentralized-perpetuals-exchanges"
+      ],
+      "points": [
+        {"period": "2025", "value": 290, "note": "~$280-300B cumulative all-time GMX trading volume (V1+V2). GMX rose to prominence in the 2022 bear market on Arbitrum; did <$500M/day in March 2023. Medium confidence (round figure)."}
+      ]
+    },
+    {
+      "label": "Jupiter Perps monthly trading volume",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.fxstreet.com/cryptocurrencies/news/jupiter-eyes-for-a-rally-as-perpetual-trading-volume-reaches-new-ath-202408081410",
+        "https://solanafloor.com/news/the-rapid-rise-of-perpetual-trading-on-solana-inside-the-rise-of-jupiter-and-adrena",
+        "https://defillama.com/protocol/jupiter-perpetual-exchange"
+      ],
+      "points": [
+        {"period": "2024-11", "value": 43.4, "note": "All-time-high monthly volume of ~$43.4B in November 2024. Jupiter became the #2 perp DEX in 2024 (largest on Solana); >$100B cumulative since launch by Oct 2024. Medium confidence."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Total decentralized perpetual exchange volume reached ~$1.5 trillion in 2024, a +138.1% increase from $647.6 billion in 2023 (top-10 perp DEXs).", "value": "$1.5T (2024); $647.6B (2023)", "as_of": "2024 full year", "confidence": "high", "source_name": "CoinGecko State of Crypto Perpetuals 2024", "source_url": "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024"},
+    {"claim": "Cumulative lifetime perp-DEX volume reached ~$12.09 trillion by end of 2025, up from ~$4.1 trillion at the start of 2025; ~$7.9T (65% of all-time) was traded in 2025 alone.", "value": "$12.09T cumulative; ~$7.9T in 2025", "as_of": "end of 2025", "confidence": "medium-high", "source_name": "Cointelegraph (DefiLlama data)", "source_url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth"},
+    {"claim": "CONFLICTING SOURCE: CoinGecko's State of Crypto Perpetuals Report 2026 reports 2025 perp-DEX volume as $6.38T and 2024 as $1.50T (methodology differs from DefiLlama's $7.9T for 2025).", "value": "$6.38T (2025); $1.50T (2024)", "as_of": "2025 full year", "confidence": "high", "source_name": "CoinGecko State of Crypto Perpetuals Report 2026", "source_url": "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026"},
+    {"claim": "H2 2025 (~$5.74T, 73% of the year) dwarfed H1 2025 (~$2.1T); on-chain perp-DEX monthly volume first crossed $1 trillion in October 2025.", "value": "$5.74T H2 vs $2.1T H1; $1T+ month in Oct 2025", "as_of": "2025", "confidence": "medium-high", "source_name": "Cointelegraph (DefiLlama data)", "source_url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth"},
+    {"claim": "Hyperliquid traded ~$1.571 trillion in perps over its first ~12 months (with ~$300M cumulative revenue) and ~$2.9 trillion in full-year 2025.", "value": "$1.571T (trailing 12mo, early 2025); ~$2.9T (FY2025)", "as_of": "2025", "confidence": "high", "source_name": "The Block / CryptoBriefing (ASXN data)", "source_url": "https://www.theblock.co/post/360239/hyperliquid-volume-revenue"},
+    {"claim": "Hyperliquid's highest single-day perps volume reached ~$32 billion; daily volume frequently exceeded $30B in mid-2025 (avg ~$83.4B/day in 2025).", "value": "~$32B record day; ~$83.4B/day avg 2025", "as_of": "2025", "confidence": "medium", "source_name": "CryptoBriefing (ASXN data)", "source_url": "https://cryptobriefing.com/hyperliquid-strong-growth-2025-revenue-metrics/"},
+    {"claim": "Hyperliquid's on-chain perp-DEX market share peaked at ~66% in Dec 2024 and ~70-80% in mid-2025, then fell to ~36-44% by early 2026 amid competition from Aster, Lighter, edgeX, Pacifica, Extended, Variational.", "value": "66% (Dec 2024) -> ~71% (May 2025) -> ~36.4% (Jan 2026) -> ~44% (Apr 2026)", "as_of": "2024-2026", "confidence": "medium", "source_name": "CoinGecko / Yellow.com / The Block", "source_url": "https://yellow.com/news/hyperliquid-perpetual-dex-volume-share"},
+    {"claim": "dYdX was the early perp-DEX leader: $466.3B volume in 2022 (+140% YoY, $137.8M fees) and ~73% on-chain share in Jan 2023, but fell to ~7% share by Dec 2024.", "value": "$466.3B (2022); 73% -> 7% share", "as_of": "2022-2024", "confidence": "high", "source_name": "The Block / CoinGecko", "source_url": "https://www.theblock.co/post/207083/dydx-users-traded-466-billion-in-crypto-derivatives-during-2022"},
+    {"claim": "Jupiter Perps (Solana) hit an all-time-high monthly volume of ~$43.4B in November 2024 and became the #2 perp DEX in 2024; surpassed $100B cumulative volume by Oct 2024.", "value": "$43.4B peak month (Nov 2024)", "as_of": "Nov 2024", "confidence": "medium", "source_name": "FXStreet / SolanaFloor", "source_url": "https://www.fxstreet.com/cryptocurrencies/news/jupiter-eyes-for-a-rally-as-perpetual-trading-volume-reaches-new-ath-202408081410"},
+    {"claim": "GMX cumulative all-time trading volume is roughly $280-300 billion (V1+V2 on Arbitrum/Avalanche); GMX rose in the 2022 bear market and did <$500M/day in March 2023.", "value": "~$290B cumulative", "as_of": "2025", "confidence": "low-medium", "source_name": "Datawallet / DefiLlama", "source_url": "https://defillama.com/protocol/gmx-v2-perps"},
+    {"claim": "In April 2026 Hyperliquid traded $190.28B (monthly), ranking ~#9 among ALL perp exchanges (incl. CEXes) at ~3.9% of total perp-exchange volume; perp-DEX OI was 13.5% of all perp OI and DEX-to-CEX volume ratio was ~10% (peak 13% Nov 2025).", "value": "$190.28B Hyperliquid April 2026; 13.5% OI share; 10% DEX/CEX ratio", "as_of": "April 2026", "confidence": "medium", "source_name": "CoinGecko State of Crypto Perpetuals Report 2026", "source_url": "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026"},
+    {"claim": "Aster and Lighter were the main 2025 challengers: Aster peaked at ~$259B/month (Oct-Nov 2025) and nearly $36B in a single day in Sept 2025; Lighter exceeded $100B/month by Q3 2025.", "value": "Aster ~$259B/mo peak; Lighter >$100B/mo", "as_of": "Q4 2025", "confidence": "medium", "source_name": "Cointelegraph / CoinMarketCap", "source_url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth"},
+    {"claim": "DATA-ACCESS NOTE: DefiLlama's free overview/summary API endpoints for derivatives now return HTTP 402 (paid plan required), so per-protocol annual series rely on reputable secondary sources that cite DefiLlama plus CoinGecko Research and The Block.", "value": "API gated (402)", "as_of": "June 2026", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/perps"}
+  ],
+  "top_entities": [
+    {"name": "Hyperliquid", "metric": "FY2025 perps volume; on-chain market share", "value": "~$2.9T (2025); ~66% Dec 2024 peak, ~70-80% mid-2025, ~36-44% early 2026", "source_url": "https://www.theblock.co/post/360239/hyperliquid-volume-revenue"},
+    {"name": "Aster", "metric": "Peak monthly volume (2025)", "value": "~$259B/month (Oct-Nov 2025); ~$36B single day Sept 2025; ~20-30% share late 2025", "source_url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth"},
+    {"name": "Lighter", "metric": "Monthly volume (2025-2026)", "value": ">$100B/month by Q3 2025; ~$203B 30-day in late 2025", "source_url": "https://coinmarketcap.com/academy/article/dex-perps-trading-volume-1-trillion-monthly"},
+    {"name": "dYdX", "metric": "Annual volume; early market share", "value": "$466.3B (2022); ~73% share Jan 2023 -> ~7% Dec 2024", "source_url": "https://www.theblock.co/post/207083/dydx-users-traded-466-billion-in-crypto-derivatives-during-2022"},
+    {"name": "Jupiter Perps", "metric": "Peak monthly volume", "value": "~$43.4B (Nov 2024 ATH); #2 perp DEX in 2024, largest on Solana", "source_url": "https://www.fxstreet.com/cryptocurrencies/news/jupiter-eyes-for-a-rally-as-perpetual-trading-volume-reaches-new-ath-202408081410"},
+    {"name": "GMX", "metric": "Cumulative all-time volume", "value": "~$280-300B (V1+V2); 2022 bear-market dark horse on Arbitrum", "source_url": "https://defillama.com/protocol/gmx-v2-perps"},
+    {"name": "edgeX", "metric": "Market share (2026)", "value": "~26.6% of on-chain perp-DEX volume early 2026 (S-tier challenger)", "source_url": "https://yellow.com/news/hyperliquid-perpetual-dex-volume-share"},
+    {"name": "Aevo", "metric": "Daily volume (2024)", "value": "~$71.68M/day (May 2024); options+perps protocol, modest scale", "source_url": "https://www.coingecko.com/en/coins/aevo"},
+    {"name": "Vertex", "metric": "Perp-DEX presence (2024)", "value": "Mid-tier perp DEX in 2024; full-year volume not reliably sourced (low confidence)", "source_url": "https://defillama.com/perps"}
+  ]
+}

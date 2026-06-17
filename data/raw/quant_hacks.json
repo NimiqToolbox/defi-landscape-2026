@@ -1,0 +1,97 @@
+{
+  "topic": "DeFi hacks & exploit losses over time (2020-2026)",
+  "summary": "Crypto/DeFi theft losses grew explosively from ~$0.5B in 2020 to a then-record ~$3.8B in 2022 (Chainalysis, all crypto sectors). Losses then fell to ~$1.7B in 2023 before rebounding to ~$2.2B in 2024 and reaching a new record of ~$3.4B in 2025 (Chainalysis) / $3.35B (CertiK). The 2025 record was driven almost entirely by the single ~$1.5B Bybit exchange hack in February 2025 (the largest crypto theft ever), attributed to North Korea's Lazarus Group; excluding Bybit, 2025 would have shown a year-over-year decline. Sources differ on scope: Chainalysis and CertiK cover all crypto theft (CEX, bridges, DeFi, wallets); Immunefi tracks DeFi-protocol-only exploit losses, which peaked at $2.62B in 2022 and fell to $534M (2024) and $680M (2025), reflecting genuinely improved on-chain security despite rising TVL. DeFi-protocol losses specifically have become a shrinking share of total crypto theft, with attackers increasingly shifting to centralized services and individual wallets. Biggest single incidents: Bybit (~$1.5B, Feb 2025), Ronin Bridge (~$625M, Mar 2022), Poly Network (~$611M, Aug 2021, mostly returned), BNB Bridge (~$570M, Oct 2022), Wormhole (~$325M, Feb 2022), Euler (~$197M, Mar 2023, returned).",
+  "series": [
+    {
+      "label": "Total crypto stolen (all sectors) - Chainalysis",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/",
+        "https://www.chainalysis.com/blog/2025-crypto-crime-report-introduction/",
+        "https://therecord.media/cryptocurrency-platforms-2-billion-stolen-2024-chainalysis",
+        "https://www.bloomberg.com/news/articles/2023-02-01/crypto-thefts-soared-to-record-3-8-billion-last-year-on-north-korea-hacks",
+        "https://www.coindesk.com/tech/2022/01/06/crypto-crime-hit-an-all-time-high-of-14b-in-2021-as-prices-climbed-chainalysis"
+      ],
+      "points": [
+        {"period": "2020", "value": 0.52, "note": "~$520M total crypto stolen (of which ~$162M / 31% from DeFi); medium confidence on rounded total"},
+        {"period": "2021", "value": 3.2, "note": "~$3.2B stolen, 72% (~$2.3B) from DeFi protocols; +516% vs 2020"},
+        {"period": "2022", "value": 3.8, "note": "Record at the time; North Korea ~$1.7B; bridges heavily targeted"},
+        {"period": "2023", "value": 1.7, "note": "Down ~54% YoY; figures revised over time by Chainalysis"},
+        {"period": "2024", "value": 2.2, "note": "+21% YoY; DeFi largest share but CEX most targeted in Q2/Q3; NK ~$1.34B"},
+        {"period": "2025", "value": 3.4, "note": "New record (Jan-early Dec); Bybit ~$1.5B = 44% of total; NK ~$2.02B"}
+      ]
+    },
+    {
+      "label": "DeFi protocol exploit losses only - Immunefi",
+      "unit": "USD billions",
+      "sources": [
+        "https://immunefi.com/blog/research/the-ecosystem-vulnerability-scoreboard-6-years-of-defi-loss-data/"
+      ],
+      "points": [
+        {"period": "2022", "value": 2.62, "note": "Peak year for DeFi-protocol exploit losses (excludes CEX failures, fraud, rug pulls)"},
+        {"period": "2024", "value": 0.534, "note": "$534M; ~80% below 2022 peak despite higher TVL"},
+        {"period": "2025", "value": 0.680, "note": "$680M; partial rebound driven by a handful of large events; median loss per incident down 75% vs 2022"}
+      ]
+    },
+    {
+      "label": "Total Web3 security losses (hacks+fraud, all sectors) - CertiK Hack3d",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.certik.com/blog/hack3d-the-web3-security-report-2025",
+        "https://www.globenewswire.com/news-release/2025/07/02/3109058/0/en/Crypto-Losses-Surpass-2-47-Billion-in-H1-2025-CertiK-Report-Reveals-Alarming-Rise-in-Phishing-Attacks.html"
+      ],
+      "points": [
+        {"period": "2024", "value": 2.446, "note": "$2,446,285,251 exact"},
+        {"period": "2025", "value": 3.353, "note": "$3,352,850,816 exact; +37.06% YoY; 700+ incidents; Bybit $1.447B = supply-chain category"}
+      ]
+    },
+    {
+      "label": "Crypto losses to hacks + fraud (all sectors) - Immunefi annual wrap-up",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.theblock.co/post/323703/crypto-losses-hacks-scams-surpass-1-4-billion-usd-2024",
+        "https://cryptonews.com/news/crypto-industry-lost-1-49b-to-hacks-and-fraud-in-2024-a-17-decline-yoy-immunefi/"
+      ],
+      "points": [
+        {"period": "2023", "value": 1.8, "note": "Implied from 2024 being a 17% YoY decline (~$1.8B); 320 incidents"},
+        {"period": "2024", "value": 1.49, "note": "$1.49B; hacks $1.47B (98.1%, 192 incidents), fraud $28M; -17% YoY; -27.5% incident count"}
+      ]
+    },
+    {
+      "label": "DeFi protocol hacks 2026 YTD - DefiLlama",
+      "unit": "USD millions",
+      "sources": [
+        "https://bitcoinfoundation.org/news/defi/defillama-q1-crypto-hacks/",
+        "https://defillama.com/hacks"
+      ],
+      "points": [
+        {"period": "2026-Q1", "value": 169, "note": "$169M lost across 34 DeFi hacks in Q1 2026 (DefiLlama); latest available 2026 data point"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Largest annual crypto theft on record", "value": "~$3.4 billion in 2025 (Chainalysis); CertiK reports $3.35B", "as_of": "2025 full-year (reported Dec 2025 / early 2026)", "source_name": "Chainalysis 2026 Crypto Crime / CertiK Hack3d 2025", "source_url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", "confidence": "high"},
+    {"claim": "Single largest crypto theft ever", "value": "Bybit exchange hack ~$1.5B (Feb 2025), 44% of all 2025 theft; attributed to North Korea/Lazarus", "as_of": "Feb 2025", "source_name": "Chainalysis / CertiK", "source_url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", "confidence": "high"},
+    {"claim": "DeFi-protocol exploit losses peaked in 2022", "value": "$2.62B (Immunefi DeFi-only scope), down to $534M in 2024 and $680M in 2025", "as_of": "2025 full-year", "source_name": "Immunefi Ecosystem Vulnerability Scoreboard", "source_url": "https://immunefi.com/blog/research/the-ecosystem-vulnerability-scoreboard-6-years-of-defi-loss-data/", "confidence": "high"},
+    {"claim": "2022 was the record year before 2025 (all-sector)", "value": "~$3.8B stolen (Chainalysis), driven by bridge hacks and North Korea (~$1.7B)", "as_of": "2022 full-year", "source_name": "Chainalysis / Bloomberg", "source_url": "https://www.bloomberg.com/news/articles/2023-02-01/crypto-thefts-soared-to-record-3-8-billion-last-year-on-north-korea-hacks", "confidence": "high"},
+    {"claim": "2020 baseline", "value": "~$520M total crypto stolen; only ~$162M (31%) from DeFi protocols", "as_of": "2020 full-year", "source_name": "Chainalysis 2022 Crypto Crime Report", "source_url": "https://www.chainalysis.com/blog/2022-crypto-crime-report-introduction/", "confidence": "medium"},
+    {"claim": "2021 DeFi share surged", "value": "~$3.2B total stolen, ~72% (~$2.3B) from DeFi; +1,330% DeFi theft vs 2020", "as_of": "2021 full-year", "source_name": "Chainalysis / CoinDesk", "source_url": "https://www.coindesk.com/tech/2022/01/06/crypto-crime-hit-an-all-time-high-of-14b-in-2021-as-prices-climbed-chainalysis", "confidence": "high"},
+    {"claim": "2025 was concentrated", "value": "Top 3 hacks = 69% of total; North Korea $2.02B (76% of service compromises); cumulative DPRK all-time $6.75B", "as_of": "2025 full-year", "source_name": "Chainalysis", "source_url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/", "confidence": "high"},
+    {"claim": "Excluding Bybit, 2025 declined YoY", "value": "Net decrease vs 2024 when the $1.447B Bybit incident is isolated (CertiK)", "as_of": "2025 full-year", "source_name": "CertiK Hack3d 2025", "source_url": "https://www.certik.com/blog/hack3d-the-web3-security-report-2025", "confidence": "high"},
+    {"claim": "2024 all-sector theft", "value": "Chainalysis $2.2B (+21% YoY); CertiK $2.45B; Immunefi (hacks+fraud) $1.49B", "as_of": "2024 full-year", "source_name": "Chainalysis / CertiK / Immunefi", "source_url": "https://therecord.media/cryptocurrency-platforms-2-billion-stolen-2024-chainalysis", "confidence": "high"},
+    {"claim": "2026 YTD pace", "value": "$169M across 34 DeFi hacks in Q1 2026 (DefiLlama)", "as_of": "Q1 2026", "source_name": "DefiLlama via Bitcoin Foundation news", "source_url": "https://bitcoinfoundation.org/news/defi/defillama-q1-crypto-hacks/", "confidence": "medium"},
+    {"claim": "DeFi security improved despite TVL growth", "value": "Median loss per DeFi incident down 75% from $6M (2022) to $1.5M (2025)", "as_of": "2025", "source_name": "Immunefi", "source_url": "https://immunefi.com/blog/research/the-ecosystem-vulnerability-scoreboard-6-years-of-defi-loss-data/", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Bybit (centralized exchange)", "metric": "Largest single crypto theft ever, Feb 2025, Lazarus/North Korea", "value": "~$1.5B (CertiK: $1.447B)", "source_url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/"},
+    {"name": "Ronin Network / Axie Infinity bridge", "metric": "Bridge hack, Mar 23 2022, Lazarus/North Korea", "value": "~$625M (73,600 ETH + 25.5M USDC)", "source_url": "https://www.bankinfosecurity.com/crypto-hackers-exploit-ronin-network-for-615-million-a-18810"},
+    {"name": "Poly Network", "metric": "Cross-chain DeFi bridge hack, Aug 10 2021 (funds mostly returned)", "value": "~$611M", "source_url": "https://surfshark.com/blog/crypto-hacks"},
+    {"name": "BNB Bridge (BNB Smart Chain)", "metric": "Bridge mint exploit, Oct 2022", "value": "~$570M", "source_url": "https://surfshark.com/blog/crypto-hacks"},
+    {"name": "FTX", "metric": "Exchange drain during collapse, Nov 8 2022", "value": "~$450M", "source_url": "https://api.llama.fi/hacks"},
+    {"name": "Wormhole", "metric": "Bridge smart-contract exploit, Feb 2 2022", "value": "~$325M (120,000 ETH)", "source_url": "https://surfshark.com/blog/crypto-hacks"},
+    {"name": "DMM Bitcoin", "metric": "Private key compromise, May 2024", "value": "~$305M", "source_url": "https://cryptonews.com/news/crypto-industry-lost-1-49b-to-hacks-and-fraud-in-2024-a-17-decline-yoy-immunefi/"},
+    {"name": "WazirX", "metric": "Multisig wallet compromise, Jul 2024, North Korea-linked", "value": "~$235M", "source_url": "https://cryptonews.com/news/crypto-industry-lost-1-49b-to-hacks-and-fraud-in-2024-a-17-decline-yoy-immunefi/"},
+    {"name": "Euler Finance", "metric": "DeFi lending flash-loan exploit, Mar 13 2023 (funds returned)", "value": "~$197M", "source_url": "https://api.llama.fi/hacks"},
+    {"name": "Nomad Bridge", "metric": "Bridge exploit (open free-for-all), Aug 2 2022", "value": "~$190M", "source_url": "https://api.llama.fi/hacks"}
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "topic": "Total DeFi TVL over time",
+  "summary": "Total Value Locked (TVL) across all of DeFi grew from effectively zero in 2018-2019 (~$0.6B end-2019) to ~$15B at the end of 2020 during 'DeFi Summer', then exploded to an all-time high of ~$177.5B on 2021-11-09 (widely cited as ~$178-180B) during the 2021 bull market. The 2022 collapse — driven by the Terra/LUNA implosion (May 2022), Three Arrows Capital, Celsius, and FTX (Nov 2022) — crushed TVL ~78% to a year-end-2022 value of ~$38B, with the cycle low around ~$38-42B in late 2022 / mid-2023. A slow recovery took TVL to ~$53B end-2023 and ~$116B end-2024, then a strong 2025 run to a near-record ~$171B in October 2025 (CoinDesk: ~$170B in mid-Sep 2025, fully erasing Terra-era losses; never quite reclaiming the 2021 ATH on DefiLlama's consistent methodology). A sharp drawdown followed: TVL fell through H1 2026 amid a broad crypto selloff and ~$746M of Q2-2026 exploits, reaching ~$74.5B as of 2026-06-16. All figures use DefiLlama's consistent cross-chain methodology as the primary series; note that other trackers (DappRadar, some press) cite higher numbers (e.g. $202B 2021 peak, $237B in 2025) due to different inclusion/double-counting rules.",
+  "series": [
+    {
+      "label": "Total DeFi TVL (DefiLlama, all chains) - year-end values",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/v2/historicalChainTvl",
+        "https://defillama.com/"
+      ],
+      "points": [
+        {"period": "2019-12-31", "value": 0.61, "note": "End of 2019; DeFi nascent. DefiLlama API."},
+        {"period": "2020-12-31", "value": 15.1, "note": "End of 2020, after 'DeFi Summer'. DefiLlama API."},
+        {"period": "2021-12-31", "value": 163.3, "note": "End of 2021, off the Nov ATH. DefiLlama API."},
+        {"period": "2022-12-31", "value": 38.3, "note": "End of 2022, post Terra/LUNA + FTX collapse, ~78% below ATH. DefiLlama API."},
+        {"period": "2023-12-31", "value": 52.8, "note": "End of 2023, early recovery. DefiLlama API."},
+        {"period": "2024-12-31", "value": 115.9, "note": "End of 2024, recovery accelerating. DefiLlama API."},
+        {"period": "2025-12-31", "value": 113.5, "note": "End of 2025, after pulling back from the Oct 2025 ~$171B local peak. DefiLlama API."},
+        {"period": "2026-06-16", "value": 74.5, "note": "Latest 2026 value (current); sharp H1-2026 drawdown amid market selloff and exploits. DefiLlama API."}
+      ]
+    },
+    {
+      "label": "Total DeFi TVL (DefiLlama, all chains) - intra-year peak values",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/v2/historicalChainTvl",
+        "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses"
+      ],
+      "points": [
+        {"period": "2020", "value": 15.5, "note": "2020 peak (Dec 29, 2020). DefiLlama API."},
+        {"period": "2021", "value": 177.5, "note": "2021 peak = all-time high, Nov 9, 2021 ($177.48B); widely cited as ~$178-180B. DefiLlama API."},
+        {"period": "2022", "value": 167.9, "note": "2022 peak (Jan 5, 2022) before the collapse. DefiLlama API."},
+        {"period": "2023", "value": 54.1, "note": "2023 peak (Dec 28, 2023). DefiLlama API."},
+        {"period": "2024", "value": 133.1, "note": "2024 peak (Dec 17, 2024). DefiLlama API."},
+        {"period": "2025", "value": 171.0, "note": "2025 peak (Oct 7, 2025); CoinDesk reported ~$170B Sep 18, 2025, erasing Terra-era losses. DefiLlama API."},
+        {"period": "2026", "value": 127.8, "note": "2026 peak so far (Jan 18, 2026) before H1 decline. DefiLlama API."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {
+      "claim": "All-time-high total DeFi TVL",
+      "value": "$177.5B (widely cited ~$178-180B)",
+      "as_of": "2021-11-09",
+      "confidence": "high",
+      "source_name": "DefiLlama historical chain TVL API",
+      "source_url": "https://api.llama.fi/v2/historicalChainTvl"
+    },
+    {
+      "claim": "Current total DeFi TVL (latest 2026)",
+      "value": "$74.5B",
+      "as_of": "2026-06-16",
+      "confidence": "high",
+      "source_name": "DefiLlama historical chain TVL API",
+      "source_url": "https://api.llama.fi/v2/historicalChainTvl"
+    },
+    {
+      "claim": "Independent cross-check of current value: TVL dropped to ~$72.5B in Q2 2026 amid selloff and security concerns",
+      "value": "$72.5B",
+      "as_of": "2026 Q2",
+      "confidence": "medium",
+      "source_name": "KuCoin News",
+      "source_url": "https://www.kucoin.com/news/flash/defi-tvl-drops-to-72-5b-amid-stablecoin-growth-and-security-concerns"
+    },
+    {
+      "claim": "2022 bear-market low point",
+      "value": "~$38-42B (DefiLlama ~$38B year-end; CoinDesk cites $42B low in Oct 2022)",
+      "as_of": "2022-Q4 / 2023 trough",
+      "confidence": "high",
+      "source_name": "DefiLlama API / CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses"
+    },
+    {
+      "claim": "2025 recovery: TVL hit ~$170B, fully erasing Terra/LUNA-era bear-market losses",
+      "value": "~$170B",
+      "as_of": "2025-09-18",
+      "confidence": "high",
+      "source_name": "CoinDesk",
+      "source_url": "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses"
+    },
+    {
+      "claim": "H1 2026 decline driven partly by exploits: ~70 protocols hit, ~$746M lost in Q2 2026",
+      "value": "~$746M lost (Q2 2026)",
+      "as_of": "2026-Q2",
+      "confidence": "medium",
+      "source_name": "AMBCrypto / KuCoin reporting",
+      "source_url": "https://ambcrypto.com/defi-tvl-sinks-despite-315b-in-stablecoins-heres-why/"
+    },
+    {
+      "claim": "Methodology note: alternative trackers cite higher peaks (CoinDesk $202B for Jan-2021-to-Apr-2022 cycle; DappRadar $237B in Q3 2025) due to broader inclusion/double-counting vs DefiLlama's consistent series",
+      "value": "$202B / $237B (alt methodologies)",
+      "as_of": "2021-2025",
+      "confidence": "medium",
+      "source_name": "CoinDesk / DappRadar via Cointelegraph",
+      "source_url": "https://www.tradingview.com/news/cointelegraph:4a2361318094b:0-defi-tvl-hits-record-237b-as-daily-active-wallets-fall-22-in-q3-dappradar/"
+    },
+    {
+      "claim": "End-of-2020 TVL after 'DeFi Summer'",
+      "value": "$15.1B",
+      "as_of": "2020-12-31",
+      "confidence": "high",
+      "source_name": "DefiLlama historical chain TVL API",
+      "source_url": "https://api.llama.fi/v2/historicalChainTvl"
+    }
+  ],
+  "top_entities": [
+    {"name": "DefiLlama", "metric": "Primary aggregate DeFi TVL data source (consistent cross-chain methodology)", "value": "Tracks total + per-chain + per-protocol TVL", "source_url": "https://defillama.com/"},
+    {"name": "All-time high", "metric": "Peak total DeFi TVL", "value": "$177.5B on 2021-11-09", "source_url": "https://api.llama.fi/v2/historicalChainTvl"},
+    {"name": "2022 collapse driver", "metric": "TVL wipeout catalyst", "value": "Terra/LUNA (May 2022) + 3AC/Celsius + FTX (Nov 2022); TVL fell ~78%", "source_url": "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses"},
+    {"name": "2025 near-record recovery", "metric": "Local peak", "value": "~$171B (Oct 2025)", "source_url": "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses"},
+    {"name": "Current (2026)", "metric": "Latest total DeFi TVL", "value": "~$74.5B (2026-06-16)", "source_url": "https://api.llama.fi/v2/historicalChainTvl"}
+  ]
+}

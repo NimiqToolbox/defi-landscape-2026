@@ -1,0 +1,99 @@
+{
+  "category": "Perpetuals & derivatives",
+  "summary": "On-chain perpetuals are the largest revenue-generating DeFi vertical and one of its most concentrated. Total perp DEX volume has grown from under $1B/day in 2022 to a multi-trillion-dollar annual market (CoinGecko: top-12 perp DEXes averaged ~$611B monthly in 2026 vs ~$532B in 2025). Hyperliquid, a fully on-chain orderbook on its own L1, is the dominant leader, controlling roughly 38-44% of perp DEX volume in early-to-mid 2026 (and ~70-75% at its 2025 peak), with ~$190B monthly volume in April 2026 and the largest open interest of any DEX. The former 2021-2023 leaders dYdX (off-chain orderbook / Cosmos appchain) and GMX (oracle/pool AMM on Arbitrum) have fallen to single-digit / sub-3% share. The market structure has bifurcated: high-performance on-chain/hybrid orderbooks (Hyperliquid, dYdX, Lighter, Aster, Vertex, Drift) win pro/HFT flow, while oracle-pool AMMs (GMX, Jupiter Perps) serve retail. A wave of newer venues (Aster, Lighter, Variational, Pacifica, Extended, edgeX) emerged in late 2025-2026 and has overtaken Jupiter and dYdX. The options sub-segment is far smaller and consolidating around Aevo (perps + options, off-chain match / on-chain settle) and Lyra/Derive (AMM, migrated to its own rollup), with legacy names like Dopex/Stryke and Premia marginalized. NOTE: figures aggregate multiple secondary sources (DefiLlama API and the DefiLlama/CoinGecko web pages were partly rate-limited/blocked) and vary by snapshot date; treat as directional.",
+  "leaders": [
+    {
+      "name": "Hyperliquid",
+      "chain": "Hyperliquid L1 (HyperCore + HyperEVM)",
+      "metric": "Monthly perp volume / market share / TVL / open interest",
+      "value": "~$190B monthly volume (Apr 2026); ~38-44% perp DEX market share early-mid 2026 (peak ~70-75% in 2025); ~$2.8-6.2B TVL; largest DEX open interest (~147,555 BTC OI on CoinGecko derivatives ranking)",
+      "note": "The category leader. Fully on-chain central limit orderbook with sub-second finality on a purpose-built L1 (HyperCore) plus HyperEVM smart-contract layer. Lowest fees among majors (~0.02% taker / 0.00% maker). 2025 perp volume ~$2.9T. Launched May 2023, flipped GMX by end-2023 and dYdX v4 by Aug 2024. Share dipped to ~38% late 2025 as Aster/Lighter rose, then rebounded toward ~44%."
+    },
+    {
+      "name": "Aster",
+      "chain": "BNB Chain / multi-chain",
+      "metric": "Market share / open interest",
+      "value": "~20-30% perp DEX share (fell from ~30.3% Jan 2026 to ~20.9% Mar 2026); ~28,927 BTC OI (2nd by OI on CoinGecko)",
+      "note": "Fast-rising late-2025/2026 challenger; briefly the #2 perp DEX. Orderbook-style venue that captured ~19-28% of recent volume during its surge before pulling back. Part of the new cohort that overtook legacy leaders."
+    },
+    {
+      "name": "dYdX",
+      "chain": "dYdX Chain (Cosmos SDK appchain; v4)",
+      "metric": "Monthly volume / TVL",
+      "value": "~$28B over 30 days (2026), historically ~$40-60B monthly; TVL ~$300-400M; ~10-12% of Hyperliquid's monthly volume",
+      "note": "Pioneer of on-chain perps and the 2021-2023 co-leader (post-Aug-2021 airdrop weekly volume ~$10B). Off-chain orderbook with on-chain settlement on its own Cosmos appchain. Lost relative share to Hyperliquid; retains a niche in BTC/ETH perps and validator-set decentralization that appeals to institutions. Now sub-3% of total perp share per CoinGecko."
+    },
+    {
+      "name": "GMX",
+      "chain": "Arbitrum, Avalanche (also Botanix, Solana, Base, BNB, Ethereum mainnet)",
+      "metric": "TVL / cumulative volume",
+      "value": "TVL ~$450M; >$345B cumulative volume from 735,000+ traders (Avalanche deployment ~$25.2B cumulative)",
+      "note": "Flagbearer of the oracle-pool AMM model and a 2021-2023 leader (launched Arbitrum Sep 2021). GMX v2 replaced shared GLP with isolated GM pools per market. Attracts retail flow with instant liquidity; now sub-3% of perp DEX share, eclipsed by orderbook venues but still a top oracle-AMM by TVL."
+    },
+    {
+      "name": "Jupiter Perpetual Exchange (Jupiter Perps)",
+      "chain": "Solana",
+      "metric": "Daily volume",
+      "value": "~$200-500M daily volume",
+      "note": "Largest perp venue by retail flow on Solana, backed by Jupiter's aggregator user base. Oracle/pool-based model (JLP liquidity pool) with keeper-routed execution (hybrid orderbook/AMM characteristics). Per CoinGecko 2026, overtaken in share by newer venues (Pacifica, Extended, Variational)."
+    },
+    {
+      "name": "Drift Protocol",
+      "chain": "Solana",
+      "metric": "TVL / open interest / volume",
+      "value": "TVL ~$650M (recovered after Apr 2026 hit); >$700M open interest; ~$150B cumulative volume; record ~$1B+ daily perp volume; pre-exploit ~$550M TVL, 175k+ traders, ~$47M monthly revenue",
+      "note": "Largest orderbook-style perps DEX on Solana. Hybrid model: just-in-time (JIT) auction matches taker flow against market makers first, with a vAMM fallback pricing the remainder, giving CEX-style execution with on-chain settlement. Suffered a ~$285M exploit (April 1, 2026, suspected DPRK-linked) that drained over half its TVL before partial recovery."
+    },
+    {
+      "name": "Vertex Protocol",
+      "chain": "Arbitrum, Mantle",
+      "metric": "Daily volume",
+      "value": "~$100M daily volume",
+      "note": "Hybrid orderbook DEX with unified cross-margin (spot, perps, money-market positions share one margin account). Maker fees 0.00%, taker ~0.02-0.04%, competitive with Hyperliquid. A mid-tier perp venue rather than a top-3 leader."
+    },
+    {
+      "name": "Lighter",
+      "chain": "Ethereum L2 (ZK rollup)",
+      "metric": "Open interest / volume share",
+      "value": "~$20,504 BTC 24h volume and ~11,877 BTC OI (CoinGecko, 4th by OI); captured ~28% of recent perp volume during late-2025 surge",
+      "note": "Fast-rising orderbook perp DEX (verifiable matching via ZK) that, with Aster, drove Hyperliquid's late-2025 share dip. Part of the 2025-2026 new-entrant cohort competing on performance and zero/low fees."
+    },
+    {
+      "name": "Aevo",
+      "chain": "Aevo L2 (OP Stack rollup; ex-Ribbon/Opyn lineage)",
+      "metric": "Volume / open interest (perps + options)",
+      "value": "Aevo perp futures ~$3.38M 24h volume and ~$8.51M aggregate OI (small relative to perp leaders; CoinGecko derivatives rank ~27th)",
+      "note": "Leading unified perps + options + structured-products venue: off-chain orderbook matching with on-chain settlement, all under one margin account. The most prominent on-chain options orderbook, though notional volumes are a fraction of the perps majors."
+    },
+    {
+      "name": "Lyra / Derive",
+      "chain": "Derive rollup (ex-Optimism / Arbitrum)",
+      "metric": "TVL (options)",
+      "value": "TVL ~$58M (Sep-2024 reference point; latest live value not confirmed)",
+      "note": "Leading on-chain options AMM, rebranded from Lyra to Derive and migrated to its own custom rollup. One of three pioneers (with Dopex/Stryke and Panoptic) that drove the 10x YoY surge in on-chain options volume in 2025. Options remain a much smaller sub-segment than perps."
+    }
+  ],
+  "leadership_shift": "2021-2023 (orderbook + AMM duopoly): The market was essentially split between dYdX and GMX. dYdX (off-chain orderbook, later its own Cosmos appchain) led on volume after its Aug-2021 airdrop, holding ~$10B weekly; GMX (oracle-pool AMM, launched Arbitrum Sep 2021) led the AMM wave at ~$2B weekly. 2023 (inflection): Hyperliquid launched ~May 2023 with a fully on-chain orderbook on a custom L1, ran ~$2-3B weekly through end-2023 and flipped GMX. 2024 (the flip): Hyperliquid grew to ~$10B weekly by Aug 2024, flipping dYdX v4; industry perp DEX volume hit ~$1.5T (+138% YoY) with Hyperliquid contributing over half in Q4. 2024-2025 (consolidation): Hyperliquid took ~70-80% peak share (Q2 2025: ~$653B of ~$898B total, ~73%); dYdX and GMX fell to single digits. Late 2025-2026 (fragmentation at the top): New orderbook venues (Aster, Lighter) plus Variational, Pacifica, Extended and edgeX gained ground, briefly cutting Hyperliquid to ~38% before it rebounded to ~44%; these newcomers overtook Jupiter and dYdX. Net result: a decisive shift from the dYdX/GMX duopoly to Hyperliquid dominance, with on-chain/hybrid orderbooks displacing pure oracle-pool AMMs for top flow, and a long tail of fast-rotating challengers. Options remained a small, separate niche consolidating around Aevo and Lyra/Derive while legacy names (Dopex, Premia, Ribbon, Friktion) faded.",
+  "sources": [
+    "https://defillama.com/perps",
+    "https://defillama.com/protocol/hyperliquid-perps",
+    "https://defillama.com/protocol/gmx",
+    "https://defillama.com/protocol/dydx-v4",
+    "https://defillama.com/protocol/jupiter-perpetual-exchange",
+    "https://defillama.com/protocols/options",
+    "https://defillama.com/protocol/aevo",
+    "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026",
+    "https://www.coingecko.com/en/exchanges/derivatives/decentralized",
+    "https://www.ainvest.com/news/hyperliquid-44-share-flow-analysis-perp-dex-power-shift-2604/",
+    "https://yellow.com/research/hyperliquid-perp-volume-dominance-how-2026",
+    "https://bbx.com/article/495812",
+    "https://thrive.fi/blog/defi/perp-dex-comparison-guide",
+    "https://perp.wiki/learn/perp-dex-comparison",
+    "https://eco.com/support/en/articles/15083167-drift-protocol-solana-perpetuals-dex-deep-dive",
+    "https://www.elliptic.co/blog/drift-protocol-exploited-for-286-million-in-suspected-dprk-linked-attack",
+    "https://yellow.com/research/defi-options-trading-in-2025-how-lyra-dopex-and-panoptic-are-reshaping-derivatives",
+    "https://decentralised.news/aevo-review-2026-on-chain-options-perpetuals-exchange",
+    "https://coinspot.io/en/analysis/dydx-gmx-hyperliquid-and-vertex-protocol-compared-a-trader-focused-rundown-for-picking-your-dex/",
+    "https://nftplazas.com/decentralized-exchanges-statistics/"
+  ]
+}

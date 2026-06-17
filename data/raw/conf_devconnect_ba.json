@@ -1,0 +1,158 @@
+{
+  "name": "Devconnect Argentina (The First Ethereum World's Fair)",
+  "edition": "2025 (Devconnect ARG)",
+  "location": "La Rural, Palermo, Buenos Aires, Argentina",
+  "dates": "November 17-22, 2025",
+  "in_window": true,
+  "attendance": "14,000+ attendees from 130+ countries (45% from Argentina; 53% first-time EF event attendees); 80+ exhibiting teams across 8 districts; 40+ events inside La Rural plus 500+ community-run side events across the city. (Pre-event organizer/press estimates ranged from 10,000-15,000.)",
+  "defi_themes": [
+    "Stablecoins as the breakout / front-end story of crypto (on-the-ground payments in BA, inflation hedge in Argentina ~19.8% crypto ownership)",
+    "Argentine peso-pegged stablecoin wARS launched on Ethereum, Base and World Chain",
+    "Consumer-facing DeFi / bringing direct DeFi access to retail (Aave App launch)",
+    "On-chain credit and lending markets evolution (Aave V4, Morpho, Gearbox, Spark, Cap)",
+    "Real-World Assets (RWA) and fund/asset tokenization",
+    "Institutional DeFi and institutional adoption (DeFi-ing Institutions; institutional privacy on Ethereum)",
+    "Unified / defragmented liquidity and capital efficiency (1inch Aqua, Fluid DEX v2, CoWSwap cross-chain auctions, RFQs vs AMMs)",
+    "Restaking / liquid restaking and verifiable yield (EtherFi, bond.credit)",
+    "DeFAI - AI agents in DeFi (autonomous trading, agent-managed stablecoin strategies, verifiable yield, prediction agents)",
+    "DeFi security: oracle manipulation, governance attack vectors, war rooms / incident response, ERC-4626 / ERC-4337 / EIP-7702 risks, MEV (multisig MEV via Safe Harbour)",
+    "DeFi regulation and policy (EU MiCA-era policy discussion - 'What we talk about when we talk about DeFi in Europe')",
+    "Stablecoin design and stablecoin banking (M0, resilient stablecoin design)"
+  ],
+  "notable_panels": [
+    {
+      "title": "Money for the Internet Era: Stablecoins & Tokenized Assets (keynote)",
+      "speakers": "Stani Kulechov (Aave Labs, Founder)",
+      "topic": "Stablecoins, tokenized assets, consumer DeFi"
+    },
+    {
+      "title": "DeFi-ing Institutions (keynote)",
+      "speakers": "Danny Ryan (Etherealize, Co-founder/President)",
+      "topic": "Institutional adoption of DeFi / Ethereum"
+    },
+    {
+      "title": "Skeuomorphic Markets (keynote)",
+      "speakers": "Austin Adams (Whetstone Research, Founder)",
+      "topic": "Market structure / DeFi market design"
+    },
+    {
+      "title": "Stablecoins' Edge on TradFi (panel)",
+      "speakers": "DeFi Today panelists",
+      "topic": "Stablecoins vs traditional finance settlement, compliance, cost"
+    },
+    {
+      "title": "Evolution of On-Chain Credit Markets (panel)",
+      "speakers": "DeFi Today panelists (incl. Morpho, Gauntlet, Cap, RedStone/Credora)",
+      "topic": "On-chain lending and credit markets"
+    },
+    {
+      "title": "Enhancing Liquidity through RFQs and AMMs (panel)",
+      "speakers": "DeFi Today panelists (incl. Barter, 0xProject, Uniswap Foundation)",
+      "topic": "DEX liquidity, RFQ vs AMM market microstructure"
+    },
+    {
+      "title": "Fund Tokenization (fireside) / Fluid DEX v2 / Stablecoin Banking / Institutional Privacy on Ethereum (talks)",
+      "speakers": "DMH (Fluid), Oskar Thoren (Ethereum Foundation), DeFi Today speakers",
+      "topic": "RWA fund tokenization, DEX design, stablecoin banking, institutional privacy"
+    },
+    {
+      "title": "Intelligence Capital Markets: DeFAI, Prediction Agents & Verifiable Yield (panel)",
+      "speakers": "Ivo Georgiev (AdEx), Renc Korzay (Giza), Kevin Leffew (Coinbase x402), Gemma (Valory), Nathan Vandy (bond.credit)",
+      "topic": "AI agents in DeFi, agent-managed stablecoin strategies, verifiable yield"
+    },
+    {
+      "title": "Designing DeFi Resilience: Inside Aave V4's Security Blueprint (DeFi Security Summit)",
+      "speakers": "Dhairya Sethi (Aave), Tomer Ganor (Certora)",
+      "topic": "Aave V4 lending protocol security architecture"
+    },
+    {
+      "title": "Financial Security Risks of DeFi (panel, DeFi Security Summit)",
+      "speakers": "Moderator Ayham (Silo); Sebastian Derivaux (Steakhouse Financial), monetsupply (Spark), Matt Cole (Allez Labs), Yaron Velner (B.Protocol), Remi Foult (9Summits/Lagoon)",
+      "topic": "Financial / economic risk in DeFi lending and yield protocols"
+    },
+    {
+      "title": "From Manipulation to Mitigation: Rethinking Oracle Security (DeFi Security Summit)",
+      "speakers": "Bianca Buzea (Chronicle Labs)",
+      "topic": "DeFi oracle security and price manipulation"
+    },
+    {
+      "title": "The State of DeFi Security - 2025 (DeFi Security Summit)",
+      "speakers": "Peter Kacherginsky (BlockThreat)",
+      "topic": "Annual review of DeFi exploits and security posture"
+    },
+    {
+      "title": "Automation & Stablecoins session: Designing Resilient Stablecoins (DeFi Security Summit)",
+      "speakers": "Antonina Norair (M0 labs); session chaired by Deniz Yilmaz (Sky)",
+      "topic": "Stablecoin design and resilience"
+    },
+    {
+      "title": "Dealing With 100M Dollar Live Vulnerability / War Room Chronicles (DeFi Security Summit)",
+      "speakers": "Juan Ignacio Ubeira (Balancer); panel moderated by Mudit Gupta (Polygon Labs) with Joe Dobson (Mandiant), Julia Hardy (zeroShadow)",
+      "topic": "DeFi incident response and live exploit handling"
+    },
+    {
+      "title": "Money Rails (full-day event by Polygon, Nov 18)",
+      "speakers": "Builders of global on-chain finance / stablecoins",
+      "topic": "Stablecoins moving money on-chain: faster settlement, compliance, cost efficiency"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Vitalik Buterin", "affiliation": "Ethereum Foundation (co-founder)"},
+    {"name": "Stani Kulechov", "affiliation": "Aave Labs (Founder/CEO)"},
+    {"name": "Danny Ryan", "affiliation": "Etherealize (Co-founder/President)"},
+    {"name": "Austin Adams", "affiliation": "Whetstone Research (Founder)"},
+    {"name": "Merlin Egalite", "affiliation": "Morpho (Co-founder)"},
+    {"name": "Mike Silagadze", "affiliation": "EtherFi (Founder/CEO)"},
+    {"name": "Rahul Goyal", "affiliation": "Gauntlet (Head of Institutional Partnerships)"},
+    {"name": "Marcin Kazmierczak", "affiliation": "RedStone / Credora (Co-Founder)"},
+    {"name": "Kenneth Ng", "affiliation": "Uniswap Foundation (Co-Founder)"},
+    {"name": "Danning Sui", "affiliation": "Pantera Capital (Research Director)"},
+    {"name": "Nikita Ovchinnik", "affiliation": "Barter (CEO)"},
+    {"name": "Nicolas Baum", "affiliation": "0x Project (Senior Engineer)"},
+    {"name": "DMH", "affiliation": "Fluid (COO)"},
+    {"name": "Benjamin S.P.", "affiliation": "Cap (Founder)"},
+    {"name": "Haonan Li", "affiliation": "Codex (Co-founder/CEO)"},
+    {"name": "Ben Rodriguez", "affiliation": "Coinbase (Protocol Specialist)"},
+    {"name": "Oskar Thoren", "affiliation": "Ethereum Foundation (Lead, Institutional Privacy Task Force)"},
+    {"name": "Anna George", "affiliation": "CoW Swap (CoW Protocol)"},
+    {"name": "Ivo Georgiev", "affiliation": "AdEx (Co-Founder)"},
+    {"name": "Antonina Norair", "affiliation": "M0 labs (CTO)"},
+    {"name": "Sebastian Derivaux", "affiliation": "Steakhouse Financial"},
+    {"name": "Yaron Velner", "affiliation": "B.Protocol"},
+    {"name": "Iurii Tkachenko", "affiliation": "Lido DAO (Head of DeFi Engineering)"},
+    {"name": "Mikael Lazarev", "affiliation": "Gearbox Protocol (Co-founder/CTO)"},
+    {"name": "Juan Ignacio Ubeira", "affiliation": "Balancer (Smart Contracts Lead)"},
+    {"name": "Mudit Gupta", "affiliation": "Polygon Labs (CISO)"},
+    {"name": "Alice Henshaw", "affiliation": "Uniswap"},
+    {"name": "Gleb Alekseev", "affiliation": "1inch (Product Owner, Blockchain Team)"},
+    {"name": "Jota Carpanelli", "affiliation": "OpenZeppelin (Head of Security Research)"},
+    {"name": "Bianca Buzea", "affiliation": "Chronicle Labs (Head of DevRel)"}
+  ],
+  "key_takeaways": [
+    "Stablecoins were the breakout story of Devconnect ARG: they were used on the ground in Buenos Aires (paying for food/services in crypto), framed as the 'front end of crypto' and an inflation 'escape hatch' for Argentina (~19.8% crypto ownership; ARS down ~99% vs USD over a decade). A new peso-pegged stablecoin, wARS, launched on Ethereum, Base and World Chain.",
+    "Consumer DeFi push: Aave launched the new unified Aave App (iOS), with Stani Kulechov arguing DeFi must move beyond savvy/professional users to bring direct access to consumers (high-yield savings framing).",
+    "On-chain credit/lending was a central theme - Aave V4, Morpho, Gearbox, Spark, Cap and others featured across both 'DeFi Today' (Evolution of On-Chain Credit Markets) and the DeFi Security Summit.",
+    "RWA, fund tokenization and institutional DeFi were headline tracks at the dedicated 'DeFi Today' event (Danny Ryan's 'DeFi-ing Institutions', fund tokenization, institutional privacy on Ethereum led by the EF's Institutional Privacy Task Force).",
+    "Liquidity defragmentation / capital efficiency emerged as a 2026 narrative: 1inch Aqua (defragmenting liquidity for market makers), Fluid DEX v2, CoW Swap's cross-chain single-auction vision, and RFQ-vs-AMM debates.",
+    "DeFAI (AI agents in DeFi) was a strong sub-theme: autonomous trading, agent-managed stablecoin strategies, prediction agents and 'verifiable yield', alongside heavy attention to its security risks.",
+    "DeFi security maturity: the 4th DeFi Security Summit (Nov 20-21, ~1,000+ attendees) emphasized oracle security, governance-as-attack-vector, war rooms/incident response, ERC-4626/ERC-4337/EIP-7702 risks, and the annual 'State of DeFi Security' review.",
+    "Overall framing for 2026: 'infrastructure story instead of casino story,' stablecoins as the consumer front-end, privacy as table stakes, and DeFi positioning toward real-world utility and institutions. The World's Fair had a dedicated DeFi district among its eight zones."
+  ],
+  "sources": [
+    "https://devconnect.org/",
+    "https://blog.ethereum.org/en/2025/03/05/devconnect-2025",
+    "https://blog.ethereum.org/2025/12/04/devconnect-arg-wrap",
+    "https://defi-today.xyz/",
+    "https://luma.com/lklh3u0v",
+    "https://defisecuritysummit.org/schedule",
+    "https://www.gncrypto.news/events/defi-security-summit-2025-buenos-aires-argentina/",
+    "https://moneyrails.io/",
+    "https://luma.com/311rbz5b",
+    "https://x.com/0xPolygon/status/1976331100508295382",
+    "https://news.bit2me.com/en/ethereum-takes-over-devconnect-2025",
+    "https://blog.heyaura.com/recap-devconnect-arg/",
+    "https://fortune.com/2025/11/17/aave-app-stani-kulechov-defi-lending-borrowing-protocol/",
+    "https://thomasbenoitbenoitonchain.substack.com/p/devconnect-2025-recap-what-you-might"
+  ],
+  "confidence": "high"
+}

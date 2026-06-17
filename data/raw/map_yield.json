@@ -1,0 +1,87 @@
+{
+  "category": "Yield, vaults & structured products",
+  "summary": "As of mid-2026 the yield/vaults/structured-products landscape is led by a new generation of protocols built around yield tokenization and synthetic-dollar yield rather than the auto-compounding aggregators that dominated 2021. Pendle is the clear category leader on TVL among yield-specific protocols (~$1.18B on DefiLlama's narrowed 'Yield' category page, though aggregate Pendle TVL has been reported far higher, with a 2025 all-time peak of ~$13.4B). Ethena's USDe synthetic dollar (~$5.5-6B supply in Q2 2026) sits adjacent to the category as the largest crypto-collateralized synthetic-dollar/structured-yield product. The 'curated vault' model led by Morpho Vaults (peaked >$10B TVL in Q4 2025, ~$5.8B after a Feb 2026 pullback) has absorbed institutional capital that once flowed to simple aggregators. Legacy aggregators Yearn (~$151M) and Beefy (~$110-186M) have shrunk dramatically from their 2021 peaks, while Convex (~$1.28B) remains the dominant veCRV vote-aggregator in the now much-smaller Curve ecosystem. The dominant 2024-2025 growth engine was points/airdrop-driven and structured yield: Ethena seasons + Pendle PT/YT markets + curator vaults.",
+  "leaders": [
+    {
+      "name": "Pendle",
+      "chain": "Ethereum (primary), plus Arbitrum, Plasma, Hyperliquid L1, BSC, Base, Sonic, Mantle, Avalanche, OP, Berachain",
+      "metric": "TVL",
+      "value": "~$1.18B (DefiLlama 'Yield' category protocol page); aggregate Pendle TVL reported much higher across feeds; 2025 all-time peak ~$13.4B",
+      "note": "Dominant yield-tokenization protocol (splits yield-bearing assets into PT principal tokens + YT yield tokens). Growth driven by Ethena sUSDe pools, weETH/LRT, RWA (USDY, USYC) and Aave PT-collateral listings. Boros (perp-funding/fixed-income venue) launched 2025. Average 2025 TVL ~$5.8B (+79% YoY); trading volume ~$47.8B."
+    },
+    {
+      "name": "Ethena (USDe / sUSDe)",
+      "chain": "Ethereum (primary), BNB Chain, Arbitrum, Solana and other EVM chains via LayerZero OFT",
+      "metric": "Supply / TVL",
+      "value": "~$5.5-6B USDe supply (Q2 2026 per DefiLlama); historically peaked higher in 2024 bull run",
+      "note": "Largest crypto-collateralized synthetic dollar after Sky's USDS. Delta-neutral basis trade (long staked ETH/LST, short ETH perps); sUSDe yield from funding + staking. sUSDe APY ranged from low single digits to >30% since 2024 launch, mostly 5-15%. The single biggest points/airdrop-season yield engine of 2024-2025; deeply integrated with Pendle and Aave."
+    },
+    {
+      "name": "Morpho (Morpho Vaults)",
+      "chain": "Ethereum (primary), Base and other EVM chains",
+      "metric": "TVL",
+      "value": "Peaked >$10B in Q4 2025; ~$5.8B as of late Feb 2026 after market pullback",
+      "note": "Curated-vault leader bridging lending and structured yield. Morpho Blue (immutable primitive) + Morpho Vaults (curated allocation layer run by curators Steakhouse, Gauntlet, MEV Capital, Block Analitica). Drove institutional entry: Coinbase USDC lending, Apollo (up to 9% of MORPHO supply over 4 years), Bitwise institutional vaults. USDC vault rates ~4-8% in 2026. Gauntlet alone curates ~$1.5B."
+    },
+    {
+      "name": "Convex Finance",
+      "chain": "Ethereum",
+      "metric": "TVL",
+      "value": "~$1.28B (up from ~$1.0B Nov 2025); 2022 peak >$20B",
+      "note": "Yield optimizer / vote-aggregator for Curve. Routes user CRV into permanent locks for cvxCRV, making it the largest single veCRV holder (~40%+) and the 'kingmaker' of Curve emissions. Convex + Yearn wallets accounted for ~90% of votes in a Dec 2025 Curve DAO vote. TVL collapsed alongside Curve (Curve ~$1.5-2.6B vs 2022 peak >$24B)."
+    },
+    {
+      "name": "Yearn Finance",
+      "chain": "Ethereum (primary), plus other EVM chains",
+      "metric": "TVL",
+      "value": "~$151M (DefiLlama yield-aggregator); 2021 peak >$7B (Dec 2021)",
+      "note": "Original DeFi yield aggregator / vaults pioneer and the 2021 category leader (>$7B peak). Auto-compounding vault strategies. Now a fraction of its peak after the 2022 bear market and migration of capital to curated-vault and yield-tokenization models. Still an active veCRV/Curve governance participant alongside Convex."
+    },
+    {
+      "name": "Beefy",
+      "chain": "Multichain (~40 chains)",
+      "metric": "TVL",
+      "value": "~$110M (DefiLlama yield-aggregator listing) to ~$186M (June 2026 cross-source)",
+      "note": "Multichain auto-compounding yield optimizer; default venue for farming on smaller/newer chains thanks to ~40-chain coverage. Native token BIFI. Like Yearn, a much smaller share of the category than at its peak; serves users wanting simple auto-compounding without picking a curator."
+    },
+    {
+      "name": "Euler (Euler Vaults / EVK)",
+      "chain": "Ethereum (primary), plus other EVM chains",
+      "metric": "TVL",
+      "value": "Re-emerged as a curated-vault competitor to Morpho in 2025-2026 (specific figure not independently confirmed here)",
+      "note": "After its 2023 exploit and recovery, Euler relaunched with the Euler Vault Kit (EVK) as modular, curator-driven vaults, competing in the same curated-vault / structured-yield niche as Morpho. Figure left unquantified to avoid inventing a number."
+    },
+    {
+      "name": "CIAN (Yield Layer)",
+      "chain": "Multichain (EVM)",
+      "metric": "TVL",
+      "value": "~$308M",
+      "note": "Leader of the pure 'yield-aggregator' DefiLlama sub-category in 2026, ahead of Yearn and Beefy. Illustrates how the aggregator label shifted toward newer automated/structured-yield layers as legacy aggregators shrank."
+    }
+  ],
+  "leadership_shift": "2021: Yearn was the flagship yield aggregator (>$7B TVL peak Dec 2021); the Curve Wars produced Convex, which rocketed past $20B TVL by early 2022 to become DeFi's #2 protocol as the dominant veCRV vote-aggregator. Beefy led multichain auto-compounding. 2022-2023: The bear market and Curve/Convex's contraction gutted aggregator TVL (Yearn fell from >$7B toward ~$1B and below; Convex shrank with Curve from >$24B to low single-digit billions). Simple auto-compounding lost relevance as a growth story. 2024-2025: Leadership decisively shifted to (a) yield tokenization, where Pendle became the category leader on the back of Ethena sUSDe, LRTs and RWAs, peaking ~$13.4B TVL in 2025; (b) synthetic-dollar/structured yield, where Ethena's USDe scaled into the multi-billion range and became the single biggest points/airdrop-driven yield engine; and (c) curated vaults, where Morpho Vaults (and a recovered Euler with its EVK) crossed >$10B and pulled in institutional capital (Coinbase, Apollo, Bitwise). 2026 (now): Pendle leads yield-specific TVL and Ethena leads synthetic-dollar yield; curated vaults (Morpho/Euler) are the institutional venue; Convex remains the Curve kingmaker but in a much smaller pond; Yearn and Beefy persist as legacy auto-compounders at a fraction of former size. The throughline: capital moved from auto-compounding aggregators -> vote-aggregation (Curve Wars) -> yield tokenization + synthetic-dollar yield + curator-run vaults, with points/airdrop incentives the primary 2024-2025 demand driver.",
+  "sources": [
+    "https://defillama.com/protocols/yield",
+    "https://defillama.com/protocols/yield-aggregator",
+    "https://defillama.com/categories",
+    "https://defillama.com/protocol/pendle",
+    "https://defillama.com/protocol/ethena",
+    "https://defillama.com/protocol/ethena-usde",
+    "https://defillama.com/stablecoin/ethena-usde",
+    "https://defillama.com/protocol/convex-finance",
+    "https://defillama.com/protocol/yearn",
+    "https://defillama.com/protocol/beefy",
+    "https://www.coindesk.com/markets/2025/08/09/pendle-s-tvl-hits-record-usd8-3b-after-yield-trading-platform-debut",
+    "https://phemex.com/news/article/pendles-tvl-soars-to-58-billion-in-2025-up-79-yearonyear-42499",
+    "https://www.weex.com/news/detail/pendle-2025-q3-performance-report-tvl-surpasses-87-billion-trading-volume-up-by-236-232742",
+    "https://messari.io/project/pendle",
+    "https://www.rockawayx.com/insights/defi-vaults-explained-2026-guide",
+    "https://defiprime.com/defi-vaults-guide",
+    "https://lagoon.finance/blog/state-of-onchain-vaults-2026",
+    "https://eco.com/support/en/articles/15254002-ethena-usde-and-susde-2026-delta-neutral-yield",
+    "https://stablecoininsider.org/ethena-usde-q1-2026-report/",
+    "https://www.cryptonewsnavigator.com/academy/article/three-on-chain-metrics-explain-cvxs-2026-trajectory",
+    "https://pontem.network/posts/curve-and-the-convex-wars-2",
+    "https://thedefiant.io/yearn-finance-struggles-to-find-its-footing-as-rates-rise"
+  ]
+}

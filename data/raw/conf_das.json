@@ -1,0 +1,83 @@
+{
+  "name": "Digital Asset Summit (DAS) by Blockworks",
+  "edition": "DAS: New York 2026 (institutional flagship; primary focus). Also in-window: DAS: London 2025.",
+  "location": "Javits Center North, 445 11th Ave, New York, NY (DAS NYC 2026). DAS London 2025 was at Old Billingsgate, London, UK.",
+  "dates": "March 24-26, 2026 (DAS NYC 2026). DAS London 2025: October 13-15, 2025.",
+  "in_window": true,
+  "attendance": "DAS NYC 2026: reported as 2,500+ attendees from 35+ countries, 150+ speakers, 45 curated sessions, with $4.2t+ in AUM represented (third-party listing). Blockworks/press materials cite $3t+ in AUM represented at past DAS events. DAS London 2025: hundreds of institutions / large audience representing ~£1.2t+ in AUM (third-party listing).",
+  "defi_themes": [
+    "Onchain institutional finance and securities settlement (BlackRock, JPMorgan moving onchain to settle treasuries, equities, private credit and other securities)",
+    "Real-world asset (RWA) tokenization of treasuries, equities, private credit and securities",
+    "Stablecoins and global payments infrastructure (institutional and consumer use cases)",
+    "DeFi protocol design, lending and borrowing markets, market structure",
+    "Risk curation and risk management in onchain credit / DeFi",
+    "Onchain trading venues and market structure",
+    "Tokenized public-market access (tokenized stocks/equities)",
+    "Digital asset regulation and US policy (post-landmark-legislation environment; SEC 'Project Crypto')",
+    "Institutional integration of digital assets into global capital markets",
+    "DeFi as collateral for institutional finance / on-chain treasuries"
+  ],
+  "notable_panels": [
+    {
+      "title": "DeFi & Risk Management (track)",
+      "topic": "Leading DeFi architects unpacking the evolution of DeFi: protocol design, lending and borrowing markets, market structure, risk curation, risk management, and onchain trading venues",
+      "speakers": "Track-level theme confirmed across Blockworks event materials and recaps; individual panel speakers not individually verified"
+    },
+    {
+      "title": "RWAs & Onchain Institutional Finance (track)",
+      "topic": "How the largest financial institutions (e.g., BlackRock, JPMorgan) are moving onchain to settle treasuries, equities, private credit and other securities",
+      "speakers": "Track-level theme; institutional participants include BlackRock, Morgan Stanley, Fidelity, JPMorgan, DTCC, Citi, Visa, Swift"
+    },
+    {
+      "title": "Stablecoins & FinTech / Stablecoins and Global Payments (track)",
+      "topic": "Evolution of global payments infrastructure and fintech; how stablecoins, vaults and embedded wallets are rewiring the financial stack",
+      "speakers": "Devin McGranahan (Western Union); Paolo Ardoino (Tether); Richard Teng (Binance) among confirmed speakers in this thematic area"
+    },
+    {
+      "title": "Tokenization's 'Trojan horse' moment (Day 2 session, per Blockworks recap)",
+      "topic": "Argument that the industry must move from discussion to at-scale deployment of tokenization, citing a ~3-5 year 'execution window' before tokenization becomes 'table stakes'; tokenization's potential to transform access to US stocks/equities",
+      "speakers": "Specific speaker names not reliably verified from accessible sources"
+    },
+    {
+      "title": "BNB Chain case for RWA dominance (summit session/press)",
+      "topic": "BNB Chain executives argued the network's user base and stablecoin activity give a structural edge for institutional tokenization, citing ~$1.5B in RWAs used as DeFi collateral and ~40% of global stablecoin volume",
+      "speakers": "BNB Chain executives (names not individually verified)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Paul S. Atkins", "affiliation": "Chairman, U.S. Securities & Exchange Commission (headlined Day 1; architect of 'Project Crypto'; delivered opening remarks per SEC.gov)"},
+    {"name": "Samara Cohen", "affiliation": "Global Head of Market Development, BlackRock"},
+    {"name": "Michael Saylor", "affiliation": "Founder & Executive Chairman, Strategy (MicroStrategy)"},
+    {"name": "Robin Vince", "affiliation": "CEO, BNY (Bank of New York Mellon)"},
+    {"name": "Stephen I. Miran", "affiliation": "Governor, U.S. Federal Reserve"},
+    {"name": "Michael S. Selig", "affiliation": "Chairman, U.S. Commodity Futures Trading Commission (CFTC)"},
+    {"name": "Devin McGranahan", "affiliation": "President & CEO, Western Union"},
+    {"name": "Richard Teng", "affiliation": "CEO, Binance"},
+    {"name": "Amy Oldenburg", "affiliation": "Head of Digital Asset Strategy, Morgan Stanley"},
+    {"name": "Paolo Ardoino", "affiliation": "CEO, Tether"},
+    {"name": "Nigel Farage", "affiliation": "MP (Clacton), Leader of Reform UK -- headlined Day 1 of DAS: London 2025 (Oct 13, 2025)"}
+  ],
+  "key_takeaways": [
+    "DAS 2026 NYC was explicitly framed as the 'institutional era of crypto' summit -- the headline cast (SEC Chair Atkins, Fed Governor Miran, CFTC Chair Selig, BNY, BlackRock, Morgan Stanley, Tether, Binance) reflects deep TradFi + regulator engagement.",
+    "Regulation/policy was front and center: SEC Chairman Paul Atkins headlined Day 1 with a keynote on his vision for US digital-asset markets ('Project Crypto'); the agenda emphasized a post-landmark-legislation US/global policy environment.",
+    "Tokenization / RWA was the dominant DeFi-adjacent theme: panels centered on BlackRock and JPMorgan moving onchain to settle treasuries, equities, private credit and other securities; a Day 2 session framed tokenization as a 'Trojan horse' with a ~3-5 year execution window before it becomes 'table stakes.'",
+    "Stablecoins and global payments were a core pillar (dedicated Stablecoins & FinTech track), with Tether (Ardoino), Western Union (McGranahan) and Binance (Teng) among the voices on how stablecoins are rewiring payments infrastructure.",
+    "Institutional DeFi framing emphasized protocol design, lending/borrowing markets, market structure, risk curation and risk management -- positioning DeFi credit and onchain trading venues for institutional adoption rather than retail speculation.",
+    "RWA-as-collateral and chain competition: BNB Chain made a public case for RWA dominance, citing ~$1.5B in RWAs used as DeFi collateral and ~40% of global stablecoin volume, signaling competition among chains for institutional tokenization deals.",
+    "Content themes were consistent across DAS NYC 2026 and the in-window DAS London 2025: macro drivers of crypto, tokenization/RWA, stablecoins & payments, ETF/public-market adoption, DeFi & risk management, and evolving global regulation."
+  ],
+  "sources": [
+    "https://blockworks.com/event/digital-asset-summit-nyc-2026",
+    "https://www.businesswire.com/news/home/20260304059961/en/US-SEC-Chairman-to-Headline-Blockworks-Digital-Asset-Summit-New-York",
+    "https://natlawreview.com/press-releases/us-sec-chairman-headline-blockworks-digital-asset-summit-new-york",
+    "https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-digital-asset-summit-032426",
+    "https://www.sec.gov/newsroom/meetings-events/digital-asset-summit-2026",
+    "https://events.coinpedia.org/digital-asset-summit-2026-new-york-7777/",
+    "https://www.kast.xyz/blog/digital-asset-summit-2026-new-york-recap",
+    "https://blockworks.co/news/das-day-2-tokenization",
+    "https://blockchain.news/news/bnb-chain-rwa-adoption-nyc-summit-3-3b-tokenized",
+    "https://www.businesswire.com/news/home/20250923376723/en/Nigel-Farage-to-Headline-Blockworks-Digital-Asset-Summit-London",
+    "https://blockworks.com/event/digital-asset-summit-2025-london"
+  ],
+  "confidence": "medium"
+}

@@ -1,0 +1,95 @@
+{
+  "category": "Stablecoins (incl. yield-bearing)",
+  "summary": "The total stablecoin market sits at roughly $315B-$321B in mid-2026, an all-time high (DefiLlama API top-line; the sector topped $321B in April 2026). The market is a duopoly: Tether's USDT (~$186B, ~58% share) and Circle's USDC (~$75-78B) together control roughly four-fifths of all supply, with both being centralized fiat-backed coins. The competitive frontier is below them: a tier of decentralized crypto-backed coins (Sky/MakerDAO's USDS ~$8.2B plus legacy DAI ~$4.4B), the synthetic delta-neutral dollar USDe from Ethena (~$4.5-5.9B, down sharply from a ~$14.6B peak), and politically-tied/newer fiat coins like World Liberty Financial's USD1 (~$4.6B). A fast-growing slice is tokenized-Treasury / yield-bearing 'stablecoins' (BlackRock's BUIDL ~$3.0B, Circle/Hashnote USYC ~$3.1B, Ondo USDY ~$2.1B). PayPal's PYUSD (~$2.7B), Ripple's RLUSD (~$1.6B), Paxos/consortium USDG (~$2.7B), Curve's crvUSD and Aave's GHO (each in the low hundreds of millions) and the rebuilt Frax (frxUSD ~$125M) round out the niche-DeFi and challenger set. Mechanism split: centralized fiat-backed (USDT, USDC, PYUSD, USD1, RLUSD, USDG, BUIDL/USYC/USDY as tokenized Treasuries) dominate; decentralized over-collateralized CDP coins (USDS/DAI, crvUSD, GHO) are the DeFi-native middle; synthetic-dollar/delta-neutral (USDe) is the high-yield, higher-risk wildcard.",
+  "leaders": [
+    {
+      "name": "Tether USD (USDT)",
+      "chain": "Tron, Ethereum, Plasma, Solana, others (multichain)",
+      "metric": "Circulating market cap / supply",
+      "value": "~$186B (≈58% of total stablecoin supply)",
+      "note": "Centralized, fiat/reserve-backed. The undisputed #1 since 2017; deepest liquidity, dominant on Tron and in emerging-market/exchange settlement. DefiLlama API showed ~$186.4B core plus a large Plasma-deployed tranche."
+    },
+    {
+      "name": "USD Coin (USDC)",
+      "chain": "Ethereum, Base, Solana, Arbitrum, others (multichain)",
+      "metric": "Circulating market cap / supply",
+      "value": "~$75-78B",
+      "note": "Centralized, fully reserved (Circle), most regulation-/transparency-focused major coin. Recovered fully from its March 2023 SVB depeg ($0.879 low) and led net new supply in 2026 (~+$4.5B YTD), the largest positive flow of any stablecoin."
+    },
+    {
+      "name": "Sky Dollar (USDS) + Dai (DAI)",
+      "chain": "Ethereum (and L2s)",
+      "metric": "Circulating market cap / supply",
+      "value": "USDS ~$8.2B; legacy DAI ~$4.4B (combined ~$12.6B)",
+      "note": "Decentralized over-collateralized CDP stablecoin from Sky (formerly MakerDAO). USDS is the rebranded/upgraded successor to DAI launched in the 2024 'Endgame' rebrand. Largest decentralized stablecoin franchise; backed by crypto plus a large allocation to tokenized US Treasuries (RWA)."
+    },
+    {
+      "name": "Ethena USDe (USDe)",
+      "chain": "Ethereum (multichain)",
+      "metric": "Circulating market cap / supply",
+      "value": "~$4.5B (DefiLlama API) to ~$5.9B (mid-March 2026); peaked ~$14.6B in 2025",
+      "note": "Synthetic delta-neutral 'internet dollar': long staked ETH/BTC collateral hedged with short perpetual futures to capture funding-rate yield. Rocketed to #3 stablecoin in 2025, then fell >40% (~$14.6B to ~$9.2B) after the Oct 10, 2025 crash, where it briefly printed $0.65 on Binance; further contracted since."
+    },
+    {
+      "name": "World Liberty Financial USD (USD1)",
+      "chain": "Ethereum, BNB Chain, Tron",
+      "metric": "Circulating market cap / supply",
+      "value": "~$4.6B",
+      "note": "Centralized fiat-backed coin tied to the Trump-affiliated World Liberty Financial; a notable 2025 fast-riser, now a top-5/6 stablecoin by supply."
+    },
+    {
+      "name": "PayPal USD (PYUSD)",
+      "chain": "Ethereum, Solana",
+      "metric": "Circulating market cap / supply",
+      "value": "~$2.7-3.8B",
+      "note": "Centralized fiat-backed, issued by Paxos for PayPal; distributed across PayPal and Venmo. Flagship 'big-fintech' stablecoin entry (launched Aug 2023)."
+    },
+    {
+      "name": "Tokenized-Treasury yield 'dollars' (BUIDL / USYC / USDY)",
+      "chain": "Ethereum, Solana, others",
+      "metric": "Circulating market cap / supply",
+      "value": "BUIDL (BlackRock) ~$3.0B; USYC (Circle/Hashnote) ~$3.1B; USDY (Ondo) ~$2.1B",
+      "note": "Yield-bearing, RWA-backed tokenized money-market/Treasury funds used as on-chain dollars and DeFi collateral. BlackRock's BUIDL is the flagship TradFi-issuer entry; this category is the fastest-growing yield-bearing segment."
+    },
+    {
+      "name": "Curve crvUSD (crvUSD)",
+      "chain": "Ethereum",
+      "metric": "Circulating market cap / supply",
+      "value": "~$208M (low end ~$124-210M range across sources)",
+      "note": "Decentralized over-collateralized CDP coin native to Curve; distinctive 'soft liquidation' LLAMMA mechanism that sells collateral gradually rather than in discrete liquidations. A niche but technically influential DeFi stablecoin."
+    },
+    {
+      "name": "Aave GHO (GHO)",
+      "chain": "Ethereum (expanding to Avalanche, Gnosis, Plasma, Linea)",
+      "metric": "Circulating market cap / supply",
+      "value": "~$584M (May 2026)",
+      "note": "Decentralized over-collateralized stablecoin minted against deposits in the Aave lending market; benefits from Aave's battle-tested risk infra. Growing via multichain expansion."
+    },
+    {
+      "name": "Frax USD (frxUSD / FRAX ecosystem)",
+      "chain": "Ethereum, Fraxtal",
+      "metric": "Circulating market cap / supply",
+      "value": "frxUSD ~$125-132M",
+      "note": "Frax pivoted from its original fractional-algorithmic FRAX design to fuller collateralization with tokenized-Treasury backing (frxUSD). Far below its historical peak but rebuilt as a fully-backed coin; a cautionary example of the algorithmic-to-collateralized migration."
+    }
+  ],
+  "leadership_shift": "2021: A clear USDT-led duopoly forming. USDT held ~75% share in Jan 2021 while USDC surged (~33-38% peak share mid-2021, +800% from Jan 2021) and BUSD rose to ~16%, briefly fueling 'flippening' speculation. Decentralized leadership belonged to MakerDAO's DAI. Algorithmic experiments (Terra's UST, early Frax fractional-algo) were ascendant. 2022-2023: Structural reset. Terra/UST collapsed in May 2022 (~$45B wiped out), killing confidence in pure algorithmic designs. In March 2023 USDC depegged to ~$0.879 after $3.3B was trapped in the failed Silicon Valley Bank, dragging DAI down with it (USDC was >half of DAI's collateral) and handing USDT a durable trust/share advantage; USDT dominance climbed back toward ~70%+. BUSD was wound down (Paxos halted minting Feb 2023), removing the #3. New regulated fintech entrants arrived (PYUSD, Aug 2023). 2024-2026 (now): USDT (~$186B, ~58%) and USDC (~$75-78B) cemented an ~80%+ combined duopoly, but the challenger field diversified sharply. MakerDAO rebranded to Sky and migrated DAI to USDS (now the largest decentralized coin, ~$8.2B). Ethena's synthetic USDe was the standout riser, vaulting to #3 (~$14.6B peak in 2025) before a >40% drawdown after the Oct 10, 2025 'black swan' liquidation cascade. Tokenized-Treasury yield dollars (BlackRock BUIDL, USYC, Ondo USDY) and politically-linked/newer fiat coins (USD1, RLUSD) became multi-billion-dollar entrants, while DeFi-native CDP coins (crvUSD, GHO) and a rebuilt, fully-collateralized Frax (frxUSD) occupy the niche tier. Net arc: algorithmic experiments died (2022), USDC's banking scare reset trust toward USDT (2023), and the post-2024 era is centralized fiat dominance at the top with a Cambrian explosion of yield-bearing, synthetic, and RWA-backed challengers below.",
+  "sources": [
+    "https://defillama.com/stablecoins",
+    "https://stablecoins.llama.fi/stablecoins?includePrices=true",
+    "https://defillama.com/stablecoin/crvusd",
+    "https://defillama.com/stablecoin/frax-usd",
+    "https://bitcoinfoundation.org/news/stablecoin-news/stablecoin-market-cap-tops-321b/",
+    "https://www.emarketer.com/content/stablecoin-explainer-2026",
+    "https://messari.io/project/ethena-usde",
+    "https://www.datawallet.com/crypto/stablecoin-statistics",
+    "https://eco.com/support/en/articles/12257142-top-stablecoins-on-ethereum-2026",
+    "https://www.mexc.com/learn/article/stablecoin-depegging-history-the-safe-evolution-from-ust-to-usd1/1",
+    "https://bingx.com/en/learn/article/what-is-a-stablecoin-depeg-and-cases-to-know",
+    "https://coinlaw.io/aave-statistics/",
+    "https://www.coingecko.com/en/coins/crvusd",
+    "https://coinmarketcap.com/currencies/frax-usd/",
+    "https://cointelegraph.com/news/usdt-market-share-jumps-amid-economic-uncertainty-usdc-shrinks",
+    "https://arxiv.org/html/2606.07442"
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "category": "Liquid staking & restaking",
+  "summary": "Liquid staking remains DeFi's largest single category, anchored by Lido (~$16.1B TVL per DefiLlama, mid-2026), which still dwarfs all rivals but has ceded share over time (peaked >32% of staked ETH in 2023, now ~24%). Exchange-operated LSTs (Binance staked ETH ~$6.6B; Coinbase cbETH ~$0.28B on-chain, but Coinbase secures ~5% of all ETH validators custodially) and decentralized Rocket Pool (~$0.96B) round out Ethereum, while Solana LSTs (Jito ~$0.72B, Sanctum, Jupiter) and newer L1 LSTs (Kinetiq kHYPE on Hyperliquid ~$1.1B) diversify the field. Restaking, born with EigenLayer in 2023, exploded to a ~$20-22B peak in mid-2024 then contracted hard as points-farming airdrops concluded; EigenLayer (rebranded EigenCloud) sits near ~$5.0B on DefiLlama's Restaking page (some trackers cite higher ~$8-9B including LRT-routed deposits) and still holds ~90%+ of the restaking market. Liquid restaking is led by ether.fi (eETH, ~$3.0B, >75% of LRT share), with Kelp (~$1.0B) and a much-diminished Renzo (~$0.1B, down from ~$2B peak). Symbiotic (~$0.35B) is the leading modular alternative to EigenLayer. The AVS / security-as-a-service narrative — restaked ETH securing Actively Validated Services and shared-security for new chains/oracles/DA layers — remains the long-term thesis, but real AVS yields have been slow to materialize, which drove the 2024-2025 cooldown.",
+  "leaders": [
+    {
+      "name": "Lido",
+      "chain": "Ethereum (also Solana, Moonbeam, Moonriver)",
+      "metric": "TVL (liquid staking)",
+      "value": "~$16.1B",
+      "note": "Undisputed liquid-staking leader; stETH/wstETH is the most DeFi-integrated LST (Aave, Maker, etc.) and dominates DEX trading volume. Share of staked ETH fell from >32% (2023 peak) to ~24% amid rising competition; ~8.7M ETH staked."
+    },
+    {
+      "name": "Binance staked ETH (WBETH/BETH)",
+      "chain": "Ethereum, BNB Chain",
+      "metric": "TVL (liquid staking)",
+      "value": "~$6.6B",
+      "note": "Largest exchange-operated LSP; ~3.3M ETH / ~9% of staked-ETH market. Custodial/centralized model contrasts with Lido and Rocket Pool."
+    },
+    {
+      "name": "EigenLayer (EigenCloud)",
+      "chain": "Ethereum",
+      "metric": "TVL (restaking)",
+      "value": "~$5.0B (DefiLlama Restaking page; some trackers cite ~$8-9B)",
+      "note": "Pioneer of restaking / shared security (AVS). Grew from ~$1.1B to a ~$20-22B peak in mid-2024, then contracted ~75% as points campaigns ended. Rebranded 'EigenCloud' (verifiable/security-as-a-service). Still ~90%+ of restaking market; EIGEN token ~96% below ATH despite TVL stability."
+    },
+    {
+      "name": "ether.fi (eETH)",
+      "chain": "Ethereum, Arbitrum, Base",
+      "metric": "TVL (liquid restaking)",
+      "value": "~$3.0B",
+      "note": "Largest liquid restaking token (LRT) protocol, >75% of LRT share. Non-custodial; stakers retain validator keys. eETH restakes into EigenLayer to earn base staking + AVS rewards."
+    },
+    {
+      "name": "Kelp (rsETH)",
+      "chain": "Ethereum, Arbitrum, Optimism, Manta",
+      "metric": "TVL (liquid restaking)",
+      "value": "~$1.0B",
+      "note": "Second-largest LRT after ether.fi; multi-chain rsETH. Dipped ~17% during the mid-2024 restaking cooldown but retained a solid base."
+    },
+    {
+      "name": "Rocket Pool (rETH)",
+      "chain": "Ethereum",
+      "metric": "TVL (liquid staking)",
+      "value": "~$0.96B",
+      "note": "Most decentralized Ethereum LSP, launched Nov 2021; permissionless node operators. Smaller than Lido/exchanges but the reference for decentralization-aligned staking."
+    },
+    {
+      "name": "Jito (JitoSOL)",
+      "chain": "Solana",
+      "metric": "TVL (liquid staking)",
+      "value": "~$0.72B",
+      "note": "Leading Solana LST, integrates MEV rewards. Anchor of Solana's liquid-staking ecosystem alongside Sanctum and Jupiter staked SOL. Jito Restaking (~$0.017B) extends the AVS model to Solana."
+    },
+    {
+      "name": "Symbiotic",
+      "chain": "Ethereum",
+      "metric": "TVL (restaking)",
+      "value": "~$0.35B",
+      "note": "Leading modular / permissionless alternative to EigenLayer for shared security; flexible collateral. Main 'security-as-a-service' challenger alongside Karak."
+    },
+    {
+      "name": "Coinbase Wrapped Staked ETH (cbETH)",
+      "chain": "Ethereum",
+      "metric": "TVL (liquid staking) / validator share",
+      "value": "~$0.28B on-chain (cbETH); ~5% of all ETH validators custodially",
+      "note": "On-chain cbETH TVL is modest, but Coinbase secures ~1.84M ETH (~5.1% of validators) via its custodial staking — a large off-DeFi footprint not fully reflected in the cbETH token TVL."
+    },
+    {
+      "name": "Renzo (ezETH)",
+      "chain": "Ethereum, Linea, Solana, Arbitrum",
+      "metric": "TVL (liquid restaking)",
+      "value": "~$0.1B",
+      "note": "Once a top-3 LRT (~$2B peak in 2024), Renzo fell hardest in the cooldown (~44% one-month drop as points ended) and a brief ezETH depeg episode, leaving it far below ether.fi and Kelp."
+    }
+  ],
+  "leadership_shift": "2021: Liquid staking was nascent — Lido (launched 2020) emerged as the clear leader for stETH; Rocket Pool launched its mainnet in Nov 2021 as the decentralized challenger. There was no restaking category yet. 2023: Post-Merge and Shapella, liquid staking boomed; Lido dominated, peaking at >32% of all staked ETH and inspiring 'monopoly' concerns, with exchange LSTs (Coinbase cbETH, Binance) and Rocket Pool as the main alternatives. EigenLayer launched restaking in 2023, creating an entirely new primitive (shared security / AVS). 2024: The restaking + liquid restaking mania peaked — EigenLayer hit ~$20-22B TVL (June 2024) and LRTs (ether.fi, Renzo, Kelp, Puffer) raced to capture points-driven deposits; ether.fi became the LRT leader. Then a sharp cooldown hit H2 2024 as airdrop/points incentives wound down (Renzo -44%, Kelp -17% in a month) and real AVS yields lagged. Now (2026): Lido still leads liquid staking (~$16B) but with reduced share (~24%); the field has broadened across Ethereum (Binance, Rocket Pool, Coinbase) and other L1s (Solana's Jito/Sanctum/Jupiter, Hyperliquid's Kinetiq). In restaking, EigenLayer (now EigenCloud) consolidated the contraction and still holds ~90%+ share but well below its peak; ether.fi dominates LRTs (>75%), Kelp is #2, Renzo collapsed to a fraction of its peak, and Symbiotic is the leading modular challenger. The narrative has matured from points-farming toward genuine security-as-a-service / verifiable-cloud, but yield monetization remains the open question.",
+  "sources": [
+    "https://api.llama.fi/protocols",
+    "https://defillama.com/protocol/lido",
+    "https://defillama.com/protocol/rocket-pool",
+    "https://defillama.com/protocol/eigencloud",
+    "https://defillama.com/protocol/swell-liquid-restaking",
+    "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption",
+    "https://www.dlnews.com/articles/defi/why-eigenlayer-and-other-restaking-projects-are-cooling-off/",
+    "https://www.dlnews.com/articles/regulation/lido-eyes-low-risk-staking-to-boost-flagging-market-share/",
+    "https://unchainedcrypto.com/lido-competition-market-share-decline/",
+    "https://news.bitcoin.com/kraken-eth-eigencloud-eigen-token-96-percent-below-ath/",
+    "https://fensory.com/intelligence/defi/eigenlayer-tvl-restaking-market-analysis-2026",
+    "https://blockworks.com/news/etherfi-eigenlayer-liquid-restaked-token",
+    "https://blockeden.xyz/blog/2026/03/20/eigenlayer-18b-tvl-vertical-avs-specialization-restaking-evolution/",
+    "https://www.datawallet.com/crypto/ethereum-staking-statistics-and-trends"
+  ]
+}

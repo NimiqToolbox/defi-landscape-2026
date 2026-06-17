@@ -1,0 +1,95 @@
+{
+  "category": "Aggregators, intents & DeFi frontends",
+  "summary": "As of mid-June 2026, the DEX-aggregator landscape is split by chain family rather than dominated by a single global leader. Across all chains, Solana's Jupiter is the largest aggregator by a wide margin (~$19.7B 30-day volume, ~29.5% of all aggregator volume tracked by DefiLlama; ~37% on a 24h basis), reflecting that aggregator routing is the default execution path on Solana. On EVM/Ethereum, leadership rotated: KyberSwap currently leads Ethereum aggregation (~24.9% of 30d ETH aggregator volume) after an incentive/liquidity-mining push, with CoW Swap #2 (~16%) and 1inch fallen to ~9% on Ethereum. 1inch — the 2021-2022 category king — has lost relative share to intent-based and incentive-driven rivals, though it remains a top-5 global aggregator (~$3.1B 30d). The dominant structural theme is the shift from classic 'best-route' aggregation toward intent-based architectures (CoW Swap batch auctions/solvers, 1inch Fusion, Velora/ex-ParaSwap Delta) and toward super-app frontends (Jupiter perps/launchpad, exchange-embedded swaps like OKX Swap and Bebop). DefiLlama figures are live snapshots and rotate month-to-month with launchpad cycles and incentive programs.",
+  "leaders": [
+    {
+      "name": "Jupiter (Jupiter Aggregator)",
+      "chain": "Solana",
+      "metric": "Aggregator trading volume (30d) / category dominance",
+      "value": "~$19.73B 30d volume; ~$950M 24h; ~29.5% of all-chain aggregator volume (30d), ~37% on 24h basis (DefiLlama, 2026-06-17). On Solana it routes the large majority of aggregator-routed swap volume (~93% of Solana aggregator share at peak per SolanaFloor).",
+      "note": "Clear global #1 by absolute volume despite operating only on Solana. Grew from JUP airdrop (Jan 2024, ~1.4M wallets) into a DeFi super-app: spot aggregation + perps (>$500M daily notional), limit orders, and the Jupiter Start launchpad. JUP market cap ~$879M (May 2026). Brief dips (share fell to ~65% when DFlow rose to ~29%; DFlow even edged ahead for one day Nov 15) but reclaimed dominance. Note: DefiLlama counts aggregator-routed volume; proprietary AMMs (e.g. HumidiFi) now drive much of Jupiter execution."
+    },
+    {
+      "name": "KyberSwap (KyberSwap Aggregator)",
+      "chain": "Multi-chain EVM (Ethereum, Arbitrum, Base, BSC, Polygon, OP, Avalanche, + ~20 chains)",
+      "metric": "Aggregator volume; Ethereum aggregator market share",
+      "value": "~$7.26B 30d all-chain; ~$250M 24h (~9.7% all-chain 24h). Leads Ethereum aggregation at ~24.9% of 30d ETH aggregator volume (~$4.87B) per DefiLlama; reported ~31% ETH share in April 2026 per The Block/Phemex.",
+      "note": "Current EVM aggregation leader. Surged on the back of a liquidity-mining program; The Block notes incentive-driven share is fragile because switching costs are low. Notable recovery after the Nov-2023 ~$48M exploit that had crippled the protocol."
+    },
+    {
+      "name": "1inch",
+      "chain": "Multi-chain EVM (Ethereum + ~13 chains: OP, BSC, Gnosis, Avalanche, Polygon, Arbitrum, Base, Linea, zkSync, Sonic, Unichain)",
+      "metric": "Aggregator volume; market share over time",
+      "value": "~$3.09B 30d all-chain; ~$176M 24h (~6.8% all-chain 24h, ~4.6% 30d). On Ethereum ~9.4% of 30d aggregator volume. ETH share fell from ~30% historically to ~15-17% (Q1 2026); >$700B lifetime volume across 12 chains (per CCN/1inch).",
+      "note": "The 2021-2022 category leader, now a top-5 global aggregator but past its peak relative share. Pioneered Pathfinder routing and Fusion (intent-based, MEV-protected, gasless RFQ-style) and Fusion+ cross-chain. The Block reported 1inch briefly 'reclaimed' the lead with ~60% share after a 2025 Solana expansion, then share slid again (Q4'25 25.2% -> Q1'26 17.0%) as Kyber/CoW rose and incentives faded; Q1 2026 trading volume reportedly fell ~60%."
+    },
+    {
+      "name": "CoW Swap (CoW Protocol)",
+      "chain": "Ethereum, Gnosis, Arbitrum, Base, Polygon, Avalanche, BSC, Lens",
+      "metric": "Aggregator volume; intent/batch-auction share",
+      "value": "~$3.50B 30d all-chain; ~$112M 24h (~5.2% 30d all-chain). Ethereum aggregator share ~16.1% (30d, DefiLlama). Rose from 12% (Jan 2024) to 26% (Jan 2025) ETH aggregator share per The Block; >$35B lifetime settled volume.",
+      "note": "Flagship intent-based DEX: collects orders ~30s, batches them, and auctions settlement to competing solvers (batch auctions), matching coincidences-of-wants (up to ~20% internalized) for MEV protection and gasless trading (gas only on fill). Monthly volume ~$4.8-5.2B in Q1 2025 (+~130% YoY). The biggest single 'intents' winner of the 2023-2025 cycle."
+    },
+    {
+      "name": "OKX Swap (OKX DEX aggregator)",
+      "chain": "Multi-chain (Ethereum, BSC, Solana, Polygon, Tron, Arbitrum, + ~30 chains)",
+      "metric": "Aggregator volume (exchange-embedded frontend)",
+      "value": "~$5.93B 30d; ~$222M 24h (~8.7% all-chain 24h, ~8.9% 30d) per DefiLlama (2026-06-17).",
+      "note": "CEX/wallet-embedded aggregator — illustrates the rise of exchange super-app frontends capturing swap flow. Now a top-3 global aggregator by volume, ahead of 1inch and CoW Swap on a raw-volume basis, via OKX Wallet distribution."
+    },
+    {
+      "name": "DFlow",
+      "chain": "Solana",
+      "metric": "Aggregator volume (Solana challenger)",
+      "value": "~$5.33B 30d; ~$156M 24h (~6.1% all-chain 24h, ~8.0% 30d) per DefiLlama.",
+      "note": "Fastest-rising Jupiter challenger on Solana; peaked near 29% Solana aggregator share and briefly overtook Jupiter on a single day (Nov 15, 47.9% vs 47.1%) before Jupiter reclaimed lead. Embeds an order-flow-auction / conditional-liquidity model."
+    },
+    {
+      "name": "0x (0x Aggregator / Matcha)",
+      "chain": "Multi-chain EVM (Ethereum, Base, Arbitrum, Polygon, BSC, + many) and now Solana",
+      "metric": "Aggregator volume / API infrastructure",
+      "value": "~$4.47B 30d; ~$205M 24h (~8.0% all-chain 24h, ~6.7% 30d) per DefiLlama.",
+      "note": "Underlying swap-API/infrastructure layer powering many wallets and the Matcha frontend; high volume reflects B2B routing demand. Among the top global aggregators by volume."
+    },
+    {
+      "name": "Velora (formerly ParaSwap)",
+      "chain": "Multi-chain EVM (Ethereum, OP, BSC, Polygon, Arbitrum, Base, Avalanche, + others)",
+      "metric": "Aggregator volume; intent migration",
+      "value": "~$1.96B 30d (~2.9% 30d all-chain) per DefiLlama. ~18,000 monthly active users; ~4.3M smart-contract interactions over trailing 365d (Token Terminal, per Cointelegraph).",
+      "note": "ParaSwap rebranded to Velora in April 2025, pivoting from classic aggregation to intent-based, cross-chain trading via Delta v2.5 (intents first introduced summer 2024 for MEV mitigation). Long-standing top-tier EVM aggregator now repositioning as a full trading protocol with CEX-like features (limit orders, cross-chain)."
+    },
+    {
+      "name": "Bebop",
+      "chain": "Multi-chain EVM (Ethereum, Arbitrum, Polygon, BSC, Base, zkSync, OP, + others)",
+      "metric": "Aggregator volume (RFQ/PMM)",
+      "value": "~$2.20B 30d; ~$74M 24h (~2.9% all-chain 24h) per DefiLlama. ~9.9% of 30d Ethereum aggregator volume.",
+      "note": "RFQ / professional-market-maker aggregator (Wintermute-incubated) cited alongside Odos as a rising star for transparency and execution quality; meaningful Ethereum share."
+    },
+    {
+      "name": "Odos (ODOS)",
+      "chain": "Multi-chain EVM (Ethereum, Arbitrum, Base, BSC, Polygon, OP, zkSync, Avalanche, Linea, Sonic, + others)",
+      "metric": "Aggregator volume; growth & adoption",
+      "value": "~$553M 30d; ~$9M 24h (~0.8% 30d all-chain) per DefiLlama (2026-06-17). 2024 full-year volume ~$53B (5x vs 2023); >$6B monthly at late-2024 peak; >3M unique wallets; +2.7M new wallets in 2024.",
+      "note": "Smaller by current DefiLlama 30d volume but a notable 2024 riser: aggregates ~900+ liquidity sources, raised ~$32M (a16z crypto, Uniswap among backers), launched the ODOS token (73% participation, ~357k wallets). Known for atomic multi-token/SOR routing."
+    }
+  ],
+  "leadership_shift": "2021-2022: 1inch was the clear category king on Ethereum (~30% ETH aggregator share at peak; 600k users, 2nd-largest ETH DeFi protocol after Uniswap), riding liquidity-mining campaigns; classic 'best price across DEXes' routing (Pathfinder) defined the segment, alongside 0x/Matcha, ParaSwap and KyberSwap. Aggregators' share of total Ethereum DEX volume roughly doubled from ~7.5% (early 2021) to ~15%, reaching ~1/3 of ETH DEX volume by 2022. 2023-2025: Two tectonic shifts. (1) Solana's rise made Jupiter the largest aggregator on earth by volume — on Solana, aggregator routing became the default path (~74%+ of Solana DEX volume) and Jupiter captured the vast majority (~90%+ at peak), expanding into a super-app (perps, launchpad). (2) Intent-based trading went mainstream: CoW Swap (batch auctions + solver competition + MEV protection) roughly doubled ETH aggregator share from 12% (Jan 2024) to 26% (Jan 2025) to challenge 1inch; 1inch answered with Fusion/Fusion+; ParaSwap pivoted to intents and rebranded to Velora (Apr 2025). 1inch even briefly 'reclaimed' the global lead (~60% share, per The Block, after a 2025 Solana expansion). Now (mid-2026): No single global leader — the market is chain-segmented and incentive-volatile. Jupiter dominates all-chain volume (~29.5% 30d) on Solana strength but faces DFlow. On EVM, KyberSwap leads Ethereum aggregation (~25% 30d ETH) after a liquidity-mining push, CoW Swap is #2 (~16%), and 1inch has slid to ~9% on Ethereum (Q4'25 25.2% -> Q1'26 17.0% overall; reported Q1'26 volume -60%). Exchange-embedded frontends (OKX Swap, Bitget/Binance wallets) and RFQ/PMM venues (Bebop) now capture top-tier flow, and the center of gravity has moved decisively from raw routing toward intents + super-app frontends + incentive-driven, rotating EVM leadership.",
+  "sources": [
+    "https://api.llama.fi/overview/aggregators (DefiLlama DEX-aggregator volumes, all-chain, retrieved 2026-06-17)",
+    "https://api.llama.fi/overview/aggregators/ethereum (DefiLlama Ethereum aggregator breakdown, retrieved 2026-06-17)",
+    "https://defillama.com/dex-aggregators",
+    "https://defillama.com/dex-aggregators/chain/ethereum",
+    "https://www.theblock.co/post/397278/ethereum-dex-aggregator-competitive-kyber-cowswap-gain",
+    "https://www.theblock.co/post/343583/cow-swap-surges-to-26-market-share-challenging-1inch-for-dex-aggregator-dominance",
+    "https://www.theblock.co/post/356650/1inch-dex-aggregator-60-market-share-solana-expansion",
+    "https://phemex.com/news/article/kyber-and-cowswap-gain-ground-in-ethereum-dex-aggregator-market-73616",
+    "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-landscape",
+    "https://yellow.com/research/jupiter-solana-dex-aggregator-market-cap-2026",
+    "https://www.ccn.com/education/crypto/1inch-cross-chain-dex-aggregator-altcoin-traders-explained/",
+    "https://cointelegraph.com/news/velora-is-now-para-swap-introduces",
+    "https://en.cryptonomist.ch/2025/04/03/velora-the-new-face-of-paraswap-revolutionizes-dex-trading-with-an-intent-based-system/",
+    "https://metalamp.io/magazine/article/cow-dao-and-cow-protocol-how-intent-based-trading-and-mev-protection-transform-defi",
+    "https://www.rootdata.com/Projects/detail/ODOS",
+    "https://www.gate.com/learn/articles/odos-token-a-comprehensive-guide-to-the-dex-aggregator/5843"
+  ]
+}

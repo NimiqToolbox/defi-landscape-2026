@@ -1,0 +1,136 @@
+{
+  "topic": "Restaking over time",
+  "summary": "Restaking lets staked ETH (and other assets) be re-pledged to secure additional services, pioneered by EigenLayer (mainnet 2023, deposits opened broadly in 2024). The narrative exploded in 2024: EigenLayer TVL rose from ~$1.3B at end-2023 to a ~$20.1B peak on 2024-06-06, while liquid restaking tokens (LRTs) — ether.fi, Renzo, Kelp, Puffer, Swell — layered on top, with ether.fi peaking above $10B in Dec 2024. Competitors Symbiotic and Karak launched in mid/late-2024. After the points-farming and airdrop incentives wound down, the sector partially normalized in 2025: EigenLayer rebounded to a fresh ~$22.1B ATH on 2025-08-14 (helped by ETH price), then declined to ~$12.6B by end-2025 and ~$5.0B by mid-June 2026 as restaked ETH outflowed and slashing went live (Apr 2025). LRTs followed: ether.fi held ~$8B through 2025 but fell to ~$3.0B by mid-2026; Renzo and Karak collapsed >90% from peaks. All figures are USD TVL from the DefiLlama API as of 2026-06-16. Note: LRTs deposit INTO EigenLayer, so summing 'Restaking' + 'Liquid Restaking' categories double-counts overlapping ETH; the combined-market series is gross summed TVL and overstates net unique value locked.",
+  "series": [
+    {
+      "label": "EigenLayer (EigenCloud) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/eigenlayer",
+        "https://defillama.com/protocol/eigencloud"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 1.32, "note": "End of 2023; deposits had recently opened, ~$1.3B (DefiLlama API as of 2026-06-16)"},
+        {"period": "2024-06-06", "value": 20.12, "note": "2024 intra-year peak; The Block reported TVL surpassing $20B for the first time around this period"},
+        {"period": "2024-12-31", "value": 14.91, "note": "End of 2024 after partial pullback from June peak"},
+        {"period": "2025-08-14", "value": 22.06, "note": "All-time high, aided by higher ETH price; coincides with broad sector peak"},
+        {"period": "2025-12-31", "value": 12.55, "note": "End of 2025; normalization after slashing went live (Apr 17, 2025) and incentives faded"},
+        {"period": "2026-06-16", "value": 4.99, "note": "Latest value; large outflows in early 2026"}
+      ]
+    },
+    {
+      "label": "ether.fi (LRT) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/ether.fi-stake",
+        "https://defillama.com/protocol/ether.fi-stake"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 0.10, "note": "End of 2023, early-stage LRT (~$103M)"},
+        {"period": "2024-12-09", "value": 10.36, "note": "2024 intra-year peak; largest LRT issuer"},
+        {"period": "2024-12-31", "value": 8.67, "note": "End of 2024"},
+        {"period": "2025-08-14", "value": 12.43, "note": "All-time high (ETH price + restaking demand)"},
+        {"period": "2025-12-31", "value": 8.08, "note": "End of 2025; held up better than peers"},
+        {"period": "2026-06-16", "value": 2.99, "note": "Latest value; still the #1 LRT by TVL"}
+      ]
+    },
+    {
+      "label": "Renzo (ezETH LRT) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/renzo",
+        "https://defillama.com/protocol/renzo"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 0.01, "note": "End of 2023, nascent (~$10M)"},
+        {"period": "2024-05-28", "value": 4.05, "note": "All-time high during 2024 LRT surge"},
+        {"period": "2024-12-31", "value": 1.30, "note": "End of 2024 after sharp drop from spring peak (ezETH depeg in Apr 2024)"},
+        {"period": "2025-12-31", "value": 0.62, "note": "End of 2025"},
+        {"period": "2026-06-16", "value": 0.11, "note": "Latest value; >97% below ATH"}
+      ]
+    },
+    {
+      "label": "Kelp (rsETH LRT) TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/kelp",
+        "https://defillama.com/protocol/kelp"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 0.14, "note": "End of 2023 (~$139M)"},
+        {"period": "2024-12-31", "value": 1.67, "note": "End of 2024"},
+        {"period": "2025-09-18", "value": 2.09, "note": "All-time high"},
+        {"period": "2025-12-31", "value": 1.10, "note": "End of 2025"},
+        {"period": "2026-06-16", "value": 1.05, "note": "Latest value; most resilient LRT besides ether.fi"}
+      ]
+    },
+    {
+      "label": "Symbiotic TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/symbiotic",
+        "https://defillama.com/protocol/symbiotic"
+      ],
+      "points": [
+        {"period": "2024-12-07", "value": 2.70, "note": "All-time high; launched mid-2024 as EigenLayer competitor (modular restaking)"},
+        {"period": "2024-12-31", "value": 2.12, "note": "End of 2024 (first full data year)"},
+        {"period": "2025-12-31", "value": 0.54, "note": "End of 2025; normalization"},
+        {"period": "2026-06-16", "value": 0.35, "note": "Latest value"}
+      ]
+    },
+    {
+      "label": "Karak TVL",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocol/karak",
+        "https://defillama.com/protocol/karak"
+      ],
+      "points": [
+        {"period": "2024-06-07", "value": 1.05, "note": "All-time high during 2024 multi-asset restaking surge"},
+        {"period": "2024-12-31", "value": 0.86, "note": "End of 2024"},
+        {"period": "2025-12-15", "value": 0.08, "note": "End of 2025; collapsed ~92% from peak"},
+        {"period": "2026-06-16", "value": 0.01, "note": "Latest value; effectively wound down (~$7M)"}
+      ]
+    },
+    {
+      "label": "Combined restaking market (Restaking + Liquid Restaking categories, gross/double-counted)",
+      "unit": "USD billions",
+      "sources": [
+        "https://api.llama.fi/protocols",
+        "https://defillama.com/protocols/Restaking",
+        "https://defillama.com/protocols/Liquid%20restaking"
+      ],
+      "points": [
+        {"period": "2022-12-31", "value": 0.0, "note": "Sector did not yet exist at scale"},
+        {"period": "2023-12-31", "value": 1.60, "note": "End of 2023; EigenLayer plus very early LRTs"},
+        {"period": "2024-12-17", "value": 47.34, "note": "2024 peak of summed categories during launch surge"},
+        {"period": "2024-12-31", "value": 38.73, "note": "End of 2024"},
+        {"period": "2025-08-23", "value": 49.18, "note": "All-time high of summed categories (ETH price-aided)"},
+        {"period": "2025-12-31", "value": 29.47, "note": "End of 2025; 2025-26 normalization"},
+        {"period": "2026-06-16", "value": 26.63, "note": "Latest summed value. CAVEAT: LRTs restake into EigenLayer, so this gross sum double-counts overlapping ETH and overstates unique TVL"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "EigenLayer (now EigenCloud) is the dominant restaking protocol", "value": "~$5.0B TVL", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
+    {"claim": "EigenLayer all-time-high TVL", "value": "$22.06B on 2025-08-14", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
+    {"claim": "EigenLayer 2024 launch-surge peak", "value": "$20.12B on 2024-06-06; The Block reported it crossing $20B for the first time", "as_of": "2024", "confidence": "high", "source_name": "DefiLlama API / The Block", "source_url": "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time"},
+    {"claim": "ether.fi is the largest liquid restaking token (LRT) issuer", "value": "~$2.99B TVL (latest); ATH $12.43B on 2025-08-14", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/ether.fi-stake"},
+    {"claim": "Restaking TVL grew ~24x in 2024 (EigenLayer ~$1.3B to ~$15B EOY, peaking ~$20B mid-year)", "value": "1.32B -> 14.91B EOY 2024", "as_of": "2024-12-31", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
+    {"claim": "Slashing went live on EigenLayer, marking a shift from incentive-driven growth", "value": "2025-04-17", "as_of": "2025", "confidence": "medium", "source_name": "Secondary reporting (Medium/industry)", "source_url": "https://medium.com/@pycheng9/eigenlayer-the-15b-to-7b-crash-d8e73f7b3169"},
+    {"claim": "2025-26 normalization: EigenLayer fell from ~$22B ATH (Aug 2025) to ~$5.0B (Jun 2026)", "value": "-77% from ATH", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
+    {"claim": "Renzo and Karak collapsed sharply from 2024 peaks", "value": "Renzo $4.05B ATH -> $0.11B; Karak $1.05B ATH -> $0.01B", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Liquid%20restaking"},
+    {"claim": "Symbiotic launched mid-2024 as a modular EigenLayer competitor", "value": "ATH $2.70B (Dec 2024); latest ~$0.35B", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/symbiotic"},
+    {"claim": "Current DefiLlama 'Restaking' category total", "value": "~$8.97B (incl. EigenCloud $5.0B, Babylon $3.4B, Symbiotic $0.35B)", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Restaking"},
+    {"claim": "Current DefiLlama 'Liquid Restaking' category total", "value": "~$4.33B (ether.fi $2.99B, Kelp $1.05B, Renzo $0.11B)", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Liquid%20restaking"}
+  ],
+  "top_entities": [
+    {"name": "EigenLayer (EigenCloud)", "metric": "Restaking TVL (latest)", "value": "$4.99B", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
+    {"name": "ether.fi", "metric": "Liquid Restaking TVL (latest)", "value": "$2.99B", "source_url": "https://api.llama.fi/protocol/ether.fi-stake"},
+    {"name": "Kelp (rsETH)", "metric": "Liquid Restaking TVL (latest)", "value": "$1.05B", "source_url": "https://api.llama.fi/protocol/kelp"},
+    {"name": "Symbiotic", "metric": "Restaking TVL (latest)", "value": "$0.35B", "source_url": "https://api.llama.fi/protocol/symbiotic"},
+    {"name": "Renzo (ezETH)", "metric": "Liquid Restaking TVL (latest)", "value": "$0.11B", "source_url": "https://api.llama.fi/protocol/renzo"},
+    {"name": "Puffer", "metric": "Liquid Restaking TVL (latest)", "value": "$0.05B", "source_url": "https://api.llama.fi/protocol/puffer-finance"},
+    {"name": "Karak", "metric": "Restaking TVL (latest)", "value": "$0.01B", "source_url": "https://api.llama.fi/protocol/karak"}
+  ]
+}

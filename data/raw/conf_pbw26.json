@@ -1,0 +1,163 @@
+{
+  "name": "Paris Blockchain Week 2026",
+  "edition": "7th edition (2026)",
+  "location": "Carrousel du Louvre, Paris, France (VIP dinner April 14 at Chateau de Versailles)",
+  "dates": "April 15-16, 2026",
+  "in_window": true,
+  "attendance": "~10,000 expected attendees from 100+ countries; 320+ speakers, 450+ journalists, 300 sponsors (2025 edition drew 9,500+ attendees and 420+ speakers)",
+  "defi_themes": [
+    "Stablecoins and stablecoin-powered payments (24/7 settlement, euro-indexed stablecoins, MiCA e-money tokens vs asset-referenced tokens)",
+    "Real World Asset (RWA) tokenization as institutional infrastructure (tokenized bonds, funds, fractional real estate)",
+    "Institutional DeFi / TradFi-DeFi convergence (banks integrating blockchain rails, closing the liquidity gap)",
+    "Tokenized assets and the global settlement layer (T+0 settlement, custody, clearing, execution at scale)",
+    "Tokenization in asset management and capital markets (natively tokenized IPO, equities in a token economy)",
+    "RWA liquidity and on-chain liquidity provision",
+    "Crypto/DeFi regulation in Europe (MiCA/MiCAR lessons, ESMA dialogue, EU vs US regulatory gap)",
+    "Bitcoin treasury strategies and on-chain digital credit/capital markets",
+    "Institutional adoption: ETPs, ETFs and stablecoins in institutional portfolios",
+    "Interoperability and account abstraction as rails for mass adoption",
+    "AI x DeFi (agentic on-chain wealth management, decentralized AI)"
+  ],
+  "notable_panels": [
+    {
+      "title": "RWA: The Trillion Dollar Institutional Infrastructure Layer",
+      "topic": "Real World Asset tokenization as institutional infrastructure",
+      "speakers": "Abel Pena (Bit2Me), Arnaud Simeray (Dune), Nenter Chow (BitMart), Prof. Ronghui Gu (CertiK), Krishna Omkar (LSEG), Michelle O'Connor (GBBC)"
+    },
+    {
+      "title": "Scaling RWA Liquidity: Assets in Motion",
+      "topic": "On-chain liquidity for tokenized real world assets",
+      "speakers": "Solomon Tesfaye (Aptos Labs), Oya Celiktemur (Ondo Finance), German Soto Sanchez (Broadridge), Hein Tibosch (Flow Traders), Francesco Ranieri Fabracci (Tether), Yana Prikhodchenko (Cointelegraph)"
+    },
+    {
+      "title": "The Global Settlement Layer: from Stablecoins to Tokenized Assets",
+      "topic": "Stablecoins and tokenized assets as a settlement layer",
+      "speakers": "Sabih Bezhad (Deutsche Bank), Catherine Chen (Binance), Marat Faritov (Moody's Ratings), Stijn Vander Straeten (Crypto Finance), Michael Higgins (Ripple Prime), Tim Haldorsson (Lunar Strategy)"
+    },
+    {
+      "title": "Bridging Markets: The Role of Exchanges and Stablecoins",
+      "topic": "Stablecoins and exchange infrastructure",
+      "speakers": "Amy Oldenburg (Morgan Stanley), Giovanni Cunti (GATE), Ivan Zhiznevsky (3S Money), Stephanie Hurry (Boerse Stuttgart Digital), Andrew Isaacs (Aurum Foundation), Odelia Torteman (XRPL Commons)"
+    },
+    {
+      "title": "The 24/7 Shift: Inside the Move to Stablecoin-Powered Payments",
+      "topic": "Stablecoin payment infrastructure",
+      "speakers": "Mark Daly (Zerohash), Marat Faritov (Moody's Ratings)"
+    },
+    {
+      "title": "The Institutional Mix: Integrating ETPs and Stablecoins",
+      "topic": "Institutional integration of ETPs and stablecoins",
+      "speakers": "Nikhil Sharma (BlackRock), Ben Slavin (BNY), Kathleen Wrynn (Invesco), Jason Xavier (Franklin Templeton), Mike Belshe (BitGo), Raphael Bloch (The Big Whale)"
+    },
+    {
+      "title": "TradFi x Web3: Closing the Liquidity Gap",
+      "topic": "TradFi-DeFi convergence and liquidity",
+      "speakers": "Robby Yung (Animoca Brands), Simon Letort (Canton Network), Laurent Majchrzak (CACEIS), Alex Chesse (Fireblocks), Christopher Beck (tradias), James Bowater (The Digital Commonwealth)"
+    },
+    {
+      "title": "The Institutional Bridge: How Banks and Digital Asset Infrastructure Are Converging",
+      "topic": "Bank and digital-asset infrastructure convergence",
+      "speakers": "Kash Razzaghi (Circle), Ronit Ghose (Citi)"
+    },
+    {
+      "title": "The utility unlock: How tokenization is rewiring finance",
+      "topic": "Tokenization rewiring finance",
+      "speakers": "Kara Kennedy (J.P. Morgan), Anna Irrera (Bloomberg)"
+    },
+    {
+      "title": "Proof-of-Concept or Beyond: Can Tokenization Reshape Asset Management",
+      "topic": "Tokenization in asset management",
+      "speakers": "Jean-Jacques Barberis (Amundi), Adrien Paredes-Vanheule (L'Agefi)"
+    },
+    {
+      "title": "MiCA - Lessons Learned and Insights Gained: What's Next for Crypto Regulation in Europe",
+      "topic": "DeFi/crypto regulation under MiCA",
+      "speakers": "Haider Rafique (OKX), Peter Kerstens (European Commission)"
+    },
+    {
+      "title": "EU vs. US: The Regulatory Gap",
+      "topic": "Cross-jurisdiction crypto/DeFi regulation",
+      "speakers": "Iana Dimitrova (OpenPayd), Stephanie Cabossioras (FORGE), Nestor Palao Pinedo (Sygnum Bank), Ambroise Helaine (Bybit), Dr Lisa Cameron (UKUS Crypto Alliance), Emma Joyce (GBBC)"
+    },
+    {
+      "title": "Bitcoin Capital Markets: The Emergence of Digital Credit",
+      "topic": "On-chain Bitcoin-backed credit / digital credit markets",
+      "speakers": "Dr Adam Back (Blockstream), Alexandre Laizet (Capital B), Bradley Duke (Bitwise), Allen Helm (Bitcoin for Corporations)"
+    },
+    {
+      "title": "The All-In Strategy: Mastering the Bitcoin Treasury Model",
+      "topic": "Corporate Bitcoin treasury / on-chain treasuries",
+      "speakers": "Thomas Restout (B2C2), Thomas Vogel (Latham & Watkins), Eric Larcheveque (The Bitcoin Society), Alexandre Laizet (Capital B), Stan Havryliuk (Sats Terminal), Allen Helm (Bitcoin for Corporations)"
+    },
+    {
+      "title": "Interoperability & Account Abstraction: Building the Rails for Mass Adoption",
+      "topic": "DeFi interoperability and account abstraction",
+      "speakers": "Jess Houlgrave (WalletConnect), Charlie Varley (Bloom), Sergej Kunz (1inch), Ofir Eliasi (EIL/Kerberus), Avishay Yanai (Soda Labs), Sheraz Ahmed (STORM Partners)"
+    },
+    {
+      "title": "AI's Role in Onchain Wealth, the agentic path",
+      "topic": "AI agents in on-chain wealth/DeFi",
+      "speakers": "Brian Huang (Glider), Daniel Seifert (Coinbase), Isaac Zarb (Spectrum Nodes), Petrix Barbosa (Matchain), Gauthier Vila (Zyfai), Ethan Pierse (Borderless Ventures)"
+    },
+    {
+      "title": "First Bell, On-Chain: The World's First Natively Tokenized IPO",
+      "topic": "Natively tokenized equities / IPO",
+      "speakers": "Mark Kepeneghian (Lise)"
+    },
+    {
+      "title": "Equities approach in a token economy",
+      "topic": "Tokenized equities",
+      "speakers": "Miller Whitehouse-Levine (Solana Policy Institute), Myles Harrison (Amina), Nimrod Knoller (Lava Network), Franck Guiader (Gide), Itai Elizur (MarketAcross)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Emmanuel Macron", "affiliation": "President of France (special address on stablecoins, digital euro, European financial sovereignty)"},
+    {"name": "Anne Le Henanff", "affiliation": "French Minister-Delegate for AI and Digital Affairs"},
+    {"name": "Nikhil Sharma", "affiliation": "BlackRock"},
+    {"name": "Kara Kennedy", "affiliation": "J.P. Morgan"},
+    {"name": "Sabih Bezhad", "affiliation": "Deutsche Bank"},
+    {"name": "Jean-Marc Stenger", "affiliation": "Societe Generale-FORGE"},
+    {"name": "Jean-Jacques Barberis", "affiliation": "Amundi"},
+    {"name": "Kash Razzaghi", "affiliation": "Circle"},
+    {"name": "Ronit Ghose", "affiliation": "Citi"},
+    {"name": "Oya Celiktemur", "affiliation": "Ondo Finance"},
+    {"name": "Sergej Kunz", "affiliation": "1inch"},
+    {"name": "Dr Adam Back", "affiliation": "Blockstream"},
+    {"name": "Silvio Micali", "affiliation": "Algorand"},
+    {"name": "Frederik Gregaard", "affiliation": "The Cardano Foundation"},
+    {"name": "Yoni Assia", "affiliation": "eToro"},
+    {"name": "Eric Anziani", "affiliation": "Crypto.com (President & COO)"},
+    {"name": "Ben Zhou", "affiliation": "Bybit"},
+    {"name": "Erald Ghoos", "affiliation": "OKX"},
+    {"name": "Natasha Cazenave", "affiliation": "ESMA"},
+    {"name": "Peter Kerstens", "affiliation": "European Commission"},
+    {"name": "Catherine Chen", "affiliation": "Binance"},
+    {"name": "Markus Infanger", "affiliation": "Ripple"},
+    {"name": "Adam Levine", "affiliation": "Fireblocks"},
+    {"name": "Martha Reyes", "affiliation": "Fidelity Digital Assets"},
+    {"name": "Christian Rau", "affiliation": "Mastercard (SVP)"}
+  ],
+  "key_takeaways": [
+    "Macron became the first sitting G7 head of state to deliver a keynote at a conference dedicated to blockchain/digital assets, framing euro-indexed stablecoins, the ECB digital euro, and European monetary sovereignty vs US/China as strategic priorities.",
+    "RWA tokenization was positioned as a 'trillion-dollar' institutional infrastructure layer, with the conversation shifting from proof-of-concept to operational deployment of tokenized bonds, funds and real estate by major asset managers (BlackRock, Amundi, Franklin Templeton, Fidelity).",
+    "Stablecoins were the dominant DeFi/payments theme: 24/7 stablecoin-powered settlement, the move toward T+0 (vs T+2), and MiCA's distinction between e-money tokens and asset-referenced tokens shaping European stablecoin issuance.",
+    "Heavy emphasis on institutional/TradFi-DeFi convergence: banks (Deutsche Bank, BNY, Citi, JPMorgan, BNP Paribas, Goldman, Morgan Stanley) and infrastructure providers (Circle, Fireblocks, Paxos, Canton Network) building the bridge between traditional finance and on-chain rails.",
+    "Regulation framed as the enabler of institutional DeFi: MiCA/MiCAR 'lessons learned', ESMA dialogue, and the EU-vs-US regulatory gap were recurring topics, with Europe presented as a relatively clear regime post-MiCAR.",
+    "Tokenized capital markets advanced beyond fixed income into equities, including discussion of the 'world's first natively tokenized IPO' (Lise) and equities in a token economy.",
+    "Bitcoin moved 'beyond store of value' into capital-markets territory: corporate Bitcoin treasury models and the emergence of on-chain Bitcoin-backed digital credit.",
+    "AI x DeFi emerged as a forward theme: agentic on-chain wealth management and decentralized AI infrastructure.",
+    "Overall positioning: 'Where Institutions and Digital Assets Finally Meet' - the event branded itself around the new institutional financial order built on tokenization, stablecoins and on-chain settlement."
+  ],
+  "sources": [
+    "https://www.parisblockchainweek.com/",
+    "https://tickets.parisblockchainweek.com/2026/agenda26",
+    "https://www.parisblockchainweek.com/speakers",
+    "https://chainwire.org/2026/03/03/paris-blockchain-week-2026-returns-to-bridge-institutions-and-digital-assets/",
+    "https://www.gncrypto.news/events/paris-blockchain-week-2026/",
+    "https://www.kucoin.com/blog/Paris-blockchain-week-2026",
+    "https://www.cointribune.com/en/macron-at-paris-blockchain-week-2026-a-historic-first-in-the-world-of-digital-assets/",
+    "https://rwatimes.substack.com/p/macron-at-paris-blockchain-week-2026-c16",
+    "https://beincrypto.com/paris-blockchain-week-2026-where-the-new-financial-order-took-shape/"
+  ],
+  "confidence": "high"
+}

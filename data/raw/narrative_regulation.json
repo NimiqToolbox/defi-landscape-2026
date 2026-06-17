@@ -1,0 +1,252 @@
+{
+  "title": "DeFi Regulation & Macro Milestones: A Chronological History (2022-2025)",
+  "events": [
+    {
+      "date": "2022-03",
+      "title": "Federal Reserve begins aggressive rate-hike cycle",
+      "description": "The Fed started lifting the federal funds rate from near-zero in March 2022, ultimately raising it by ~5 percentage points across 11 hikes to a 5.25%-5.50% peak by July 2023, the steepest tightening since 1980, while running quantitative tightening.",
+      "impact": "Ended the cheap-money era that had inflated DeFi yields and TVL. As risk-free Treasury yields rose above most on-chain returns, capital fled DeFi; total value locked collapsed from a ~$180B late-2021 peak toward ~$40B, and 'real-world-asset' tokenized Treasury products later emerged to compete with the new risk-free rate.",
+      "sources": [
+        "https://www.thestreet.com/fed/fed-rate-hikes-2022-2023-timeline-discussion",
+        "https://crypto.com/en/crypto/learn/what-happens-to-crypto-fed-changes-interest-rates"
+      ]
+    },
+    {
+      "date": "2022-05",
+      "title": "Terra/LUNA algorithmic stablecoin collapse",
+      "description": "The UST algorithmic stablecoin lost its dollar peg in May 2022 and, with sister token LUNA, collapsed in a death spiral that wiped out roughly $40B+ in value, the first major run in crypto.",
+      "impact": "Discredited uncollateralized algorithmic stablecoins, triggered contagion across DeFi (Anchor, Celsius, 3AC) and accelerated regulatory scrutiny of stablecoins worldwide, directly shaping the reserve-backing requirements later codified in MiCA and the GENIUS Act.",
+      "sources": [
+        "https://corpgov.law.harvard.edu/2023/05/22/anatomy-of-a-run-the-terra-luna-crash/"
+      ]
+    },
+    {
+      "date": "2022-08-08",
+      "title": "OFAC sanctions Tornado Cash",
+      "description": "The US Treasury's Office of Foreign Assets Control added the Tornado Cash crypto mixer and its smart-contract addresses to the SDN list, alleging it laundered funds for North Korea's Lazarus Group; OFAC re-designated it in November 2022.",
+      "impact": "First time immutable, autonomous smart contracts (rather than a person or entity) were sanctioned, raising existential questions for DeFi privacy tools and open-source developers; protocols rushed to block sanctioned addresses and the case became the central test of whether code itself can be 'property' under US sanctions law.",
+      "sources": [
+        "https://www.steptoe.com/en/news-publications/international-compliance-blog/treasury-department-delists-tornado-cash-following-the-fifth-circuits-decision.html",
+        "https://www.defieducationfund.org/deep-dive-on-delisting-of-tornado-cash-potential-implications/"
+      ]
+    },
+    {
+      "date": "2022-11",
+      "title": "FTX collapse and contagion",
+      "description": "The implosion of centralized exchange FTX in November 2022 destroyed tens of billions in customer value and dragged Bitcoin to roughly $16,000 by year-end.",
+      "impact": "Deepened the crypto winter and intensified US regulatory hostility, but paradoxically validated DeFi's non-custodial 'not your keys, not your coins' thesis, as on-chain protocols kept functioning transparently while centralized intermediaries failed.",
+      "sources": [
+        "https://crypto.com/en/crypto/learn/what-happens-to-crypto-fed-changes-interest-rates"
+      ]
+    },
+    {
+      "date": "2023-06-05",
+      "title": "SEC sues Coinbase",
+      "description": "Under Chair Gary Gensler, the SEC sued Coinbase on June 5/6, 2023, alleging it operated as an unregistered exchange, broker and clearing agency, naming numerous tokens as unregistered securities.",
+      "impact": "A centerpiece of the 'regulation by enforcement' era that chilled US token listings and pushed DeFi development offshore; the suit's broad securities theory threatened to sweep in many DeFi tokens and intensified industry demands for legislative clarity.",
+      "sources": [
+        "https://www.cnn.com/2025/02/21/tech/coinbase-sec-case-update",
+        "https://www.amundsendavislaw.com/corporate-legal-update/sec-drops-case-against-coinbase-what-are-the-implications-for-other-cryptocurrency-cases-with-the-sec"
+      ]
+    },
+    {
+      "date": "2023-06-29",
+      "title": "EU MiCA enters into force",
+      "description": "The EU's Markets in Crypto-Assets Regulation, the world's first comprehensive crypto framework, entered into force on June 29, 2023, beginning a phased rollout across the 27-member bloc.",
+      "impact": "Gave the EU a head start on legal clarity for crypto-asset service providers and stablecoins, but its focus on identifiable issuers and licensed intermediaries left a gap for fully decentralized DeFi, which a future report was mandated to study.",
+      "sources": [
+        "https://www.cyfrin.io/blog/mica-regulation-explained-a-guide-to-eu-crypto-compliance",
+        "https://micapapers.com/guide/timeline/"
+      ]
+    },
+    {
+      "date": "2024-01-10",
+      "title": "SEC approves spot Bitcoin ETFs",
+      "description": "After the August 2023 Grayscale appellate court win against the SEC, the SEC approved 11 spot Bitcoin ETF applications on January 10, 2024, allowing direct BTC exposure in traditional brokerage accounts.",
+      "impact": "Opened an institutional on-ramp that drove a new bull cycle and renewed inflows into crypto broadly, lifting DeFi activity; the approval also signaled that even a hostile SEC could be forced toward crypto market access through the courts.",
+      "sources": [
+        "https://www.mintz.com/insights-center/viewpoints/2401/2024-01-12-sec-approves-spot-bitcoin-etfs-gensler-still-disapproves",
+        "https://www.stblaw.com/about-us/publications/view/2024/04/08/a-landmark-decision-for-the-cryptocurrency-markets-sec-approves-spot-bitcoin-etfs-(registered-funds-regulatory-update)"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "title": "SEC issues Wells notice to Uniswap Labs",
+      "description": "In April 2024 the SEC sent Uniswap Labs a Wells notice signaling planned enforcement, alleging the largest decentralized exchange operated as an unregistered securities exchange/broker and that UNI was an unregistered security; Uniswap filed a defiant Wells response in May 2024.",
+      "impact": "The most direct US enforcement threat ever aimed at core DeFi infrastructure, raising the prospect that automated, non-custodial protocols and their governance tokens could be regulated as exchanges and securities, an existential question for the sector.",
+      "sources": [
+        "https://www.coindesk.com/policy/2024/05/21/uniswap-labs-urges-sec-to-drop-pending-enforcement-action-in-wells-response",
+        "https://www.crowdfundinsider.com/2025/02/236742-sec-closes-another-crypto-investigation-uniswap-labs-no-longer-target-of-an-enforcement-action/"
+      ]
+    },
+    {
+      "date": "2024-05-23",
+      "title": "SEC approves spot Ethereum ETFs",
+      "description": "The SEC approved 19b-4 rule changes on May 23, 2024 permitting eight spot Ether ETFs (later launched in July 2024), the first US ETFs tracking a proof-of-stake smart-contract asset.",
+      "impact": "Implicitly treated ETH as a non-security commodity for ETF purposes, easing a cloud over the entire Ethereum DeFi stack, though the SEC required issuers to drop staking from the products, leaving DeFi-native staking yield outside the regulated wrapper.",
+      "sources": [
+        "https://www.mayerbrown.com/en/insights/publications/2024/05/sec-approves-listings-of-spot-ether-etfs-waiting-is-the-hardest-part",
+        "https://finance.yahoo.com/news/sec-approves-first-spot-bitcoin-151357691.html"
+      ]
+    },
+    {
+      "date": "2024-06-30",
+      "title": "MiCA stablecoin rules take effect",
+      "description": "MiCA's stablecoin provisions for asset-referenced tokens (ARTs) and e-money tokens (EMTs) became applicable on June 30, 2024, imposing reserve, licensing and issuer requirements on EU stablecoins.",
+      "impact": "Forced exchanges and DeFi front-ends serving EU users toward MiCA-compliant stablecoins (e.g., euro and regulated USD coins) and pressured non-compliant tokens like Tether's USDT off EU venues, reshaping which stablecoins anchor European DeFi liquidity.",
+      "sources": [
+        "https://www.dotfile.com/resources/crypto-regulation-what-you-should-know-about-mica",
+        "https://micapapers.com/guide/timeline/"
+      ]
+    },
+    {
+      "date": "2024-11-26",
+      "title": "Fifth Circuit rules OFAC overstepped in Tornado Cash sanctions",
+      "description": "In Van Loon v. Department of the Treasury, the US Fifth Circuit held on November 26, 2024 that Tornado Cash's immutable smart contracts are not 'property' of a foreign national and that OFAC exceeded its IEEPA authority by sanctioning them.",
+      "impact": "Landmark vindication for DeFi and open-source developers, establishing that autonomous, ownerless code cannot be sanctioned as property and constraining how far Treasury can reach into decentralized protocols.",
+      "sources": [
+        "https://www.steptoe.com/en/news-publications/international-compliance-blog/treasury-department-delists-tornado-cash-following-the-fifth-circuits-decision.html",
+        "https://www.coindesk.com/policy/2025/04/05/why-ofac-delisted-tornado-cash"
+      ]
+    },
+    {
+      "date": "2024-12-30",
+      "title": "MiCA full application for crypto-asset service providers",
+      "description": "The remaining MiCA framework became fully applicable on December 30, 2024, requiring crypto-asset service providers (CASPs) to obtain authorization to operate in the EU, subject to national transitional 'grandfathering' periods running into 2025-2026.",
+      "impact": "Completed the EU's licensing regime for centralized crypto services while explicitly deferring on fully decentralized finance, leaving DeFi protocols in a defined but unsettled gray zone pending a European Commission DeFi report.",
+      "sources": [
+        "https://www.dotfile.com/resources/crypto-regulation-what-you-should-know-about-mica",
+        "https://www.cyfrin.io/blog/mica-regulation-explained-a-guide-to-eu-crypto-compliance"
+      ]
+    },
+    {
+      "date": "2025-01-20",
+      "title": "Gensler departs; Uyeda becomes Acting SEC Chair",
+      "description": "With the change of US administration, crypto-skeptic SEC Chair Gary Gensler left office in January 2025 and Commissioner Mark Uyeda became Acting Chair, signaling an immediate pivot away from regulation-by-enforcement.",
+      "impact": "Marked the turning point from the enforcement era to an accommodative posture, setting the stage for dropped investigations, rescinded guidance, and a rule-making approach far friendlier to DeFi.",
+      "sources": [
+        "https://www.dlnews.com/articles/people-culture/who-is-paul-atkin-trumps-new-sec-chair-has-a-history-of-backing-crypto/",
+        "https://www.skadden.com/insights/publications/2025/04/trump-administrations-first-100-days/sec-moves-quickly-to-create-a-regulatory-framework"
+      ]
+    },
+    {
+      "date": "2025-01-21",
+      "title": "SEC launches Crypto Task Force under Hester Peirce",
+      "description": "On January 21, 2025, Acting Chair Uyeda created an SEC Crypto Task Force led by pro-crypto Commissioner Hester Peirce to build a clear regulatory framework instead of pursuing enforcement; later branded 'Project Crypto' under Chair Atkins.",
+      "impact": "Institutionalized the policy shift, providing a formal venue to craft DeFi-friendly rules (including exemptive relief concepts for on-chain protocols) and justifying the wind-down of pending crypto enforcement actions.",
+      "sources": [
+        "https://www.skadden.com/insights/publications/2025/04/trump-administrations-first-100-days/sec-moves-quickly-to-create-a-regulatory-framework",
+        "https://www.fintechanddigitalassets.com/2025/08/sec-and-cftc-launch-crypto-initiatives-to-revamp-regulations-and-promote-innovation/"
+      ]
+    },
+    {
+      "date": "2025-01-23",
+      "title": "Executive Order 14178 and rescission of SAB 121",
+      "description": "President Trump signed EO 14178, 'Strengthening American Leadership in Digital Financial Technology,' promoting digital assets and dollar-backed stablecoins while banning a US CBDC; the same day the SEC issued SAB 122, rescinding the punitive SAB 121 crypto-custody accounting rule.",
+      "impact": "Reoriented US federal policy toward 'making America the crypto capital of the world,' the CBDC ban cleared the field for private stablecoins central to DeFi liquidity, and rescinding SAB 121 let regulated banks custody crypto, opening institutional rails into DeFi.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Executive_Order_14178",
+        "https://www.jonesday.com/en/insights/2025/02/digital-asset-executive-order-and-sab-121-rescission",
+        "https://bankingjournal.aba.com/2025/01/sec-repeals-controversial-crypto-accounting-rule-for-banks/"
+      ]
+    },
+    {
+      "date": "2025-02-05",
+      "title": "Senate Banking hearing on debanking / 'Operation Chokepoint 2.0'",
+      "description": "On February 5, 2025, Chairman Tim Scott's Senate Banking Committee held a hearing on crypto and lawful-business 'debanking,' alongside FDIC release of ~175 'pause letter' documents; Republicans alleged Biden-era regulators pressured banks to cut off at least ~30 digital-asset firms from 2022-2024.",
+      "impact": "Elevated the debanking grievance into formal policy, building momentum to roll back informal supervisory pressure (the 'reputational risk' standard) that had starved crypto and DeFi firms of banking and fiat on/off-ramps.",
+      "sources": [
+        "https://www.banking.senate.gov/newsroom/majority/scott-banking-committee-will-investigate-debanking",
+        "https://cointelegraph.com/news/lessons-operation-chokepoint-hearings"
+      ]
+    },
+    {
+      "date": "2025-02-21",
+      "title": "SEC moves to dismiss its case against Coinbase",
+      "description": "Coinbase announced on February 21, 2025 that the SEC had agreed to dismiss its landmark enforcement suit; the regulator filed the voluntary dismissal with prejudice in late February, with no fines or business-model changes.",
+      "impact": "Ended the case the industry said 'could have killed crypto in America,' removing the broadest securities-law threat to DeFi tokens and signaling that the SEC would no longer pursue exchanges and protocols through enforcement.",
+      "sources": [
+        "https://www.cnn.com/2025/02/21/tech/coinbase-sec-case-update",
+        "https://www.pymnts.com/cryptocurrency/2025/sec-dismisses-lawsuit-against-coinbase-promises-regulatory-framework-for-crypto/"
+      ]
+    },
+    {
+      "date": "2025-02-25",
+      "title": "SEC closes Uniswap Labs investigation",
+      "description": "On February 25, 2025 the SEC closed its investigation into Uniswap Labs without any enforcement action, dropping the threat flagged by its April 2024 Wells notice.",
+      "impact": "A direct, high-profile win for DeFi, leaving the leading DEX and its UNI token free of charges and signaling that core decentralized protocols would not be treated as unregistered securities exchanges under the new SEC.",
+      "sources": [
+        "https://www.coindesk.com/policy/2025/02/25/sec-drops-investigation-into-uniswap-will-not-file-enforcement-action",
+        "https://blog.uniswap.org/a-win-for-defi"
+      ]
+    },
+    {
+      "date": "2025-03-21",
+      "title": "OFAC delists Tornado Cash",
+      "description": "On March 21, 2025, following the Fifth Circuit ruling, OFAC removed Tornado Cash and its smart-contract addresses from the SDN list, while keeping individual developer Roman Semenov designated.",
+      "impact": "First reversal of crypto smart-contract sanctions, restoring the legality of using a key DeFi privacy protocol and reinforcing that ownerless code is not sanctionable property, even as developer liability remained a live risk.",
+      "sources": [
+        "https://www.defieducationfund.org/treasury-department-officially-delists-sanctions-on-tornado-cash/",
+        "https://www.coindesk.com/policy/2025/04/05/why-ofac-delisted-tornado-cash"
+      ]
+    },
+    {
+      "date": "2025-04-21",
+      "title": "Paul Atkins sworn in as SEC Chair",
+      "description": "Pro-crypto former commissioner Paul Atkins became SEC Chair on April 21, 2025, succeeding Acting Chair Uyeda and pledging a clear, innovation-friendly digital-asset framework ('Project Crypto').",
+      "impact": "Cemented the agency's accommodative direction, prioritizing rulemaking and exemptive relief over enforcement and explicitly seeking to keep DeFi and tokenization development onshore in the US.",
+      "sources": [
+        "https://www.dandodiary.com/2025/04/articles/securities-enforcement/paul-atkins-chair-sworn-in-as-sec-chair/",
+        "https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125"
+      ]
+    },
+    {
+      "date": "2025-07-17",
+      "title": "House passes the CLARITY Act (market-structure bill)",
+      "description": "On July 17, 2025 the US House passed the Digital Asset Market Clarity (CLARITY) Act, 294-134, to define digital assets, split SEC/CFTC jurisdiction, and create registration rules for exchanges, brokers and dealers, with a Senate version under negotiation.",
+      "impact": "The most consequential attempt to give DeFi and digital assets a bespoke federal market-structure regime; if enacted, it would shift many tokens to CFTC commodity oversight and seek tailored treatment for decentralized systems, replacing the uncertainty of securities-law-by-default.",
+      "sources": [
+        "https://www.arnoldporter.com/en/perspectives/advisories/2025/08/clarifying-the-clarity-act",
+        "https://www.govtrack.us/congress/bills/119/hr3633"
+      ]
+    },
+    {
+      "date": "2025-07-18",
+      "title": "GENIUS Act signed into law (federal stablecoin framework)",
+      "description": "After Senate (68-30 on June 17) and House (308-122 on July 17) passage, President Trump signed the GENIUS Act on July 18, 2025, the first US federal stablecoin law, mandating 100% liquid reserves (cash/short-term Treasuries) and monthly public reserve disclosures for payment stablecoin issuers.",
+      "impact": "Legitimized regulated dollar stablecoins, the core settlement and collateral asset of DeFi, by creating a clear issuance regime; it is expected to expand compliant stablecoin supply and drive demand for short-term Treasuries, while pulling stablecoin activity toward licensed issuers.",
+      "sources": [
+        "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/",
+        "https://www.mayerbrown.com/en/insights/publications/2025/07/genius-act-signed-into-law-us-enacts-federal-stablecoin-legislation",
+        "https://en.wikipedia.org/wiki/GENIUS_Act"
+      ]
+    },
+    {
+      "date": "2025-08-06",
+      "title": "Roman Storm Tornado Cash trial: split verdict",
+      "description": "On August 6, 2025 a federal jury convicted Tornado Cash co-founder Roman Storm of conspiracy to operate an unlicensed money-transmitting business, but deadlocked on the more serious money-laundering and sanctions-conspiracy charges.",
+      "impact": "A mixed but chilling outcome for DeFi developer liability: even after the protocol's sanctions were lifted, builders of permissionless software can face criminal money-transmission exposure, sustaining legal uncertainty for open-source DeFi development.",
+      "sources": [
+        "https://www.coindesk.com/policy/2025/08/06/roman-storm-guilty-of-unlicensed-money-transmitting-conspiracy-in-partial-verdict",
+        "https://www.mayerbrown.com/en/insights/publications/2025/08/the-tornado-cash-trials-mixed-verdict-implications-for-developer-liability"
+      ]
+    }
+  ],
+  "eras": [
+    {
+      "name": "Macro Reckoning & Crypto Winter",
+      "period": "2022-03 to 2023-01",
+      "summary": "Fed tightening drains cheap-money yield while Terra and FTX collapses crash TVL, exposing fragile stablecoin designs and centralized custody and inviting regulatory scrutiny."
+    },
+    {
+      "name": "Regulation by Enforcement",
+      "period": "2022-08 to 2024-12",
+      "summary": "A hostile US SEC and Treasury pursue crypto via lawsuits (Coinbase), Wells notices (Uniswap) and smart-contract sanctions (Tornado Cash), pushing DeFi offshore even as the EU's MiCA and US spot ETFs build the first formal on-ramps."
+    },
+    {
+      "name": "The Great Policy Pivot",
+      "period": "2025-01 to 2025-12",
+      "summary": "A new US administration bans a CBDC, rescinds SAB 121, dismisses cases against Coinbase and Uniswap, delists Tornado Cash, and enacts the GENIUS stablecoin law while advancing the CLARITY market-structure bill, turning hostility into a pro-DeFi framework, though developer liability (Roman Storm) remains unresolved."
+    }
+  ]
+}

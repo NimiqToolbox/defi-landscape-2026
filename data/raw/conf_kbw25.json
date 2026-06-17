@@ -1,0 +1,80 @@
+{
+  "name": "Korea Blockchain Week 2025 (KBW2025: IMPACT)",
+  "edition": "2025 edition; flagship conference branded \"KBW2025: IMPACT\". KBW is an annual event organized by FACTBLOCK since 2018.",
+  "location": "Seoul, South Korea. Festival week spread across the city; flagship IMPACT conference held at Walkerhill Hotel & Resort (Vista Walkerhill / Grand Walkerhill), Gwangjin-gu, Seoul.",
+  "dates": "Festival week: September 22-28, 2025. Flagship IMPACT conference: September 23-24, 2025.",
+  "in_window": true,
+  "attendance": "Approximately 12,000-13,000+ attendees and ~300 speakers across the IMPACT conference, with 80+ official side events across Seoul (some promotional sources cited up to 17,000 for the broader week). For comparison, KBW2024 reported ~17,000 attendees at the main conference. Figures vary by source.",
+  "defi_themes": [
+    "Stablecoins as core crypto infrastructure (settlement, payments, liquidity, cross-border remittance)",
+    "KRW-denominated (Korean won) stablecoins and the evolving Korean/US regulatory frameworks (GENIUS Act-era US policy, FSC engagement)",
+    "Real-world asset (RWA) tokenization and RWAfi (real-world-asset finance) - RWAs as programmable DeFi collateral, liquidity-pool assets, and media of exchange",
+    "Digital Asset Treasuries (DATs) / on-chain treasuries reshaping market infrastructure and corporate balance sheets",
+    "Institutional DeFi adoption and the convergence of TradFi with decentralized systems",
+    "Regulation and compliance as enablers of institutional on-chain finance (Washington policymakers + Korea FSC participation)",
+    "AI x DeFi convergence (verifiable compute, ZK proofs for on-chain data, agentic finance)",
+    "Perps / high-performance on-chain trading venues (Hyperliquid presence)"
+  ],
+  "notable_panels": [
+    {
+      "title": "Stable Summit (stablecoin-focused forum at/around KBW2025)",
+      "topic": "Dollar-pegged and fiat-pegged stablecoins, financial innovation, and regulatory design; stablecoins as settlement and payments infrastructure",
+      "speakers": "Policymakers and stablecoin/issuer leaders (lineup not fully itemized in verifiable sources)"
+    },
+    {
+      "title": "Korea RWA & Stablecoin Summit",
+      "topic": "Real-world assets and stablecoins in Web3; brought together 20+ financial institutions and Web3 leaders on RWA/stablecoin adoption mechanics and infrastructure scaling",
+      "speakers": "20+ financial institutions and Web3 leaders (individual names not reliably itemized)"
+    },
+    {
+      "title": "Asset Tokenization's Rising Tide",
+      "topic": "Institutional implications of tokenized real-world assets (held ~Sept 24)",
+      "speakers": "Plume Co-Founder among speakers"
+    },
+    {
+      "title": "RWAfi / RWAiFi Summit (Robotics & AI Economy)",
+      "topic": "Real-world asset finance, including tokenization of robotics/AI compute economy assets (GAIB AI's RWAiFi programming)",
+      "speakers": "RWAfi ecosystem founders"
+    },
+    {
+      "title": "Verifiable: AI x DeFi Networking Event (official side event)",
+      "topic": "Intersection of verifiable AI compute and DeFi across APAC/Cosmos ecosystems",
+      "speakers": "Hosted by Nexus with Cosmostation; partners included Story Protocol, Osmosis, Babylon, Allora"
+    }
+  ],
+  "notable_speakers": [
+    { "name": "Justin Sun", "affiliation": "Founder, TRON" },
+    { "name": "Charles Hoskinson", "affiliation": "Founder & CEO, Input Output (Cardano)" },
+    { "name": "Jeff Yan", "affiliation": "CEO, Hyperliquid Labs" },
+    { "name": "Arthur Hayes", "affiliation": "CIO, Maelstrom (co-founder, BitMEX) - keynote on monetary policy / economic volatility" },
+    { "name": "Sandeep Nailwal", "affiliation": "Co-Founder, Sentient (Polygon co-founder)" },
+    { "name": "Lily Liu", "affiliation": "President, Solana Foundation" },
+    { "name": "Keone Hon", "affiliation": "Co-Founder, Monad" },
+    { "name": "Frank McCourt", "affiliation": "Founder, Project Liberty" },
+    { "name": "Bo Hines", "affiliation": "Former Executive Director, White House Council of Advisers on Digital Assets (later Tether USA) - US digital-asset policy" },
+    { "name": "Donald Trump Jr.", "affiliation": "Co-Founder, American Bitcoin / World Liberty Financial association" },
+    { "name": "Bilal Bin Saqib", "affiliation": "CEO/Head, Pakistan Crypto Council" }
+  ],
+  "key_takeaways": [
+    "Stablecoins were the dominant DeFi narrative: framed as foundational crypto infrastructure anchoring liquidity, trading, payments, and emerging-market adoption, with multiple dedicated summits (Stable Summit, Asia Stablecoin Conference, Korea RWA & Stablecoin Summit).",
+    "KRW (Korean won) stablecoins were a focal regulatory theme - if approved, seen as powering merchant payments, loyalty programs, and digital remittances; Korea's FSC and US policymakers both engaged on frameworks.",
+    "RWAs are maturing from simple wrappers into programmable DeFi building blocks - used as collateral, in liquidity pools, and as media of exchange (RWAfi); strong institutional and Korean-market interest in an Asia RWA hub.",
+    "Digital Asset Treasuries (DATs) / on-chain treasuries emerged as a structural theme reshaping market infrastructure, corporate balance sheets, and compliance.",
+    "Institutional adoption and the TradFi-DeFi convergence were the overarching message, reinforced by unprecedented participation from Washington policymakers (White House, CFTC) and Korea's FSC bridging US and Asian regulatory frameworks.",
+    "AI x DeFi convergence (verifiable compute, ZK proofs like Brevis for scalable on-chain data, agentic finance) was a recurring cross-cutting theme.",
+    "USD1 (World Liberty Financial) was a notable stablecoin standout, emphasizing real-world payment integration (e.g., card/payment partnerships)."
+  ],
+  "sources": [
+    "https://koreablockchainweek.com/blogs/blog/korea-blockchain-week-2025-returns-to-seoul-in-september",
+    "https://www.prnewswire.com/news-releases/kbw-2025-presents-convergence-of-washington-policymakers-institutions-and-aicrypto-innovation-in-seoul-302543041.html",
+    "https://www.prnewswire.com/news-releases/korea-blockchain-week-2025-hollywood-stars-nba-champions-and-blockchain-visionaries-unite-at-kbw2025-impact-conference-302524228.html",
+    "https://www.kucoin.com/news/flash/korea-blockchain-week-2025-attracts-12-000-attendees-and-300-speakers-sets-new-collaboration-benchmarks",
+    "https://www.lksbrothers.com/post/highlights-from-korea-blockchain-week-2025-decentralization-innovation-and-unexpected-standouts",
+    "https://plume.org/blog/korea-blockchain-week-kbw2025-plume-edition",
+    "https://blog.nexus.xyz/korea-blockchain-week-2025/",
+    "https://www.coinspeaker.com/events/korea-blockchain-week-2025/",
+    "https://luma.com/x69qdd8h",
+    "https://x.com/kbwofficial/status/1954890549053591684"
+  ],
+  "confidence": "medium"
+}

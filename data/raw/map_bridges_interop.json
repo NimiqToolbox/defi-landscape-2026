@@ -1,0 +1,90 @@
+{
+  "category": "Bridges & interoperability",
+  "summary": "The cross-chain landscape has split into two layers: generalized messaging protocols (LayerZero, Wormhole, Chainlink CCIP, Axelar, Hyperlane) that secure and route arbitrary data/value, and value-transfer rails that increasingly run on top of them (Stargate, Circle CCTP, intent bridges like Across). As of mid-2026, LayerZero is the messaging volume leader (reported ~35% share of cross-chain messaging volume, 150M+ messages and $100B+ value transferred cumulatively; it acquired Stargate in 2025 for ~$110M to capture the value-transfer layer). Wormhole (~$41B+ total value transferred, deep DeFi/Solana integrations) and Chainlink CCIP (institutional focus; CCIP moved ~$18B in a single month by March 2026 vs $7.77B for all of 2025, riding SWIFT/bank integrations) are the other heavyweights. Axelar (~18% share, ~$353M monthly volume) saw Circle acquire developer Interop Labs in Dec 2025 (excluding the AXL token, which sold off ~18%). Hyperlane is the permissionless breadth leader (140+ chains). On the pure value-transfer side, native rollup/canonical bridges still hold the most locked value (Arbitrum, Base/Coinbase, Optimism canonical bridges each multi-billion TVL), while intent-based bridging (Across) and native USDC routing (Circle CCTP) dominate fast user transfers. The dominant structural trend is intents/solvers replacing classic lock-and-mint bridges: Across pioneered intent bridging in 2022 and ERC-7683 (ratified early 2025, co-authored by Across and Uniswap) is now the cross-chain order standard adopted across Across, UniswapX, CoW Protocol, Eco and deBridge DLN.",
+  "leaders": [
+    {
+      "name": "LayerZero (incl. Stargate)",
+      "chain": "Omnichain — 130+ chains (Ethereum, all major rollups, Solana, BNB, etc.)",
+      "metric": "Messaging market share / cumulative value transferred / messages",
+      "value": "~35% reported cross-chain messaging volume share; ~$684M monthly cross-chain volume; 150M+ messages and $100B+ value transferred cumulatively; 500+ apps",
+      "note": "Current messaging-volume leader. V2 is the transport layer for Stargate ($70B+ cumulative cross-chain transactions), which LayerZero acquired in 2025 for ~$110M to own the value-transfer layer. ZRO token. Figures are protocol/secondary-source reported, not exchange-audited."
+    },
+    {
+      "name": "Wormhole",
+      "chain": "35+ chains, strong Solana + EVM coverage",
+      "metric": "Total value transferred / integrations",
+      "value": "~$41B+ total value transferred cumulatively; 19 Guardian nodes; integrated with Uniswap, Lido, Pyth, Circle CCTP across 8+ chains",
+      "note": "Recovered from the Feb 2022 $320M+ exploit (120k wETH) to become a top messaging + token-bridge protocol, especially for Solana. W token (~$0.03, ~$177M mcap as of late 2025/2026). Powers native USDC transfers via CCTP integration."
+    },
+    {
+      "name": "Chainlink CCIP",
+      "chain": "70+ networks (Ethereum, major L2s, plus private/bank chains)",
+      "metric": "Monthly transfer volume / institutional adoption",
+      "value": "~$18B moved in a single month by March 2026, up from $7.77B for all of 2025 (~1,972% YoY); connects 70+ networks",
+      "note": "Fastest-growing on institutional/TradFi rails. Tied to SWIFT (11,500+ banks enabling on-chain wallet attachment Nov 2025) and framed by Standard Chartered as a bridge to the $150T SWIFT market. Oracle-grade verification via Chainlink DON; LINK token."
+    },
+    {
+      "name": "Axelar",
+      "chain": "70+ chains (Ethereum, major rollups, Solana, Sui, Aptos, Stellar, Cosmos/IBC)",
+      "metric": "Messaging share / monthly volume",
+      "value": "~18% reported messaging share; ~$353M monthly cross-chain volume; Q4 2025 daily tx +~140% vs Q2 2025",
+      "note": "Validator-consensus (PoS) security, Interchain Token Service + ITS Hub (Jan 2025). Circle agreed to acquire developer Interop Labs (Dec 15, 2025) for institutional readiness — but excluded the AXL token, which dropped ~18% on the news. Historically led messaging volume in early 2025 per Binance Research before LayerZero pulled ahead."
+    },
+    {
+      "name": "Hyperlane",
+      "chain": "140+ chains (largest footprint; added TRON to reach 150+ in 2026)",
+      "metric": "Chain coverage / permissionless deployments",
+      "value": "140+ chains connected — the largest of any messaging protocol; HYPER token launched April 2025",
+      "note": "Differentiates on permissionless deployment: any chain can self-deploy contracts and connect without foundation/governance approval. Warp Routes for token bridging. Breadth leader rather than raw-volume leader."
+    },
+    {
+      "name": "Across",
+      "chain": "Ethereum + all major rollups, 15+ chains",
+      "metric": "Bridged volume / intent dominance",
+      "value": "$28B+ cumulative bridged volume, 0 exploits; daily volume routinely >$50M; ERC-7683 orders ~88% of Across volume after Q3 2025 solver migration",
+      "note": "Pioneered intent-based bridging (2022); relayers front destination funds in seconds and settle via UMA Optimistic Oracle. Co-author of ERC-7683 with Uniswap. The flagship of the intents/solvers wave; clears most user transfers in 2-30s. ACX token."
+    },
+    {
+      "name": "Circle CCTP (native USDC)",
+      "chain": "8+ major chains (Ethereum, Arbitrum, Base, OP, Avalanche, Solana, etc.)",
+      "metric": "Native USDC transfer rail share",
+      "value": "Burn-and-mint native USDC routing used as the default stablecoin rail by aggregators (LI.FI, Squid, Jumper, deBridge) and bridges (Wormhole, Across)",
+      "note": "Not a token-locking bridge but a canonical-issuer transfer protocol; eliminates wrapped-USDC fragmentation. Increasingly the backbone for cross-chain stablecoin transfer (USDC); strategically central given Circle's Axelar/Interop Labs acquisition."
+    },
+    {
+      "name": "Native rollup / canonical bridges (Arbitrum, Base, Optimism)",
+      "chain": "Ethereum <-> respective L2",
+      "metric": "TVL / value locked (deposits)",
+      "value": "Arbitrum One canonical ~multi-billion (ecosystem TVL ~$16.9B May 2026 per secondary source); Base/Coinbase Bridge ~$5.8B TVL; Optimism Bridge ~$6.13B (Jan 2024 reference)",
+      "note": "Hold the largest locked value of any 'bridge' because they are the L1<->L2 deposit contracts inheriting Ethereum security (~7-day withdrawal). Not in the messaging-volume race but dominate value-locked rankings. Figures are secondary-source / point-in-time and should be re-verified on DefiLlama."
+    }
+  ],
+  "leadership_shift": "2021 (lock-and-mint era): Value-locked bridges dominated — Multichain/Anyswap (~$6.5B across chains, $3.5B Fantom<->Ethereum), Binance Bridge (~$4.5B), Solana Wormhole (~$3.8B), plus Polygon PoS and Ronin. These were custody-heavy and became prime hack targets. 2022 (the bridge-hack crisis): >80% of the ~$1.2B+ hacked in 2022 flowed through bridges — Ronin ($600M+), Wormhole ($320M+, Feb 2022), Nomad, Harmony Horizon. Trust assumptions came under scrutiny and 'bridge wars' shifted toward security narratives. 2023 (collapse + messaging pivot): Multichain imploded after its CEO was detained in China (May 2023) and a $125M+ exploit hit in July 2023; it ceased operations, dragging Fantom TVL down ~67-80%. Confidence in monolithic lock-and-mint bridges broke; the market pivoted to generalized messaging (LayerZero, Wormhole rebuild, Axelar) and to native rollup bridges + Circle CCTP for value transfer. Early 2025 Axelar reportedly led messaging volume (Binance Research: Axelar ~2x Wormhole, ~8x CCIP on 30-day volume). Now (2025-2026): LayerZero leads messaging share (~35%), having acquired Stargate to own value transfer; Chainlink CCIP is the breakout institutional rail (monthly volume from ~$0.6B avg in 2025 to ~$18B by Mar 2026 via SWIFT/bank integrations); Wormhole holds strong DeFi/Solana share; Axelar slipped to ~18% and was absorbed by Circle (team/IP, not token); Hyperlane won breadth (140+ chains). Structurally, intents/solvers (Across, UniswapX, CoW, Eco, deBridge DLN) and the ERC-7683 standard (ratified 2025) are displacing classic bridges for user transfers, while native rollup bridges + CCTP hold the most locked value.",
+  "sources": [
+    "https://defillama.com/bridges",
+    "https://defillama.com/bridge-aggregators",
+    "https://defillama.com/bridge/layerzero",
+    "https://www.stablecoininsider.com/layerzero/",
+    "https://www.ainvest.com/news/layerzero-110m-stargate-acquisition-strategic-win-cross-chain-dominance-token-capture-2508/",
+    "https://wormhole.com/blog/use-wormhole-and-circle-cctp-for-native-usdc-cross-chain-transfers",
+    "https://crypto.techguide.org/wormhole-bridge",
+    "https://www.openpr.com/news/4548823/chainlink-link-ccip-volume-jumps-1-972-to-18-billion-while",
+    "https://blockeden.xyz/blog/2026/01/12/chainlink-ccip-cross-chain-interoperability-tradfi-bridge/",
+    "https://blog.chain.link/ccip-cross-chain-standard/",
+    "https://yellow.com/research/cross-chain-messaging-comparing-ibc-wormhole-layerzero-ccip-and-more",
+    "https://www.coinspeaker.com/axl-price-crashes-18-circle-abandons-token-axelar-network/",
+    "https://www.axelar.network/blog/interchain-token-service-opens-native-like-capabilities-on-15-chains",
+    "https://messari.io/compare/layerzero-vs-axelar",
+    "https://www.theblock.co/post/396382/tron-network-integrated-into-hyperlane-expanding-interoperability-to-over-150-chains",
+    "https://defi-planet.com/2025/07/can-hyperlane-achieve-true-sovereign-interoperability-a-review-of-its-open-interchain-messaging-protocol/",
+    "https://skrumble.com/cross-chain-bridges/across-protocol-review/",
+    "https://eco.com/support/en/articles/11802670-best-cross-chain-intent-protocols-2026-how-intents-are-replacing-bridges",
+    "https://eco.com/support/en/articles/14799834-erc-7683-cross-chain-intents-standard-explained",
+    "https://www.dcentralab.com/blog/intents-and-solvers-defi-in-2026",
+    "https://www.coindesk.com/business/2023/07/14/crypto-bridging-protocol-multichain-ceases-operations",
+    "https://cointelegraph.com/news/multichain-was-a-big-blow-says-andre-cronje-as-fantom-tvl-slumps",
+    "https://www.merklescience.com/blog/hack-track-analysis-of-wormhole-token-bridge-exploit",
+    "https://beincrypto.com/top-11-defi-cross-chain-bridge-attacks-of-2022-hackers-bag-over-2-billion/",
+    "https://www.spotedcrypto.com/ethereum-l2-consolidation-2026-arbitrum-base-tvl/"
+  ]
+}

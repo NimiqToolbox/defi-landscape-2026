@@ -1,0 +1,64 @@
+{
+  "name": "Avalanche Summit London 2025",
+  "edition": "Avalanche Summit London 2025 (the most recent COMPLETED flagship Avalanche Summit; effectively 'Summit IV', following Avalanche Summit III in Buenos Aires, Oct 2024). The next edition, Avalanche Summit New York ('Summit V'), is scheduled for Sept 16-17, 2026.",
+  "location": "Hatfield House, Hatfield, England (just outside London), UK",
+  "dates": "May 20-22, 2025 (main summit). Associated events: Owl Explains Crypto Summit policy day May 22; Avalanche Hackathon May 23-25; Codebase incubator Demo Day May 29.",
+  "in_window": false,
+  "attendance": "Over 1,500 in-person attendees (developers, founders, investors, former policymakers); the summit engaged 50+ EMEA partners across DeFi, institutional, and gaming.",
+  "defi_themes": [
+    "DeFi lending protocol architecture (Aave V4 unveiled in a fireside chat by Stani Kulechov)",
+    "Institutional adoption of DeFi / institutional liquidity onchain",
+    "Scaling DeFi beyond billions in TVL (next-generation lending models)",
+    "Layer 1 (L1) infrastructure for building DeFi applications on Avalanche",
+    "Composable multi-chain / multi-L1 DeFi environments",
+    "DeFi regulation and policy (covered in the co-located Owl Explains Crypto Summit presented by Sidley)",
+    "Stablecoins and broader onchain finance (discussed as part of the institutional/DeFi track)"
+  ],
+  "notable_panels": [
+    {
+      "title": "Fireside chat with Stani Kulechov on Aave V4 and the future of DeFi lending",
+      "topic": "DeFi / lending: the Aave V4 architectural upgrade for the largest DeFi protocol, how the new model unlocks more for lending protocols, and the changing DeFi landscape (scaling DeFi beyond billions).",
+      "speakers": "Stani Kulechov (Founder, Aave Labs)"
+    },
+    {
+      "title": "Owl Explains Crypto Summit presented by Sidley (co-located policy day, May 22)",
+      "topic": "Blockchain and DeFi regulation; one-day conference for policymakers, academics, and industry experts on the regulatory landscape for DeFi.",
+      "speakers": "Policymakers, academics, and industry/legal experts (Sidley)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Emin Gun Sirer", "affiliation": "Founder & CEO, Ava Labs"},
+    {"name": "John Wu", "affiliation": "President, Ava Labs"},
+    {"name": "Stani Kulechov", "affiliation": "Founder, Aave Labs"},
+    {"name": "Haseeb Qureshi", "affiliation": "Managing Partner, Dragonfly"},
+    {"name": "Rob Hadick", "affiliation": "General Partner, Dragonfly"},
+    {"name": "Christopher Perkins", "affiliation": "President, CoinFund"},
+    {"name": "Meltem Demirors", "affiliation": "General Partner, Crucible Capital"},
+    {"name": "Paul Kremsky", "affiliation": "Global Head of Business Development, Cumberland"},
+    {"name": "Anthony Scaramucci", "affiliation": "Founder & Managing Partner, SkyBridge Capital"},
+    {"name": "Baylor Myers", "affiliation": "VP, Corporate Development, BitGo"},
+    {"name": "Lavinia D. Osbourne", "affiliation": "Founder, Women in Blockchain Talks"}
+  ],
+  "key_takeaways": [
+    "DeFi lending was a headline DeFi theme: Aave founder Stani Kulechov used the summit to discuss Aave V4, the protocol's new architecture intended to scale DeFi lending beyond its current multi-billion-dollar base.",
+    "Institutional adoption of DeFi was a central narrative, with TradFi-adjacent voices (SkyBridge, Cumberland, BitGo, CoinFund) and major crypto VCs (Dragonfly, Crucible) on the agenda.",
+    "DeFi regulation/policy was given a dedicated venue via the co-located Owl Explains Crypto Summit (presented by Sidley) on May 22, signaling Avalanche's emphasis on regulatory engagement.",
+    "Avalanche positioned its L1 / multi-chain (Avalanche9000) infrastructure as the foundation for building scalable DeFi and institutional finance applications.",
+    "The summit reflected a maturation arc from pure on-chain DeFi trading toward institutional liquidity, stablecoins, and onchain finance - a theme Avalanche carried forward into its Summit New York 2026 'Onchain Finance' track.",
+    "NOTE on window: No Avalanche flagship Summit fell strictly inside June 2025-June 2026. London Summit (May 20-22, 2025) is the nearest COMPLETED flagship, ~2-4 weeks before the window opened; the next edition, Avalanche Summit New York (Sept 16-17, 2026, Chelsea Industrial, NYC), is ~3 months after the window closed."
+  ],
+  "sources": [
+    "https://www.avalanchesummitlondon.com/",
+    "https://www.avalanchesummitlondon.com/agenda",
+    "https://chainwire.org/2025/03/12/avalanche-london-summit-first-speakers-announced/",
+    "https://www.intelligenthq.com/avalanche-london-summit-2025-a-gathering-of-blockchain-innovators-and-visionaries/",
+    "https://www.ainvest.com/news/avalanche-london-summit-2025-gather-1500-blockchain-leaders-2503/",
+    "https://cryptonomads.org/research/crypto-events/avalanche-summit-2025-the-ultimate-guide-to-attending-networking-and-learning-at-this-premier-blockchain-event",
+    "https://podcasts.apple.com/us/podcast/stani-kulechov-inside-aaves-new-plan-to-scale-defi/id1743669141?i=1000710086677",
+    "https://www.avax.network/community-hub/events",
+    "https://www.avalanchesummit.com/",
+    "https://www.team1.blog/p/avalanche-summit-nyc-2026-arrives",
+    "https://cryptoevents.global/topic/avalanche-summit/"
+  ],
+  "confidence": "medium"
+}

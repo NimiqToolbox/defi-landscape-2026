@@ -1,0 +1,204 @@
+{
+  "topic": "DeFi TVL by blockchain over time",
+  "summary": "Total DeFi Total Value Locked (TVL) grew from ~$15B at end-2020 to an all-time high of ~$177B on 9 Nov 2021, then collapsed to ~$38B by end-2022 during the bear market (Terra/Luna, FTX). It recovered to ~$53B (end-2023), surged to ~$117B (end-2024), held ~$114B at end-2025, and as of mid-June 2026 sits around $74.5B amid a 2026 drawdown. Ethereum has always dominated DeFi TVL: ~96% in 2020, falling to ~57% by end-2021 as alt-L1s (BSC, Solana, Avalanche, Polygon) rose, and oscillating in a ~53-60% band since. As of 16 Jun 2026, Ethereum holds ~$39.8B (~53% dominance, near multi-year lows). The next tier is now tightly bunched and specialized: BSC ~$5.3B (DEX flow), Solana ~$4.9B, Tron ~$4.6B (stablecoin settlement), Bitcoin DeFi ~$4.3B (BTCFi, new in 2024), and Base ~$4.3B. Newer entrants Hyperliquid (~$1.65B, perps) and Plasma (~$0.73B) have climbed fast. Arbitrum (~$1.3B), Polygon (~$1.05B), Avalanche (~$0.48B) and Sui (~$0.45B) have faded from their prior peaks. All values are USD billions. Primary source: DefiLlama API (api.llama.fi), which methodology aggregates protocol TVL per chain; figures are point-in-time and excludes double-counted/staking depending on toggle.",
+  "series": [
+    {
+      "label": "Total DeFi TVL (all chains)",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl", "https://defillama.com/", "https://defillama.com/chains"],
+      "points": [
+        {"period": "2020-12-30", "value": 15.25, "note": "End-2020"},
+        {"period": "2021-11-09", "value": 177.48, "note": "All-time high"},
+        {"period": "2021-12-30", "value": 161.86, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 38.40, "note": "End-2022 (bear market trough era)"},
+        {"period": "2023-12-30", "value": 52.72, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 116.66, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 113.61, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 74.53, "note": "Latest available (2026 drawdown)"}
+      ]
+    },
+    {
+      "label": "Ethereum DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Ethereum", "https://defillama.com/chain/ethereum"],
+      "points": [
+        {"period": "2020-12-30", "value": 14.64, "note": "End-2020"},
+        {"period": "2021-11-09", "value": 104.33, "note": "Near total-TVL peak; ATH ~$107.5B on same day"},
+        {"period": "2021-12-30", "value": 92.28, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 22.36, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 28.58, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 66.26, "note": "End-2024; ATH ~$75.1B on 2024-12-03"},
+        {"period": "2025-12-30", "value": 67.32, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 39.74, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Ethereum dominance (% of total DeFi TVL)",
+      "unit": "percent",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl", "https://api.llama.fi/v2/historicalChainTvl/Ethereum", "https://www.mexc.com/news/1079996"],
+      "points": [
+        {"period": "2020-12-30", "value": 96.0, "note": "Near-total Ethereum dominance early on"},
+        {"period": "2021-11-09", "value": 60.0, "note": "At total-TVL peak; alt-L1s had risen"},
+        {"period": "2021-12-30", "value": 57.0, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 58.2, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 54.2, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 56.8, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 59.3, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 53.4, "note": "Latest; near multi-year low per DefiLlama coverage"}
+      ]
+    },
+    {
+      "label": "BSC (BNB Chain) DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/BSC", "https://defillama.com/chain/bsc"],
+      "points": [
+        {"period": "2020-12-30", "value": 0.15, "note": "End-2020 (chain launched late 2020)"},
+        {"period": "2021-05-05", "value": 21.78, "note": "All-time high"},
+        {"period": "2021-12-30", "value": 12.81, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 4.68, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 3.45, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 5.46, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 6.49, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 5.29, "note": "Latest; ~7% market share, leads DEX flow"}
+      ]
+    },
+    {
+      "label": "Tron DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Tron", "https://defillama.com/chain/tron"],
+      "points": [
+        {"period": "2020-12-30", "value": 0.13, "note": "End-2020"},
+        {"period": "2021-12-30", "value": 5.39, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 4.31, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 7.95, "note": "End-2023"},
+        {"period": "2024-12-04", "value": 14.71, "note": "All-time high"},
+        {"period": "2024-12-30", "value": 7.45, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 4.37, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 4.58, "note": "Latest; leads stablecoin settlement"}
+      ]
+    },
+    {
+      "label": "Solana DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Solana", "https://defillama.com/chain/solana"],
+      "points": [
+        {"period": "2021-12-30", "value": 6.56, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 0.21, "note": "End-2022 (collapsed after FTX/Alameda)"},
+        {"period": "2023-12-30", "value": 1.43, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 8.50, "note": "End-2024"},
+        {"period": "2025-09-14", "value": 13.21, "note": "All-time high"},
+        {"period": "2025-12-30", "value": 8.20, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 4.92, "note": "Latest; ~6.6% market share"}
+      ]
+    },
+    {
+      "label": "Base DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Base", "https://defillama.com/chain/base"],
+      "points": [
+        {"period": "2023-12-30", "value": 0.44, "note": "End-2023 (Coinbase L2 launched mid-2023)"},
+        {"period": "2024-12-30", "value": 3.21, "note": "End-2024"},
+        {"period": "2025-10-07", "value": 5.58, "note": "All-time high"},
+        {"period": "2025-12-30", "value": 4.47, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 4.29, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Arbitrum DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Arbitrum", "https://defillama.com/chain/arbitrum"],
+      "points": [
+        {"period": "2021-12-30", "value": 1.75, "note": "End-2021 (launched 2021)"},
+        {"period": "2022-12-30", "value": 1.00, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 2.31, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 2.95, "note": "End-2024"},
+        {"period": "2025-10-07", "value": 4.20, "note": "All-time high"},
+        {"period": "2025-12-30", "value": 2.82, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 1.31, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Polygon DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Polygon", "https://defillama.com/chain/polygon"],
+      "points": [
+        {"period": "2021-06-15", "value": 9.90, "note": "All-time high"},
+        {"period": "2021-12-30", "value": 4.86, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 0.93, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 0.88, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 0.87, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 1.17, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 1.05, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Avalanche DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Avalanche", "https://defillama.com/chain/avalanche"],
+      "points": [
+        {"period": "2021-12-02", "value": 11.49, "note": "All-time high"},
+        {"period": "2021-12-30", "value": 9.49, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 0.77, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 0.90, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 1.32, "note": "End-2024"},
+        {"period": "2025-12-30", "value": 1.16, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 0.48, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Sui DeFi TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Sui", "https://defillama.com/chain/sui"],
+      "points": [
+        {"period": "2023-12-30", "value": 0.21, "note": "End-2023 (mainnet launched May 2023)"},
+        {"period": "2024-12-30", "value": 1.63, "note": "End-2024"},
+        {"period": "2025-10-09", "value": 2.64, "note": "All-time high"},
+        {"period": "2025-12-30", "value": 0.91, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 0.45, "note": "Latest"}
+      ]
+    },
+    {
+      "label": "Bitcoin DeFi (BTCFi) TVL",
+      "unit": "USD billions",
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Bitcoin", "https://defillama.com/chain/bitcoin"],
+      "points": [
+        {"period": "2021-12-30", "value": 0.16, "note": "End-2021"},
+        {"period": "2022-12-30", "value": 0.10, "note": "End-2022"},
+        {"period": "2023-12-30", "value": 0.31, "note": "End-2023"},
+        {"period": "2024-12-30", "value": 6.36, "note": "End-2024 (BTCFi surge)"},
+        {"period": "2025-10-07", "value": 9.13, "note": "All-time high"},
+        {"period": "2025-12-30", "value": 6.68, "note": "End-2025"},
+        {"period": "2026-06-16", "value": 4.33, "note": "Latest"}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Total DeFi TVL all-time high", "value": "~$177.5B", "as_of": "2021-11-09", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "Total DeFi TVL latest", "value": "~$74.5B", "as_of": "2026-06-16", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "Ethereum DeFi TVL latest", "value": "~$39.8B", "as_of": "2026-06-16", "source_name": "DefiLlama /v2/chains", "source_url": "https://api.llama.fi/v2/chains", "confidence": "high"},
+    {"claim": "Ethereum dominance latest", "value": "~53.4%", "as_of": "2026-06-16", "source_name": "DefiLlama (computed ETH/total)", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
+    {"claim": "Ethereum dominance at end-2020", "value": "~96%", "as_of": "2020-12-30", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Ethereum", "confidence": "high"},
+    {"claim": "Ethereum DeFi TVL all-time high", "value": "~$107.5B", "as_of": "2021-11-09", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Ethereum", "confidence": "high"},
+    {"claim": "Ethereum dominance fell from ~63.5% (start 2025) to ~54% (May 2026)", "value": "63.5% -> 54%", "as_of": "2026-05-07", "source_name": "MEXC News / DefiLlama coverage", "source_url": "https://www.mexc.com/news/1079996", "confidence": "medium"},
+    {"claim": "Solana DeFi TVL all-time high", "value": "~$13.2B", "as_of": "2025-09-14", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Solana", "confidence": "high"},
+    {"claim": "Tron DeFi TVL all-time high (leads stablecoin settlement)", "value": "~$14.7B", "as_of": "2024-12-04", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Tron", "confidence": "high"},
+    {"claim": "BSC DeFi TVL all-time high", "value": "~$21.8B", "as_of": "2021-05-05", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/BSC", "confidence": "high"},
+    {"claim": "Base DeFi TVL all-time high", "value": "~$5.6B", "as_of": "2025-10-07", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Base", "confidence": "high"},
+    {"claim": "Bitcoin DeFi (BTCFi) all-time high", "value": "~$9.1B", "as_of": "2025-10-07", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl/Bitcoin", "confidence": "high"},
+    {"claim": "Hyperliquid L1 TVL (perps-focused chain) latest", "value": "~$1.65B", "as_of": "2026-06-16", "source_name": "DefiLlama /v2/chains", "source_url": "https://api.llama.fi/v2/chains", "confidence": "high"},
+    {"claim": "Total DeFi TVL collapsed ~76% in 2022 (end-2021 $161.9B to end-2022 $38.4B)", "value": "$161.9B -> $38.4B", "as_of": "2022-12-30", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Ethereum", "metric": "DeFi TVL / dominance (current)", "value": "$39.8B (~53.4%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "BSC (BNB Chain)", "metric": "DeFi TVL (current)", "value": "$5.29B (~7.1%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Solana", "metric": "DeFi TVL (current)", "value": "$4.92B (~6.6%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Tron", "metric": "DeFi TVL (current)", "value": "$4.58B (~6.1%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Bitcoin (BTCFi)", "metric": "DeFi TVL (current)", "value": "$4.33B (~5.8%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Base", "metric": "DeFi TVL (current)", "value": "$4.29B (~5.8%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Hyperliquid L1", "metric": "DeFi TVL (current)", "value": "$1.65B (~2.2%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Arbitrum", "metric": "DeFi TVL (current)", "value": "$1.31B (~1.8%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Polygon", "metric": "DeFi TVL (current)", "value": "$1.05B (~1.4%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Avalanche", "metric": "DeFi TVL (current)", "value": "$0.48B (~0.6%)", "source_url": "https://api.llama.fi/v2/chains"},
+    {"name": "Sui", "metric": "DeFi TVL (current)", "value": "$0.45B (~0.6%)", "source_url": "https://api.llama.fi/v2/chains"}
+  ]
+}

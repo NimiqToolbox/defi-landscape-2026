@@ -1,0 +1,146 @@
+{
+  "topic": "Developer activity for DeFi & chains over time",
+  "summary": "Authoritative time-series of crypto/Web3 developer activity, primarily from the Electric Capital Developer Report (the industry-standard open-source dev tracker, analyzing 900M+ commits across 1.7M+ repos). Total monthly active open-source crypto developers grew from ~1,000 in 2015 to a peak of ~26,000-30,000 in 2021-2022 (all-time-high monthly count around the late-2021/mid-2022 market top; ~61,000+ NEW developers joined in calendar 2022, the most ever), then contracted with the bear market to 23,343 (Dec 2022), 22,411 (2023, -25% YoY by some cuts / -24% by others), and 23,613 (2024, ~-7%). A notable structural shift: while overall headcount fell, EXPERIENCED developers (2+ years) grew (+27% in 2024) and now write ~70% of all code. By ecosystem, Ethereum (incl. L2s) remains #1 in total developers and code written (~6,200 monthly active L1+L2 in 2024; reported 31,869 total active in 2025 on a broader basis), but in 2024 Solana surpassed Ethereum as the #1 ecosystem for NEW developers for the first time since 2016 (7,625 new, +83% YoY). DeFi-specific monthly active developers peaked around 3,900 (2022) after exploding from ~600 (Oct 2020) and ~2,500 (2021); ~3,532 in 2024. Note: Electric Capital's counting methodology and headline definitions shifted across reports (monthly-active vs. total-active vs. new), so cross-year comparisons carry moderate uncertainty; figures are end-of-year/peak snapshots as labeled.",
+  "series": [
+    {
+      "label": "Total monthly active open-source crypto developers (Electric Capital)",
+      "unit": "developers (count)",
+      "sources": [
+        "https://www.developerreport.com/developer-report",
+        "https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html",
+        "https://techcrunch.com/2024/01/17/monthly-active-crypto-devs-fell-25-percent-2023/",
+        "https://www.chaincatcher.com/en/article/2156880",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2020-analysis-of-developer-activity-across-cryptocurrencies-and-public-blockchains-301193370.html"
+      ],
+      "points": [
+        {"period": "2015", "value": 1000, "note": "~1,000 monthly active devs at Ethereum's launch; baseline cited repeatedly by Electric Capital. Low precision (approx)."},
+        {"period": "2018", "value": 4000, "note": "4,000+ developers per month contributing code (Electric Capital 2018 report)."},
+        {"period": "2020", "value": 9000, "note": "Close to 9,000 monthly active developers across all ecosystems as of the Dec 2020 report; new monthly devs grew +15% in 2020. Approx."},
+        {"period": "2021", "value": 18000, "note": "18,000+ monthly active developers; 34,000+ NEW devs joined in 2021 (highest in history at the time). Electric Capital 2021 report."},
+        {"period": "2022", "value": 23343, "note": "23,343 monthly active in December 2022; this was after the peak. Calendar-2022 saw 61,000+ NEW devs (all-time-high new-dev inflow). +5% YoY overall despite 70%+ price decline."},
+        {"period": "2023", "value": 22411, "note": "22,411 monthly active open-source developers (Electric Capital 2023 report). Headline reported as -24% to -25% YoY depending on cut; newcomers (<12mo) fell -53%."},
+        {"period": "2024", "value": 23613, "note": "23,613 (some sources 23,615) monthly active in Nov 2024; ~-7% YoY. Experienced devs (2+yr) +27% and wrote 70% of code. 39,148 new devs in 2024."},
+        {"period": "2025", "value": 25000, "note": "~25,000 by mid-2025 per secondary reporting of Electric Capital data; full-year 2025 report not yet confirmed published as of mid-2026. LOWER CONFIDENCE / rounded."}
+      ]
+    },
+    {
+      "label": "Peak / all-time-high crypto developer metrics (Electric Capital)",
+      "unit": "developers (count)",
+      "sources": [
+        "https://www.developerreport.com/developer-report",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html"
+      ],
+      "points": [
+        {"period": "2022-06-16", "value": 26000, "note": "All-time-high MONTHLY-ACTIVE developer count occurred mid-June 2022 (Dec 2022 figure of 23,343 was '-11% from peak', implying peak ~26,000). Peak monthly-active value approximate, derived from -11% off-peak statement."},
+        {"period": "2022", "value": 61000, "note": "All-time-high NEW developers in a single calendar year: 61,000+ devs contributed code for the first time during 2022."}
+      ]
+    },
+    {
+      "label": "DeFi-specific monthly active developers (Electric Capital)",
+      "unit": "developers (count)",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2020-analysis-of-developer-activity-across-cryptocurrencies-and-public-blockchains-301193370.html",
+        "https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html",
+        "https://www.chaincatcher.com/en/article/2156880"
+      ],
+      "points": [
+        {"period": "2020", "value": 606, "note": "606 DeFi developers total as of Oct 31, 2020 (220 infrequent contributors, 107 frequent/full-time-equivalent contributors). +67% in monthly active DeFi devs since Jan 2020."},
+        {"period": "2021", "value": 2500, "note": "2,500+ developers working on DeFi projects; DeFi devs +76% in 2021; 500+ new DeFi devs every month except January 2021."},
+        {"period": "2022", "value": 3901, "note": "3,901 monthly active DeFi developers (+240% since 'DeFi summer'); ~50% of DeFi devs outside Ethereum. Peak DeFi figure."},
+        {"period": "2024", "value": 3532, "note": "3,532 monthly active DeFi developers (Electric Capital 2024 report)."}
+      ]
+    },
+    {
+      "label": "Ethereum (L1) monthly active developers (Electric Capital)",
+      "unit": "developers (count)",
+      "sources": [
+        "https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html",
+        "https://www.chaincatcher.com/en/article/2156880"
+      ],
+      "points": [
+        {"period": "2018", "value": 1084, "note": "1,084 monthly active Ethereum developers (per 2022 report's historical comparison)."},
+        {"period": "2021", "value": 4000, "note": "4,000+ monthly active Ethereum developers, largest ecosystem; +42% growth in 2021."},
+        {"period": "2022", "value": 5819, "note": "5,819 monthly active Ethereum developers (5x vs 2018); largest single ecosystem."},
+        {"period": "2024", "value": 6244, "note": "6,244 monthly active Ethereum (L1) developers, down ~17% YoY. ~56% of Ethereum devs work on L2s; Ethereum L1+L2 ~65% of all new code written."}
+      ]
+    },
+    {
+      "label": "Bitcoin monthly active developers (Electric Capital)",
+      "unit": "developers (count)",
+      "sources": [
+        "https://medium.com/electric-capital/electric-capital-developer-report-2021-f37874efea6d",
+        "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html",
+        "https://www.chaincatcher.com/en/article/2156880"
+      ],
+      "points": [
+        {"period": "2018", "value": 372, "note": "372 monthly active Bitcoin developers (per 2022 report's historical comparison)."},
+        {"period": "2021", "value": 680, "note": "680+ monthly active Bitcoin developers; +10% growth in 2021."},
+        {"period": "2022", "value": 946, "note": "946 monthly active Bitcoin developers (3x vs 2018)."},
+        {"period": "2024", "value": 1200, "note": "~1,200 monthly active Bitcoin developers, roughly stable YoY."}
+      ]
+    },
+    {
+      "label": "New developers per ecosystem in 2024 (Electric Capital 2024 report)",
+      "unit": "new developers (count, calendar 2024)",
+      "sources": [
+        "https://www.coindesk.com/tech/2024/12/12/solana-was-the-biggest-draw-for-new-crypto-developers-in-2024-electric-capital",
+        "https://cryptopotato.com/solana-surpasses-ethereum-as-top-ecosystem-for-new-developers-in-2024-report/",
+        "https://www.chaincatcher.com/en/article/2156880"
+      ],
+      "points": [
+        {"period": "2024-Solana", "value": 7625, "note": "Solana attracted 7,625 new developers in 2024 (+83% YoY) - #1 ecosystem for NEW devs for first time since 2016."},
+        {"period": "2024-total-new", "value": 39148, "note": "39,148 total new developers entered crypto in 2024 (down from 45,580 in 2023). India = 17% of new devs, surpassing the US."}
+      ]
+    },
+    {
+      "label": "New developers per ecosystem Jan-Sep 2025 (Electric Capital data, via Ethereum Foundation)",
+      "unit": "new developers (count, Jan-Sep 2025)",
+      "sources": [
+        "https://finance.yahoo.com/news/ethereum-leads-16-000-developers-054251913.html",
+        "https://coinfomania.com/ethereum-tops-2025-dev-growth-solana-and-bitcoin-follow/"
+      ],
+      "points": [
+        {"period": "2025-Ethereum", "value": 16181, "note": "Ethereum (incl. L2s) added 16,181 new developers Jan-Sep 2025 - #1 for new devs in 2025."},
+        {"period": "2025-Solana", "value": 11500, "note": "Solana added ~11,500 new developers Jan-Sep 2025 (#2)."},
+        {"period": "2025-Bitcoin", "value": 7494, "note": "Bitcoin added 7,494 new developers Jan-Sep 2025 (#3)."}
+      ]
+    },
+    {
+      "label": "Total active developers per ecosystem 2025 (Electric Capital data, via Ethereum Foundation; broader 'active' basis)",
+      "unit": "total active developers (count)",
+      "sources": [
+        "https://finance.yahoo.com/news/ethereum-leads-16-000-developers-054251913.html",
+        "https://finance.yahoo.com/news/ethereum-adds-16k-developers-2025-091310770.html"
+      ],
+      "points": [
+        {"period": "2025-Ethereum", "value": 31869, "note": "31,869 total active Ethereum developers (incl. L2s, no cross-layer double-count). Broader 'active' definition than monthly-active series above. ETH full-time devs +5.8% YoY."},
+        {"period": "2025-Solana", "value": 17708, "note": "17,708 total active Solana developers; Solana FT devs +29.1% YoY, +61.7% over 2yrs. Solana Foundation says figure may undercount by ~7,800."},
+        {"period": "2025-Bitcoin", "value": 11036, "note": "11,036 total active Bitcoin contributors."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Crypto developer ecosystem grew at ~39% average annual rate since Ethereum's 2015 launch (from ~1,000 to ~23,600 monthly active by 2024)", "value": "39% CAGR", "as_of": "2024 (Electric Capital 2024 report)", "source_name": "Electric Capital Developer Report 2024", "source_url": "https://www.developerreport.com/developer-report", "confidence": "high"},
+    {"claim": "Monthly active open-source crypto developers", "value": "23,613 (Nov 2024); ~22,411 (2023); 23,343 (Dec 2022); 18,000+ (2021); ~9,000 (2020)", "as_of": "Nov 2024 latest report; ~25,000 mid-2025 per secondary reporting", "source_name": "Electric Capital Developer Reports", "source_url": "https://www.developerreport.com/developer-report", "confidence": "high"},
+    {"claim": "All-time-high MONTHLY-ACTIVE developer count occurred mid-June 2022 (~26,000, derived from Dec 2022 being -11% off peak)", "value": "~26,000 peak monthly-active (Jun 2022)", "as_of": "2022-06-16", "source_name": "Electric Capital Developer Report 2022", "source_url": "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html", "confidence": "medium"},
+    {"claim": "All-time-high NEW developers in a single year: 61,000+ first-time contributors in calendar 2022", "value": "61,000+ new devs in 2022", "as_of": "2022", "source_name": "Electric Capital Developer Report 2022", "source_url": "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html", "confidence": "high"},
+    {"claim": "Solana surpassed Ethereum as #1 ecosystem for NEW developers in 2024 (first time since 2016): 7,625 new Solana devs, +83% YoY", "value": "Solana 7,625 new devs (+83% YoY)", "as_of": "2024", "source_name": "CoinDesk / Electric Capital 2024", "source_url": "https://www.coindesk.com/tech/2024/12/12/solana-was-the-biggest-draw-for-new-crypto-developers-in-2024-electric-capital", "confidence": "high"},
+    {"claim": "Ethereum remains #1 for total developer activity and code written; ~65% of new code is across Ethereum L1+L2; 56% of Ethereum devs work on L2s; Base = 42% of new code in the Ethereum ecosystem", "value": "Ethereum ~65% of new code; 56% on L2", "as_of": "2024", "source_name": "Electric Capital Developer Report 2024 / Blockworks", "source_url": "https://www.chaincatcher.com/en/article/2156880", "confidence": "high"},
+    {"claim": "DeFi-specific monthly active developers peaked at 3,901 (2022); ~3,532 (2024); grew from 606 total (Oct 2020) and 2,500+ (2021)", "value": "DeFi devs: 606 (2020) -> 2,500 (2021) -> 3,901 (2022 peak) -> 3,532 (2024)", "as_of": "2024", "source_name": "Electric Capital Developer Reports 2020-2024", "source_url": "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html", "confidence": "high"},
+    {"claim": "Structural shift: overall headcount down post-2022 but experienced devs (2+ years) grew +27% in 2024 and write ~70% of all code", "value": "experienced devs +27% YoY; 70% of code", "as_of": "2024", "source_name": "Electric Capital Developer Report 2024", "source_url": "https://www.developerreport.com/developer-report", "confidence": "high"},
+    {"claim": "In 2025 (Jan-Sep), Ethereum led new-dev growth (16,181) ahead of Solana (~11,500) and Bitcoin (7,494); total active devs reported as Ethereum 31,869, Solana 17,708, Bitcoin 11,036 on a broader 'active' basis", "value": "ETH 31,869 / SOL 17,708 / BTC 11,036 total active (2025)", "as_of": "Jan-Sep 2025 (published Oct 2025 via Ethereum Foundation)", "source_name": "Yahoo Finance / Electric Capital via Ethereum Foundation", "source_url": "https://finance.yahoo.com/news/ethereum-leads-16-000-developers-054251913.html", "confidence": "medium"},
+    {"claim": "1 in 3 crypto developers (34%) work on multiple chains in 2024, up from <10% in 2015; ~74% of multichain devs work on an EVM chain", "value": "34% multichain (2024)", "as_of": "2024", "source_name": "Electric Capital Developer Report 2024", "source_url": "https://www.chaincatcher.com/en/article/2156880", "confidence": "high"},
+    {"claim": "Methodology note: Electric Capital's 2024 analysis covered 902M code commits across 1.7M open-source repositories (vs 89M commits / 276K repos in 2020), so coverage expansion partly affects cross-year totals", "value": "902M commits / 1.7M repos (2024)", "as_of": "2024", "source_name": "Electric Capital Developer Report 2024", "source_url": "https://github.com/electric-capital/developer-reports", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "Ethereum (incl. L2s)", "metric": "Total active developers 2025 / #1 ecosystem by total dev activity & code", "value": "31,869 total active (2025); ~6,244 monthly active L1 (2024); ~65% of new crypto code", "source_url": "https://finance.yahoo.com/news/ethereum-leads-16-000-developers-054251913.html"},
+    {"name": "Solana", "metric": "#1 for NEW developers in 2024; #2 total active 2025", "value": "7,625 new devs in 2024 (+83% YoY); 17,708 total active (2025); FT devs +29.1% YoY", "source_url": "https://www.coindesk.com/tech/2024/12/12/solana-was-the-biggest-draw-for-new-crypto-developers-in-2024-electric-capital"},
+    {"name": "Bitcoin", "metric": "Monthly active developers (stable, slow growth)", "value": "~1,200 monthly active (2024); 946 (2022); 11,036 total active (2025)", "source_url": "https://www.chaincatcher.com/en/article/2156880"},
+    {"name": "Base (Coinbase L2)", "metric": "Share of new code in Ethereum ecosystem", "value": "42% of new code written in the Ethereum ecosystem (2024)", "source_url": "https://www.chaincatcher.com/en/article/2156880"},
+    {"name": "DeFi (cross-chain category)", "metric": "Monthly active DeFi developers", "value": "3,901 peak (2022); 3,532 (2024); ~50% outside Ethereum", "source_url": "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html"},
+    {"name": "India (geography)", "metric": "Share of new crypto developers", "value": "17% of all new devs in 2024 - surpassed the US as #1 source of new developers", "source_url": "https://www.chaincatcher.com/en/article/2156880"}
+  ]
+}

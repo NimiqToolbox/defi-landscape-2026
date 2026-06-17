@@ -1,0 +1,77 @@
+{
+  "name": "Money20/20 USA",
+  "edition": "2025 (USA edition)",
+  "location": "The Venetian Expo / Venetian Convention and Expo Center, Las Vegas, Nevada, USA",
+  "dates": "October 26-29, 2025",
+  "in_window": true,
+  "attendance": "11,000+ attendees from 85 countries; 630+ speakers across 300+ sessions; 380+ sponsors. Theme: \"Create the Future\".",
+  "defi_themes": [
+    "Stablecoins as mainstream payment rails (cross-border, programmable money) - dominant theme",
+    "TradFi x digital-asset convergence ('frenemies' to partners; shared infrastructure over competition)",
+    "Tokenization of assets and tokenized infrastructure as the next growth backbone for finance",
+    "On-chain / cross-border FX and real-time settlement using stablecoins",
+    "Institutional adoption of digital assets (banks integrating stablecoins/digital assets into legacy systems)",
+    "Tokenized treasuries / tokenized money-market funds (Circle's tokenized treasury fund context; just-in-time liquidity)",
+    "Regulatory tailwinds - GENIUS Act stablecoin legislation cited as driving an uptick in growth",
+    "Bank-stablecoin integration ('Speaking Stablecoins to Banks') and embedded digital-asset platforms"
+  ],
+  "notable_panels": [
+    {
+      "title": "Frenemies, Friction, and the $27T Opportunity: Inside the Stablecoin Revolution",
+      "topic": "Stablecoin transaction growth (>$27T/yr), cross-border interoperable rails, merchant acceptance, bank integration; predictions of 10-20% of cross-border commerce moving to stablecoins",
+      "speakers": "Moderator: Rocio Wu (Partner, F-Prime Capital); Panelists: Eric Barbier (CEO, Triple-A), Yelena Reznikova (Global Head of Partnerships, Bridge), Keith Vander Leest (GM Americas, BVNK)"
+    },
+    {
+      "title": "Speaking Stablecoins to Banks",
+      "topic": "How traditional banks adopt stablecoins; building digital-asset platforms that connect into banks' existing core/digital-banking systems so customers access digital assets like fiat; GENIUS Act driving growth",
+      "speakers": "Sunil Sachdev (SVP, Embedded Finance & Digital Assets, Fiserv), Caitlin Barnett (Chainalysis), Carol Hartman (Threshold Partners / Brightside Financial)"
+    },
+    {
+      "title": "Stablecoins / tokenization & open finance conversations (Intersection Stage)",
+      "topic": "Stablecoins, tokenization, and open finance as the next chapter of resilient financial infrastructure",
+      "speakers": "Circle, Citi, and Michael Saylor (MicroStrategy/Strategy) led these conversations"
+    },
+    {
+      "title": "Tokenization & cross-border money movement (TradFi x digital assets)",
+      "topic": "Tokenization enabling just-in-time liquidity and cross-border money movement; orchestration across ecosystems rather than competition",
+      "speakers": "Naveen Mallela (Global Co-head, Kinexys by J.P. Morgan), Raj Dhamodharan (EVP, Mastercard)"
+    },
+    {
+      "title": "How Stablecoins are Powering a New Era of On-chain FX",
+      "topic": "Use of stablecoins for on-chain foreign exchange and real-time cross-border payments",
+      "speakers": "Featured speakers from Ripple, Bank of America, and Thunes (cross-border payments programming)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Michael Saylor", "affiliation": "Executive Chairman, Strategy (MicroStrategy)"},
+    {"name": "Kash Razzaghi", "affiliation": "Chief Commercial Officer, Circle"},
+    {"name": "Naveen Mallela", "affiliation": "Global Co-head, Kinexys (J.P. Morgan digital assets)"},
+    {"name": "Raj Dhamodharan", "affiliation": "EVP, Mastercard"},
+    {"name": "Sunil Sachdev", "affiliation": "SVP, Embedded Finance & Digital Assets, Fiserv"},
+    {"name": "Caitlin Barnett", "affiliation": "Chainalysis"},
+    {"name": "Carol Hartman", "affiliation": "Threshold Partners (with Brightside Financial)"},
+    {"name": "Rocio Wu", "affiliation": "Partner, F-Prime Capital"},
+    {"name": "Eric Barbier", "affiliation": "CEO, Triple-A"},
+    {"name": "Yelena Reznikova", "affiliation": "Global Head of Partnerships, Bridge"},
+    {"name": "Keith Vander Leest", "affiliation": "General Manager Americas, BVNK"}
+  ],
+  "key_takeaways": [
+    "Stablecoins were the breakout DeFi/crypto theme, framed as institutional payment infrastructure ('programmable money' rails) rather than speculative crypto - the industry crossed from pilots to operational execution.",
+    "TradFi and digital-native firms increasingly favor partnership and shared infrastructure (tokenization, orchestration) over competition; banks, networks (Mastercard, J.P. Morgan/Kinexys) and crypto-native firms (Circle, Ripple) shared stages.",
+    "Regulatory clarity from the GENIUS Act was repeatedly credited with accelerating stablecoin adoption and growth rates among banks and fintechs.",
+    "Stablecoin transaction volume cited at >$27 trillion/year; cross-border payments and FX seen as the killer use case, with bank back-end integration being the main friction to solve.",
+    "Major announcement: Western Union to launch its U.S. Dollar Payment Token (USDPT) stablecoin in H1 2026 on Solana, partnering with Anchorage Digital Bank - signaling TradFi legitimization of stablecoins.",
+    "Tokenization of real-world/financial assets (treasuries, FX, liquidity) positioned as the next growth backbone for mainstream finance; Fiserv recognized (Diamond Award) for democratizing stablecoin access."
+  ],
+  "sources": [
+    "https://us.money2020.com/media/newsroom/pr-10-30-2025-money2020-usa-closes",
+    "https://www.businesswire.com/news/home/20251030444503/en/Money2020-USA-2025-Closes-With-a-Future-Ready-Fintech-Ecosystem-AI-Stablecoins-and-Infrastructure-Take-the-Lead",
+    "https://biztechmagazine.com/article/2025/10/money2020-2025-increasing-use-stablecoins-shows-no-sign-slowing-down",
+    "https://www.fintechfutures.com/blockchain-crypto-digital-assets/money20-20-usa-stablecoin-momentum-and-regulatory-support-shape-day-two",
+    "https://capitalpioneer.co.uk/money20-20-usa-roundup-convergence-crypto-and-the-next-era-of-finance/",
+    "https://fintechfrontiers.live/money20-20-usa-2025-fintech-crosses-the-execution-threshold-with-ai-stablecoins-and-infrastructure-at-the-core/",
+    "https://www.eventmarketer.com/article/inside-money20-20-usa-2025-how-money-did-business/",
+    "https://us.money2020.com/"
+  ],
+  "confidence": "medium-high"
+}

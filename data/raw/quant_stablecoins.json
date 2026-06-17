@@ -1,0 +1,167 @@
+{
+  "topic": "Stablecoin supply over time",
+  "summary": "Stablecoin total supply (circulating market cap) grew from roughly $4B at end-2019 to an all-time high of ~$321B in May 2026, per DefiLlama. Growth came in waves: a ~6x surge in 2020-2021 (DeFi/bull market) to ~$163B, a contraction in 2022-2023 (Terra/UST collapse, FTX, BUSD wind-down) bottoming near ~$124-130B, then a strong recovery through 2024-2026 driven by US regulatory clarity (GENIUS Act era), tokenized treasuries, and new entrants. As of 2026-06-16 the total stood at ~$313.5B (USD-pegged). The market is highly concentrated: Tether's USDT (~$186B, ~59% share) and Circle's USDC (~$75B, ~24% share) together hold ~83-85% of supply. Sky's USDS+DAI (~$12.6B combined), Ethena's USDe (volatile, ~$4.5B currently after peaking ~$14.8B in Oct 2025), and newcomers like World Liberty Financial's USD1 (~$4.5B) round out the top tier. Stablecoins represent roughly 9-13% of total crypto market cap. On-chain transfer volume (adjusted/organic, Artemis) rose from ~$1.3T in 2020 to ~$18.4T in 2024, exceeding Visa and Mastercard's individual annual volumes; true payment volume (excluding bots/trading) was ~$390B in 2025 per Artemis/McKinsey. All market-cap series unit = USD billions. Primary source: DefiLlama Stablecoins API (stablecoins.llama.fi), accessed 2026-06-17.",
+  "series": [
+    {
+      "label": "Total stablecoin market cap (USD-pegged), year-end & key points",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all",
+        "https://defillama.com/stablecoins"
+      ],
+      "points": [
+        {"period": "2018-12-31", "value": 0.42, "note": "Year-end. DefiLlama all-stablecoins chart."},
+        {"period": "2019-12-31", "value": 4.17, "note": "Year-end. Early stablecoin era (mostly USDT)."},
+        {"period": "2020-12-31", "value": 27.06, "note": "Year-end. ~6.5x growth during DeFi summer."},
+        {"period": "2021-12-31", "value": 162.53, "note": "Year-end. ~6x growth in bull market."},
+        {"period": "2022-04-02", "value": 187.39, "note": "2022 peak, pre-Terra/UST collapse (early May 2022)."},
+        {"period": "2022-12-31", "value": 137.46, "note": "Year-end. Contraction after Terra/UST and FTX collapses."},
+        {"period": "2023-12-31", "value": 130.1, "note": "Year-end. Continued decline (BUSD wind-down, USDC depeg scare in Mar 2023). Intra-year low ~$124B in Oct 2023."},
+        {"period": "2024-12-31", "value": 205.43, "note": "Year-end. +$70-75B recovery year; 2024 peak ~$206.8B on Dec 28."},
+        {"period": "2025-12-31", "value": 306.7, "note": "Year-end. Crossed $300B; 2025 peak ~$309.4B on Dec 21. Driven by US regulatory clarity."},
+        {"period": "2026-05-17", "value": 321.38, "note": "All-time high (USD-pegged) per DefiLlama. Corroborated by CoinDesk reports of $321-323B ATH in Apr-May 2026."},
+        {"period": "2026-06-16", "value": 313.53, "note": "Latest value, USD-pegged total. As-of 2026-06-17."}
+      ]
+    },
+    {
+      "label": "USDT (Tether) circulating supply, year-end & key points",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=1",
+        "https://defillama.com/stablecoin/tether"
+      ],
+      "points": [
+        {"period": "2019-12-31", "value": 3.2, "note": "Year-end."},
+        {"period": "2020-12-31", "value": 20.07, "note": "Year-end."},
+        {"period": "2021-12-31", "value": 79.43, "note": "Year-end."},
+        {"period": "2022-12-31", "value": 66.22, "note": "Year-end (2022 peak ~$83.7B in May)."},
+        {"period": "2023-12-31", "value": 91.77, "note": "Year-end; USDT gained share as USDC/BUSD shrank."},
+        {"period": "2024-12-31", "value": 137.83, "note": "Year-end."},
+        {"period": "2025-12-31", "value": 187.06, "note": "Year-end. ~59% market share."},
+        {"period": "2026-05-20", "value": 190.24, "note": "USDT all-time high ~$190B per DefiLlama / CoinDesk."},
+        {"period": "2026-06-16", "value": 186.32, "note": "Latest. ~59% of total stablecoin supply."}
+      ]
+    },
+    {
+      "label": "USDC (Circle) circulating supply, year-end & key points",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=2",
+        "https://defillama.com/stablecoin/usd-coin"
+      ],
+      "points": [
+        {"period": "2019-12-31", "value": 0.52, "note": "Year-end."},
+        {"period": "2020-12-31", "value": 3.71, "note": "Year-end."},
+        {"period": "2021-12-31", "value": 38.09, "note": "Year-end."},
+        {"period": "2022-12-31", "value": 44.1, "note": "Year-end (2022 peak ~$55.2B in June)."},
+        {"period": "2023-12-31", "value": 24.02, "note": "Year-end. Sharp decline after Mar 2023 SVB/depeg episode and redemptions."},
+        {"period": "2024-12-31", "value": 43.8, "note": "Year-end. Recovery."},
+        {"period": "2025-12-31", "value": 75.99, "note": "Year-end. ~73% growth in 2025; ~24-25% market share."},
+        {"period": "2026-06-16", "value": 74.98, "note": "Latest. ~24% of total stablecoin supply."}
+      ]
+    },
+    {
+      "label": "DAI + USDS (Sky / former MakerDAO) circulating supply",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=5",
+        "https://stablecoins.llama.fi/stablecoins",
+        "https://defillama.com/stablecoin/dai"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 1.16, "note": "DAI year-end (USDS did not exist yet)."},
+        {"period": "2021-12-31", "value": 8.97, "note": "DAI year-end."},
+        {"period": "2022-12-31", "value": 5.06, "note": "DAI year-end (2022 peak ~$9.9B in Feb)."},
+        {"period": "2023-12-31", "value": 5.18, "note": "DAI year-end."},
+        {"period": "2024-12-31", "value": 4.42, "note": "DAI year-end. USDS launched 2024 (MakerDAO -> Sky rebrand); combined DAI+USDS higher."},
+        {"period": "2025-12-31", "value": 4.49, "note": "DAI year-end. USDS grew separately to several $B over 2025."},
+        {"period": "2026-06-16", "value": 12.62, "note": "Combined: USDS ~$8.21B + DAI ~$4.42B (live DefiLlama snapshot). Confidence medium on the split; combined Sky total is the meaningful figure."}
+      ]
+    },
+    {
+      "label": "USDe (Ethena) circulating supply",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=146",
+        "https://defillama.com/stablecoin/ethena-usde"
+      ],
+      "points": [
+        {"period": "2023-12-31", "value": 0.09, "note": "Launch year-end (Feb 2024 mainnet; small testnet/early supply)."},
+        {"period": "2024-12-31", "value": 5.86, "note": "Year-end. Rapid first-year growth (synthetic delta-neutral, funding-rate yield)."},
+        {"period": "2025-10-04", "value": 14.83, "note": "All-time high ~$14.8B in Oct 2025."},
+        {"period": "2025-12-31", "value": 6.29, "note": "Year-end. Sharp contraction from Oct peak as funding-rate yields fell."},
+        {"period": "2026-06-16", "value": 4.49, "note": "Latest. Highly volatile supply."}
+      ]
+    },
+    {
+      "label": "BUSD (Binance USD, Paxos) circulating supply",
+      "unit": "USD billions",
+      "sources": [
+        "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=4"
+      ],
+      "points": [
+        {"period": "2020-12-31", "value": 0.9, "note": "Year-end."},
+        {"period": "2021-12-31", "value": 14.74, "note": "Year-end."},
+        {"period": "2022-11-15", "value": 23.46, "note": "Peak. 3rd-largest stablecoin at its height."},
+        {"period": "2022-12-31", "value": 16.71, "note": "Year-end."},
+        {"period": "2023-12-31", "value": 1.01, "note": "Year-end. NYDFS ordered Paxos to stop minting BUSD (Feb 2023); wind-down."},
+        {"period": "2024-12-31", "value": 0.07, "note": "Year-end. Effectively deprecated."},
+        {"period": "2026-06-16", "value": 0.04, "note": "Latest. Residual supply only."}
+      ]
+    },
+    {
+      "label": "Stablecoin on-chain transfer volume (adjusted/organic, annual)",
+      "unit": "USD trillions",
+      "sources": [
+        "https://www.visualcapitalist.com/charted-stablecoins-are-now-bigger-than-visa-or-mastercard/",
+        "https://www.artemisanalytics.com/",
+        "https://corporate.visa.com/en/solutions/crypto/stablecoins/stablecoins-and-the-future-of-onchain-finance.html"
+      ],
+      "points": [
+        {"period": "2020", "value": 1.3, "note": "Adjusted volume per Artemis (via Visual Capitalist). Confidence medium."},
+        {"period": "2021", "value": 8.1, "note": "~6x jump in bull market. Artemis."},
+        {"period": "2023", "value": 7.6, "note": "Artemis adjusted volume."},
+        {"period": "2024", "value": 18.4, "note": "Artemis adjusted volume; exceeded Visa ($15.7T) and Mastercard ($9.8T). Raw/unadjusted volume cited elsewhere as ~$27.6T (CEX.IO), ~70-77% bot-driven."}
+      ]
+    },
+    {
+      "label": "Stablecoin true payment volume (excludes trading/bots, annual)",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.mckinsey.com/industries/financial-services/our-insights/stablecoins-in-payments-what-the-raw-transaction-numbers-miss",
+        "https://research.artemisanalytics.com/p/stablecoin-payments-at-scale-how"
+      ],
+      "points": [
+        {"period": "2025", "value": 390, "note": "Genuine payments (commercial transfers, settlement, payroll, remittances), more than 2x 2024. Artemis/McKinsey. Confidence medium."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Total stablecoin market cap all-time high", "value": "~$321.4B (USD-pegged) on 2026-05-17 per DefiLlama; CoinDesk reports $321-323B ATH in Apr-May 2026", "as_of": "2026-05-17", "source_name": "DefiLlama Stablecoins API", "source_url": "https://stablecoins.llama.fi/stablecoincharts/all", "confidence": "high"},
+    {"claim": "Total stablecoin market cap current/latest", "value": "~$313.5B (USD-pegged)", "as_of": "2026-06-16", "source_name": "DefiLlama Stablecoins API", "source_url": "https://stablecoins.llama.fi/stablecoincharts/all", "confidence": "high"},
+    {"claim": "Total stablecoin supply (sum of all 381 tracked pegged assets, all currencies)", "value": "~$313.9B", "as_of": "2026-06-17", "source_name": "DefiLlama Stablecoins API", "source_url": "https://stablecoins.llama.fi/stablecoins", "confidence": "high"},
+    {"claim": "USDT current market cap and dominance", "value": "~$186.3B, ~59% of total stablecoin supply", "as_of": "2026-06-16", "source_name": "DefiLlama", "source_url": "https://defillama.com/stablecoin/tether", "confidence": "high"},
+    {"claim": "USDC current market cap and dominance", "value": "~$75.0B, ~24% of total stablecoin supply", "as_of": "2026-06-16", "source_name": "DefiLlama", "source_url": "https://defillama.com/stablecoin/usd-coin", "confidence": "high"},
+    {"claim": "USDT + USDC combined share of stablecoin supply", "value": "~83-85%", "as_of": "2026-06-16", "source_name": "DefiLlama (computed)", "source_url": "https://defillama.com/stablecoins", "confidence": "high"},
+    {"claim": "USDT on Tron vs Ethereum", "value": "~$87.7B on Tron, plus large Ethereum supply (of ~$186B total)", "as_of": "2026-06-17", "source_name": "DefiLlama Stablecoins API", "source_url": "https://stablecoins.llama.fi/stablecoins", "confidence": "high"},
+    {"claim": "Stablecoin share of total crypto market cap", "value": "~9-13% (varies by date; ~9.9% early Jan 2026, ~13.3% per CoinGecko mid-June 2026)", "as_of": "2026-06", "source_name": "CoinGecko", "source_url": "https://www.coingecko.com/en/categories/stablecoins", "confidence": "medium"},
+    {"claim": "USDe (Ethena) all-time high", "value": "~$14.8B on 2025-10-04, since fallen to ~$4.5B", "as_of": "2025-10-04", "source_name": "DefiLlama", "source_url": "https://defillama.com/stablecoin/ethena-usde", "confidence": "high"},
+    {"claim": "2024 stablecoin transfer volume exceeded Visa and Mastercard", "value": "~$18.4T adjusted (Artemis) vs Visa $15.7T, Mastercard $9.8T; raw ~$27.6T", "as_of": "2024", "source_name": "Artemis via Visual Capitalist / CEX.IO", "source_url": "https://www.visualcapitalist.com/charted-stablecoins-are-now-bigger-than-visa-or-mastercard/", "confidence": "medium"},
+    {"claim": "True stablecoin payment volume (excl. trading/bots)", "value": "~$390B in 2025, >2x 2024", "as_of": "2025", "source_name": "Artemis / McKinsey", "source_url": "https://www.mckinsey.com/industries/financial-services/our-insights/stablecoins-in-payments-what-the-raw-transaction-numbers-miss", "confidence": "medium"},
+    {"claim": "First $1T+ monthly transaction volume", "value": "September 2025 was the first month exceeding $1T in stablecoin transaction volume", "as_of": "2025-09", "source_name": "Arkham Research", "source_url": "https://info.arkm.com/research/how-stablecoins-reached-a-300-billion-market-cap-in-2025", "confidence": "medium"},
+    {"claim": "BUSD wind-down", "value": "NYDFS ordered Paxos to stop minting BUSD Feb 2023; supply fell from ~$16.7B (end-2022, peak ~$23.5B Nov 2022) to ~$40M today", "as_of": "2026-06-16", "source_name": "DefiLlama", "source_url": "https://stablecoins.llama.fi/stablecoincharts/all?stablecoin=4", "confidence": "high"},
+    {"claim": "2022 contraction trigger", "value": "Total fell from 2022 peak ~$187.4B (early May 2022) following Terra/UST collapse, then FTX (Nov 2022)", "as_of": "2022", "source_name": "DefiLlama", "source_url": "https://stablecoins.llama.fi/stablecoincharts/all", "confidence": "high"}
+  ],
+  "top_entities": [
+    {"name": "USDT (Tether)", "metric": "circulating market cap", "value": "$186.3B (~59% share)", "source_url": "https://defillama.com/stablecoin/tether"},
+    {"name": "USDC (Circle)", "metric": "circulating market cap", "value": "$75.0B (~24% share)", "source_url": "https://defillama.com/stablecoin/usd-coin"},
+    {"name": "USDS (Sky, ex-MakerDAO)", "metric": "circulating market cap", "value": "$8.2B", "source_url": "https://defillama.com/stablecoins"},
+    {"name": "USD1 (World Liberty Financial)", "metric": "circulating market cap", "value": "$4.57B", "source_url": "https://defillama.com/stablecoins"},
+    {"name": "USDe (Ethena)", "metric": "circulating market cap", "value": "$4.49B (ATH ~$14.8B Oct 2025)", "source_url": "https://defillama.com/stablecoin/ethena-usde"},
+    {"name": "DAI (Sky, ex-MakerDAO)", "metric": "circulating market cap", "value": "$4.40B", "source_url": "https://defillama.com/stablecoin/dai"},
+    {"name": "USYC (Circle, tokenized yield)", "metric": "circulating market cap", "value": "$3.08B", "source_url": "https://defillama.com/stablecoins"},
+    {"name": "BUIDL (BlackRock USD)", "metric": "circulating market cap", "value": "$3.03B", "source_url": "https://defillama.com/stablecoins"},
+    {"name": "PYUSD (PayPal)", "metric": "circulating market cap", "value": "$2.74B", "source_url": "https://defillama.com/stablecoins"},
+    {"name": "USDG (Global Dollar / Paxos)", "metric": "circulating market cap", "value": "$2.72B", "source_url": "https://defillama.com/stablecoins"}
+  ]
+}

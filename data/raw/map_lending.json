@@ -1,0 +1,84 @@
+{
+  "category": "Lending & borrowing",
+  "summary": "DeFi lending is a ~$40-54B deposit category (DefiLlama lending category, April 2026) dominated by Aave, which holds roughly 60-63% market share and a ~$13B+ TVL lead over its nearest rival. The structure has bifurcated: Aave remains the broad-market, multi-chain incumbent (pooled model), while the fastest growth is in modular/isolated architectures led by Morpho (Morpho Blue primitive + curated Vaults), with Euler V2 staging a post-hack comeback. Spark, the lending/yield arm of Sky (formerly MakerDAO), is the #2-#3 player on the back of Sky's stablecoin reserves. Compound has stagnated as a legacy pooled lender, JustLend dominates Tron, and Kamino leads Solana lending. Figures vary by snapshot date; the most cited April-May 2026 readings are reported below.",
+  "leaders": [
+    {
+      "name": "Aave (V3)",
+      "chain": "Ethereum + 14-21 EVM chains (Arbitrum, Base, Polygon, Optimism, Avalanche, Gnosis, BNB, etc.)",
+      "metric": "TVL / market share",
+      "value": "~$17-19.4B TVL; ~60-63% lending market share; >$1T cumulative loan volume",
+      "note": "Clear category leader. Pooled (monolithic) money market. V3 is ~96% of Aave TVL; V2 in runoff. Lead over #2 has widened, not narrowed, through the 2025-26 recovery. Reached a record ~$41B+ peak TVL earlier."
+    },
+    {
+      "name": "Spark (SparkLend / Sky)",
+      "chain": "Ethereum, Base, Gnosis",
+      "metric": "TVL",
+      "value": "SparkLend ~$3.6B; total Spark (incl. Savings + Liquidity Layer) ~$6.8-8B",
+      "note": "Lending/yield arm of Sky (formerly MakerDAO). Borrows from Sky's $6.5B+ stablecoin reserves; DAI/USDS money market. Grew TVL during the April 2026 KelpDAO exploit period as capital sought safe harbors."
+    },
+    {
+      "name": "Morpho (Blue + Vaults)",
+      "chain": "Ethereum, Base",
+      "metric": "TVL / deposits",
+      "value": "~$4.9-7.4B TVL; ~$10B+ total deposits at Nov 2025 peak",
+      "note": "Most credible structural challenger and the face of the modular shift. Morpho Blue is a ~650-line immutable primitive for isolated markets; Vaults add a curator allocation layer with tighter spreads. Rose from ~$0.6B (Jan 2024) to multi-billion; raised $175M from a16z/Paradigm. V2 targets $20B+ with intent solvers and cross-chain."
+    },
+    {
+      "name": "Compound (V3 'Comet')",
+      "chain": "Ethereum, Base, Arbitrum, Polygon",
+      "metric": "TVL",
+      "value": "~$2.7B TVL (~10% of Aave's)",
+      "note": "Original first-mover (kicked off 'DeFi summer' yield farming with COMP in 2020) but stagnated. Founder Robert Leshner shifted focus to Superstate in 2023; under-invested in multi-chain vs Aave. Legacy pooled model; ~6-year security track record cited as its main edge."
+    },
+    {
+      "name": "JustLend (DAO)",
+      "chain": "Tron",
+      "metric": "TVL",
+      "value": "~$2.4-3.3B TVL (Q1 2026); ~$6.7B reported at Jan 2026 peak",
+      "note": "Dominant lender on Tron, tied to Justin Sun ecosystem (USDD). Pooled algorithmic money market. Active loans ~$200M+; JST buyback-and-burn program funded by protocol revenue/USDD rewards."
+    },
+    {
+      "name": "Kamino Finance",
+      "chain": "Solana",
+      "metric": "TVL / Solana lending share",
+      "value": "~$1.1-3.6B TVL; ~75% of Solana's lending market",
+      "note": "Largest DeFi protocol on Solana and its leading lender. Rebranded Dec 2025 with RWA/institutional products (fixed-rate loans, private credit vault, RWA DEX); Feb 2026 institutional tri-party custody with Anchorage Digital."
+    },
+    {
+      "name": "Euler (V2)",
+      "chain": "Ethereum + Avalanche, Berachain and others",
+      "metric": "TVL",
+      "value": "~$0.9-1.5B TVL",
+      "note": "Comeback story after the ~$200M March 2023 hack. V2 (Sept 2024) is a modular credit layer of ERC-4626 vaults (EVK/EVC) for building isolated, configurable lending markets. TVL rose ~38x in 3 months / +500% post-V2; new ATHs in TVL and borrows."
+    },
+    {
+      "name": "Sky (formerly MakerDAO)",
+      "chain": "Ethereum",
+      "metric": "stablecoin reserves / collateral supply",
+      "value": "~$6.5B+ stablecoin (DAI/USDS) reserves backing the ecosystem",
+      "note": "Pioneer of on-chain lending (overcollateralized DAI, 2018). Rebranded MakerDAO -> Sky and externalized active lending into Spark. Now functions more as the stablecoin/collateral backbone than a direct user-facing money market."
+    }
+  ],
+  "leadership_shift": "2018-2020: MakerDAO pioneered on-chain lending with overcollateralized DAI; Compound then ignited 'DeFi summer' (2020) with the COMP liquidity-mining model and briefly led. 2021: A multi-protocol top tier - by Oct 2021 Aave (~$18.9B) had overtaken Compound (~$12B), with MakerDAO (~$16.4B) also huge; Aave won via faster innovation (flash loans, more assets) and aggressive multi-chain/TradFi expansion. 2023: Aave consolidated the #1 spot with V3 and broad multi-chain deployment while Compound stagnated (founder pivoted to Superstate) and Euler suffered a ~$200M hack; MakerDAO spun out SparkLend. 2024-2026: The category split into two tracks - (1) Aave entrenched as the pooled, multi-chain incumbent (~60-63% share, ~$13B+ lead) with Spark as the Sky-backed #2/#3; and (2) a modular/isolated-market wave led by Morpho (Blue primitive + curated Vaults, ~$10B deposits at peak) and a recovering Euler V2. The narrative is specialization rather than displacement: Morpho/Euler grew by pulling capital off monolithic pools with isolated, curator-driven markets and tighter spreads, while Aave defended its liquidity moat. Chain-specific leaders emerged too: JustLend on Tron and Kamino on Solana (~75% of Solana lending).",
+  "sources": [
+    "https://eco.com/support/en/articles/14800882-best-defi-lending-protocols-2026-tvl-rates-risk",
+    "https://yellow.com/research/decentralized-lending-2026-aave-on-chain-money-markets",
+    "https://coinlaw.io/aave-statistics/",
+    "https://www.theblock.co/post/366397/aaves-parabolic-growth-towards-50-billion-tvl-signals-iinstitutional-embrace-of-defi-lending",
+    "https://defillama.com/protocol/morpho",
+    "https://defillama.com/protocol/spark",
+    "https://defillama.com/protocol/justlend",
+    "https://cryptobriefing.com/spark-may-savings-sparklend-tvl/",
+    "https://messari.io/protocol/spark-lend",
+    "https://www.cryptonewsnavigator.com/academy/article/morpho-tvl-institutional-distribution-thesis",
+    "https://memeburn.com/morpho-raises-175m-from-a16z-and-paradigm-to-challenge-defi-lending/",
+    "https://thedefiant.io/news/defi/euler-finance-tvl-rises-38x-in-3-months",
+    "https://www.coindesk.com/business/2025/03/14/euler-looks-to-build-on-v2-s-defi-lending-comeback-story",
+    "https://www.ainvest.com/news/solana-lending-ecosystem-kamino-dominance-institutional-defi-2512/",
+    "https://eco.com/support/en/articles/14801186-kamino-lending-solana-s-money-market-explained",
+    "https://www.coindesk.com/research/tron-network-q1-2026",
+    "https://cryptoslate.com/data-shows-how-aave-overtook-compound-in-defi-lending/",
+    "https://coinmarketcap.com/academy/article/aave-crosses-dollar1t-in-lending-volume-with-institutional-push",
+    "https://www.kucoin.com/news/flash/who-will-replace-aave-as-the-new-defi-lending-leader"
+  ]
+}

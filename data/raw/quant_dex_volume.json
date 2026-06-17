@@ -1,0 +1,110 @@
+{
+  "topic": "DEX trading volume over time",
+  "summary": "Decentralized exchange (DEX) spot trading volume has grown from roughly $115B in 2020 and ~$1T in 2021 to a record ~$4.9 trillion in 2025, with 2024 (~$1.5T) up 138% over 2023 (~$647.6B). DefiLlama tracks cumulative all-time DEX volume above $13 trillion (June 2026). Monthly spot volume peaked around $419.76B in October 2025 (CoinGecko basis); DefiLlama's broader all-chain coverage shows even higher single-month peaks. The DEX-to-CEX spot volume ratio more than tripled from ~6% (Jan 2021) to an all-time high of 37.4% in June 2025 (Solana memecoin mania), settling around 21.2% by November 2025. By market share, Uniswap and PancakeSwap have led for years (Uniswap 35.9% / PancakeSwap 29.5% in Aug 2025), but Solana-native DEXes (Raydium, Jupiter) and Base's Aerodrome surged in 2025 — Raydium briefly overtook Uniswap in monthly volume in Nov 2025 ($124.6B vs $90.5B). NOTE: annual totals differ across sources because some count spot-only and others include perps; figures here are spot unless noted, and confidence is lower where sources disagree.",
+  "series": [
+    {
+      "label": "Annual DEX spot trading volume",
+      "unit": "USD billions",
+      "sources": [
+        "https://news.bitcoin.com/report-decentralized-exchange-volume-surpasses-1-trillion-in-2021-uniswap-leads-the-pack/",
+        "https://news.bit2me.com/en/dex-register-record-volume-in-December",
+        "https://www.coingecko.com/research/publications/dex-to-cex-ratio",
+        "https://www.coingecko.com/research/publications/2025-annual-crypto-report",
+        "https://api.llama.fi/overview/dexs"
+      ],
+      "points": [
+        {"period": "2020", "value": 115, "note": "Approx full-year DEX volume; low-precision figure cited in 2021 retrospectives (vs ~$1T in 2021). Low confidence."},
+        {"period": "2021", "value": 1000, "note": "DEX volume surpassed ~$1 trillion in 2021, Uniswap leading (news.bitcoin.com / The Block Research). Round figure."},
+        {"period": "2022", "value": 1000, "note": "Estimate ~$1T; sources vary (top-10 DEX volume cited at ~$1.33T including some derivatives). Bear-market year. Low confidence on spot-only split."},
+        {"period": "2023", "value": 647.6, "note": "Full-year DEX spot volume cited as the base for 2024's +138.1% growth (bit2me / DefiLlama-derived)."},
+        {"period": "2024", "value": 1500, "note": "Record ~$1.5 trillion in 2024, up 138.1% from $647.6B in 2023."},
+        {"period": "2025", "value": 4900, "note": "~$4.9 trillion DEX spot volume in 2025 (CoinGecko CEX/DEX Trading Activity Report 2026). New annual record."}
+      ]
+    },
+    {
+      "label": "Cumulative all-time DEX volume (DefiLlama, all categories tracked)",
+      "unit": "USD trillions",
+      "sources": ["https://api.llama.fi/overview/dexs", "https://defillama.com/dexs"],
+      "points": [
+        {"period": "2026-06", "value": 13.02, "note": "All-time cumulative DEX volume per DefiLlama API as of ~June 2026."}
+      ]
+    },
+    {
+      "label": "Monthly DEX spot trading volume (selected peaks/records)",
+      "unit": "USD billions",
+      "sources": [
+        "https://www.coingecko.com/research/publications/dex-to-cex-ratio",
+        "https://www.theblock.co/post/332557/monthly-dex-volume-hits-all-time-high-in-december",
+        "https://cryptobriefing.com/dex-trading-volume-surge/"
+      ],
+      "points": [
+        {"period": "2024-12", "value": 320, "note": "Monthly DEX volume surpassed $320B in Dec 2024 — a then-record (The Block)."},
+        {"period": "2025-01", "value": 413.75, "note": "$413.75B — prior monthly record, driven by Solana memecoin speculation (CoinGecko)."},
+        {"period": "2025-10", "value": 419.76, "note": "$419.76B — all-time-high monthly DEX spot volume on CoinGecko's basis."},
+        {"period": "2025-Q3", "value": 1430, "note": "Q3 2025 quarterly spot volume ~$1.43T (~$477B/mo avg), +44% over Q2's ~$1.0T."}
+      ]
+    },
+    {
+      "label": "DEX-to-CEX spot volume ratio",
+      "unit": "percent",
+      "sources": [
+        "https://www.coingecko.com/research/publications/dex-to-cex-ratio",
+        "https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume"
+      ],
+      "points": [
+        {"period": "2021-01", "value": 5.98, "note": "Baseline; DEX share of spot ~6% (CoinGecko)."},
+        {"period": "2021-06", "value": 13.07, "note": "DeFi summer momentum peak within 2021."},
+        {"period": "2022-01", "value": 14.58, "note": "Early-2022 local high before bear market compressed ratio."},
+        {"period": "2023-12", "value": 10.86, "note": "Top of the 2023 range (7.18%-10.86%)."},
+        {"period": "2024-12", "value": 13.02, "note": "Top of the 2024 range (8.35%-13.02%)."},
+        {"period": "2025-01", "value": 18.71, "note": "Breakout driven by Solana memecoin mania."},
+        {"period": "2025-06", "value": 37.40, "note": "All-time-high DEX-to-CEX spot ratio (CoinGecko)."},
+        {"period": "2025-11", "value": 21.2, "note": "Settled ~21.2% by Nov 2025; more than tripled vs ~6% five years earlier."}
+      ]
+    },
+    {
+      "label": "Top DEX monthly spot volume / market share (Aug 2025 snapshot)",
+      "unit": "USD billions (monthly)",
+      "sources": ["https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share"],
+      "points": [
+        {"period": "2025-08", "value": 111.8, "note": "Uniswap — 35.9% market share (#1)."},
+        {"period": "2025-08", "value": 92.0, "note": "PancakeSwap — 29.5% market share (#2)."},
+        {"period": "2025-08", "value": 22.9, "note": "Aerodrome (Base) — 7.4% market share (#3)."}
+      ]
+    },
+    {
+      "label": "Raydium vs Uniswap monthly volume (Nov 2025 flip)",
+      "unit": "USD billions (monthly)",
+      "sources": ["https://www.coingecko.com/research/publications/dex-to-cex-ratio", "https://solanafloor.com/news/solana-s-dex-volume-hits-trillion-dollar-mark-2025-in-numbers"],
+      "points": [
+        {"period": "2025-11", "value": 124.6, "note": "Raydium overtook Uniswap in monthly DEX volume."},
+        {"period": "2025-11", "value": 90.5, "note": "Uniswap monthly volume — ~30% behind Raydium."},
+        {"period": "2025-11", "value": 70.56, "note": "PancakeSwap monthly volume."}
+      ]
+    }
+  ],
+  "key_facts": [
+    {"claim": "Current 24h DEX volume across all tracked DEXes", "value": "$10.43 billion", "as_of": "2026-06-17", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/overview/dexs", "confidence": "high"},
+    {"claim": "30-day DEX volume", "value": "$213.18 billion", "as_of": "2026-06-17", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/overview/dexs", "confidence": "high"},
+    {"claim": "Cumulative all-time DEX volume tracked by DefiLlama", "value": "$13.02 trillion", "as_of": "2026-06-17", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/overview/dexs", "confidence": "high"},
+    {"claim": "Full-year 2025 DEX spot trading volume (annual record)", "value": "$4.9 trillion", "as_of": "2025-12-31", "source_name": "CoinGecko 2026 CEX/DEX Trading Activity Report", "source_url": "https://www.coingecko.com/research/publications/2025-annual-crypto-report", "confidence": "medium"},
+    {"claim": "Full-year 2024 DEX volume, a record, up 138.1% YoY", "value": "$1.5 trillion", "as_of": "2024-12-31", "source_name": "Bit2Me News / DefiLlama-derived", "source_url": "https://news.bit2me.com/en/dex-register-record-volume-in-December", "confidence": "medium"},
+    {"claim": "Full-year 2023 DEX volume (base for 2024 growth)", "value": "$647.6 billion", "as_of": "2023-12-31", "source_name": "Bit2Me News / DefiLlama-derived", "source_url": "https://news.bit2me.com/en/dex-register-record-volume-in-December", "confidence": "medium"},
+    {"claim": "DEX volume surpassed ~$1 trillion in 2021, Uniswap leading", "value": "~$1 trillion", "as_of": "2021-12-31", "source_name": "Bitcoin.com News / The Block Research", "source_url": "https://news.bitcoin.com/report-decentralized-exchange-volume-surpasses-1-trillion-in-2021-uniswap-leads-the-pack/", "confidence": "medium"},
+    {"claim": "All-time-high monthly DEX spot volume (CoinGecko basis)", "value": "$419.76 billion (October 2025)", "as_of": "2025-10-31", "source_name": "CoinGecko Research (DEX-to-CEX ratio)", "source_url": "https://www.coingecko.com/research/publications/dex-to-cex-ratio", "confidence": "medium"},
+    {"claim": "DEX-to-CEX spot volume ratio all-time high", "value": "37.40% (June 2025)", "as_of": "2025-06-30", "source_name": "CoinGecko Research", "source_url": "https://www.coingecko.com/research/publications/dex-to-cex-ratio", "confidence": "high"},
+    {"claim": "DEX-to-CEX spot volume ratio, more than tripled over 5 years", "value": "21.2% (from ~6% in Jan 2021)", "as_of": "2025-11-30", "source_name": "CoinGecko Research", "source_url": "https://www.coingecko.com/research/publications/dex-to-cex-ratio", "confidence": "high"},
+    {"claim": "Uniswap reached $1 trillion cumulative lifetime trading volume", "value": "$1 trillion cumulative", "as_of": "2022-05", "source_name": "The Block", "source_url": "https://www.theblock.co/linked/148465/dex-protocol-uniswap-hits-1-trillion-cumulative-trading-volume", "confidence": "high"},
+    {"claim": "Raydium overtook Uniswap in monthly DEX volume in Nov 2025", "value": "Raydium $124.6B vs Uniswap $90.5B", "as_of": "2025-11-30", "source_name": "CoinGecko Research", "source_url": "https://www.coingecko.com/research/publications/dex-to-cex-ratio", "confidence": "medium"},
+    {"claim": "Solana led chain DEX spot share in early 2026", "value": "30.6% of DEX spot volume (Q1 2026); Jan 2026 Solana ~$117B vs Ethereum ~$52B", "as_of": "2026-01", "source_name": "BYDFi / SolanaFloor", "source_url": "https://www.bydfi.com/en/cointalk/dex-volume", "confidence": "low"},
+    {"claim": "2025 perpetuals (derivatives) DEX volume for context (NOT spot)", "value": "$6.7 trillion (top-10 perp DEXes), +346% YoY", "as_of": "2025-12-31", "source_name": "CoinGecko 2026 Annual Report", "source_url": "https://www.coingecko.com/research/publications/2025-annual-crypto-report", "confidence": "medium"}
+  ],
+  "top_entities": [
+    {"name": "Uniswap", "metric": "Spot DEX market share / monthly volume (Aug 2025)", "value": "35.9% share, $111.8B/mo", "source_url": "https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share"},
+    {"name": "PancakeSwap", "metric": "Spot DEX market share / monthly volume (Aug 2025)", "value": "29.5% share, $92.0B/mo", "source_url": "https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share"},
+    {"name": "Raydium", "metric": "Monthly volume (Nov 2025; briefly #1)", "value": "$124.6B/mo (Nov 2025); ~4.1% share Aug 2025", "source_url": "https://www.coingecko.com/research/publications/dex-to-cex-ratio"},
+    {"name": "Aerodrome", "metric": "Spot DEX market share / monthly volume (Aug 2025)", "value": "7.4% share, $22.9B/mo", "source_url": "https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share"},
+    {"name": "Jupiter", "metric": "Solana DEX aggregator (major Solana spot router)", "value": "Top Solana spot venue with Raydium; outside CoinGecko top-10 by raw DEX volume in Aug 2025", "source_url": "https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share"},
+    {"name": "Curve", "metric": "Spot DEX market share (Aug 2025) / current 24h", "value": "~2.9% share (Aug 2025); ~$112.8M 24h leader (Jun 2026 snapshot)", "source_url": "https://api.llama.fi/overview/dexs"}
+  ]
+}

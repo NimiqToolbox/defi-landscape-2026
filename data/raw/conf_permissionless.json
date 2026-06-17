@@ -1,0 +1,95 @@
+{
+  "name": "Permissionless (Blockworks)",
+  "edition": "Permissionless IV",
+  "location": "Industry City, Brooklyn, New York, USA",
+  "dates": "June 24-26, 2025 (36-hour hackathon June 22-23, 2025)",
+  "in_window": true,
+  "attendance": "5,000+ attendees expected; 215 confirmed speakers (Blockworks/press materials). Organized by Blockworks in collaboration with Bankless.",
+  "defi_themes": [
+    "DeFi Renaissance (one of six core tracks: RWAs, U.S. capital formation, American Dynamism)",
+    "Stablecoins as the first real product-market fit in crypto (and U.S. regulatory tailwinds, e.g. GENIUS Act era)",
+    "Real-world assets (RWA) and asset tokenization, including permissioned RWA collateral",
+    "DeFi lending / on-chain credit (Aave V4 hub-and-spoke 'Liquidity Hub'/'Spokes' architecture, Horizon RWA market)",
+    "DEX vs CEX volume ratio as a key metric for the 'permissionless' movement going on-chain",
+    "Perps / on-chain derivatives and DeFi trading infrastructure",
+    "Crypto/DeFi treasury (digital asset treasury, DAT) companies and tokenized equity",
+    "Prediction markets on crypto rails (Kalshi)",
+    "DePIN (decentralized physical infrastructure) and the machine economy / agent-driven finance",
+    "Network revenue and token value accrual ('tokens need to make money')",
+    "Regulation and policy (SEC posture toward Ethereum, stablecoin legislation)"
+  ],
+  "notable_panels": [
+    {
+      "title": "Crypto / Digital Asset Treasury (DAT) Companies",
+      "topic": "On-chain treasuries, tokenized equity, and the sustainability of crypto treasury strategies. DeFi Development Corp runs Solana validators to accumulate assets beyond stock multiples and plans to tokenize its DFDV stock on Solana; comparisons of crypto treasury valuations to oil-reserve trading; warnings that some treasury companies could face insolvency.",
+      "speakers": "Dan Kang (DeFi Development Corp), Thomas Lee (Fundstrat), David Grider, with framing from Joe Lubin (Consensys/Ethereum) and a quote from Michael Anderson (Framework Ventures)"
+    },
+    {
+      "title": "Stablecoins, RWAs, and the Upcoming Launch of Aave V4",
+      "topic": "Aave V4 architecture (Liquidity Hub, Spokes, Liquidity Premiums) and the Horizon market enabling access to permissioned RWAs to borrow against permissionless stablecoin liquidity; positioning Aave as a core credit layer for DeFi.",
+      "speakers": "Stani Kulechov (Founder & CEO, Aave Labs / Avara)"
+    },
+    {
+      "title": "DePIN and the Machine Economy",
+      "topic": "Decentralized physical infrastructure networks (satellites, drones, solar, data centers), token utility vs token-as-money debate, and financing infrastructure via crypto ('initial machine offerings').",
+      "speakers": "David Vorick (Glow), Abhay Kumar (Helium Foundation), Sam Hougan (Inference.net), Logan Jastremski (Frictionless), David Rhodus (Permissionless Labs); related keynote by Leo Dorlochter (Peaq)"
+    },
+    {
+      "title": "Prediction Markets on Crypto Rails",
+      "topic": "Prediction markets at ~$1B/month volume with millions of users; thesis that fintech will inevitably become crypto and that prediction markets could rival the stock market within a decade.",
+      "speakers": "Tarek Mansour (CEO, Kalshi)"
+    },
+    {
+      "title": "Opening Keynote / State of the Permissionless Movement",
+      "topic": "DEX-vs-CEX volume ratio as the key KPI for moving activity on-chain; underwhelming on-chain/network revenue and the search for a breakout app beyond memecoin trading; framing that finance still belongs to TradFi unless crypto builders change it.",
+      "speakers": "Mike Ippolito (Co-founder, Blockworks / Bell Curve)"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Hayden Adams", "affiliation": "Founder & CEO, Uniswap Labs"},
+    {"name": "Stani Kulechov", "affiliation": "Founder & CEO, Aave Labs / Avara"},
+    {"name": "Sreeram Kannan", "affiliation": "Founder, EigenLayer (restaking)"},
+    {"name": "Kain Warwick", "affiliation": "Founder, Infinex (and Synthetix)"},
+    {"name": "Ali Yahya", "affiliation": "General Partner, a16z crypto"},
+    {"name": "Samara Cohen", "affiliation": "CIO of ETF & Index Investments, BlackRock"},
+    {"name": "Joe Lubin", "affiliation": "Founder & CEO, Consensys (co-founder, Ethereum)"},
+    {"name": "Tarek Mansour", "affiliation": "Co-founder & CEO, Kalshi"},
+    {"name": "Dan Kang", "affiliation": "CEO, DeFi Development Corp"},
+    {"name": "Thomas Lee", "affiliation": "Co-founder & Head of Research, Fundstrat"},
+    {"name": "Michael Anderson", "affiliation": "Co-founder, Framework Ventures"},
+    {"name": "Keone Hon", "affiliation": "Co-founder & GM, Monad Foundation"},
+    {"name": "Eli Ben-Sasson", "affiliation": "Co-founder & CEO, StarkWare"},
+    {"name": "Brendan Eich", "affiliation": "Co-founder & CEO, Brave"},
+    {"name": "Peter Todd", "affiliation": "Bitcoin developer"},
+    {"name": "Leo Dorlochter", "affiliation": "Co-founder, Peaq"},
+    {"name": "David Vorick", "affiliation": "Glow (DePIN)"},
+    {"name": "Abhay Kumar", "affiliation": "Helium Foundation"},
+    {"name": "Mike Ippolito", "affiliation": "Co-founder, Blockworks / host, Bell Curve"}
+  ],
+  "key_takeaways": [
+    "Stablecoins were the headline 'it's working' narrative: Ali Yahya (a16z) called stablecoins 'the first thing in crypto that's starting to work,' aligning with U.S. stablecoin legislation momentum in mid-2025.",
+    "DeFi lending is being re-architected for institutional scale: Aave's Stani Kulechov detailed the V4 hub-and-spoke design (Liquidity Hub + Spokes + Liquidity Premiums) and the Horizon market letting users borrow against permissionless stablecoin liquidity using permissioned RWA collateral, positioning Aave as DeFi's core credit layer.",
+    "RWA tokenization framed as DeFi's biggest opportunity, bridging permissioned real-world assets with permissionless on-chain liquidity.",
+    "The DEX-vs-CEX volume ratio was presented as the key scorecard for the 'permissionless' thesis, but on-chain/network revenue was seen as underwhelming, with the industry still awaiting a breakout app beyond memecoin trading.",
+    "Crypto/digital-asset treasury (DAT) companies were a major and contested theme: enthusiasm for valuing firms on token/BTC holdings (Tom Lee) collided with warnings of 'tokenized equitized tokens' and potential insolvencies (David Grider); 'tokens need to make money' (Michael Anderson) captured the value-accrual mood.",
+    "Prediction markets emerged as a breakout DeFi-adjacent category: Kalshi's Tarek Mansour cited ~$1B/month volume and argued fintech will inevitably run on crypto rails.",
+    "Forward-looking theme of agent-driven and machine-economy finance (a16z: most financial transactions agent-driven within five years; Peaq's 'machine economy' / DePIN), tying autonomous agents to on-chain payments and DeFi.",
+    "Regulation/policy undertone: Joe Lubin aired allegations about prior SEC efforts to slow Ethereum, set against a more constructive 2025 U.S. policy backdrop.",
+    "Overall narrative shift from infrastructure to applications: the event was explicitly positioned as moving 'from infrastructure to applications,' with the DeFi Renaissance track centering RWAs and U.S. capital formation."
+  ],
+  "sources": [
+    "https://blockworks.com/event/permissionless",
+    "https://cryptoevents.global/permissionless-iv-brooklyn/",
+    "https://mail.blockworks.com/p/permissionless-iv-day-1",
+    "https://mail.blockworks.com/p/permissionless-iv-day-2",
+    "https://mail.blockworks.com/p/permissionless-iv-day-3",
+    "https://blockworks.co/news/permissionless-iv-day-3-takeaways",
+    "https://blockworks.co/news/0x-permissionless-day-2",
+    "https://www.businesswire.com/news/home/20250603416817/en/Blockworks-Permissionless-IV-to-Unite-DeFis-Top-Developers-and-Builders-in-Brooklyn",
+    "https://ifbusiness.uk/events/permissionless-iv-2025/",
+    "https://mpost.io/aaves-stani-kulechov-unveils-multi-phase-roadmap-to-establish-protocol-as-core-credit-layer-for-defi/",
+    "https://cryptonews.com/news/bringing-rwas-on-chain-is-biggest-opportunity-for-defi-says-aave-founder/",
+    "https://blockworks.co/news/aave-v4-roadmap"
+  ],
+  "confidence": "medium-high"
+}

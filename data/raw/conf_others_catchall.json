@@ -1,0 +1,84 @@
+{
+  "name": "Permissionless IV (Blockworks) — headline of a catch-all of other notable DeFi-relevant conferences not separately covered",
+  "edition": "Permissionless IV (4th edition; by Blockworks). Catch-all also references TOKEN2049 Singapore 2025 and Consensus 2025 Toronto (CoinDesk).",
+  "location": "Permissionless IV: Industry City, 220 36th St, Brooklyn, NY, USA. (TOKEN2049: Marina Bay Sands, Singapore; Consensus 2025: Metro Toronto Convention Centre, Toronto, Canada.)",
+  "dates": "Permissionless IV: June 24-26, 2025 (hackathon June 22-23, 2025). TOKEN2049 Singapore: Oct 1-2, 2025. Consensus 2025 Toronto: May 14-16, 2025 (just before the window; next in-window edition is Consensus 2026).",
+  "in_window": true,
+  "attendance": "Permissionless IV: ~5,000+ attendees expected; 215 confirmed speakers (some sources cite 100+ headline speakers, all ticket tiers sold out). For reference within the catch-all: TOKEN2049 Singapore 2025 ~25,000+ attendees / 500+ side events; Consensus 2025 Toronto ~14,771 attendees from 102 countries, 500 speakers, 1,000+ hackathon devs.",
+  "defi_themes": [
+    "DeFi Renaissance (Blockworks track): RWAs, US capital formation, reshoring DeFi talent/American Dynamism, next-gen DeFi apps",
+    "Institutional DeFi & permissioned lending (e.g., Aave's Horizon: institutions borrow stablecoins against tokenized MMFs / US Treasuries while keeping permissionless liquidity)",
+    "Real-world asset (RWA) tokenization (grew from ~$5B in 2022 to >$24B by June 2025; crypto's 2nd fastest-growing sector after stablecoins)",
+    "Stablecoins as global settlement infrastructure (segmented designs: permissionless/censorship-resistant for crypto-natives vs compliant/bank-issued for institutions; euro stablecoins like Circle EURC surging)",
+    "BTCFi — BTC-denominated yield and bringing BTC into EVM (Maple, Core, Lombard, Threshold tBTC)",
+    "Restaking / shared security (EigenLayer) and protocol R&D (rollups, ZK, EVM scaling, privacy)",
+    "Token design & governance, on-chain treasuries and capital formation",
+    "Regulation and the maturing US regulatory environment enabling institutional on-chain finance",
+    "DEXs / on-chain trading and perps (Uniswap, Infinex)",
+    "Crypto x AI / agents and DePIN (adjacent track)"
+  ],
+  "notable_panels": [
+    {
+      "title": "DeFi Renaissance (thematic track)",
+      "topic": "RWAs, US capital formation, reshoring DeFi talent, and next-generation DeFi applications",
+      "speakers": "Track-level; featured DeFi founders including Hayden Adams (Uniswap), Stani Kulechov (Aave), Kain Warwick (Infinex)"
+    },
+    {
+      "title": "Protocol R&D (thematic track)",
+      "topic": "Blockchain design, EVM, rollups, scaling, privacy, ZK proofs, restaking/shared security",
+      "speakers": "Featured Sreeram Kannan (EigenLayer), Eli Ben-Sasson (StarkWare)"
+    },
+    {
+      "title": "Token Design (thematic track)",
+      "topic": "Tokenomics, governance, utility mechanics and value accrual"
+    },
+    {
+      "title": "Bitcoin / BTCFi (thematic track)",
+      "topic": "BTC network development, scaling, institutional adoption and BTC-denominated yield (BTCFi)"
+    },
+    {
+      "title": "Enterprise (thematic track)",
+      "topic": "Financial system infrastructure, payments, stablecoins as settlement layer, institutional/commercial applications"
+    }
+  ],
+  "notable_speakers": [
+    {"name": "Hayden Adams", "affiliation": "Founder & CEO, Uniswap Labs"},
+    {"name": "Stani Kulechov", "affiliation": "Founder & CEO, Aave Labs / Avara"},
+    {"name": "Kain Warwick", "affiliation": "Founder, Infinex (and Synthetix founder)"},
+    {"name": "Sreeram Kannan", "affiliation": "Founder & CEO, EigenLayer / Eigen Labs"},
+    {"name": "Eli Ben-Sasson", "affiliation": "Co-Founder & CEO, StarkWare"},
+    {"name": "Keone Hon", "affiliation": "Co-Founder & GM, Monad Foundation"},
+    {"name": "Joseph Lubin", "affiliation": "Founder, ConsenSys (Ethereum co-founder)"},
+    {"name": "Samara Cohen", "affiliation": "CIO of ETF & Index Investments / Global Head of Market Development, BlackRock"},
+    {"name": "Ali Yahya", "affiliation": "General Partner, a16z crypto"},
+    {"name": "Kyle Samani", "affiliation": "Co-Founder & Managing Partner, Multicoin Capital"},
+    {"name": "Brendan Eich", "affiliation": "Co-Founder & CEO, Brave"},
+    {"name": "Peter Todd", "affiliation": "Bitcoin developer, OpenTimestamps"},
+    {"name": "Eric Adams", "affiliation": "Mayor of New York City (civic/keynote appearance)"}
+  ],
+  "key_takeaways": [
+    "Permissionless IV (June 24-26, 2025, Brooklyn) is the most DeFi-centric major in-window event not separately covered, organized by Blockworks; its explicit 'DeFi Renaissance' track framed a thesis that crypto's center of gravity is shifting from infrastructure to DeFi/consumer applications.",
+    "Institutional DeFi was the dominant theme: Aave's Horizon (a permissioned Aave V3 instance letting institutions borrow stablecoins against tokenized money-market funds / US Treasuries) was discussed as a template for combining permissionless liquidity with permissioned collateral.",
+    "RWA tokenization is treated as crypto's 2nd fastest-growing sector after stablecoins (~$5B in 2022 to >$24B by June 2025), with US Treasuries and MMFs leading as on-chain collateral.",
+    "Stablecoins reframed as the settlement backbone linking traditional banking, fintech and DeFi, with a spectrum from decentralized primitives to bank-issued tokens; euro stablecoins (e.g., Circle's EURC) noted as a fast-growing segment.",
+    "BTCFi moved from theoretical to real, with BTC-denominated yield (Maple, Core, Lombard) and BTC-into-EVM infrastructure (Threshold tBTC).",
+    "Restaking / shared security (EigenLayer) and protocol R&D (ZK, rollups, scaling, privacy) remained core technical themes alongside the DeFi application focus.",
+    "Catch-all context: TOKEN2049 Singapore (Oct 1-2, 2025, ~25k attendees) and Consensus by CoinDesk (Toronto, May 14-16, 2025, ~14.8k attendees) carried the same DeFi/stablecoin/RWA/tokenization narrative to broader institutional audiences; at Consensus, stablecoins and tokenization were headline takeaways ('stablecoins took Toronto by storm').",
+    "Note: Consensus 2025 Toronto (May 14-16, 2025) falls just before the June 2025 start of the window; it is included for context, and the next in-window edition would be Consensus 2026. Permissionless IV anchors the in_window=true determination."
+  ],
+  "sources": [
+    "https://blockworks.com/event/permissionless",
+    "https://www.businesswire.com/news/home/20250603416817/en/Blockworks-Permissionless-IV-to-Unite-DeFis-Top-Developers-and-Builders-in-Brooklyn",
+    "https://cryptoevents.global/permissionless-iv-brooklyn/",
+    "https://exponential.fi/blog/takeaways-from-permissionless-iv",
+    "https://blog.redstone.finance/2025/06/26/real-world-assets-in-onchain-finance-report/",
+    "https://aave.com/blog/horizon-launch",
+    "https://www.coindesk.com/business/2025/08/25/aave-labs-debuts-horizon-to-let-institutions-borrow-stablecoins-against-tokenized-assets",
+    "https://safeheron.com/blog/token2049-singapore-2025-agenda-schedule-key-dates-details/",
+    "https://www.token2049.com/singapore/agenda",
+    "https://blog.amberdata.io/top-takeaways-from-coindesks-consensus-2025-in-toronto",
+    "https://investingnews.com/consensus-defi-stablecoins-tokenization/",
+    "https://www.prnewswire.com/news-releases/consensus-2025-wraps-in-toronto-with-eric-trump-302458221.html"
+  ],
+  "confidence": "medium"
+}

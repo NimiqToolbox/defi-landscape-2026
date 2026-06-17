@@ -1,0 +1,105 @@
+{
+  "category": "Decentralized exchanges (DEX)",
+  "summary": "Spot DEXs are a maturing, multi-chain market. As of mid-June 2026, monthly on-chain spot DEX volume runs at roughly $210B+ (DefiLlama 30d total ~$213B, though a recent prediction-market/Polymarket spike inflates 24h figures), and the DEX-to-CEX spot volume ratio has hit record highs (~29% in 2026 per Phemex/The Block, up from ~21% in Nov 2025 and the low-teens in 2023). By 30-day spot volume the leaders are the Uniswap family (V4 ~$24.6B + V3 ~$16.9B + V2), PancakeSwap (AMM V3 ~$18.6B + Infinity ~$4.9B), and Aerodrome Slipstream on Base (~$17.5B). By TVL the order is Uniswap (~$3.1B aggregated), PancakeSwap (~$2.2B), and Curve (~$1.46B). Solana hosts a dense long tail of high-volume venues (Orca, Raydium, Meteora, plus newer SolFi/HumidiFi/Tessera) routed largely through the Jupiter aggregator (~$19.7B 30d agg volume, dominant Solana routing). Newer designs Fluid DEX (smart-debt/smart-collateral, ~$5.3B 30d) and on-chain orderbooks (Hyperliquid spot ~$6.5B 30d) are climbing. Aggregators are a parallel leadership stack led by Jupiter, then KyberSwap, OKX Swap, 0x, CoWSwap and 1inch.",
+  "leaders": [
+    {
+      "name": "Uniswap (V2/V3/V4)",
+      "chain": "Ethereum, Base, Arbitrum, OP Mainnet, Polygon (43+ chains)",
+      "metric": "Spot volume (30d) + TVL",
+      "value": "~$24.6B 30d (V4) + ~$16.9B 30d (V3); aggregated TVL ~$3.1B",
+      "note": "Overall #1 DEX by combined volume and TVL. V4 (hooks/singleton) is now the largest single deployment by volume; V3 still very large; V2 persists. Held ~36% spot DEX market share in Aug 2025 (CoinGecko)."
+    },
+    {
+      "name": "PancakeSwap",
+      "chain": "BSC (primary), Ethereum, Base, Arbitrum, zkSync, Polygon zkEVM",
+      "metric": "Spot volume (30d) + TVL",
+      "value": "~$18.6B 30d (AMM V3) + ~$4.9B 30d (Infinity); aggregated TVL ~$2.2B",
+      "note": "Closest rival to Uniswap; #2 by both volume and TVL. PancakeSwap Infinity (CLMM, launched late 2025) is taking share from V3. Reportedly led Uniswap on full-year 2025 trading volume (~$1.2T, Token Terminal)."
+    },
+    {
+      "name": "Aerodrome (Slipstream + V1)",
+      "chain": "Base",
+      "metric": "Spot volume (30d) + TVL",
+      "value": "~$17.5B 30d (Slipstream); aggregated TVL ~$0.29B",
+      "note": "Dominant DEX on Base, ~half of Base DEX volume/TVL. ve(3,3) model evolved from Velodrome. In Nov 2025 Dromos Labs announced merging Aerodrome and Velodrome into a unified 'Aero' DEX with EVM extensions (incl. Circle's Arc)."
+    },
+    {
+      "name": "Curve",
+      "chain": "Ethereum (primary), 30 chains incl. OP, Gnosis, Avalanche, Arbitrum",
+      "metric": "TVL + stablecoin volume (30d)",
+      "value": "TVL ~$1.46B; ~$3.9B 30d volume",
+      "note": "Stableswap specialist; lowest slippage on large stablecoin/pegged swaps. Pioneered veCRV vote-locking ('Curve Wars'). Was a top-3 TVL DEX in 2021-2023; now #3 by TVL, smaller in raw volume."
+    },
+    {
+      "name": "Hyperliquid Spot Orderbook",
+      "chain": "Hyperliquid L1",
+      "metric": "Spot volume (30d)",
+      "value": "~$6.5B 30d; TVL ~$0.18B",
+      "note": "On-chain central-limit orderbook DEX. Hyperliquid was the breakout venue of 2025 (perps dominance ~80%, ~$800M+ annual revenue) and its spot orderbook now ranks among the largest non-AMM DEXs."
+    },
+    {
+      "name": "Fluid DEX",
+      "chain": "Ethereum, Arbitrum, Polygon, Base (expanding to Solana)",
+      "metric": "Spot volume (30d) + TVL",
+      "value": "~$5.3B 30d; TVL ~$0.25B",
+      "note": "Instadapp's capital-efficient 'smart debt / smart collateral' DEX integrated with lending. Fast riser in 2025; bridged FLUID to Solana (Sept 2025) and partnered with Jupiter on Jupiter Lend."
+    },
+    {
+      "name": "Orca",
+      "chain": "Solana, Eclipse",
+      "metric": "Spot volume (30d)",
+      "value": "~$6.3B 30d; TVL ~$0.24B",
+      "note": "Leading Solana concentrated-liquidity AMM (Whirlpools). Among the highest-volume Solana venues, primarily filled via Jupiter routing."
+    },
+    {
+      "name": "Raydium",
+      "chain": "Solana",
+      "metric": "Spot volume (30d) + TVL",
+      "value": "~$4.2B 30d (AMM); TVL ~$0.86B",
+      "note": "Long-standing Solana AMM; benefited from the 2024-2025 Pump.fun memecoin boom, briefly topping Uniswap on weekly volume in early 2025 before reverting. Highest TVL of the Solana-native AMMs."
+    },
+    {
+      "name": "Meteora",
+      "chain": "Solana",
+      "metric": "Spot volume (30d)",
+      "value": "~$4.1B 30d (DLMM); TVL ~$0.19B",
+      "note": "Solana dynamic liquidity market maker (DLMM); core memecoin/long-tail liquidity venue, routed heavily through Jupiter."
+    },
+    {
+      "name": "Jupiter (aggregator)",
+      "chain": "Solana (omnichain expanding)",
+      "metric": "Aggregator volume (30d)",
+      "value": "~$19.7B 30d; ~95% of Solana DEX-aggregator volume",
+      "note": "Dominant Solana DEX aggregator and DeFi super-app (swaps, perps, lend). Not an AMM itself but the primary execution path that routes into Raydium/Orca/Meteora/SolFi. #1 aggregator by far."
+    },
+    {
+      "name": "Balancer",
+      "chain": "Ethereum + 9 chains",
+      "metric": "TVL",
+      "value": "TVL ~$0.13B (V2+V3 aggregated)",
+      "note": "Flexible weighted/boosted pools and a key 2021-2022 liquidity venue; now a niche/mid-tier player well behind the volume and TVL leaders."
+    }
+  ],
+  "leadership_shift": "2021 (DeFi summer peak): Uniswap was the clear #1 spot DEX, with SushiSwap (a Uniswap fork) as the main challenger and Curve/Balancer dominating stablecoin and weighted-pool TVL; Uniswap's daily volume ran ~4x SushiSwap's. 2023 (bear market): the top tier consolidated to Uniswap, Curve, SushiSwap, plus dYdX and 0x; daily DEX volume averaged ~$4B and DEX/CEX spot ratio sat in the low teens. SushiSwap faded; Curve remained a TVL pillar despite the 2022-2023 turmoil. 2024-2025: explosive diversification away from Ethereum monoculture - PancakeSwap rose to rival Uniswap (and reportedly led on full-year 2025 volume); Aerodrome became the dominant DEX on Base; the Solana stack (Raydium, Orca, Meteora) surged on the Pump.fun memecoin cycle with Jupiter as the routing layer; and Hyperliquid emerged as the breakout on-chain orderbook (perps + spot) and a top revenue generator. Now (mid-2026): Uniswap remains overall #1 by combined volume and TVL but no longer dominant - PancakeSwap and Aerodrome are genuine peers on volume, Curve still anchors stablecoin TVL, and newer designs (Fluid's smart-debt DEX, on-chain orderbooks like Hyperliquid) plus an expanding Solana long tail are reshaping the field. Structurally, the DEX-to-CEX spot ratio has hit record highs (~29% in 2026, up from ~21% in Nov 2025), signaling a durable shift of spot activity on-chain.",
+  "sources": [
+    "https://api.llama.fi/overview/dexs",
+    "https://api.llama.fi/overview/aggregators",
+    "https://api.llama.fi/protocols",
+    "https://defillama.com/dexs",
+    "https://defillama.com/protocols/dexs",
+    "https://defillama.com/dex-aggregators",
+    "https://defillama.com/dexs/chain/base",
+    "https://defillama.com/dexs/chain/solana",
+    "https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume",
+    "https://www.theblock.co/post/360671/cex-spot-volume-hits-9-month-low",
+    "https://phemex.com/news/article/dex-to-cex-spot-volume-ratio-reaches-record-2792-11342",
+    "https://www.coingecko.com/research/publications/cex-dex-trading-activity-report-2026",
+    "https://www.coingecko.com/research/publications/decentralized-crypto-exchanges-market-share",
+    "https://www.coindesk.com/tech/2025/11/13/leading-base-dex-aerodrome-merges-into-aero-in-major-overhaul",
+    "https://www.theblock.co/post/378634/aerodrome-upgrades-evm-extensions-circles-arc-metadex",
+    "https://messari.io/report/fluid-dripping-onto-solana",
+    "https://oakresearch.io/en/analyses/fundamentals/jupiter-jup-from-solana-aggregator-to-omnichain-defi-super-app",
+    "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-landscape",
+    "https://bingx.com/en/learn/article/uniswap-vs-pancakeswap-vs-sushiswap-which-one-is-the-better-dex"
+  ]
+}

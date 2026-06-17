@@ -1,0 +1,332 @@
+{
+  "title": "DeFi Cycles & Key Events Timeline (2017-2026)",
+  "events": [
+    {
+      "date": "2017-12-18",
+      "title": "MakerDAO launches Single-Collateral Dai (Sai)",
+      "description": "MakerDAO activated the Dai Credit System via MKR governance vote, letting users lock ETH as collateral to mint the DAI stablecoin in a fully on-chain, market-driven way (no token sale).",
+      "impact": "Created the first widely used decentralized stablecoin and the CDP/over-collateralized lending primitive, becoming a foundational money-lego that virtually all later DeFi protocols built upon.",
+      "sources": [
+        "https://medium.com/@MakerDAO/single-collateral-dai-source-code-and-security-reviews-523e1a01a3c8",
+        "https://medium.com/coinmonks/defi-weekly-makerdao-the-protocol-that-created-decentralized-money-41058b3b0a50"
+      ]
+    },
+    {
+      "date": "2018-11",
+      "title": "Uniswap v1 launches on Ethereum mainnet",
+      "description": "Hayden Adams deployed Uniswap v1, an automated market maker (AMM) using the constant-product (x*y=k) formula, enabling permissionless token swaps and liquidity provision without order books.",
+      "impact": "Established the AMM as DeFi's dominant exchange model and made it trivial for anyone to list a token or supply liquidity, seeding the on-chain trading infrastructure that powered later booms.",
+      "sources": [
+        "https://iq.wiki/wiki/uni",
+        "https://www.gemini.com/cryptopedia/sushiswap-uniswap-vampire-attack"
+      ]
+    },
+    {
+      "date": "2019-11-18",
+      "title": "MakerDAO migrates to Multi-Collateral Dai (MCD) with the Dai Savings Rate",
+      "description": "Maker upgraded from single-collateral Sai to Multi-Collateral Dai, accepting multiple collateral types and introducing the Dai Savings Rate (DSR) for passive yield on DAI.",
+      "impact": "Made DAI more scalable and resilient, and introduced an on-chain native yield primitive that strengthened DAI's role as DeFi's base trading and collateral asset.",
+      "sources": [
+        "https://www.prnewswire.com/news-releases/multi-collateral-dai-launches-and-introduces-the-dai-savings-rate-300960077.html",
+        "https://makerdao.com/whitepaper/"
+      ]
+    },
+    {
+      "date": "2020-06-15",
+      "title": "Compound launches COMP liquidity mining, igniting DeFi Summer",
+      "description": "Compound began distributing ~2,880 COMP governance tokens daily to lenders and borrowers (split 50/50), rewarding users for supplying and borrowing assets. COMP spiked to ~$372 within days and briefly became the largest DeFi token.",
+      "impact": "Invented the liquidity-mining / yield-farming playbook that became DeFi's standard go-to-market, triggering 'DeFi Summer 2020' and a wave of copycat token launches (Balancer, Curve, etc.).",
+      "sources": [
+        "https://www.coindesk.com/business/2020/10/20/with-comp-below-100-a-look-back-at-the-defi-summer-it-sparked",
+        "https://medium.com/coinmonks/defi-weekly-compound-the-protocol-that-sparked-defi-summer-8871d6903a60"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "title": "Yearn Finance 'fair launch' of YFI",
+      "description": "Andre Cronje launched the YFI governance token with zero allocation to the team or VCs; tokens could only be earned by providing liquidity. YFI reached a ~$100M market cap within a week.",
+      "impact": "Popularized the 'fair launch' ethos and yield aggregation/vaults, intensifying DeFi Summer's farming mania and influencing community-first token distribution models.",
+      "sources": [
+        "https://insights.deribit.com/market-research/yfi-a-tale-of-fair-launch-governance-and-value/",
+        "https://coinmarketcap.com/academy/article/deep-dive-into-the-astronomic-growth-of-yearn-finance-yfi"
+      ]
+    },
+    {
+      "date": "2020-08",
+      "title": "SushiSwap's 'vampire attack' on Uniswap",
+      "description": "SushiSwap forked Uniswap's code, rewarded users who staked Uniswap LP tokens with SUSHI, then migrated over $1B of liquidity away from Uniswap.",
+      "impact": "Demonstrated the 'vampire attack' liquidity-siphoning tactic and added fee-sharing/governance incentives, pressuring incumbents and accelerating the competitive token-incentive arms race.",
+      "sources": [
+        "https://finematics.com/vampire-attack-sushiswap-explained/",
+        "https://www.gemini.com/cryptopedia/sushiswap-uniswap-vampire-attack"
+      ]
+    },
+    {
+      "date": "2020-09-16",
+      "title": "Uniswap launches UNI governance token with retroactive airdrop",
+      "description": "Uniswap distributed 400 UNI (~$1,344 at the time) to every wallet that had used the protocol before Sept 1, 2020, reaching over 250,000 addresses; 15% of supply went to past users.",
+      "impact": "Set the gold standard for retroactive airdrops (later copied by Optimism, dYdX, ENS, and many others) and cemented governance tokens as a core user-acquisition and decentralization tool.",
+      "sources": [
+        "https://www.coindesk.com/markets/2020/09/17/uniswap-recaptures-defi-buzz-with-uni-tokens-airdropped-debut",
+        "https://dune.com/blog/uni-airdrop-analysis"
+      ]
+    },
+    {
+      "date": "2021-03-23",
+      "title": "OlympusDAO (OHM) launches Protocol-Owned Liquidity and (3,3)",
+      "description": "Anonymous founder 'Zeus' launched OlympusDAO, pioneering bonding and Protocol-Owned Liquidity (POL) instead of rented liquidity-mining, with the viral (3,3) staking game-theory meme and very high staking APYs.",
+      "impact": "Sparked the 'DeFi 2.0' wave of POL/bonding designs and reflexive high-yield tokenomics; influenced many forks but also previewed the unsustainability of hyper-inflationary yields.",
+      "sources": [
+        "https://keonehd.medium.com/elucidating-the-financial-mechanics-of-olympusdao-eebab7a1502b",
+        "https://docs.olympusdao.finance/main/overview/pol/"
+      ]
+    },
+    {
+      "date": "2021-05-05",
+      "title": "Uniswap v3 launches with concentrated liquidity",
+      "description": "Uniswap v3 went live on Ethereum mainnet, letting liquidity providers concentrate capital within custom price ranges for far greater capital efficiency than the full-range v2 model.",
+      "impact": "Dramatically improved AMM capital efficiency and reshaped LP strategy (active management, range orders), becoming the template for the next generation of DEXs.",
+      "sources": [
+        "https://www.cyfrin.io/blog/uniswap-v3-concentrated-liquidity-capital-efficiency",
+        "https://medium.com/@ankitacode11/understanding-uniswap-v3-liquidity-pools-a-comprehensive-guide-a5a4a9e32080"
+      ]
+    },
+    {
+      "date": "2021-11",
+      "title": "Curve Wars peak and DeFi TVL all-time high",
+      "description": "Protocols (Convex, Yearn, Redacted Cartel) battled to accumulate veCRV voting power over Curve's stablecoin liquidity emissions, birthing the 'bribe' economy. Total DeFi TVL peaked around this period, reaching an all-time high near $180B in November and ~$250B+ by early December 2021 per DeFiLlama.",
+      "impact": "Showcased meta-governance and vote-bribery as a new DeFi primitive and marked the cyclical top of the 2021 bull market before the 2022 unwind.",
+      "sources": [
+        "https://www.coindesk.com/business/2021/11/11/curve-wars-heat-up-emergency-dao-invoked-after-clear-governance-attack",
+        "https://www.prnewswire.com/news-releases/defi-total-value-locked-hits-all-time-high-of-236-billion-301412901.html"
+      ]
+    },
+    {
+      "date": "2022-05-09",
+      "title": "Terra/UST algorithmic stablecoin collapse",
+      "description": "TerraUSD (UST), an algorithmic stablecoin propped up by ~20% Anchor yields and its sister token LUNA, lost its $1 peg starting May 7-9 and entered a death spiral; LUNA fell from ~$80-116 to near zero and the chain was halted, wiping out roughly $40-50B in days.",
+      "impact": "Triggered the worst DeFi/crypto contagion of the cycle, discredited algorithmic stablecoins, and set off cascading insolvencies (3AC, Celsius, Voyager) and an extended 'crypto winter.'",
+      "sources": [
+        "https://mitsloan.mit.edu/cfi/anatomy-a-run-terra-luna-crash",
+        "https://corpgov.law.harvard.edu/2023/05/22/anatomy-of-a-run-the-terra-luna-crash/"
+      ]
+    },
+    {
+      "date": "2022-06-12",
+      "title": "Celsius freezes withdrawals",
+      "description": "Crypto lender Celsius Network paused all customer withdrawals, swaps, and transfers amid a liquidity crisis worsened by the Terra fallout and risky DeFi/staking exposures.",
+      "impact": "Signaled deep contagion from Terra into the centralized-lending sector and froze billions in customer funds, deepening the bear market and counterparty distrust.",
+      "sources": [
+        "https://www.coindesk.com/markets/2022/07/15/the-fall-of-celsius-network-a-timeline-of-the-crypto-lenders-descent-into-insolvency",
+        "https://dfr.vermont.gov/consumer-alert/celsius-network-files-chapter-11-bankruptcy"
+      ]
+    },
+    {
+      "date": "2022-06-27",
+      "title": "Three Arrows Capital (3AC) ordered into liquidation",
+      "description": "After heavy losses on LUNA, staked-ETH, and leveraged bets, the BVI High Court ordered the liquidation of crypto hedge fund 3AC; it filed for Chapter 15 in the U.S. on July 1, facing ~$3.5B in creditor claims.",
+      "impact": "3AC's default cascaded through its many lender counterparties (Voyager, BlockFi, Genesis, Celsius), turning the Terra shock into a systemic credit crisis across crypto.",
+      "sources": [
+        "https://en.wikipedia.org/wiki/Three_Arrows_Capital",
+        "https://www.afslaw.com/services/metaverse-blockchain-digital-assets/crypto-blockchain-bankruptcy/3ac-bankruptcy"
+      ]
+    },
+    {
+      "date": "2022-07-13",
+      "title": "Celsius files for Chapter 11 bankruptcy",
+      "description": "Celsius Network and affiliates filed for Chapter 11 in the Southern District of New York, about a month after freezing withdrawals.",
+      "impact": "Cemented the collapse of the CeFi lending model and reinforced DeFi advocates' 'not your keys, not your coins' / transparency arguments, even as overall crypto sentiment cratered.",
+      "sources": [
+        "https://www.coindesk.com/business/2022/07/14/celsius-files-for-chapter-11-bankrupcty",
+        "https://dfr.vermont.gov/consumer-alert/celsius-network-files-chapter-11-bankruptcy"
+      ]
+    },
+    {
+      "date": "2022-09-15",
+      "title": "Ethereum completes The Merge (Proof-of-Stake)",
+      "description": "Ethereum transitioned from proof-of-work to proof-of-stake, cutting energy use by ~99.95% and making staked ETH a native yield-bearing asset (though withdrawals were not yet enabled).",
+      "impact": "Laid the groundwork for the liquid-staking and later restaking economy that would dominate DeFi yield in 2023-2024.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/04/12/ethereums-shanghai-upgrade-activates-starting-new-era-of-staking-withdrawals",
+        "https://www.nansen.ai/research/ethereum-shanghai-upgrade-explained-key-metrics-to-track-and-future-predictions"
+      ]
+    },
+    {
+      "date": "2022-11-11",
+      "title": "FTX collapses and files for bankruptcy",
+      "description": "After a Nov 2 CoinDesk report exposed Alameda Research's balance sheet was loaded with FTX's own FTT token, Binance dumped FTT and a run ensued; FTX halted withdrawals (Nov 8) and filed Chapter 11 on Nov 11, with SBF resigning and an ~$8B customer shortfall revealed.",
+      "impact": "The defining event of the bear market: it destroyed trust in centralized exchanges/CeFi, took down Genesis/BlockFi and others, and accelerated the regulatory crackdown and the narrative shift toward self-custody and on-chain (DeFi) transparency.",
+      "sources": [
+        "https://www.theblock.co/post/256106/a-complete-timeline-of-ftx-from-alamedas-spiraling-debt-to-its-dramatic-implosion",
+        "https://www.ebsco.com/research-starters/law/ftx-bankruptcy"
+      ]
+    },
+    {
+      "date": "2023-03-11",
+      "title": "USDC de-pegs after Silicon Valley Bank failure",
+      "description": "Circle revealed that $3.3B of USDC reserves (~8%) were stuck at the failed Silicon Valley Bank; USDC briefly fell to ~$0.87, dragging DAI and other USDC-collateralized stablecoins off peg before the U.S. backstopped SVB depositors and USDC recovered.",
+      "impact": "Exposed DeFi's deep dependence on USDC as collateral and the fragility of even 'fully reserved' stablecoins to traditional banking risk, spurring reserve diversification and tokenized-Treasury demand.",
+      "sources": [
+        "https://www.coindesk.com/business/2023/03/11/circle-confirms-33b-of-usdcs-cash-reserves-stuck-at-failed-silicon-valley-bank",
+        "https://www.chainalysis.com/blog/crypto-market-usdc-silicon-valley-bank/"
+      ]
+    },
+    {
+      "date": "2023-04-12",
+      "title": "Ethereum Shapella upgrade enables staking withdrawals; LSDfi era begins",
+      "description": "The Shanghai/Capella ('Shapella') upgrade finalized at ~22:42 UTC, finally allowing validators to withdraw staked ETH and rewards, removing the key risk of locked ETH.",
+      "impact": "De-risked liquid staking and ignited 'LSDfi' (Lido stETH, Rocket Pool rETH used across lending/AMMs), which became the dominant DeFi TVL category and the foundation for restaking.",
+      "sources": [
+        "https://www.coindesk.com/tech/2023/04/12/ethereums-shanghai-upgrade-activates-starting-new-era-of-staking-withdrawals",
+        "https://gelato.cloud/blog/ethereum-shanghai-capella-upgrades"
+      ]
+    },
+    {
+      "date": "2023-06",
+      "title": "EigenLayer launches restaking on Ethereum mainnet",
+      "description": "EigenLayer went live (initial mainnet/early-access in June 2023), letting users 'restake' ETH or liquid-staking tokens to extend Ethereum's economic security to other services (AVSs).",
+      "impact": "Created the 'restaking' primitive and a new shared-security marketplace, becoming one of DeFi's fastest-growing categories and the centerpiece of the 2024 points/airdrop meta.",
+      "sources": [
+        "https://metalamp.io/magazine/article/a-guide-to-eigenlayer-how-the-eth-restaking-protocol-attracted-15-billion-tvl",
+        "https://airdrops.io/eigenlayer/"
+      ]
+    },
+    {
+      "date": "2023-08-09",
+      "title": "Coinbase launches Base mainnet to the public",
+      "description": "Coinbase opened its OP-Stack Layer-2 network Base to the general public (builder access since July 13), celebrated with the month-long 'Onchain Summer' campaign.",
+      "impact": "Brought a major regulated U.S. exchange's distribution to an L2, dramatically lowering fees and seeding a new wave of consumer DeFi, memecoins, and 'onchain' apps over 2024-2025.",
+      "sources": [
+        "https://www.theblock.co/post/243899/base-mainnet-onchain-summer",
+        "https://www.coindesk.com/tech/2023/08/03/coinbase-sets-public-launch-of-base-layer-2-blockchain-for-next-week"
+      ]
+    },
+    {
+      "date": "2024-01-10",
+      "title": "SEC approves 11 U.S. spot Bitcoin ETFs",
+      "description": "The SEC approved spot Bitcoin ETF applications from BlackRock, Fidelity, 21Shares, and others, which began trading the next day amid a fee-competition price war.",
+      "impact": "Opened a regulated TradFi on-ramp that pulled institutional capital into crypto, lifting the whole market and indirectly boosting DeFi liquidity and the institutional-DeFi narrative.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2024-01-10/spot-bitcoin-etfs-approved-to-launch-in-us-by-gensler-s-sec",
+        "https://www.congress.gov/crs-product/IF12573"
+      ]
+    },
+    {
+      "date": "2024-03",
+      "title": "BlackRock launches BUIDL tokenized money-market fund",
+      "description": "BlackRock, via Securitize, launched the BUIDL tokenized Treasury/money-market fund on Ethereum; it grew from ~$40M at launch to over $1.8B (later ~$2.9B) and expanded to multiple chains.",
+      "impact": "Validated real-world-asset (RWA) tokenization at institutional scale, establishing tokenized U.S. Treasuries as a flagship RWA category and a major new source of on-chain yield/collateral.",
+      "sources": [
+        "https://thedefiant.io/news/defi/rwas-became-wall-street-s-gateway-to-crypto-in-2025",
+        "https://www.chainalysis.com/blog/tokenized-real-world-assets-on-chain-commodities/"
+      ]
+    },
+    {
+      "date": "2024-04",
+      "title": "EigenLayer mainnet goes fully operational with first AVS (EigenDA)",
+      "description": "EigenLayer became fully operational, launching EigenDA as its first Actively Validated Service; restaking TVL climbed toward ~$15B and dozens of AVSs followed.",
+      "impact": "Turned restaking into a live shared-security market and fueled a points/airdrop farming frenzy that defined 2024 DeFi capital flows.",
+      "sources": [
+        "https://en.cryptonomist.ch/2024/04/11/230095/",
+        "https://www.blockhead.co/2024/04/30/eigenlayer-launches-native-token-with-multi-season-stakedrop/"
+      ]
+    },
+    {
+      "date": "2024-05-10",
+      "title": "EigenLayer EIGEN token stakedrop begins",
+      "description": "EigenLayer began distributing its EIGEN governance token via a multi-season stakedrop (Season 1 from a March 15 snapshot), with tokens becoming transferable in late September 2024.",
+      "impact": "One of the largest airdrops of 2024, it crystallized the 'points farming' meta and the economics of the restaking sector while drawing criticism over allocations and geo-restrictions.",
+      "sources": [
+        "https://www.blockhead.co/2024/04/30/eigenlayer-launches-native-token-with-multi-season-stakedrop/",
+        "https://airdrops.io/eigenlayer/"
+      ]
+    },
+    {
+      "date": "2024-07-23",
+      "title": "U.S. spot Ethereum ETFs begin trading",
+      "description": "After the SEC declared the registration statements effective on July 22, spot Ether ETFs from BlackRock, Fidelity, Grayscale, Bitwise, and others started trading July 23.",
+      "impact": "Extended regulated institutional access to ETH, the settlement and collateral asset of most DeFi, reinforcing ETH's institutional legitimacy and the staking/restaking economy around it.",
+      "sources": [
+        "https://blockchain.bakermckenzie.com/2024/07/23/ethereum-etfs-to-start-trading-today-in-the-united-states/",
+        "https://www.etf.com/sections/news/spot-ethereum-etf-approval-sec"
+      ]
+    },
+    {
+      "date": "2024-11-29",
+      "title": "Hyperliquid HYPE airdrop launches the perp-DEX era",
+      "description": "Hyperliquid, a high-performance perpetuals DEX on its own L1, airdropped ~310M HYPE (~31% of supply, worth >$1.6B) to ~94,000 users in a VC-free, community-first distribution.",
+      "impact": "One of the most valuable airdrops ever; it propelled Hyperliquid to dominate on-chain perpetuals volume and showcased a high-performance, app-specific-chain model for institutional-grade on-chain trading.",
+      "sources": [
+        "https://coinmarketcap.com/academy/article/hyperliquid-airdrop-guide-what-is-hyperliquid-how-to-participate-and-what-it-means-for-defi",
+        "https://www.coingecko.com/learn/what-is-hyperliquid-and-what-the-hyperliquid-airdrop-means-for-defi"
+      ]
+    },
+    {
+      "date": "2025-02-21",
+      "title": "Bybit hacked for ~$1.5B by North Korea's Lazarus Group",
+      "description": "Attackers compromised the Safe multisig wallet interface used by exchange Bybit, tricking signers into approving malicious transactions and draining ~$1.5B in ETH-the largest crypto heist in history, attributed by the FBI to Lazarus.",
+      "impact": "Underscored persistent infrastructure/supply-chain and signing-UI risks even for sophisticated custodians, intensifying focus on security tooling and on-chain monitoring across DeFi and CeFi.",
+      "sources": [
+        "https://www.bloomberg.com/news/articles/2025-02-28/lazarus-1-5-billion-hack-on-bybit-shakes-up-the-crypto-world-eth",
+        "https://learn.bybit.com/en/this-week-in-bybit/bybit-security-incident-timeline"
+      ]
+    },
+    {
+      "date": "2025-07-18",
+      "title": "GENIUS Act signed into law: first U.S. federal stablecoin framework",
+      "description": "President Trump signed the GENIUS Act (S. 1582) after Senate (June 17, 68-30) and House (July 17, 308-122) passage, establishing federal licensing for payment-stablecoin issuers and requiring high-quality liquid reserves (cash/short-term Treasuries) and monthly reserve disclosures.",
+      "impact": "The first U.S. federal crypto law to take effect, it gave regulatory clarity to dollar stablecoins-DeFi's core liquidity layer-encouraging bank and institutional issuance and accelerating the institutional-DeFi/RWA era.",
+      "sources": [
+        "https://www.mayerbrown.com/en/insights/publications/2025/07/genius-act-signed-into-law-us-enacts-federal-stablecoin-legislation",
+        "https://www.cov.com/news-and-insights/insights/2025/07/the-genius-act-becomes-law-key-provisions-from-the-federal-stablecoin-regulatory-framework"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "title": "RWA tokenization reaches ~$33B; institutional DeFi consolidates",
+      "description": "By late 2025, total on-chain tokenized real-world assets reached roughly $33B (up from ~$5.5B at the start of the year), led by tokenized Treasuries/money-market funds (BlackRock BUIDL, Ondo, OpenEden) as Wall Street's main gateway to DeFi.",
+      "impact": "Marked the maturation of RWAs as a durable, regulation-friendly DeFi vertical, blending TradFi yield with on-chain composability and anchoring the 2025-26 institutional-DeFi era.",
+      "sources": [
+        "https://thedefiant.io/news/defi/rwas-became-wall-street-s-gateway-to-crypto-in-2025",
+        "https://metamask.io/news/types-of-tokenized-real-world-assets-rwa-categories"
+      ]
+    }
+  ],
+  "eras": [
+    {
+      "name": "Genesis / Early DeFi",
+      "period": "2017-2019",
+      "summary": "MakerDAO's DAI and Uniswap v1 establish the first decentralized stablecoin, lending, and AMM money-legos that define the building blocks of DeFi."
+    },
+    {
+      "name": "DeFi Summer",
+      "period": "2020",
+      "summary": "Compound's COMP liquidity mining ignites yield farming; Yearn's fair launch, SushiSwap's vampire attack, and the Uniswap UNI airdrop turn governance tokens and incentives into DeFi's growth engine."
+    },
+    {
+      "name": "2021 Bull Market & DeFi 2.0",
+      "period": "2021",
+      "summary": "Uniswap v3 concentrated liquidity, OlympusDAO's protocol-owned liquidity, and the Curve Wars drive TVL to record highs amid reflexive yields and meta-governance."
+    },
+    {
+      "name": "The Great Unwind / Crypto Winter",
+      "period": "2022",
+      "summary": "Terra/UST's implosion cascades through 3AC, Celsius, and Voyager, and culminates in FTX's collapse-the deepest contagion of the cycle and a crisis of trust in CeFi."
+    },
+    {
+      "name": "Recovery & LSDfi",
+      "period": "2023",
+      "summary": "After the USDC/SVB scare, Ethereum's Shapella upgrade unlocks staking withdrawals, liquid-staking (LSDfi) becomes DeFi's dominant yield, and Base launches as a major consumer L2."
+    },
+    {
+      "name": "Restaking, L2s & ETFs",
+      "period": "2024",
+      "summary": "EigenLayer restaking and a points/airdrop meta surge, spot Bitcoin and Ethereum ETFs bring institutional capital, and Hyperliquid's HYPE airdrop launches the high-performance perp-DEX era."
+    },
+    {
+      "name": "RWA, Stablecoin Law & Institutional DeFi",
+      "period": "2025-2026",
+      "summary": "The GENIUS Act gives U.S. stablecoins legal clarity, tokenized Treasuries/RWAs scale toward ~$33B, and institutional DeFi (Hyperliquid, BUIDL, on-chain credit) matures-while the record Bybit hack keeps security front of mind."
+    }
+  ]
+}
