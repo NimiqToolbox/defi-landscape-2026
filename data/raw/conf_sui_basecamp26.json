@@ -1,8 +1,8 @@
 {
   "name": "Sui Basecamp 2026",
-  "edition": "Sui Basecamp 2026 (3rd annual) — NOT officially confirmed as of 2026-06-17. Most recent VERIFIED edition is Sui Basecamp 2025 (2nd annual). The inaugural event was Sui Basecamp 2024 in Paris.",
-  "location": "2026: tentatively Singapore per an unofficial 'Registration Test' page (test.buildonsui.io) — UNCONFIRMED. 2025 (verified): InterContinental Dubai Festival City, Dubai, UAE. 2024 (verified): Paris, France.",
-  "dates": "2026: tentatively September 15-17, 2026 per the unofficial test page (UNCONFIRMED, and these dates fall just AFTER the June-2025-to-June-2026 window). 2025 (verified): May 1-2, 2025 (falls just BEFORE the window start). 2024: Paris.",
+  "edition": "Sui Basecamp 2026 (3rd annual) — officially announced for October 7-8, 2026 in Singapore (per Sui Network X announcement) as of 2026-06-18. Most recent VERIFIED edition is Sui Basecamp 2025 (2nd annual). The inaugural event was Sui Basecamp 2024 in Paris.",
+  "location": "2026: officially announced Singapore, co-located with TOKEN2049 (per Sui Network X announcement); supersedes the earlier unofficial 'Registration Test' page (test.buildonsui.io) guess. 2025 (verified): InterContinental Dubai Festival City, Dubai, UAE. 2024 (verified): Paris, France.",
+  "dates": "2026: officially announced October 7-8, 2026, Singapore, co-located with TOKEN2049 (per Sui Network X announcement). Supersedes the earlier unofficial 'September 15-17' test-page date. Still falls AFTER the June-2025-to-June-2026 window, so in_window remains false. 2025 (verified): May 1-2, 2025 (falls just BEFORE the window start). 2024: Paris.",
   "in_window": false,
   "attendance": "2026: '3K+ attendees' claimed on the unofficial test page (UNCONFIRMED). 2025 (verified): 2,000+ attendees from 90+ countries. 2024 inaugural: ~1,100 attendees from 65 countries.",
   "defi_themes": [
@@ -31,9 +31,9 @@
     {"name": "Kostas Chalkias", "affiliation": "Chief Cryptographer, Mysten Labs — 2025 edition speaker"}
   ],
   "key_takeaways": [
-    "No officially announced Sui Basecamp 2026 exists as of 2026-06-17: the official Sui press center (Feb-Mar 2026), blog, and FAQ contain no 2026 Basecamp announcement; the main buildonsui.io domain serves only a default nginx placeholder page.",
-    "The only '2026' source is test.buildonsui.io, explicitly labeled 'Registration Test' — it lists Sept 15-17, 2026 in Singapore, 3K+ attendees, 50+ speakers, and a 'DeFi on Sui' panel, but this is unverified placeholder data and NOT an official announcement.",
-    "Those tentative 2026 dates (mid-September 2026) fall just AFTER the June-2025-to-June-2026 window, so in_window is set false.",
+    "Sui Basecamp 2026 is now officially announced (per the Sui Network X account) for October 7-8, 2026 in Singapore, co-located with TOKEN2049. This supersedes the earlier state where no official announcement existed (the Sui press center, blog, and FAQ had carried none through Feb-Mar 2026).",
+    "The earlier unofficial test.buildonsui.io 'Registration Test' page had listed Sept 15-17, 2026 in Singapore, 3K+ attendees, 50+ speakers, and a 'DeFi on Sui' panel; the official Oct 7-8 announcement corrects that date while confirming the Singapore location.",
+    "The official 2026 dates (October 7-8, 2026) fall AFTER the June-2025-to-June-2026 window, so in_window is set false.",
     "The most recent VERIFIED edition, Sui Basecamp 2025 (Dubai, May 1-2, 2025), is the substantive DeFi signal: it positioned Sui's 'rapidly maturing financial layer powering next-gen DeFi and Bitcoin Finance.'",
     "2025 DeFi highlights (verified): First Digital deploying FDUSD natively on Sui; suiUSDe stablecoin expansion; Babylon Labs BTCfi; institutional crossover via Grayscale and Franklin Templeton; ecosystem DeFi protocols Cetus (DEX), NAVI & Suilend (lending), and Pyth (oracle) as sponsors/builders.",
     "Confidence is LOW for any 2026-specific claim. No panels or speakers were fabricated; the single panel listed is flagged as unconfirmed test-page data, and all named speakers are verified 2025-edition speakers, not confirmed for 2026."
@@ -47,7 +47,8 @@
     "https://test.buildonsui.io/",
     "https://buildonsui.io/",
     "https://www.sui.io/press-center",
-    "https://www.sui.io/faq"
+    "https://www.sui.io/faq",
+    "https://x.com/SuiNetwork/status/2033982246882054346"
   ],
   "confidence": "low"
 }

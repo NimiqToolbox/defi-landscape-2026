@@ -16,7 +16,7 @@
         {"period": "2021-12-31", "value": 162.53, "note": "Year-end. ~6x growth in bull market."},
         {"period": "2022-04-02", "value": 187.39, "note": "2022 peak, pre-Terra/UST collapse (early May 2022)."},
         {"period": "2022-12-31", "value": 137.46, "note": "Year-end. Contraction after Terra/UST and FTX collapses."},
-        {"period": "2023-12-31", "value": 130.1, "note": "Year-end. Continued decline (BUSD wind-down, USDC depeg scare in Mar 2023). Intra-year low ~$124B in Oct 2023."},
+        {"period": "2023-12-31", "value": 130.1, "note": "Year-end. Continued decline (BUSD wind-down, USDC depeg scare in Mar 2023). Intra-year low ~$122.7B on 2023-08-19 (DefiLlama)."},
         {"period": "2024-12-31", "value": 205.43, "note": "Year-end. +$70-75B recovery year; 2024 peak ~$206.8B on Dec 28."},
         {"period": "2025-12-31", "value": 306.7, "note": "Year-end. Crossed $300B; 2025 peak ~$309.4B on Dec 21. Driven by US regulatory clarity."},
         {"period": "2026-05-17", "value": 321.38, "note": "All-time high (USD-pegged) per DefiLlama. Corroborated by CoinDesk reports of $321-323B ATH in Apr-May 2026."},

@@ -160,7 +160,7 @@
     {
       "label": "Bitcoin DeFi (BTCFi) TVL",
       "unit": "USD billions",
-      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Bitcoin", "https://defillama.com/chain/bitcoin"],
+      "sources": ["https://api.llama.fi/v2/historicalChainTvl/Bitcoin", "https://defillama.com/chain/bitcoin", "https://www.spark.money/research/btcfi-bitcoin-defi-landscape-2026"],
       "points": [
         {"period": "2021-12-30", "value": 0.16, "note": "End-2021"},
         {"period": "2022-12-30", "value": 0.10, "note": "End-2022"},

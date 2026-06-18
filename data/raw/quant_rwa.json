@@ -41,7 +41,7 @@
         {"period": "2025-08", "value": 7.45, "note": "All-time high of $7.45B in August 2025 after a July correction (CryptoSlate)."},
         {"period": "2025", "value": 7.3, "note": "~$7.3B reported for 2025 (Yellow.com); ~$8.86B reported by RWA.xyz on 2025-12-29 across 62 products / 59,023 holders (higher definition)."},
         {"period": "2026-02", "value": 10.0, "note": "Surpassed $10B for the first time (Arkham, Feb 2026)."},
-        {"period": "2026-06", "value": 14.95, "note": "As of 2026-06-16: $14.95B distributed value across 82 products, ~65,978 holders (RWA.xyz/treasuries). Current value and approximate all-time high."}
+        {"period": "2026-06", "value": 14.95, "note": "As of 2026-06-16: $14.95B distributed value across 82 products, ~65,978 holders (RWA.xyz/treasuries). Current value and approximate all-time high. (Live 2026-06-18 ≈ $15.01B, 82 products, 66,023 holders.)"}
       ]
     },
     {
@@ -55,16 +55,16 @@
       "points": [
         {"period": "2024", "value": 3.0, "note": "End-2024 order-of-magnitude; private credit grew ~40% in 2024 (Tokenized Asset Coalition). Low-medium confidence on exact figure."},
         {"period": "2025-11", "value": 18.91, "note": "RWA.xyz: active on-chain private credit exceeded $18.91B; cumulative originations ~$33.66B. NOTE: this counts active LOANS (incl. Figure's ~$9.5B home-equity book), not just transferable tokens — only ~12% is in transferable tokenized form."},
-        {"period": "2026-06", "value": 6.14, "note": "As of 2026-06-16: $6.14B distributed (transferable on-chain) tokenized credit value; $21.17B represented value; 2,406 assets, 183,227 holders (RWA.xyz/private-credit)."}
+        {"period": "2026-06", "value": 6.14, "note": "As of 2026-06-16: $6.14B distributed (transferable on-chain) tokenized credit value; $21.17B represented value; 2,406 assets, 183,227 holders (RWA.xyz/private-credit). (Live 2026-06-18 ≈ $6.12B distributed / $23.44B represented, 183,203 holders.)"}
       ]
     }
   ],
   "key_facts": [
-    {"claim": "Total tokenized RWA on-chain (ex-stablecoins) distributed value, current / all-time high", "value": "$32.61B", "as_of": "2026-06-16", "source_name": "RWA.xyz homepage", "source_url": "https://app.rwa.xyz/", "confidence": "high"},
+    {"claim": "Total tokenized RWA on-chain (ex-stablecoins) distributed value, current / all-time high", "value": "$32.61B (snapshot; live 2026-06-18 ≈ $32.40B)", "as_of": "2026-06-16", "source_name": "RWA.xyz homepage", "source_url": "https://app.rwa.xyz/", "confidence": "high"},
     {"claim": "Total tokenized RWA (ex-stablecoins) at end of 2024", "value": "$15.2B (+85% YoY)", "as_of": "2024-12-31", "source_name": "RWA.xyz via InvestaX 2024 recap", "source_url": "https://investax.io/blog/2024-real-world-asset-tokenization-market-recap", "confidence": "medium"},
     {"claim": "Total tokenized RWA (ex-stablecoins) reached $20B at end of 2025", "value": "$20B", "as_of": "2025-12-31", "source_name": "RWA.xyz via The Defiant / CoinDesk", "source_url": "https://www.coindesk.com/markets/2026/03/08/tokenized-assets-exceed-usd25-billion-after-nearly-quadrupling-in-a-year", "confidence": "medium"},
     {"claim": "Total tokenized RWA (ex-stablecoins) crossed $25B in March 2026, nearly quadrupling YoY", "value": "$25B", "as_of": "2026-03-08", "source_name": "CoinDesk (RWA.xyz data)", "source_url": "https://www.coindesk.com/markets/2026/03/08/tokenized-assets-exceed-usd25-billion-after-nearly-quadrupling-in-a-year", "confidence": "high"},
-    {"claim": "Tokenized US Treasuries distributed value, current", "value": "$14.95B (82 products, ~65,978 holders)", "as_of": "2026-06-16", "source_name": "RWA.xyz Treasuries", "source_url": "https://app.rwa.xyz/treasuries", "confidence": "high"},
+    {"claim": "Tokenized US Treasuries distributed value, current", "value": "$14.95B (82 products, ~65,978 holders) (snapshot; live 2026-06-18 ≈ $15.01B, 82 products, 66,023 holders)", "as_of": "2026-06-16", "source_name": "RWA.xyz Treasuries", "source_url": "https://app.rwa.xyz/treasuries", "confidence": "high"},
     {"claim": "Tokenized US Treasuries at end of 2023", "value": "$845M (+641% in 2023, from $114M in Jan 2023)", "as_of": "2023-12-31", "source_name": "CoinGecko via Cointelegraph", "source_url": "https://cointelegraph.com/news/tokenized-us-treasuries-845-market-cap-2023-coingecko", "confidence": "high"},
     {"claim": "Tokenized US Treasuries crossed $1B on public blockchains", "value": "$1B", "as_of": "2024-03-28", "source_name": "CoinDesk", "source_url": "https://www.coindesk.com/markets/2024/03/28/over-1b-in-us-treasury-notes-has-been-tokenized-on-public-blockchains", "confidence": "high"},
     {"claim": "Tokenized US Treasuries all-time high reached in Aug 2025", "value": "$7.45B", "as_of": "2025-08", "source_name": "CryptoSlate", "source_url": "https://cryptoslate.com/tokenized-us-treasuries-reach-7-45-billion-all-time-high-after-july-correction/", "confidence": "medium"},
@@ -75,7 +75,7 @@
     {"claim": "Ondo USDY ~$2.15B; OUSG ~$0.55B (mid-2026)", "value": "USDY $2.15B / OUSG $0.55B", "as_of": "2026-06-16", "source_name": "RWA.xyz Treasuries", "source_url": "https://app.rwa.xyz/treasuries", "confidence": "high"},
     {"claim": "Franklin Templeton BENJI + iBENJI combined ~$2.4B (iBENJI $1.60B + BENJI $0.82B)", "value": "$2.4B", "as_of": "2026-06-16", "source_name": "RWA.xyz Treasuries", "source_url": "https://app.rwa.xyz/treasuries", "confidence": "high"},
     {"claim": "Active on-chain private credit (loans tracked by RWA.xyz) exceeded $18.91B; cumulative originations ~$33.66B; only ~12% in transferable tokenized form", "value": "$18.91B active loans", "as_of": "2025-11", "source_name": "RWA.xyz via HTX / The Defiant", "source_url": "https://thedefiant.io/news/defi/private-credit-leads-rwa-tokenization-boom-report", "confidence": "medium"},
-    {"claim": "Tokenized/distributed credit value (transferable tokens) and represented value, current", "value": "$6.14B distributed / $21.17B represented (2,406 assets, 183,227 holders)", "as_of": "2026-06-16", "source_name": "RWA.xyz Private Credit", "source_url": "https://app.rwa.xyz/private-credit", "confidence": "high"},
+    {"claim": "Tokenized/distributed credit value (transferable tokens) and represented value, current", "value": "$6.14B distributed / $21.17B represented (2,406 assets, 183,227 holders) (snapshot; live 2026-06-18 ≈ $6.12B distributed / $23.44B represented, 2,406 assets, 183,203 holders)", "as_of": "2026-06-16", "source_name": "RWA.xyz Private Credit", "source_url": "https://app.rwa.xyz/private-credit", "confidence": "high"},
     {"claim": "Maple active loans ~$777M (Jun 2025), >$3.3B cumulative; ~$1.4B tokenized credit value mid-2026", "value": "$1.4B (mid-2026)", "as_of": "2026-06-16", "source_name": "RWA.xyz", "source_url": "https://app.rwa.xyz/private-credit", "confidence": "medium"},
     {"claim": "Centrifuge tokenized credit value ~$736M (mid-2026), +54% over 30 days", "value": "$0.74B", "as_of": "2026-06-16", "source_name": "RWA.xyz", "source_url": "https://app.rwa.xyz/private-credit", "confidence": "medium"},
     {"claim": "Figure leads private credit with ~$9.5B in active loans via Figure Connect marketplace", "value": "$9.5B active loans", "as_of": "2025-11", "source_name": "The Defiant (RWA.xyz data)", "source_url": "https://thedefiant.io/news/defi/private-credit-leads-rwa-tokenization-boom-report", "confidence": "medium"},
@@ -90,7 +90,7 @@
     {"name": "Janus Henderson JTRSY", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.87B", "source_url": "https://app.rwa.xyz/treasuries"},
     {"name": "Franklin Templeton BENJI", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.82B", "source_url": "https://app.rwa.xyz/treasuries"},
     {"name": "WisdomTree WTGXX", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.79B", "source_url": "https://app.rwa.xyz/treasuries"},
-    {"name": "Invesco USTB", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.78B", "source_url": "https://app.rwa.xyz/treasuries"},
+    {"name": "Invesco USTB", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.78B (snapshot; live 2026-06-18 ≈ $0.81B)", "source_url": "https://app.rwa.xyz/treasuries"},
     {"name": "Ondo OUSG", "metric": "Tokenized US Treasury fund on-chain value", "value": "$0.55B", "source_url": "https://app.rwa.xyz/treasuries"},
     {"name": "Figure", "metric": "Active on-chain private credit (loans)", "value": "$9.5B active loans", "source_url": "https://thedefiant.io/news/defi/private-credit-leads-rwa-tokenization-boom-report"},
     {"name": "Maple", "metric": "Tokenized private credit value", "value": "$1.4B", "source_url": "https://app.rwa.xyz/private-credit"},

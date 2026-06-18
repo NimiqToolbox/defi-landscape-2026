@@ -19,7 +19,7 @@
         {"period": "2022", "value": 35.8, "note": "~35.8M cumulative addresses end of 2022 (Dune rchen8). Growth slowed during bear market / FTX collapse."},
         {"period": "2023", "value": 50.4, "note": "~50.4M cumulative addresses end of 2023 (Dune rchen8)."},
         {"period": "2024", "value": 150.8, "note": "~150.8M cumulative addresses end of 2024 (Dune rchen8). Sharp acceleration driven by low-fee chains (Solana, Base, BNB)."},
-        {"period": "2025", "value": 332.6, "note": "~332.6M cumulative addresses (latest data point dated Jun 6, 2026 on Dune rchen8). This is the all-time-high cumulative count and current value. OVERESTIMATE of real users."},
+        {"period": "2025", "value": 332.6, "note": "~332.6M cumulative addresses (latest data point dated Jun 6, 2026 on Dune rchen8). This is the all-time-high cumulative count and current value. OVERESTIMATE of real users. (Drift check 2026-06-18: live rchen8 dashboard reads ~332.5M with its latest data point labelled May 5, 2026 - magnitude confirmed within rounding, only the latest-data-point date label differs.)"},
         {"period": "2026-06", "value": 332.6, "note": "Current value as of latest dashboard snapshot (Jun 6, 2026). Cumulative metric - only goes up over time."}
       ]
     },
@@ -85,7 +85,7 @@
     {"name": "Bitcoin", "metric": "monthly active addresses (Sept 2024)", "value": "11 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
     {"name": "BNB Chain", "metric": "monthly active addresses (Sept 2024)", "value": "10 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
     {"name": "Ethereum", "metric": "monthly active addresses (Sept 2024)", "value": "6 million", "source_url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/"},
-    {"name": "Solana (2025)", "metric": "monthly active addresses (2025, most active network)", "value": "~68 million (+14%)", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025"},
+    {"name": "Solana (2025)", "metric": "monthly active addresses (2025 peak month, +14%)", "value": "~68 million (peak month; by Sep 2025 Solana was ~38.3M and BNB Chain ~58M had overtaken it as the most active network per the same CryptoRank/BlockchainReporter source)", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025"},
     {"name": "BNB Chain (2025)", "metric": "monthly active addresses (2025)", "value": "~58 million", "source_url": "https://blockchainreporter.net/bnb-chain-leads-blockchain-rankings-with-58m-monthly-active-addresses"},
     {"name": "Ethereum (2025)", "metric": "monthly active addresses (2025)", "value": "~13 million (+53%)", "source_url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025"}
   ]

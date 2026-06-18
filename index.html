@@ -28,7 +28,8 @@
     <a class="navlink" href="#security">Security</a>
     <a class="navlink" href="#map">Protocol map</a>
     <a class="navlink" href="#conferences">Conferences</a>
-    <a class="navlink" href="#methodology">Sources</a>
+    <a class="navlink" href="#data">Data &amp; sources</a>
+    <a class="navlink" href="#methodology">Methodology</a>
   </div>
 </nav>
 
@@ -155,7 +156,7 @@
     <h3>Spot DEX market share</h3>
     <div class="cap">percent of monthly spot volume · Aug-2025 snapshot</div>
     <div id="c-dex-share" class="chart short"></div>
-    <div class="note">Uniswap &amp; PancakeSwap have led for years, but Solana venues (Raydium, Jupiter routing) and Base's Aerodrome surged in 2025 — Raydium briefly overtook Uniswap on monthly volume in Nov-2025.</div>
+    <div class="note">Uniswap &amp; PancakeSwap have led for years, but Solana venues (Raydium, Jupiter routing) and Base's Aerodrome surged in 2025 — Raydium briefly overtook Uniswap on monthly volume in Nov-2024.</div>
     <div class="src">Raw: <a href="data/raw/quant_dex_volume.json">quant_dex_volume.json</a> · <a href="data/raw/map_dex.json">map_dex.json</a></div>
   </div>
 </section>
@@ -167,7 +168,7 @@
   <div class="section-head">
     <div class="eyebrow">Credit</div>
     <h2>Lending markets</h2>
-    <p class="lead">Aave is the entrenched incumbent (~60–63% of lending), peaking at <span class="hl">$45.8B</span> TVL in Oct-2025. The growth story is modular: Morpho went 0 → top-3 in two years.</p>
+    <p class="lead">Aave is the entrenched incumbent (~60% of active borrows, ~36–42% of lending-category TVL), peaking at <span class="hl">$45.8B</span> TVL in Oct-2025. The growth story is modular: Morpho went 0 → top-3 in two years.</p>
   </div>
   <div class="card">
     <h3>Lending protocol TVL</h3>
@@ -420,6 +421,33 @@
     <div class="cap">major + regional flagships · DeFi themes &amp; headline speakers · ✓ in window / ✗ adjacent</div>
     <div class="tablewrap"><table id="conf-table"><!-- populated --></table></div>
     <div class="src">Raw: per-event files in <a href="https://github.com/NimiqToolbox/defi-landscape-2026/tree/main/data/raw">data/raw/conf_*.json</a></div>
+  </div>
+</section>
+
+<hr class="div"/>
+
+<!-- ================= DATA & SOURCES ================= -->
+<section id="data">
+  <div class="section-head">
+    <div class="eyebrow">The data room</div>
+    <h2>Data &amp; sources — every raw dataset</h2>
+    <p class="lead">All <span class="hl">50 research datasets</span> behind this page, grouped and individually downloadable — each is the raw JSON our multi-agent fact-check ran against. Below them: the data providers cited across the datasets. Every chart and KPI above also links its own sources inline.</p>
+  </div>
+  <div class="card">
+    <h3>Tabular &amp; bundled exports</h3>
+    <div class="pills">
+      <a class="pill" href="data/timeseries_long.csv" download>timeseries_long.csv ↓</a>
+      <a class="pill" href="data/conferences.csv" download>conferences.csv ↓</a>
+      <a class="pill" href="data/defi_data.js" download>defi_data.js ↓</a>
+      <a class="pill" href="data/CORRECTIONS_AUDIT.md">fact-check audit log ↗</a>
+      <a class="pill" href="https://github.com/NimiqToolbox/defi-landscape-2026/tree/main/data/raw">browse all raw files on GitHub ↗</a>
+    </div>
+  </div>
+  <div id="data-files"><!-- grouped download tables, populated by app.js from D.rawFiles --></div>
+  <div class="card" style="margin-top:18px">
+    <h3>Sources cited across the datasets</h3>
+    <div class="cap">primary data providers &amp; outlets, ranked by how many datasets they back · the full per-claim source list lives inside each raw file</div>
+    <div class="tablewrap"><table id="sources-table"><!-- populated by app.js from D.sourceProviders --></table></div>
   </div>
 </section>
 

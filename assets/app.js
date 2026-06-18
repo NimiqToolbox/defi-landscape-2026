@@ -69,6 +69,27 @@
   var fmtPct = function (v) { return v == null ? "" : v + "%"; };
   var fmtNum = function (v) { return v == null ? "" : (v >= 1000 ? (v / 1000) + "k" : v); };
 
+  /* ---- citation helpers: surface source provenance from D.sourcesByRaw ---- */
+  var MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
+  function fmtDate(s) {
+    if (!s) return "";
+    var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(s);
+    if (!m) return s;
+    var mo = MONTHS[parseInt(m[2], 10) - 1] || "";
+    return (m[3] ? parseInt(m[3], 10) + " " : "") + mo + " " + m[1];
+  }
+  function esc(s) { return String(s == null ? "" : s).replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
+  function srcLine(sources, fallbackAsOf) {
+    if (!sources || !sources.length) return "";
+    var parts = sources.slice(0, 3).map(function (s) {
+      var d = s.asOf || fallbackAsOf;
+      var label = esc(s.name) + (d ? " · " + fmtDate(d) : "");
+      return s.url ? '<a href="' + esc(s.url) + '" target="_blank" rel="noopener">' + label + ' ↗</a>' : label;
+    });
+    return "Source: " + parts.join(" · ");
+  }
+  function srcByRaw(raw) { return (D.sourcesByRaw && raw) ? D.sourcesByRaw[raw] : null; }
+
   function lineChart(id, cats, series, o) {
     var c = mk(id); if (!c) return;
     o = o || {};
@@ -164,7 +185,8 @@
   (function () {
     var host = el("kpis"); if (!host) return;
     host.innerHTML = D.kpis.map(function (k) {
-      return '<div class="kpi"><div class="v">' + k.value + '</div><div class="l">' + k.label + '</div><div class="s">' + k.sub + '</div></div>';
+      var ks = srcByRaw(k.raw); var src = srcLine(ks ? ks.slice(0, 1) : null, D.meta && D.meta.asOf);
+      return '<div class="kpi"><div class="v">' + k.value + '</div><div class="l">' + k.label + '</div><div class="s">' + k.sub + '</div>' + (src ? '<div class="src">' + src + '</div>' : '') + '</div>';
     }).join("");
   })();
 
@@ -204,6 +226,43 @@
         "<td>" + badge + "</td><td>" + themes + "</td><td class='muted'>" + c.speakers + "</td></tr>";
     }).join("");
     host.innerHTML = "<thead><tr><th>Event</th><th>Dates / location</th><th>Scale</th><th>In&nbsp;window</th><th>Top DeFi themes</th><th>Headline speakers</th></tr></thead><tbody>" + rows + "</tbody>";
+  })();
+
+  /* ---------------- DATA ROOM: raw-file manifest ---------------- */
+  (function () {
+    var host = el("data-files"); if (!host || !D.rawFiles) return;
+    var GROUPS = [
+      { key: "quant", label: "Quantitative datasets (time series & snapshots)" },
+      { key: "map", label: "Protocol & category leadership maps" },
+      { key: "narrative", label: "Narrative timelines" },
+      { key: "conf", label: "Conference coverage (Jun 2025 → Jun 2026)" }
+    ];
+    host.innerHTML = GROUPS.map(function (g) {
+      var fl = D.rawFiles.filter(function (f) { return f.group === g.key; });
+      if (!fl.length) return "";
+      var rows = fl.map(function (f) {
+        return "<tr><td><b>" + esc(f.title) + "</b></td><td class='muted'>" + esc(f.desc || "") +
+          "</td><td>" + (f.asOf ? fmtDate(f.asOf) : "") + "</td>" +
+          "<td><a href='data/raw/" + esc(f.file) + "'>" + esc(f.file) + " ↓</a></td></tr>";
+      }).join("");
+      return "<div class='card' style='margin-top:18px'><h3>" + esc(g.label) +
+        " <span class='muted'>(" + fl.length + " files)</span></h3>" +
+        "<div class='tablewrap'><table><thead><tr><th>Dataset</th><th>What&rsquo;s in it</th><th>As of</th><th>Raw file</th></tr></thead><tbody>" +
+        rows + "</tbody></table></div></div>";
+    }).join("");
+  })();
+
+  /* ---------------- MASTER SOURCE TABLE ---------------- */
+  (function () {
+    var host = el("sources-table"); if (!host) return;
+    var provs = D.sourceProviders || [];
+    if (!provs.length) { var c = host.closest ? host.closest(".card") : null; if (c) c.style.display = "none"; return; }
+    var rows = provs.map(function (p) {
+      var h = p.url ? p.url.replace(/^https?:\/\//, "").replace(/\/.*$/, "") : "";
+      return "<tr><td><b>" + esc(p.name) + "</b></td><td class='muted'>" + p.files + " dataset" + (p.files === 1 ? "" : "s") + "</td><td>" +
+        (p.url ? "<a href='" + esc(p.url) + "' target='_blank' rel='noopener'>" + esc(h) + " ↗</a>" : "") + "</td></tr>";
+    }).join("");
+    host.innerHTML = "<thead><tr><th>Provider</th><th>Cited in</th><th>Link</th></tr></thead><tbody>" + rows + "</tbody>";
   })();
 
   /* ============================= CHARTS ============================= */
@@ -399,9 +458,35 @@
     })();
   }
 
+  /* ---- attach a source citation under each chart (ECharts owns the chart div, so insert a sibling) ---- */
+  var CHART_SRC = {
+    "c-tvl": "totalTvl", "c-chain-stack": "tvlByChain", "c-chain-pie": "chainShareNow",
+    "c-eth-dom": "ethDominance", "c-cat-proxy": "categoryProxy", "c-cat-now": "categoryNow",
+    "c-dex-vol": "dexVolumeAnnual", "c-dexcex": "dexCexRatio", "c-dex-share": "dexShareNow",
+    "c-lending": "lending", "c-stable-total": "stablecoinTotal", "c-stable-pie": "stablecoinShareNow",
+    "c-stable-issuers": "stablecoinByIssuer", "c-perp-vol": "perpsVolumeAnnual", "c-hl-share": "hyperliquidShare",
+    "c-lst": "liquidStaking", "c-ethstaked": "ethStaked", "c-restake": "restaking",
+    "c-rwa": "rwa", "c-rwa-leaders": "rwaLeadersNow", "c-yield": "yield", "c-bridges": "bridgesNow",
+    "c-fees": "feesRevenue", "c-devs": "developers", "c-users": "users",
+    "c-hacks": "hacksAnnual", "c-bighacks": "biggestHacks"
+  };
+  function injectChartSources() {
+    Object.keys(CHART_SRC).forEach(function (id) {
+      var node = el(id); if (!node) return;
+      var ds = D[CHART_SRC[id]]; if (!ds) return;
+      var line = srcLine(srcByRaw(ds.raw), ds.asOf || (D.meta && D.meta.asOf));
+      if (!line) return;
+      if (node.nextSibling && node.nextSibling.className === "src chart-src") return; // idempotent
+      var div = document.createElement("div");
+      div.className = "src chart-src";
+      div.innerHTML = line;
+      node.parentNode.insertBefore(div, node.nextSibling);
+    });
+  }
+
   // Render once Muli is ready (canvas text won't reflow on a late font swap); 1.5s safety net.
   var started = false;
-  function start() { if (started) return; started = true; renderCharts(); }
+  function start() { if (started) return; started = true; renderCharts(); injectChartSources(); }
   if (window.document && document.fonts && document.fonts.ready && typeof document.fonts.ready.then === "function") {
     document.fonts.ready.then(start);
     setTimeout(start, 1500);

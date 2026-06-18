@@ -6,7 +6,7 @@
       "name": "LayerZero (incl. Stargate)",
       "chain": "Omnichain — 130+ chains (Ethereum, all major rollups, Solana, BNB, etc.)",
       "metric": "Messaging market share / cumulative value transferred / messages",
-      "value": "~35% reported cross-chain messaging volume share; ~$684M monthly cross-chain volume; 150M+ messages and $100B+ value transferred cumulatively; 500+ apps",
+      "value": "~35% reported cross-chain messaging volume share (conservative third-party figure, Spartan Group Jun-2024; LayerZero self-reports ~57%, peak 76% in Q2 2025); ~$684M monthly cross-chain volume; 150M+ messages and $100B+ value transferred cumulatively (mid-2025 figures; live 2026-06-18 ≈ $260B+ across 170+ chains, 830+ OFTs per The Merkle); 500+ apps",
       "note": "Current messaging-volume leader. V2 is the transport layer for Stargate ($70B+ cumulative cross-chain transactions), which LayerZero acquired in 2025 for ~$110M to own the value-transfer layer. ZRO token. Figures are protocol/secondary-source reported, not exchange-audited."
     },
     {
@@ -14,7 +14,7 @@
       "chain": "35+ chains, strong Solana + EVM coverage",
       "metric": "Total value transferred / integrations",
       "value": "~$41B+ total value transferred cumulatively; 19 Guardian nodes; integrated with Uniswap, Lido, Pyth, Circle CCTP across 8+ chains",
-      "note": "Recovered from the Feb 2022 $320M+ exploit (120k wETH) to become a top messaging + token-bridge protocol, especially for Solana. W token (~$0.03, ~$177M mcap as of late 2025/2026). Powers native USDC transfers via CCTP integration."
+      "note": "Recovered from the Feb 2022 $320M+ exploit (120k wETH) to become a top messaging + token-bridge protocol, especially for Solana. W token (~$0.0097, ~$58M mcap as of mid-Jun 2026). Powers native USDC transfers via CCTP integration."
     },
     {
       "name": "Chainlink CCIP",
@@ -27,7 +27,7 @@
       "name": "Axelar",
       "chain": "70+ chains (Ethereum, major rollups, Solana, Sui, Aptos, Stellar, Cosmos/IBC)",
       "metric": "Messaging share / monthly volume",
-      "value": "~18% reported messaging share; ~$353M monthly cross-chain volume; Q4 2025 daily tx +~140% vs Q2 2025",
+      "value": "~18% reported messaging share (Spartan Group Jun-2024 figure; absolute monthly volume since fell to single-digit $M/day by early 2026); ~$353M monthly cross-chain volume (Jun-2024 datapoint); Q4 2025 daily tx +~140% vs Q2 2025; interchain tx +478% YoY",
       "note": "Validator-consensus (PoS) security, Interchain Token Service + ITS Hub (Jan 2025). Circle agreed to acquire developer Interop Labs (Dec 15, 2025) for institutional readiness — but excluded the AXL token, which dropped ~18% on the news. Historically led messaging volume in early 2025 per Binance Research before LayerZero pulled ahead."
     },
     {
@@ -85,6 +85,9 @@
     "https://cointelegraph.com/news/multichain-was-a-big-blow-says-andre-cronje-as-fantom-tvl-slumps",
     "https://www.merklescience.com/blog/hack-track-analysis-of-wormhole-token-bridge-exploit",
     "https://beincrypto.com/top-11-defi-cross-chain-bridge-attacks-of-2022-hackers-bag-over-2-billion/",
-    "https://www.spotedcrypto.com/ethereum-l2-consolidation-2026-arbitrum-base-tvl/"
+    "https://www.spotedcrypto.com/ethereum-l2-consolidation-2026-arbitrum-base-tvl/",
+    "https://www.dlnews.com/articles/defi/layerzero-pips-rivals-110m-stargate-deal-dao-dissolves/",
+    "https://www.coinreporter.io/2026/03/chainlinks-ccip-cross-chain-transfers-top-18-billion-monthly-volume/",
+    "https://www.circle.com/blog/circle-signs-agreement-to-acquire-interop-labs-team-intellectual-property"
   ]
 }

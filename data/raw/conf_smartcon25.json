@@ -4,7 +4,7 @@
   "location": "Metropolitan Pavilion, Manhattan, New York City, USA",
   "dates": "November 4-5, 2025",
   "in_window": true,
-  "attendance": "~1,700 in-person attendees (reported 1,701 confirmed guests); Chainlink cited 275+ speakers, thousands of registrations, and millions of online views. (Note: the official agenda page lists overlapping session times across multiple stages, consistent with a multi-track event.)",
+  "attendance": "~1,700 in-person attendees (reported; the precise '1,701 confirmed guests' figure came from a Vendelux attendee-list page now returning HTTP 410 Gone and is no longer independently verifiable — secondary sources cite only 'thousands of attendees'); Chainlink cited 275+ speakers, thousands of registrations, and millions of online views. (Note: the official agenda page lists overlapping session times across multiple stages, consistent with a multi-track event.)",
   "defi_themes": [
     "TradFi-DeFi convergence ('AllFi') and institutional adoption of onchain finance",
     "Real-world asset (RWA) tokenization (funds, securities, treasuries) at institutional scale",

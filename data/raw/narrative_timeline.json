@@ -268,7 +268,8 @@
       "impact": "Underscored persistent infrastructure/supply-chain and signing-UI risks even for sophisticated custodians, intensifying focus on security tooling and on-chain monitoring across DeFi and CeFi.",
       "sources": [
         "https://www.bloomberg.com/news/articles/2025-02-28/lazarus-1-5-billion-hack-on-bybit-shakes-up-the-crypto-world-eth",
-        "https://learn.bybit.com/en/this-week-in-bybit/bybit-security-incident-timeline"
+        "https://learn.bybit.com/en/this-week-in-bybit/bybit-security-incident-timeline",
+        "https://www.ic3.gov/psa/2025/psa250226"
       ]
     },
     {
@@ -278,13 +279,14 @@
       "impact": "The first U.S. federal crypto law to take effect, it gave regulatory clarity to dollar stablecoins-DeFi's core liquidity layer-encouraging bank and institutional issuance and accelerating the institutional-DeFi/RWA era.",
       "sources": [
         "https://www.mayerbrown.com/en/insights/publications/2025/07/genius-act-signed-into-law-us-enacts-federal-stablecoin-legislation",
-        "https://www.cov.com/news-and-insights/insights/2025/07/the-genius-act-becomes-law-key-provisions-from-the-federal-stablecoin-regulatory-framework"
+        "https://www.cov.com/news-and-insights/insights/2025/07/the-genius-act-becomes-law-key-provisions-from-the-federal-stablecoin-regulatory-framework",
+        "https://www.whitehouse.gov/fact-sheets/2025/07/fact-sheet-president-donald-j-trump-signs-genius-act-into-law/"
       ]
     },
     {
       "date": "2025-12",
-      "title": "RWA tokenization reaches ~$33B; institutional DeFi consolidates",
-      "description": "By late 2025, total on-chain tokenized real-world assets reached roughly $33B (up from ~$5.5B at the start of the year), led by tokenized Treasuries/money-market funds (BlackRock BUIDL, Ondo, OpenEden) as Wall Street's main gateway to DeFi.",
+      "title": "RWA tokenization reaches ~$20B; institutional DeFi consolidates",
+      "description": "By the end of 2025, total on-chain tokenized real-world assets (excluding stablecoins) reached roughly $20B (up from ~$5.5B at the start of the year), led by tokenized Treasuries/money-market funds (BlackRock BUIDL, Ondo, OpenEden) as Wall Street's main gateway to DeFi; the figure climbed to ~$25B by March 2026 and ~$32B by mid-2026 per rwa.xyz.",
       "impact": "Marked the maturation of RWAs as a durable, regulation-friendly DeFi vertical, blending TradFi yield with on-chain composability and anchoring the 2025-26 institutional-DeFi era.",
       "sources": [
         "https://thedefiant.io/news/defi/rwas-became-wall-street-s-gateway-to-crypto-in-2025",
@@ -326,7 +328,7 @@
     {
       "name": "RWA, Stablecoin Law & Institutional DeFi",
       "period": "2025-2026",
-      "summary": "The GENIUS Act gives U.S. stablecoins legal clarity, tokenized Treasuries/RWAs scale toward ~$33B, and institutional DeFi (Hyperliquid, BUIDL, on-chain credit) matures-while the record Bybit hack keeps security front of mind."
+      "summary": "The GENIUS Act gives U.S. stablecoins legal clarity, tokenized Treasuries/RWAs (excluding stablecoins) scale to ~$20B by end-2025 and ~$32B by mid-2026, and institutional DeFi (Hyperliquid, BUIDL, on-chain credit) matures-while the record Bybit hack keeps security front of mind."
     }
   ]
 }

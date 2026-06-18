@@ -82,8 +82,8 @@
       "label": "Karak TVL",
       "unit": "USD billions",
       "sources": [
-        "https://api.llama.fi/protocol/karak",
-        "https://defillama.com/protocol/karak"
+        "https://api.llama.fi/protocol/karak-protocol",
+        "https://defillama.com/protocol/karak-protocol"
       ],
       "points": [
         {"period": "2024-06-07", "value": 1.05, "note": "All-time high during 2024 multi-asset restaking surge"},
@@ -122,7 +122,7 @@
     {"claim": "Renzo and Karak collapsed sharply from 2024 peaks", "value": "Renzo $4.05B ATH -> $0.11B; Karak $1.05B ATH -> $0.01B", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Liquid%20restaking"},
     {"claim": "Symbiotic launched mid-2024 as a modular EigenLayer competitor", "value": "ATH $2.70B (Dec 2024); latest ~$0.35B", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/protocol/symbiotic"},
     {"claim": "Current DefiLlama 'Restaking' category total", "value": "~$8.97B (incl. EigenCloud $5.0B, Babylon $3.4B, Symbiotic $0.35B)", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Restaking"},
-    {"claim": "Current DefiLlama 'Liquid Restaking' category total", "value": "~$4.33B (ether.fi $2.99B, Kelp $1.05B, Renzo $0.11B)", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Liquid%20restaking"}
+    {"claim": "Current DefiLlama 'Liquid Restaking' category total", "value": "~$4.33B (ether.fi $2.99B, Kelp $1.05B, Renzo $0.11B) (note: live DefiLlama 'Liquid Restaking' category aggregate may read higher, ~$6.96B per one source on 2026-06-18, due to broader protocol/chain coverage than these three named LRTs)", "as_of": "2026-06-16", "confidence": "high", "source_name": "DefiLlama API", "source_url": "https://defillama.com/protocols/Liquid%20restaking"}
   ],
   "top_entities": [
     {"name": "EigenLayer (EigenCloud)", "metric": "Restaking TVL (latest)", "value": "$4.99B", "source_url": "https://api.llama.fi/protocol/eigenlayer"},
@@ -131,6 +131,6 @@
     {"name": "Symbiotic", "metric": "Restaking TVL (latest)", "value": "$0.35B", "source_url": "https://api.llama.fi/protocol/symbiotic"},
     {"name": "Renzo (ezETH)", "metric": "Liquid Restaking TVL (latest)", "value": "$0.11B", "source_url": "https://api.llama.fi/protocol/renzo"},
     {"name": "Puffer", "metric": "Liquid Restaking TVL (latest)", "value": "$0.05B", "source_url": "https://api.llama.fi/protocol/puffer-finance"},
-    {"name": "Karak", "metric": "Restaking TVL (latest)", "value": "$0.01B", "source_url": "https://api.llama.fi/protocol/karak"}
+    {"name": "Karak", "metric": "Restaking TVL (latest)", "value": "$0.01B", "source_url": "https://api.llama.fi/protocol/karak-protocol"}
   ]
 }

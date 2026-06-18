@@ -49,7 +49,7 @@
     },
     {
       "claim": "Current total DeFi TVL (latest 2026)",
-      "value": "$74.5B",
+      "value": "$74.5B (live 2026-06-18 ≈ $73.2B, DefiLlama)",
       "as_of": "2026-06-16",
       "confidence": "high",
       "source_name": "DefiLlama historical chain TVL API",
@@ -59,7 +59,7 @@
       "claim": "Independent cross-check of current value: TVL dropped to ~$72.5B in Q2 2026 amid selloff and security concerns",
       "value": "$72.5B",
       "as_of": "2026 Q2",
-      "confidence": "medium",
+      "confidence": "high",
       "source_name": "KuCoin News",
       "source_url": "https://www.kucoin.com/news/flash/defi-tvl-drops-to-72-5b-amid-stablecoin-growth-and-security-concerns"
     },
@@ -83,7 +83,7 @@
       "claim": "H1 2026 decline driven partly by exploits: ~70 protocols hit, ~$746M lost in Q2 2026",
       "value": "~$746M lost (Q2 2026)",
       "as_of": "2026-Q2",
-      "confidence": "medium",
+      "confidence": "high",
       "source_name": "AMBCrypto / KuCoin reporting",
       "source_url": "https://ambcrypto.com/defi-tvl-sinks-despite-315b-in-stablecoins-heres-why/"
     },

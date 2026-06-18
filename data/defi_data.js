@@ -242,7 +242,7 @@ window.DEFI_DATA = {
       { name: "Ondo (USDY+OUSG)", value: 2.70 },
       { name: "Paxos Gold", value: 1.97 },
       { name: "Centrifuge", value: 1.64 },
-      { name: "Franklin BENJI", value: 2.40 }
+      { name: "Franklin BENJI", value: 1.98 }
     ],
     raw: "map_rwa.json"
   },
@@ -363,7 +363,7 @@ window.DEFI_DATA = {
     { date: "2024-11", title: "Hyperliquid HYPE airdrop", desc: "~$1.6B airdrop launches the high-performance perp-DEX era." },
     { date: "2025-02", title: "Bybit hacked ~$1.5B", desc: "Largest crypto heist ever (Lazarus); record annual theft year." },
     { date: "2025-07", title: "GENIUS Act signed", desc: "First U.S. federal stablecoin framework; legitimizes dollar stablecoins — DeFi's liquidity layer." },
-    { date: "2025-12", title: "RWA tokenization ≈ $33B", desc: "Institutional DeFi consolidates; tokenized Treasuries are Wall Street's gateway." }
+    { date: "2025-12", title: "RWA tokenization ≈ $20B (ex-stablecoins)", desc: "Institutional DeFi consolidates; tokenized Treasuries are Wall Street's gateway. (Scaled to ~$32B by mid-2026.)" }
   ],
 
   // ---- REGULATION TIMELINE ----
@@ -394,7 +394,7 @@ window.DEFI_DATA = {
       leaders: "Uniswap (v2/v3/v4), PancakeSwap, Aerodrome (Base), Curve, Jupiter (Solana agg.), Raydium, Orca, Fluid, Hyperliquid spot",
       shift: "2021 Uniswap-dominant → 2024-26 multi-chain: PancakeSwap rivals Uniswap, Aerodrome owns Base, Solana stack surges via Jupiter routing; DEX/CEX spot ratio at record highs (~29%)." },
     { key: "lending", title: "Lending & borrowing", raw: "map_lending.json",
-      leaders: "Aave (~60–63% share), Spark (Sky), Morpho, Compound, JustLend (Tron), Kamino (Solana), Euler V2",
+      leaders: "Aave (~60% of borrows / ~36–42% of lending-category TVL), Spark (Sky), Morpho, Compound, JustLend (Tron), Kamino (Solana), Euler V2",
       shift: "MakerDAO/Compound pioneers → Aave entrenched as pooled incumbent; growth shifts to modular/isolated markets (Morpho Blue + curated Vaults, Euler V2)." },
     { key: "stablecoins", title: "Stablecoins", raw: "map_stablecoins.json",
       leaders: "USDT (~58%), USDC (~24%), USDS+DAI (Sky), USDe (Ethena), USD1, PYUSD; tokenized-Treasury dollars BUIDL/USYC/USDY",
@@ -497,11 +497,1671 @@ window.DEFI_DATA = {
     { key: "avax_summit", name: "Avalanche Summit (London)", loc: "London, UK", dates: "May 20–22, 2025", inWindow: false, attendance: "~1.5k",
       themes: ["Aave V4 unveil", "Institutional DeFi liquidity", "Scaling DeFi beyond billions", "DeFi regulation (Owl Explains)"],
       speakers: "Emin Gün Sirer, Stani Kulechov, Anthony Scaramucci, Dragonfly", raw: "conf_avax_summit.json", note: "Just before window (nearest completed flagship)." },
-    { key: "sui_basecamp26", name: "Sui Basecamp", loc: "Dubai 2025 / Singapore 2026?", dates: "May 1–2, 2025 (2026 unconfirmed)", inWindow: false, attendance: "~2k (2025)",
+    { key: "sui_basecamp26", name: "Sui Basecamp", loc: "Dubai 2025 / Singapore 2026?", dates: "May 1–2, 2025 (2026: Oct 7–8)", inWindow: false, attendance: "~2k (2025)",
       themes: ["DeFi on Sui (DEX/lending)", "Stablecoins (FDUSD, suiUSDe)", "BTCfi (Babylon)", "Institutional adoption"],
-      speakers: "Evan Cheng, NAVI Protocol, Babylon Labs, Raoul Pal", raw: "conf_sui_basecamp26.json", note: "2026 edition unconfirmed; 2025 edition just before window." },
+      speakers: "Evan Cheng, NAVI Protocol, Babylon Labs, Raoul Pal", raw: "conf_sui_basecamp26.json", note: "2026 edition officially set for Oct 7–8 (Singapore, with TOKEN2049); 2025 edition just before window." },
     { key: "others_catchall", name: "Others (catch-all)", loc: "Global", dates: "Jun-2025 → Jun-2026", inWindow: true, attendance: "varies",
       themes: ["Consensus Toronto, ETHGlobal, DeFi Security Summit, regional Web3 weeks", "BTCFi", "DeFi Renaissance"],
       speakers: "Cross-event; see raw file", raw: "conf_others_catchall.json" }
   ]
 };
+
+/* ---- Source provenance + raw-file manifest (compiled 2026-06-16; see CORRECTIONS_AUDIT.md) ---- */
+window.DEFI_DATA.sourcesByRaw = {
+  "conf_avax_summit.json": [
+    {
+      "name": "Avalanchesummitlondon",
+      "url": "https://www.avalanchesummitlondon.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Intelligenthq",
+      "url": "https://www.intelligenthq.com/avalanche-london-summit-2025-a-gathering-of-blockchain-innovators-and-visionaries/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Chainwire",
+      "url": "https://chainwire.org/2025/03/12/avalanche-london-summit-first-speakers-announced/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Ainvest",
+      "url": "https://www.ainvest.com/news/avalanche-london-summit-2025-gather-1500-blockchain-leaders-2503/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_bbw_dappcon25.json": [
+    {
+      "name": "Cryptoevents",
+      "url": "https://cryptoevents.global/dappcon-25/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://events.coinpedia.org/dappcon-2025-6389/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Dappcon",
+      "url": "https://dappcon.io/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Icoholder",
+      "url": "https://icoholder.com/en/events/dappcon-berlin-2025-29269",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_breakpoint25.json": [
+    {
+      "name": "Solana",
+      "url": "https://solana.com/news/solana-breakpoint-2025",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Incrypted",
+      "url": "https://incrypted.com/en/solana-breakpoint-2025-key-announcements-and-speeches-from-day-one/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://coinpedia.org/news/jupiter-unveils-jupusd-stablecoin-and-major-defi-upgrades-at-solana-breakpoint-2025/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/web3/2025/10/08/solana-s-jupiter-to-develop-jupusd-stablecoin-with-backing-from-ethena-labs",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_cardano_summit25.json": [
+    {
+      "name": "Cardanofoundation",
+      "url": "https://cardanofoundation.org/blog/cardano-summit-2025-berlin",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20251117496852/en/Cardano-Summit-2025-Concludes-In-Berlin-Trust-Emerges-As-The-Winner-with-Traditional-Financial-Firms-Feeling-Blockchain-FOMO",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Crypto-reporter",
+      "url": "https://www.crypto-reporter.com/press-releases/cardano-summit-day-two-recap-trust-and-digital-identity-to-drive-blockchain-towards-enterprise-adoption-116717/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cardano",
+      "url": "https://summit.cardano.org/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_consensus.json": [
+    {
+      "name": "CoinDesk",
+      "url": "https://consensus.coindesk.com/agenda-at-a-glance/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/blog/consensus-Miami-2026",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cryptotimes",
+      "url": "https://www.cryptotimes.io/2026/05/02/20000-expected-in-miami-the-wall-street-crypto-convergence-at-consensus-2026/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Theblockverse",
+      "url": "https://www.theblockverse.co/consensus-miami/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_cosmoverse25.json": [
+    {
+      "name": "Cryptonomist",
+      "url": "https://en.cryptonomist.ch/2025/12/06/cosmoverse-2025-web3-conferences/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/cosmoverse-2025-split-croatia/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://events.coinpedia.org/cosmoverse-balkans-2025-7095/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cosmoverse",
+      "url": "https://www.cosmoverse.org/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_das.json": [
+    {
+      "name": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20260304059961/en/US-SEC-Chairman-to-Headline-Blockworks-Digital-Asset-Summit-New-York",
+      "asOf": "2026-03-04"
+    },
+    {
+      "name": "Blockworks",
+      "url": "https://blockworks.com/event/digital-asset-summit-nyc-2026",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "SEC",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-remarks-digital-asset-summit-032426",
+      "asOf": "2026-03-24"
+    },
+    {
+      "name": "Natlawreview",
+      "url": "https://natlawreview.com/press-releases/us-sec-chairman-headline-blockworks-digital-asset-summit-new-york",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_devconnect_ba.json": [
+    {
+      "name": "Devconnect",
+      "url": "https://devconnect.org/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Ethereum",
+      "url": "https://blog.ethereum.org/en/2025/03/05/devconnect-2025",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Luma",
+      "url": "https://luma.com/lklh3u0v",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Fortune",
+      "url": "https://fortune.com/2025/11/17/aave-app-stani-kulechov-defi-lending-borrowing-protocol/",
+      "asOf": "2025-11-17"
+    }
+  ],
+  "conf_ethcc8.json": [
+    {
+      "name": "EthCC",
+      "url": "https://ethcc.io/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Palaisdesfestivals",
+      "url": "https://en.palaisdesfestivals.com/press-area/press-releases/the-ethereum-community-conference-chooses-cannes-for-its-8th-edition-from-30-june-to-3-july-2025/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Mexc",
+      "url": "https://www.mexc.com/learn/article/ethcc-cannes-everything-you-need-to-know-about-the-ethereum-conference/1",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Aicoin",
+      "url": "https://www.aicoin.com/en/article/473355",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_ethdenver26.json": [
+    {
+      "name": "ETHDenver",
+      "url": "https://ethdenver.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Nationalwesterncenter",
+      "url": "https://nationalwesterncenter.com/event/ethdenver-2026/2026-02-21/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://events.coinpedia.org/ethdenver-2026-7876/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Blockchainreporter",
+      "url": "https://blockchainreporter.net/eth-denver/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_hkw3_26.json": [
+    {
+      "name": "GlobeNewswire",
+      "url": "https://www.globenewswire.com/news-release/2026/04/13/3272776/0/en/Hong-Kong-Web3-Festival-Unveils-2026-Full-Schedule-4-Days-of-Insight-Driven-Forums-with-Vitalik-Yi-He-Justin-Sun-Lily-Liu-and-More.html",
+      "asOf": "2026-04-13"
+    },
+    {
+      "name": "Web3festival",
+      "url": "https://www.web3festival.org/hongkong2026/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Mexc",
+      "url": "https://www.mexc.com/news/1022836",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Milantribune",
+      "url": "https://milantribune.com/hong-kong-web3-festival-2026-concludes-a-resounding-success-for-global-web3-collaboration/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_kbw25.json": [
+    {
+      "name": "Korea Blockchain Week",
+      "url": "https://koreablockchainweek.com/blogs/blog/korea-blockchain-week-2025-returns-to-seoul-in-september",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/kbw-2025-presents-convergence-of-washington-policymakers-institutions-and-aicrypto-innovation-in-seoul-302543041.html",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/news/flash/korea-blockchain-week-2025-attracts-12-000-attendees-and-300-speakers-sets-new-collaboration-benchmarks",
+      "asOf": "2025-09"
+    },
+    {
+      "name": "Lksbrothers",
+      "url": "https://www.lksbrothers.com/post/highlights-from-korea-blockchain-week-2025-decentralization-innovation-and-unexpected-standouts",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_mainnet25.json": [
+    {
+      "name": "Messari",
+      "url": "https://events.messari.io/mainnet2025 (official Mainnet 2025 event site; not retrievable / 404 at time of research)",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Luma",
+      "url": "https://luma.com/mainnet (Mainnet calendar: New York City, Sept 30 – Oct 2; host @messaricrypto)",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Silicon",
+      "url": "https://silicon.nyc/mainnet-an-immersive-trend-setting-crypto-summit-in-nyc-sept-21-23/ (NYC summit, dates header 'Sept 30 - Oct 2nd')",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Pier36nyc",
+      "url": "https://pier36nyc.com/private-events/messari-mainnet/ (venue: Pier 36 NYC hosts Messari Mainnet)",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_money2020_25.json": [
+    {
+      "name": "Money20/20",
+      "url": "https://us.money2020.com/media/newsroom/pr-10-30-2025-money2020-usa-closes",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Western Union",
+      "url": "https://ir.westernunion.com/news/archived-press-releases/press-release-details/2025/Western-Union-Announces-USDPT-Stablecoin-on-Solana-and-Digital-Asset-Network/default.aspx",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20251030444503/en/Money2020-USA-2025-Closes-With-a-Future-Ready-Fintech-Ecosystem-AI-Stablecoins-and-Infrastructure-Take-the-Lead",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Biztechmagazine",
+      "url": "https://biztechmagazine.com/article/2025/10/money2020-2025-increasing-use-stablecoins-shows-no-sign-slowing-down",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_others_catchall.json": [
+    {
+      "name": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20250603416817/en/Blockworks-Permissionless-IV-to-Unite-DeFis-Top-Developers-and-Builders-in-Brooklyn",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/consensus-2025-wraps-in-toronto-with-eric-trump-302458221.html",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "BeInCrypto",
+      "url": "https://beincrypto.com/token2049-singapore-2025-sells-out/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Blockworks",
+      "url": "https://blockworks.com/event/permissionless",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_pbw26.json": [
+    {
+      "name": "Paris Blockchain Week",
+      "url": "https://www.parisblockchainweek.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Chainwire",
+      "url": "https://chainwire.org/2026/03/03/paris-blockchain-week-2026-returns-to-bridge-institutions-and-digital-assets/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/blog/Paris-blockchain-week-2026",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cointribune",
+      "url": "https://www.cointribune.com/en/macron-at-paris-blockchain-week-2026-a-historic-first-in-the-world-of-digital-assets/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_permissionless.json": [
+    {
+      "name": "Blockworks",
+      "url": "https://blockworks.com/event/permissionless",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Business Wire",
+      "url": "https://www.businesswire.com/news/home/20250603416817/en/Blockworks-Permissionless-IV-to-Unite-DeFis-Top-Developers-and-Builders-in-Brooklyn",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "OurCryptoTalk",
+      "url": "https://ourcryptotalk.com/news/permissionless-iv-in-brooklyn",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "cryptoevents.global",
+      "url": "https://cryptoevents.global/permissionless-iv-brooklyn/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_smartcon25.json": [
+    {
+      "name": "Chainlinktoday",
+      "url": "https://chainlinktoday.com/chainlink-previews-smartcon-2025-agenda/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Vendelux",
+      "url": "https://vendelux.com/insights/smartcon-2025-attendee-list/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Panewslab",
+      "url": "https://www.panewslab.com/en/articles/60f6ab14-ff2d-47e3-9342-c46b5672fe3a",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Phemex",
+      "url": "https://phemex.com/news/article/chainlink-smartcon-2025-to-explore-tradfi-and-defi-convergence-in-nyc-32437",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_stablecon25.json": [
+    {
+      "name": "Stablecon",
+      "url": "https://stablecon.com/faq/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://events.coinpedia.org/stablecon-amesterdam-2026-7840/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Gdf",
+      "url": "https://www.gdf.io/events/stablecon/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Arkrepublic",
+      "url": "https://www.arkrepublic.com/2026/05/27/a-seat-at-stablecon/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_sui_basecamp26.json": [
+    {
+      "name": "Sui",
+      "url": "https://blog.sui.io/sui-basecamp-2025-lands-in-dubai/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Chainwire",
+      "url": "https://chainwire.org/2025/03/28/sui-basecamp-2025-lands-in-dubai-with-hands-on-access-to-suiplay0x1-and-other-unveils/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Financemagnates",
+      "url": "https://www.financemagnates.com/thought-leadership/sui-reveals-initial-wave-of-speakers-famed-venue-for-first-annual-basecamp-event/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cryptoevents",
+      "url": "https://cryptoevents.global/sui-basecamp-2025-dubai/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_t2049_dubai.json": [
+    {
+      "name": "TOKEN2049",
+      "url": "https://www.token2049.com/dubai/agenda",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinpedia",
+      "url": "https://events.coinpedia.org/token2049-dubai-2026-7329/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Tiger-research",
+      "url": "https://reports.tiger-research.com/p/token2049-dubai-eng",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Odaily",
+      "url": "https://www.odaily.news/en/post/5203814",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "conf_t2049_sg.json": [
+    {
+      "name": "TOKEN2049",
+      "url": "https://www.token2049.com/singapore",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Drofa-ra",
+      "url": "https://www.drofa-ra.com/insider/token2049-singapore-2025-takeaways-stablecoins-tokenization-and-rwas",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Marinabaysands",
+      "url": "https://www.marinabaysands.com/expo-and-convention/gallery/event-highlights/2025/10/highlights-from-token2049-singapore-2025.html",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinrank",
+      "url": "https://www.coinrank.io/market/%E3%80%90token2049-singapore%E3%80%91rwas-bringing-global-markets-on-chain/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_aggregators_frontends.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/dex-aggregators",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/397278/ethereum-dex-aggregator-competitive-kyber-cowswap-gain",
+      "asOf": "2025-01"
+    },
+    {
+      "name": "Phemex",
+      "url": "https://phemex.com/news/article/kyber-and-cowswap-gain-ground-in-ethereum-dex-aggregator-market-73616",
+      "asOf": "2026-04-15"
+    },
+    {
+      "name": "Solana",
+      "url": "https://solanafloor.com/news/jupiter-reclaims-dominance-with-93-6-market-share-in-solana-s-aggregator-landscape",
+      "asOf": "2025-11"
+    }
+  ],
+  "map_bridges_interop.json": [
+    {
+      "name": "Openpr",
+      "url": "https://www.openpr.com/news/4548823/chainlink-link-ccip-volume-jumps-1-972-to-18-billion-while",
+      "asOf": "2026-03"
+    },
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/bridges",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "eco.com",
+      "url": "https://eco.com/support/en/articles/11802670-best-cross-chain-intent-protocols-2026-how-intents-are-replacing-bridges",
+      "asOf": "2026-04"
+    },
+    {
+      "name": "Stablecoininsider",
+      "url": "https://www.stablecoininsider.com/layerzero/",
+      "asOf": "2026-04-01"
+    }
+  ],
+  "map_cdp_synth.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://stablecoins.llama.fi/stablecoins",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/313235/makerdao-mkr-sky-dai-stablecoin-usds",
+      "asOf": "2024-09"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/magic-internet-money-token-depegs-as-terra-luna-domino-effect-persists",
+      "asOf": "2025-04"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/en/coins/frankencoin",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_dex.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/dexs",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/cex-dex-trading-activity-report-2026",
+      "asOf": "2026-01 / 2026-04"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/data/decentralized-finance/dex-non-custodial/dex-to-cex-spot-trade-volume",
+      "asOf": "2025-11"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2025/11/13/leading-base-dex-aerodrome-merges-into-aero-in-major-overhaul",
+      "asOf": "2025-11-13"
+    }
+  ],
+  "map_lending.json": [
+    {
+      "name": "eco.com",
+      "url": "https://eco.com/support/en/articles/14800882-best-defi-lending-protocols-2026-tvl-rates-risk",
+      "asOf": "2026-04"
+    },
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocol/morpho",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/euler-finance-tvl-rises-38x-in-3-months",
+      "asOf": "2026-04 (headline)"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2025/03/14/euler-looks-to-build-on-v2-s-defi-lending-comeback-story",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_perps_derivs.json": [
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-report-2026",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/perps",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Yellow",
+      "url": "https://yellow.com/research/hyperliquid-perp-volume-dominance-how-2026",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_rwa.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/RWA",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cryptopolitan",
+      "url": "https://www.cryptopolitan.com/rwa-displace-dex-defi-tvl-rankings/",
+      "asOf": "2025-12"
+    },
+    {
+      "name": "Coincentral",
+      "url": "https://coincentral.com/circle-usyc-overtakes-blackrock-buidl-as-largest-tokenized-treasury-fund/",
+      "asOf": "2026-03-14"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/03/13/circle-overtakes-blackrock-in-tokenized-treasuries-as-market-hits-record-usd11-billion",
+      "asOf": "2026-03-13"
+    }
+  ],
+  "map_stablecoins.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/stablecoins",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Fool",
+      "url": "https://www.fool.com/research/largest-stablecoins/",
+      "asOf": "2026-06"
+    },
+    {
+      "name": "CoinLaw",
+      "url": "https://coinlaw.io/aave-statistics/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/en/coins/crvusd",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_staking_restaking.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocol/lido",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Datawallet",
+      "url": "https://www.datawallet.com/crypto/ethereum-staking-statistics-and-trends",
+      "asOf": "2026-01-06"
+    },
+    {
+      "name": "CCN",
+      "url": "https://www.ccn.com/analysis/crypto/lido-loses-ground-staked-eth-market-share-falls/",
+      "asOf": "2026-03"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "map_yield.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/yield",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2025/08/09/pendle-s-tvl-hits-record-usd8-3b-after-yield-trading-platform-debut",
+      "asOf": "2026-06-09"
+    },
+    {
+      "name": "Crypto News Navigator",
+      "url": "https://www.cryptonewsnavigator.com/academy/article/morpho-tvl-institutional-distribution-thesis",
+      "asOf": "2026-05"
+    },
+    {
+      "name": "Phemex",
+      "url": "https://phemex.com/news/article/pendles-tvl-soars-to-58-billion-in-2025-up-79-yearonyear-42499",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "narrative_regulation.json": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/policy/2024/05/21/uniswap-labs-urges-sec-to-drop-pending-enforcement-action-in-wells-response",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "SEC",
+      "url": "https://www.sec.gov/newsroom/speeches-statements/atkins-digital-finance-revolution-073125",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Mayerbrown",
+      "url": "https://www.mayerbrown.com/en/insights/publications/2024/05/sec-approves-listings-of-spot-ether-etfs-waiting-is-the-hardest-part",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Thestreet",
+      "url": "https://www.thestreet.com/fed/fed-rate-hikes-2022-2023-timeline-discussion",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "narrative_timeline.json": [
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2020/10/20/with-comp-below-100-a-look-back-at-the-defi-summer-it-sparked",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "RWA.xyz",
+      "url": "https://app.rwa.xyz/treasuries",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinMarketCap",
+      "url": "https://coinmarketcap.com/academy/article/deep-dive-into-the-astronomic-growth-of-yearn-finance-yfi",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/256106/a-complete-timeline-of-ftx-from-alamedas-spiraling-debt-to-its-dramatic-implosion",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_bridges.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/Bridge",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/tech/2022/03/29/axie-infinitys-ronin-network-suffers-625m-exploit",
+      "asOf": "2025-08-21"
+    },
+    {
+      "name": "Chainalysis",
+      "url": "https://www.chainalysis.com/blog/poly-network-hack-august-2021/",
+      "asOf": "2022-08-04"
+    },
+    {
+      "name": "Yellow",
+      "url": "https://yellow.com/research/cross-chain-bridge-exploits-security-risks-2026",
+      "asOf": "2026-06"
+    }
+  ],
+  "quant_developers.json": [
+    {
+      "name": "PR Newswire",
+      "url": "https://www.prnewswire.com/news-releases/electric-capital-releases-2022-crypto-developer-report-301723401.html",
+      "asOf": "2022-06-16"
+    },
+    {
+      "name": "Chaincatcher",
+      "url": "https://www.chaincatcher.com/en/article/2156880",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Yahoo Finance",
+      "url": "https://finance.yahoo.com/news/ethereum-leads-16-000-developers-054251913.html",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Electric Capital 2024",
+      "url": "https://www.chaincatcher.com/en/article/2156880",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_dex_volume.json": [
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/2025-annual-crypto-report",
+      "asOf": "2026-01"
+    },
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/dexs",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Observers",
+      "url": "https://www.observers.com/defi/raydium-trading-volume-hits-124-6b-on-solana-outpaces-uniswap-again/",
+      "asOf": "2024-11-30"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/linked/148465/dex-protocol-uniswap-hits-1-trillion-cumulative-trading-volume",
+      "asOf": "2025-11-30"
+    }
+  ],
+  "quant_fees_revenue.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/fees",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2025/10/30/1kx-onchain-economy-hits-usd20b-as-fees-signal-real-demand",
+      "asOf": "2025-10-30"
+    },
+    {
+      "name": "1kx",
+      "url": "https://1kx.capital/writing/2025-onchain-revenue-report ; https://www.coingecko.com/research/publications/blockchain-fee-earnings",
+      "asOf": "2025-10-30"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/blockchain-fee-earnings",
+      "asOf": "2026-04-20"
+    }
+  ],
+  "quant_hacks.json": [
+    {
+      "name": "Chainalysis",
+      "url": "https://www.chainalysis.com/blog/crypto-hacking-stolen-funds-2026/",
+      "asOf": "2025-12"
+    },
+    {
+      "name": "CertiK",
+      "url": "https://www.certik.com/blog/hack3d-the-web3-security-report-2025",
+      "asOf": "2026-01"
+    },
+    {
+      "name": "DefiLlama",
+      "url": "https://bitcoinfoundation.org/news/defi/defillama-q1-crypto-hacks/",
+      "asOf": "2026-06"
+    },
+    {
+      "name": "Cryptonews",
+      "url": "https://cryptonews.com/news/crypto-industry-lost-1-49b-to-hacks-and-fraud-in-2024-a-17-decline-yoy-immunefi/",
+      "asOf": "2025-01"
+    }
+  ],
+  "quant_lending.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "eco.com",
+      "url": "https://eco.com/support/en/articles/15254000-best-defi-lending-protocols-2026-tvl-rates-risk-compared ; https://eco.com/support/en/articles/14800882-best-defi-lending-protocols-2026-tvl-rates-risk",
+      "asOf": "2026-05"
+    },
+    {
+      "name": "FXStreet",
+      "url": "https://www.fxstreet.com/amp/cryptocurrencies/news/defi-is-waking-up-again-active-loans-return-to-2022-levels-202408011033",
+      "asOf": "2024-08"
+    },
+    {
+      "name": "Phemex News",
+      "url": "https://phemex.com/news/article/morpho-tvl-reaches-1178b-secures-second-place-in-defi-lending-80656",
+      "asOf": "2026-05"
+    }
+  ],
+  "quant_liquid_staking.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/Liquid%20Staking",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption",
+      "asOf": "2025-08-14"
+    },
+    {
+      "name": "beaconcha.in",
+      "url": "https://beaconcha.in/charts/staked_ether",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Everstake",
+      "url": "https://everstake.one/resources/crypto-reports/ethereum-staking-insights-protocol-analysis-annual-2025",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_perps.json": [
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/research/publications/state-of-crypto-perpetuals-2024",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/perpetuals-dex-volume-2025-onchain-derivatives-growth",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/360239/hyperliquid-volume-revenue",
+      "asOf": "2022-2024"
+    },
+    {
+      "name": "Yellow",
+      "url": "https://yellow.com/news/hyperliquid-perpetual-dex-volume-share",
+      "asOf": "2024-2026"
+    }
+  ],
+  "quant_restaking.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/Liquid%20restaking",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time",
+      "asOf": "2024-06"
+    },
+    {
+      "name": "Phemex News",
+      "url": "https://phemex.com/news/article/eigenlayer-tvl-hits-record-22-billion-in-august-17380",
+      "asOf": "2025-08"
+    },
+    {
+      "name": "Messari",
+      "url": "https://x.com/MessariCrypto/status/1968773679472374028",
+      "asOf": "2025-08"
+    }
+  ],
+  "quant_rwa.json": [
+    {
+      "name": "RWA.xyz",
+      "url": "https://app.rwa.xyz/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2026/03/08/tokenized-assets-exceed-usd25-billion-after-nearly-quadrupling-in-a-year",
+      "asOf": "2026-03-08"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/private-credit-leads-rwa-tokenization-boom-report",
+      "asOf": "2025-12"
+    },
+    {
+      "name": "Cointelegraph",
+      "url": "https://cointelegraph.com/news/tokenized-us-treasuries-845-market-cap-2023-coingecko",
+      "asOf": "2024-03"
+    }
+  ],
+  "quant_stablecoins.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://stablecoins.llama.fi/stablecoincharts/all",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinMarketCap",
+      "url": "https://coinmarketcap.com/view/stablecoin/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinGecko",
+      "url": "https://www.coingecko.com/en/categories/stablecoins",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Visual Capitalist",
+      "url": "https://www.visualcapitalist.com/charted-stablecoins-are-now-bigger-than-visa-or-mastercard/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_total_tvl.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/business/2025/09/18/defi-tvl-rebounds-to-usd170b-erasing-terra-era-bear-market-losses",
+      "asOf": "2025-09-18"
+    },
+    {
+      "name": "KuCoin",
+      "url": "https://www.kucoin.com/news/flash/defi-tvl-drops-to-72-5b-amid-stablecoin-growth-and-security-concerns",
+      "asOf": "2026-06-14"
+    },
+    {
+      "name": "AMBCrypto",
+      "url": "https://ambcrypto.com/defi-tvl-sinks-despite-315b-in-stablecoins-heres-why/",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_tvl_by_category.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/categories",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "RWA.xyz",
+      "url": "https://app.rwa.xyz/networks",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Defiant",
+      "url": "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "The Block",
+      "url": "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_tvl_by_chain.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Portals.fi",
+      "url": "https://blog.portals.fi/defi-tvl-may-12-2026-weekly-movers-market-data/",
+      "asOf": "2026-05-12"
+    },
+    {
+      "name": "Bitcoin.com",
+      "url": "https://news.bitcoin.com/ethereums-defi-tvl-dominance-drops-to-53-approaching-multi-year-low/",
+      "asOf": "2026-05"
+    },
+    {
+      "name": "Mexc",
+      "url": "https://www.mexc.com/news/1079996",
+      "asOf": "2026-05-07"
+    }
+  ],
+  "quant_users.json": [
+    {
+      "name": "a16z",
+      "url": "https://a16zcrypto.com/posts/article/state-of-crypto-report-2024/",
+      "asOf": "2025-10"
+    },
+    {
+      "name": "Dune Analytics",
+      "url": "https://dune.com/rchen8/defi-users-over-time",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Crypto Briefing",
+      "url": "https://cryptobriefing.com/defi-million-users-ethereum-surging/",
+      "asOf": "2021-07-13"
+    },
+    {
+      "name": "CryptoRank",
+      "url": "https://cryptorank.io/insights/reports/crypto-market-recap-q-3-2025",
+      "asOf": "2026-06-16"
+    }
+  ],
+  "quant_yield.json": [
+    {
+      "name": "DefiLlama",
+      "url": "https://defillama.com/protocols/yield",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "CoinDesk",
+      "url": "https://www.coindesk.com/markets/2025/08/09/pendle-s-tvl-hits-record-usd8-3b-after-yield-trading-platform-debut",
+      "asOf": "2026-06 (mid)"
+    },
+    {
+      "name": "FalconX newsroom",
+      "url": "https://www.falconx.io/newsroom/pendle-one-venue-all-of-fixed-income",
+      "asOf": "2026-06-16"
+    },
+    {
+      "name": "Coinfomania",
+      "url": "https://coinfomania.com/morpho-surpasses-10b-in-deposits-with-6-7b-tvl-across-chains/",
+      "asOf": "2025-08-22"
+    }
+  ]
+};
+
+window.DEFI_DATA.sourceProviders = [
+  {
+    "name": "DefiLlama",
+    "url": "https://defillama.com/dex-aggregators",
+    "files": 24
+  },
+  {
+    "name": "CoinDesk",
+    "url": "https://www.coindesk.com/web3/2025/10/08/solana-s-jupiter-to-develop-jupusd-stablecoin-with-backing-from-ethena-labs",
+    "files": 23
+  },
+  {
+    "name": "The Block",
+    "url": "https://www.theblock.co/post/397278/ethereum-dex-aggregator-competitive-kyber-cowswap-gain",
+    "files": 17
+  },
+  {
+    "name": "CoinGecko",
+    "url": "https://www.coingecko.com/en/coins/wormhole",
+    "files": 12
+  },
+  {
+    "name": "Cointelegraph",
+    "url": "https://cointelegraph.com/explained/vitalik-s-take-on-decentralized-stablecoins-what-it-means-for-defi",
+    "files": 10
+  },
+  {
+    "name": "KuCoin",
+    "url": "https://www.kucoin.com/blog/consensus-Miami-2026",
+    "files": 10
+  },
+  {
+    "name": "The Defiant",
+    "url": "https://thedefiant.io/newsletter/defi-daily/robinhoods-cannes-token-festival",
+    "files": 10
+  },
+  {
+    "name": "CoinMarketCap",
+    "url": "https://coinmarketcap.com/currencies/wormhole/",
+    "files": 9
+  },
+  {
+    "name": "Coinpedia",
+    "url": "https://events.coinpedia.org/dappcon-2025-6389/",
+    "files": 9
+  },
+  {
+    "name": "Yellow",
+    "url": "https://yellow.com/research/jupiter-solana-dex-aggregator-market-cap-2026",
+    "files": 9
+  },
+  {
+    "name": "Messari",
+    "url": "https://events.messari.io/mainnet2025 (official Mainnet 2025 event site; not retrievable / 404 at time of research)",
+    "files": 8
+  },
+  {
+    "name": "Phemex",
+    "url": "https://phemex.com/news/article/chainlink-smartcon-2025-to-explore-tradfi-and-defi-convergence-in-nyc-32437",
+    "files": 8
+  },
+  {
+    "name": "Crypto Briefing",
+    "url": "https://cryptobriefing.com/hong-kong-web3-festival-unveils-2026-full-schedule-4-days-of-insight-driven-forums-with-vitalik-yi-he-justin-sun-lily-liu-and-more-2/",
+    "files": 7
+  },
+  {
+    "name": "eco.com",
+    "url": "https://eco.com/support/en/articles/11802670-best-cross-chain-intent-protocols-2026-how-intents-are-replacing-bridges",
+    "files": 7
+  },
+  {
+    "name": "PR Newswire",
+    "url": "https://www.prnewswire.com/news-releases/coindesk-unveils-consensus-hong-kong-2025-302083599.html",
+    "files": 7
+  },
+  {
+    "name": "Ainvest",
+    "url": "https://www.ainvest.com/news/avalanche-london-summit-2025-gather-1500-blockchain-leaders-2503/",
+    "files": 6
+  },
+  {
+    "name": "BeInCrypto",
+    "url": "https://beincrypto.com/consensus-miami-2026-speaker-lineup/",
+    "files": 6
+  },
+  {
+    "name": "Blockworks",
+    "url": "https://blockworks.com/event/digital-asset-summit-nyc-2026",
+    "files": 6
+  },
+  {
+    "name": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/news/cardano-summit-2025-concludes-berlin-132300666.html",
+    "files": 6
+  },
+  {
+    "name": "Bitcoin.com",
+    "url": "https://news.bitcoin.com/tron-network-integrated-into-hyperlane-expanding-interoperability-to-over-150-chains/",
+    "files": 5
+  },
+  {
+    "name": "Business Wire",
+    "url": "https://www.businesswire.com/news/home/20251117496852/en/Cardano-Summit-2025-Concludes-In-Berlin-Trust-Emerges-As-The-Winner-with-Traditional-Financial-Firms-Feeling-Blockchain-FOMO",
+    "files": 5
+  },
+  {
+    "name": "Chainwire",
+    "url": "https://chainwire.org/2025/03/12/avalanche-london-summit-first-speakers-announced/",
+    "files": 5
+  },
+  {
+    "name": "Cryptoevents",
+    "url": "https://cryptoevents.global/topic/avalanche-summit/",
+    "files": 5
+  },
+  {
+    "name": "Mexc",
+    "url": "https://www.mexc.com/learn/article/ethcc-cannes-everything-you-need-to-know-about-the-ethereum-conference/1",
+    "files": 5
+  },
+  {
+    "name": "Solana",
+    "url": "https://solana.com/news/solana-breakpoint-2025",
+    "files": 5
+  },
+  {
+    "name": "Chainalysis",
+    "url": "https://www.chainalysis.com/blog/wormhole-hack-february-2022/",
+    "files": 4
+  },
+  {
+    "name": "Cryptonomist",
+    "url": "https://en.cryptonomist.ch/2025/12/06/cosmoverse-2025-web3-conferences/",
+    "files": 4
+  },
+  {
+    "name": "CryptoPotato",
+    "url": "https://cryptopotato.com/solana-lending-tvl-soars-to-3-6b-as-new-protocols-battle-for-market-dominance/",
+    "files": 4
+  },
+  {
+    "name": "Cryptoslate",
+    "url": "https://cryptoslate.com/data-shows-how-aave-overtook-compound-in-defi-lending/",
+    "files": 4
+  },
+  {
+    "name": "Luma",
+    "url": "https://luma.com/bbw2025",
+    "files": 4
+  },
+  {
+    "name": "Blockeden",
+    "url": "https://blockeden.xyz/blog/2026/01/12/chainlink-ccip-cross-chain-interoperability-tradfi-bridge/",
+    "files": 3
+  },
+  {
+    "name": "Coinfomania",
+    "url": "https://coinfomania.com/morpho-surpasses-10b-in-deposits-with-6-7b-tvl-across-chains/",
+    "files": 3
+  },
+  {
+    "name": "CoinLaw",
+    "url": "https://coinlaw.io/aave-statistics/",
+    "files": 3
+  },
+  {
+    "name": "Coinspeaker",
+    "url": "https://www.coinspeaker.com/events/korea-blockchain-week-2025/",
+    "files": 3
+  },
+  {
+    "name": "Cryptonews",
+    "url": "https://cryptonews.net/news/ethereum/32514342/",
+    "files": 3
+  },
+  {
+    "name": "CryptoNewsNavigator",
+    "url": "https://www.cryptonewsnavigator.com/academy/article/three-scenarios-for-axelar-as-cross-chain-demand-explodes",
+    "files": 3
+  },
+  {
+    "name": "Cryptotimes",
+    "url": "https://www.cryptotimes.io/2026/05/02/20000-expected-in-miami-the-wall-street-crypto-convergence-at-consensus-2026/",
+    "files": 3
+  },
+  {
+    "name": "Datawallet",
+    "url": "https://www.datawallet.com/crypto/stablecoin-statistics",
+    "files": 3
+  },
+  {
+    "name": "Elliptic",
+    "url": "https://www.elliptic.co/blog/drift-protocol-exploited-for-286-million-in-suspected-dprk-linked-attack",
+    "files": 3
+  },
+  {
+    "name": "FXStreet",
+    "url": "https://www.fxstreet.com/cryptocurrencies/news/anchorage-digital-kamino-finance-solana-company-team-up-to-strengthen-institutional-borrowing-with-sol-202602132226",
+    "files": 3
+  }
+];
+
+window.DEFI_DATA.rawFiles = [
+  {
+    "file": "quant_bridges.json",
+    "group": "quant",
+    "title": "Cross-chain bridges over time",
+    "desc": "Cross-chain bridges scaled from near-zero in early 2020 to a peak of well over $50B in locked value during the 2021-Q1 2022 bull market, dominated by Multichain (peak ~$10.5B Ja.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_developers.json",
+    "group": "quant",
+    "title": "Developer activity for DeFi & chains over time",
+    "desc": "Authoritative time-series of crypto/Web3 developer activity, primarily from the Electric Capital Developer Report (the industry-standard open-source dev tracker, analyzing 900M+.",
+    "asOf": "2022-06-16"
+  },
+  {
+    "file": "quant_dex_volume.json",
+    "group": "quant",
+    "title": "DEX trading volume over time",
+    "desc": "Decentralized exchange (DEX) spot trading volume has grown from roughly $115B in 2020 and ~$1T in 2021 to a record ~$4.9 trillion in 2025, with 2024 (~$1.5T) up 138% over 2023 (.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_fees_revenue.json",
+    "group": "quant",
+    "title": "DeFi fees & revenue over time",
+    "desc": "Aggregate DeFi fees (total fees paid by users, equivalent to gross revenue) and protocol revenue (the subset retained by protocols/token holders) have grown roughly 100x since 2020.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_hacks.json",
+    "group": "quant",
+    "title": "DeFi hacks & exploit losses over time (2020-2026)",
+    "desc": "Crypto/DeFi theft losses grew explosively from ~$0.5B in 2020 to a then-record ~$3.8B in 2022 (Chainalysis, all crypto sectors).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_lending.json",
+    "group": "quant",
+    "title": "DeFi lending markets over time",
+    "desc": "Historical and current quantitative data for the major DeFi lending/borrowing protocols, sourced primarily from the DefiLlama API (per-protocol historical TVL and 'borrowed' ser.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_liquid_staking.json",
+    "group": "quant",
+    "title": "Liquid staking over time",
+    "desc": "Liquid staking grew from near-zero in 2020 into the single largest DeFi category.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_perps.json",
+    "group": "quant",
+    "title": "Perpetuals & derivatives DEX volume over time",
+    "desc": "On-chain perpetual/derivatives DEX trading volume has grown from a near-rounding-error share of crypto derivatives in 2020-2021 into a multi-trillion-dollar annual market.",
+    "asOf": "2024-2026"
+  },
+  {
+    "file": "quant_restaking.json",
+    "group": "quant",
+    "title": "Restaking over time",
+    "desc": "Restaking lets staked ETH (and other assets) be re-pledged to secure additional services, pioneered by EigenLayer (mainnet 2023, deposits opened broadly in 2024).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_rwa.json",
+    "group": "quant",
+    "title": "Real-world assets (RWA) on-chain over time",
+    "desc": "Tokenized real-world assets (RWA) on-chain — excluding fiat stablecoins — grew from roughly $5B in 2022 to about $15.2B at end-2024, ~$20B at end-2025, ~$25B by March 2026, and .",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_stablecoins.json",
+    "group": "quant",
+    "title": "Stablecoin supply over time",
+    "desc": "Stablecoin total supply (circulating market cap) grew from roughly $4B at end-2019 to an all-time high of ~$321B in May 2026, per DefiLlama.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_total_tvl.json",
+    "group": "quant",
+    "title": "Total DeFi TVL over time",
+    "desc": "Total Value Locked (TVL) across all of DeFi grew from effectively zero in 2018-2019 (~$0.6B end-2019) to ~$15B at the end of 2020 during 'DeFi Summer', then exploded to an all-t.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_tvl_by_category.json",
+    "group": "quant",
+    "title": "DeFi TVL by category over time",
+    "desc": "Total Value Locked (TVL) in DeFi grew from under ~$1B at the start of 2020 to a first all-time high of ~$177.5B on 2021-11-09 (DefiLlama 'headline' DeFi TVL, which excludes liqu.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_tvl_by_chain.json",
+    "group": "quant",
+    "title": "DeFi TVL by blockchain over time",
+    "desc": "Total DeFi Total Value Locked (TVL) grew from ~$15B at end-2020 to an all-time high of ~$177B on 9 Nov 2021, then collapsed to ~$38B by end-2022 during the bear market (Terra/Lu.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_users.json",
+    "group": "quant",
+    "title": "DeFi users / active addresses over time (2020 to 2026)",
+    "desc": "DeFi participation, measured by cumulative unique wallet addresses, grew from roughly 1 million (Dec 2020) to over 330 million by mid-2026 according to Richard Chen's widely cit.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "quant_yield.json",
+    "group": "quant",
+    "title": "Yield products & aggregators over time",
+    "desc": "Historical and current TVL for the major DeFi yield aggregators and yield-trading protocols, sourced primarily from the DefiLlama protocol TVL API (as-of 2026-06-17).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_aggregators_frontends.json",
+    "group": "map",
+    "title": "Aggregators, intents & DeFi frontends — protocol map",
+    "desc": "As of mid-June 2026, the DEX-aggregator landscape is split by chain family rather than dominated by a single global leader.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_bridges_interop.json",
+    "group": "map",
+    "title": "Bridges & interoperability — protocol map",
+    "desc": "The cross-chain landscape has split into two layers: generalized messaging protocols (LayerZero, Wormhole, Chainlink CCIP, Axelar, Hyperlane) that secure and route arbitrary dat.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_cdp_synth.json",
+    "group": "map",
+    "title": "CDP & synthetics — protocol map",
+    "desc": "The CDP (collateralized-debt-position stablecoin) and synthetic-asset sector is overwhelmingly dominated by MakerDAO's successor, Sky.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_dex.json",
+    "group": "map",
+    "title": "Decentralized exchanges (DEX) — protocol map",
+    "desc": "Spot DEXs are a maturing, multi-chain market.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_lending.json",
+    "group": "map",
+    "title": "Lending & borrowing — protocol map",
+    "desc": "DeFi lending is a ~$40-54B deposit category (DefiLlama lending category, April 2026) dominated by Aave, which holds roughly 60-63% of active borrows (Token Terminal), about 36-4.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_perps_derivs.json",
+    "group": "map",
+    "title": "Perpetuals & derivatives — protocol map",
+    "desc": "On-chain perpetuals are the largest revenue-generating DeFi vertical and one of its most concentrated.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_rwa.json",
+    "group": "map",
+    "title": "RWA & tokenization — protocol map",
+    "desc": "As of June 2026 the on-chain RWA category sits around $17B+ TVL on DefiLlama (the sum of all 149 RWA-tagged protocols is ~$26B including tokenized gold), having overtaken DEXs t.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_stablecoins.json",
+    "group": "map",
+    "title": "Stablecoins (incl. yield-bearing) — protocol map",
+    "desc": "The total stablecoin market sits at roughly $315B-$321B in mid-2026, an all-time high (DefiLlama API top-line; the sector topped $321B in April 2026).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_staking_restaking.json",
+    "group": "map",
+    "title": "Liquid staking & restaking — protocol map",
+    "desc": "Liquid staking remains DeFi's largest single category, anchored by Lido (~$16.1B TVL per DefiLlama, mid-2026), which still dwarfs all rivals but has ceded share over time (peake.",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "map_yield.json",
+    "group": "map",
+    "title": "Yield, vaults & structured products — protocol map",
+    "desc": "As of mid-2026 the yield/vaults/structured-products landscape is led by a new generation of protocols built around yield tokenization and synthetic-dollar yield rather than the .",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "narrative_regulation.json",
+    "group": "narrative",
+    "title": "DeFi Regulation & Macro Milestones: A Chronological History (2022-2025)",
+    "desc": "DeFi Regulation & Macro Milestones: A Chronological History (2022-2025).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "narrative_timeline.json",
+    "group": "narrative",
+    "title": "DeFi Cycles & Key Events Timeline (2017-2026)",
+    "desc": "DeFi Cycles & Key Events Timeline (2017-2026).",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_avax_summit.json",
+    "group": "conf",
+    "title": "Avalanche Summit London 2025 — Hatfield House, Hatfield, England (just outside London), UK",
+    "desc": "May 20-22, 2025 (main summit). Associated events: Owl Explains Crypto Summit policy day May 22; Avalanche Hackathon May 23-25; Codebase incubator Demo Day May 29. · Over 1,500 in-person attendees (developers, founders, investors, former policymakers); the summit engaged 50+ EMEA partners across DeFi, institutional, and gaming. · themes: DeFi lending protocol architecture (Aave V4 unveiled in a fireside chat by Stani Kulechov), Institutional adoption of DeFi / institutional liquidity onchain, Scaling DeFi beyond billions in TVL (next-generation lending models)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_bbw_dappcon25.json",
+    "group": "conf",
+    "title": "DappCon (Berlin Blockchain Week) — Radialsystem, Holzmarktstrasse 33, 10243 Berlin, Germany (Friedrichshain-Kreuzberg)",
+    "desc": "June 16-18, 2025 · ~800-1,000+ builders/attendees, 80+ speakers, 15+ sessions (sources vary: Coinpedia cites 800+ attendees/80+ speakers; multiple listings cite 900+ builders; one Gnosis-ecosystem recap cites 1,000+ builders and 100+ speakers). Hosted/organized by Gnosis. · themes: DEX / AMM liquidity infrastructure and capital efficiency (Balancer V3 modular architecture, ReCLAMM concentrated liquidity), Lending protocol evolution and multi-protocol capital coordination (Aave V4), Protocol composability and liquidity routing across DeFi venues (Aave + Balancer + KPK)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_breakpoint25.json",
+    "group": "conf",
+    "title": "Solana Breakpoint — Etihad Arena, Yas Island, Abu Dhabi, UAE (first Breakpoint held in the Middle East)",
+    "desc": "December 11-13, 2025 · 7,000+ attendees from 100+ countries (sold out; ~1,800 founders present) — the largest Breakpoint to date · themes: Stablecoins (USDC dominance on Solana; new yield-bearing stablecoins JupUSD, Streamflow USD+, Abra USDAF), Institutional DeFi / TradFi convergence ('Everything Chain' / 'Revenue and Returns' framing), Real-world asset (RWA) tokenization (>$2B tokenized RWAs by end-2025; gold, uranium, equities, domains, sovereign reserves)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_cardano_summit25.json",
+    "group": "conf",
+    "title": "Cardano Summit 2025 — Gasometer Schöneberg, Berlin, Germany (Day Zero hackathon/pitch on 11 November at w3.hub Berlin)",
+    "desc": "12-13 November 2025 (Day Zero: 11 November 2025) · ~800 in-person attendees from 70+ countries, 140 speakers, and 25,000+ online participants · themes: Stablecoins for institutional finance (cross-border payments, payroll, treasury management, trading), DeFi liquidity expansion as a 2026 Cardano roadmap priority, Real-world asset (RWA) tokenization for enterprise adoption",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_consensus.json",
+    "group": "conf",
+    "title": "Consensus by CoinDesk — Miami Beach Convention Center, Miami Beach, Florida, USA",
+    "desc": "May 5-7, 2026 (Consensus Miami 2026). Companion in-window edition: Consensus Hong Kong 2026, February 10-12, 2026. · Marketed/expected at 20,000+ attendees from 100+ countries (some recaps cite a 15,000-20,000 range), including representatives from 200+ Fortune 500 companies. Program scale: 6 stages, 3-4 summits, 6 content tracks, 200+ sessions, and 500+ speakers. Institutional Summit (May 5) was application-only; previous editions cited participants representing roughly $4 trillion+ in AUM, with one recap estimating ~35% of attendees from institutional capital. Exact independently audited headcount not published. · themes: Stablecoins as core financial infrastructure - dedicated multi-day Stablecoin Track / 'Stablecoin University'; reserve management, yield-bearing stablecoin products, cross-border payments and remittances, regulatory uncertainty, competition with CBDCs, Real-world asset (RWA) tokenization - real estate, treasury bills, bonds, private equity, commodities; fractional ownership and near-instant 24/7 settlement; RWA market cited crossing ~$31B (ex-stablecoins); 'Internet Capital Markets' framing, Institutional DeFi / TradFi-DeFi convergence - JPMorgan (Kinexys), Morgan Stanley, DTCC, Fidelity, Mastercard, State Street as sponsors/speakers; old 'TradFi vs DeFi' framing largely absent",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_cosmoverse25.json",
+    "group": "conf",
+    "title": "Cosmoverse 2025 — Le Méridien Lav, Split, Croatia",
+    "desc": "October 30 - November 1, 2025 · Marketing pre-event materials cited 10,000+ attendees and 500+ speakers; post-event recaps describe 60+ curated sessions across ~10 tracks plus a 100-builder Hackmos x DoraHacks hackathon. Exact verified headcount not published in independent coverage. · themes: Stablecoins and institutional stablecoin infrastructure (Visa pilot for a stablecoin liquidity and funding model with global banks), CBDCs / Digital Euro and on-chain finance (ECB and Croatian National Bank; Cosmos Labs building two Latin American CBDCs), Real-world asset (RWA) tokenization across banking, gaming, government, and asset management",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_das.json",
+    "group": "conf",
+    "title": "Digital Asset Summit (DAS) by Blockworks — Javits Center North, 445 11th Ave, New York, NY (DAS NYC 2026). DAS London 2025 was at Old Billingsgate, London, UK.",
+    "desc": "March 24-26, 2026 (DAS NYC 2026). DAS London 2025: October 13-15, 2025. · DAS NYC 2026: reported as 2,500+ attendees from 35+ countries, 150+ speakers, 45 curated sessions, with $4.2t+ in AUM represented (third-party listing). Blockworks/press materials cite $3t+ in AUM represented at past DAS events. DAS London 2025: hundreds of institutions / large audience representing ~£1.2t+ in AUM (third-party listing). · themes: Onchain institutional finance and securities settlement (BlackRock, JPMorgan moving onchain to settle treasuries, equities, private credit and other securities), Real-world asset (RWA) tokenization of treasuries, equities, private credit and securities, Stablecoins and global payments infrastructure (institutional and consumer use cases)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_devconnect_ba.json",
+    "group": "conf",
+    "title": "Devconnect Argentina (The First Ethereum World's Fair) — La Rural, Palermo, Buenos Aires, Argentina",
+    "desc": "November 17-22, 2025 · 14,000+ attendees from 130+ countries (45% from Argentina; 53% first-time EF event attendees); 80+ exhibiting teams across 8 districts; 40+ events inside La Rural plus 500+ community-run side events across the city. (Pre-event organizer/press estimates ranged from 10,000-15,000.) · themes: Stablecoins as the breakout / front-end story of crypto (on-the-ground payments in BA, inflation hedge in Argentina ~19.8% crypto ownership), Argentine peso-pegged stablecoin wARS launched on Ethereum, Base and World Chain, Consumer-facing DeFi / bringing direct DeFi access to retail (Aave App launch)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_ethcc8.json",
+    "group": "conf",
+    "title": "EthCC (Ethereum Community Conference) — Palais des Festivals et des Congres, Cannes, France",
+    "desc": "June 30 - July 3, 2025 · ~6,400-6,500 accredited attendees at the main conference; ~10,000 total participants across EthCC Week including ~250-300 parallel/side events. 390-400+ speakers and 64-72 sponsors. · themes: Stablecoins as core financial infrastructure (payments, settlement, lending, cash management) with regulatory clarity (MiCA, US CLARITY/GENIUS context) driving institutional adoption, Institutional DeFi / 'onchain finance' - traditional banks and TradFi firms moving their own business on-chain (first-time official participation by Bloomberg, S&P Global, BNP Paribas, Euroclear, Amundi, Societe Generale-Forge, Tradeweb), Real-World Asset (RWA) tokenization moving from concept to implementation - tokenized treasuries, RWA-collateralized lending, tokenized stocks/ETFs (dedicated RWA Summit)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_ethdenver26.json",
+    "group": "conf",
+    "title": "ETHDenver — Denver, Colorado, USA — LVC at the National Western Center / Stockyards Event Center, 4850 National Western Dr, Denver, CO 80216",
+    "desc": "Main event Feb 18-21, 2026 (some sources cite Feb 17-21); BUIDLWeek + Camp BUIDL Feb 15-17; SporkDAO Community Mountain Retreat Feb 22-27 · Reported 25,000+ participants from 125+ countries (organizer/recap figures); however post-event coverage emphasized a notably smaller, more intimate event than prior years — side events dropped roughly 68-85% (from ~668 in 2025 to ~215 in 2026) and international attendance declined (Lunar New Year timing, industry cooling, competing events). · themes: Stablecoins as payment rails and cross-border infrastructure (legislation, GENIUS-style provisions, institutional adoption), Real-world assets (RWA) tokenization and RealFi, Institutional DeFi / institutional ETH and Wall Street + Main Street adoption (\"less degen, more boardroom\")",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_hkw3_26.json",
+    "group": "conf",
+    "title": "Hong Kong Web3 Festival — Hong Kong Convention and Exhibition Centre (HKCEC), Hong Kong",
+    "desc": "April 20-23, 2026 · 20,000+ attendees (200+ speakers, 100+ partners, 4 stages, 20+ sessions); billed as Asia's largest crypto event · themes: TradFi x crypto finance convergence / institutional adoption, Stablecoins and cross-border / Web3 payments, Real-World Assets (RWA) and compliant asset tokenization",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_kbw25.json",
+    "group": "conf",
+    "title": "Korea Blockchain Week 2025 (KBW2025: IMPACT) — Seoul, South Korea. Festival week spread across the city; flagship IMPACT conference held at Walkerhill Hotel & Resort (Vista Walkerhill / Grand Walkerhill), Gwangjin-gu, Seoul.",
+    "desc": "Festival week: September 22-28, 2025. Flagship IMPACT conference: September 23-24, 2025. · Approximately 12,000-13,000+ attendees and ~300 speakers across the IMPACT conference, with 80+ official side events across Seoul (some promotional sources cited up to 17,000 for the broader week). For comparison, KBW2024 reported ~17,000 attendees at the main conference. Figures vary by source. · themes: Stablecoins as core crypto infrastructure (settlement, payments, liquidity, cross-border remittance), KRW-denominated (Korean won) stablecoins and the evolving Korean/US regulatory frameworks (GENIUS Act-era US policy, FSC engagement), Real-world asset (RWA) tokenization and RWAfi (real-world-asset finance) - RWAs as programmable DeFi collateral, liquidity-pool assets, and media of exchange",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_mainnet25.json",
+    "group": "conf",
+    "title": "Mainnet 2025 (Messari) — New York City, USA — Pier 36 (299 South Street, Manhattan)",
+    "desc": "September 30 – October 2, 2025 (3-day summit; some aggregators list Sept 30 – Oct 3, 2025) · Not verifiable for 2025. Billed as 'the largest annual crypto event in New York.' Prior-edition benchmark: Mainnet 2024 drew 3,000+ attendees and 200+ speakers (not confirmed for 2025). · themes: DeFi listed by Messari as a core focus area of the summit (alongside macro, regulation, and infrastructure), Regulation / regulatory clarity for digital assets (stablecoin frameworks, custody, market structure), Stablecoins (including the rise of yield-bearing stablecoins)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_money2020_25.json",
+    "group": "conf",
+    "title": "Money20/20 USA — The Venetian Expo / Venetian Convention and Expo Center, Las Vegas, Nevada, USA",
+    "desc": "October 26-29, 2025 · 11,000+ attendees from 85 countries; 630+ speakers across 300+ sessions; 380+ sponsors. Theme: \"Create the Future\". · themes: Stablecoins as mainstream payment rails (cross-border, programmable money) - dominant theme, TradFi x digital-asset convergence ('frenemies' to partners; shared infrastructure over competition), Tokenization of assets and tokenized infrastructure as the next growth backbone for finance",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_others_catchall.json",
+    "group": "conf",
+    "title": "Permissionless IV (Blockworks) — headline of a catch-all of other notable DeFi-relevant conferences not separately covered — Permissionless IV: Industry City, 220 36th St, Brooklyn, NY, USA. (TOKEN2049: Marina Bay Sands, Singapore; Consensus 2025: Metro Toronto Convention Centre, Toronto, Canada.)",
+    "desc": "Permissionless IV: June 24-26, 2025 (hackathon June 22-23, 2025). TOKEN2049 Singapore: Oct 1-2, 2025. Consensus 2025 Toronto: May 14-16, 2025 (just before the window; next in-window edition is Consensus 2026). · Permissionless IV: ~5,000+ attendees expected; 215 confirmed speakers (some sources cite 100+ headline speakers, all ticket tiers sold out). For reference within the catch-all: TOKEN2049 Singapore 2025 ~25,000+ attendees / 500+ side events; Consensus 2025 Toronto ~14,771 attendees from 102 countries, 500 speakers, 1,000+ hackathon devs. · themes: DeFi Renaissance (Blockworks track): RWAs, US capital formation, reshoring DeFi talent/American Dynamism, next-gen DeFi apps, Institutional DeFi & permissioned lending (e.g., Aave's Horizon: institutions borrow stablecoins against tokenized MMFs / US Treasuries while keeping permissionless liquidity), Real-world asset (RWA) tokenization (grew from ~$5B in 2022 to >$24B by June 2025; crypto's 2nd fastest-growing sector after stablecoins)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_pbw26.json",
+    "group": "conf",
+    "title": "Paris Blockchain Week 2026 — Carrousel du Louvre, Paris, France (VIP dinner April 14 at Chateau de Versailles)",
+    "desc": "April 15-16, 2026 · ~10,000 expected attendees from 100+ countries; 320+ speakers, 450+ journalists, 300 sponsors (2025 edition drew 9,500+ attendees and 420+ speakers) (forward-dated projection, not a realized figure; official sources vary as of 2026-06-18: live homepage cites 7,500+ attendees and 360+ journalists, other official listings cite 10,000 and 450+ journalists) · themes: Stablecoins and stablecoin-powered payments (24/7 settlement, euro-indexed stablecoins, MiCA e-money tokens vs asset-referenced tokens), Real World Asset (RWA) tokenization as institutional infrastructure (tokenized bonds, funds, fractional real estate), Institutional DeFi / TradFi-DeFi convergence (banks integrating blockchain rails, closing the liquidity gap)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_permissionless.json",
+    "group": "conf",
+    "title": "Permissionless (Blockworks) — Industry City, Brooklyn, New York, USA",
+    "desc": "June 24-26, 2025 (36-hour hackathon June 22-23, 2025) · 5,000+ attendees expected; 215 confirmed speakers (Blockworks/press materials). Organized by Blockworks in collaboration with Bankless. · themes: DeFi Renaissance (one of six core tracks: RWAs, U.S. capital formation, American Dynamism), Stablecoins as the first real product-market fit in crypto (and U.S. regulatory tailwinds, e.g. GENIUS Act era), Real-world assets (RWA) and asset tokenization, including permissioned RWA collateral",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_smartcon25.json",
+    "group": "conf",
+    "title": "Chainlink SmartCon 2025 — Metropolitan Pavilion, Manhattan, New York City, USA",
+    "desc": "November 4-5, 2025 · ~1,700 in-person attendees (reported; the precise '1,701 confirmed guests' figure came from a Vendelux attendee-list page now returning HTTP 410 Gone and is no longer independently verifiable — secondary sources cite only 'thousands of attendees'); Chainlink cited 275+ speakers, thousands of registrations, and millions of online views. (Note: the official agenda page lists overlapping session times across multiple stages, consistent with a multi-track event.) · themes: TradFi-DeFi convergence ('AllFi') and institutional adoption of onchain finance, Real-world asset (RWA) tokenization (funds, securities, treasuries) at institutional scale, Stablecoins for payments and as a financial-stack primitive",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_stablecon25.json",
+    "group": "conf",
+    "title": "Stablecon — In-window edition: IPG Mediabrands Netherlands, 7 Peter van Anrooystraat, Amsterdam, Noord-Holland 1076 DA, Netherlands. (Original Stablecon NYC 2025: Metropolitan Pavilion, 125 W 18th St, New York, NY 10011, USA.)",
+    "desc": "Stablecon EMEA 2026: May 19-20, 2026 (in window). Stablecon NYC 2025: May 29, 2025 (just before the window). For reference, the next edition is Stablecon USA 2026: September 9-11, 2026, National Harbor Resort, Washington DC (after the window). · Conflicting figures. Promotional materials for both editions claim 1,500+ attendees, 750+ C-suite leaders, and 100-125+ speakers. Independent sources are lower: a Turnkey recap of Stablecon NYC 2025 cited 460+ attendees, and an Ark Republic recap of Stablecon EMEA 2026 cited 'nearly 600 registrants.' The EMEA 2026 published speaker list contains roughly 100 named speakers, consistent with the 100+ speaker claim. · themes: Convergence of TradFi and crypto/DeFi - banks and institutions integrating stablecoins rather than competing ('the future of finance was not crypto vs institutions, it was their convergence'), Stablecoins as programmable global payment rails and 'invisible financial infrastructure' rather than speculative crypto assets, Yield-bearing stablecoins and yield embedded 'under the hood' of fintech apps (typically 4-8% USD-denominated yield)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_sui_basecamp26.json",
+    "group": "conf",
+    "title": "Sui Basecamp 2026 — 2026: officially announced Singapore, co-located with TOKEN2049 (per Sui Network X announcement); supersedes the earlier unofficial 'Registration Test' page (test.buildonsui.io) guess. 2025 (verified): InterContinental Dubai Festival City, Dubai, UAE. 2024 (verified): Paris, France.",
+    "desc": "2026: officially announced October 7-8, 2026, Singapore, co-located with TOKEN2049 (per Sui Network X announcement). Supersedes the earlier unofficial 'September 15-17' test-page date. Still falls AFTER the June-2025-to-June-2026 window, so in_window remains false. 2025 (verified): May 1-2, 2025 (falls just BEFORE the window start). 2024: Paris. · 2026: '3K+ attendees' claimed on the unofficial test page (UNCONFIRMED). 2025 (verified): 2,000+ attendees from 90+ countries. 2024 inaugural: ~1,100 attendees from 65 countries. · themes: DeFi on Sui ecosystem builders (DEXs, lending, liquidity) — a 'DeFi on Sui' Ecosystem Builders Panel is listed on the unofficial 2026 test agenda (UNCONFIRMED), Stablecoins on Sui — FDUSD native deployment by First Digital; suiUSDe stablecoin expansion (verified, 2025 edition), Bitcoin Finance / BTCfi — Babylon Labs Bitcoin staking & restaking integration (verified, 2025 edition)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_t2049_dubai.json",
+    "group": "conf",
+    "title": "TOKEN2049 Dubai — Madinat Jumeirah, Dubai, UAE",
+    "desc": "29-30 April 2026 · Billed for 15,000+ attendees from 4,000+ companies across 160+ countries, 200+ speakers, 200+ exhibitors, >70% C-level (same scale as the 2025 edition, which drew ~15,000 attendees and 500+ side events during TOKEN2049 Week, 27 Apr-3 May 2026). · themes: Stablecoins as core on-chain infrastructure (regulatory-compliant, yield-bearing, multi-chain models; surging demand approaching ~$250B), Real-world asset (RWA) tokenization (real estate, bonds, private credit; trillion-dollar market cap projected by ~2026), Institutional DeFi and on-chain finance (banks/asset managers entering trading, lending, tokenization)",
+    "asOf": "2026-06-16"
+  },
+  {
+    "file": "conf_t2049_sg.json",
+    "group": "conf",
+    "title": "TOKEN2049 Singapore — Marina Bay Sands Expo & Convention Centre, Singapore",
+    "desc": "October 1-2, 2025 · Record ~25,000 attendees from 160+ countries; sold out. ~500 exhibitors, 300+ speakers. Surrounding TOKEN2049 Week (Sep 29 - Oct 5) featured 500+ side events. · themes: Stablecoins as financial infrastructure / cross-border settlement rails (>$45T in annual stablecoin transaction volume cited; market cap ~$300B, up ~50% in 2025), Real-world asset (RWA) tokenization going mainstream (tokenized US Treasuries from BlackRock/Franklin Templeton; tokenized equities and real-world debt instruments), Institutional DeFi: move from speculative yield farms to institutional-grade infrastructure (custody, audited proof-of-reserves, compliance, regulatory wrappers)",
+    "asOf": "2026-06-16"
+  }
+];
