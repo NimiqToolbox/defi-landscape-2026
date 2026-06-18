@@ -6,7 +6,7 @@
       "name": "Lido",
       "chain": "Ethereum (also Solana, Moonbeam, Moonriver)",
       "metric": "TVL (liquid staking)",
-      "value": "~$16.1B",
+      "value": "~$16.1B (live 2026-06-18 ≈ $15.7B per DefiLlama)",
       "note": "Undisputed liquid-staking leader; stETH/wstETH is the most DeFi-integrated LST (Aave, Maker, etc.) and dominates DEX trading volume. Share of staked ETH fell from >32% (2023 peak) to ~24% amid rising competition; ~8.7M ETH staked."
     },
     {
@@ -88,6 +88,13 @@
     "https://fensory.com/intelligence/defi/eigenlayer-tvl-restaking-market-analysis-2026",
     "https://blockworks.com/news/etherfi-eigenlayer-liquid-restaked-token",
     "https://blockeden.xyz/blog/2026/03/20/eigenlayer-18b-tvl-vertical-avs-specialization-restaking-evolution/",
-    "https://www.datawallet.com/crypto/ethereum-staking-statistics-and-trends"
+    "https://www.datawallet.com/crypto/ethereum-staking-statistics-and-trends",
+    "https://defillama.com/protocol/binance-staked-eth",
+    "https://defillama.com/protocol/ether.fi",
+    "https://defillama.com/protocol/kelp",
+    "https://defillama.com/protocol/jito-liquid-staking",
+    "https://defillama.com/protocol/symbiotic",
+    "https://defillama.com/protocol/renzo",
+    "https://defillama.com/protocol/kinetiq-khype"
   ]
 }

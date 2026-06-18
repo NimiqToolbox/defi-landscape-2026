@@ -69,7 +69,7 @@
       "name": "Jupiter (aggregator)",
       "chain": "Solana (omnichain expanding)",
       "metric": "Aggregator volume (30d)",
-      "value": "~$19.7B 30d; ~95% of Solana DEX-aggregator volume",
+      "value": "~$19.7B 30d; ~93-95% of Solana DEX-aggregator volume",
       "note": "Dominant Solana DEX aggregator and DeFi super-app (swaps, perps, lend). Not an AMM itself but the primary execution path that routes into Raydium/Orca/Meteora/SolFi. #1 aggregator by far."
     },
     {

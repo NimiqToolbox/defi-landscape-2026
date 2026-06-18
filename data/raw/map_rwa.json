@@ -13,7 +13,7 @@
       "name": "Tether Gold (XAUₜ)",
       "chain": "Ethereum, Monad, Plasma, Avalanche",
       "metric": "TVL (tokenized commodity / gold)",
-      "value": "~$3.07B TVL (DefiLlama, 2026-06-17)",
+      "value": "~$3.07B TVL (DefiLlama, 2026-06-17; live 2026-06-18 ≈ $3.02B)",
       "note": "Largest tokenized-gold product; not a Treasury but the top tokenized-commodity RWA. The 2025 gold/silver rally pulled significant capital into tokenized commodities, lifting it near the top of the RWA category."
     },
     {
@@ -76,7 +76,7 @@
       "name": "Franklin Templeton BENJI (FOBXX)",
       "chain": "Stellar, Polygon, Ethereum, Aptos, Arbitrum, Base, Solana",
       "metric": "tokenized government MMF AUM",
-      "value": "~$700M AUM (press, 2026; appears under 'WisdomTree'/issuer trackers, not a standalone DefiLlama RWA leader at this size)",
+      "value": "FOBXX ~$0.83B AUM (Q1 2026); broader BENJI suite ~$1.98B AUM (Apr 2026, press); appears under issuer trackers, not a standalone DefiLlama RWA leader at this size",
       "note": "Pioneer: FOBXX/BENJI was the first US-registered mutual fund on a public blockchain (launched 2021). An early RWA leader and still a core tokenized-MMF player, now one of several within the BUIDL/USYC/Ondo/Franklin group that together hold the majority of the tokenized-Treasury market."
     },
     {
@@ -104,6 +104,9 @@
     "https://www.theblock.co/post/331013/ethenas-much-anticipated-usdtb-stablecoin-backed-by-blackrocks-buidl-token-goes-live",
     "https://www.ledgerinsights.com/franklin-templeton-backed-protocol-ethena-to-launch-stablecoin-with-buidl-as-reserves/",
     "https://info.arkm.com/research/the-total-value-of-tokenized-u-s-treasuries-is-now-more-than-10b",
-    "https://en.cryptonomist.ch/2026/03/26/tokenization-rwa-standards-report/"
+    "https://en.cryptonomist.ch/2026/03/26/tokenization-rwa-standards-report/",
+    "https://coincentral.com/circle-usyc-overtakes-blackrock-buidl-as-largest-tokenized-treasury-fund/",
+    "https://maple.finance/insights/2025-data-review",
+    "https://miniapp.gate.com/blog/102069/rwa-market-triopoly-blackrock-buidl-ondo-franklin-templeton-tokenized-us-treasury-market-real-world-assets-rwa-competition-onchain-treasuries-institutional-adoption-analysis"
   ]
 }

@@ -49,7 +49,7 @@
     {
       "label": "Liquid Staking TVL (leaders: Lido, Rocket Pool, Binance staked ETH, Jito; proxy)",
       "unit": "USD billions",
-      "sources": ["https://api.llama.fi/protocol/lido", "https://api.llama.fi/protocol/rocket-pool", "https://api.llama.fi/protocol/jito", "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption"],
+      "sources": ["https://api.llama.fi/protocol/lido", "https://api.llama.fi/protocol/rocket-pool", "https://api.llama.fi/protocol/jito", "https://thedefiant.io/news/defi/liquid-staking-tvl-hits-record-usd86b-amid-eth-rally-and-growing-institutional-adoption", "https://bitcoinethereumnews.com/ethereum/liquid-staking-tvl-hits-record-86b-amid-eth-rally-and-growing-institutional-adoption/"],
       "points": [
         {"period": "2020-12-31", "value": 0.01, "note": "Category barely existed"},
         {"period": "2021-12-31", "value": 12.4, "note": "Pre-Merge; Lido emerging"},
@@ -147,12 +147,12 @@
     {"claim": "EigenLayer first surpassed $20B (restaking category emergence in 2024)", "value": "20", "as_of": "2024-06", "source_name": "The Block", "source_url": "https://www.theblock.co/post/298796/eigenlayers-total-value-locked-surpasses-20-billion-for-the-first-time", "confidence": "high"},
     {"claim": "EigenLayer current TVL (deep 2026 unwind)", "value": "5.0", "as_of": "2026-06-17", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/eigenlayer", "confidence": "high"},
     {"claim": "Aave (largest lending protocol) all-time-high TVL", "value": "45.8", "as_of": "2025-10-07", "source_name": "DefiLlama protocol API", "source_url": "https://api.llama.fi/protocol/aave", "confidence": "high"},
-    {"claim": "Tokenized RWA on-chain value excluding stablecoins (different metric than DefiLlama RWA category)", "value": "32", "as_of": "2026-05", "source_name": "RWA.xyz (via PYMNTS / Tech4Impact)", "source_url": "https://app.rwa.xyz/networks", "confidence": "medium"},
+    {"claim": "Tokenized RWA on-chain value excluding stablecoins (different metric than DefiLlama RWA category)", "value": "32", "as_of": "2026-05", "source_name": "RWA.xyz (via PYMNTS / Tech4Impact)", "source_url": "https://app.rwa.xyz/networks", "confidence": "high"},
     {"claim": "DefiLlama RWA category TVL (gross, current)", "value": "26.2", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
     {"claim": "Current gross Lending category TVL (largest non-staking category)", "value": "38.1", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
     {"claim": "Current gross Liquid Staking category TVL", "value": "33.9", "as_of": "2026-06-16", "source_name": "DefiLlama protocols API", "source_url": "https://api.llama.fi/protocols", "confidence": "high"},
     {"claim": "Mix shift: liquid staking overtook DEX/lending as the single largest DeFi category from ~2023 onward (Lido became #1 application by TVL)", "value": "qualitative", "as_of": "2024-Q1", "source_name": "Messari State of Lido / The Defiant", "source_url": "https://messari.io/report/state-of-lido-q1-2024", "confidence": "high"},
-    {"claim": "EOY 2020 headline DeFi TVL (early DeFi Summer aftermath)", "value": "15.1", "as_of": "2020-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "medium"},
+    {"claim": "EOY 2020 headline DeFi TVL (early DeFi Summer aftermath)", "value": "15.1", "as_of": "2020-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
     {"claim": "EOY 2023 headline DeFi TVL", "value": "52.8", "as_of": "2023-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"},
     {"claim": "EOY 2024 headline DeFi TVL", "value": "115.9", "as_of": "2024-12-31", "source_name": "DefiLlama API", "source_url": "https://api.llama.fi/v2/historicalChainTvl", "confidence": "high"}
   ],

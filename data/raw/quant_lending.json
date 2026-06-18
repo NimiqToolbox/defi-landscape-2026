@@ -254,8 +254,8 @@
       "claim": "Aave is the dominant DeFi lender; reached ~1/5 of all DeFi TVL in 2025",
       "value": "~20% of total DeFi TVL",
       "as_of": "2025",
-      "source_name": "The Defiant",
-      "source_url": "https://thedefiant.io/news/defi/aave-now-commands-a-fifth-of-total-defi-tvl",
+      "source_name": "The Defiant (primary); HedgeThink (secondary corroboration)",
+      "source_url": "https://thedefiant.io/news/defi/aave-now-commands-a-fifth-of-total-defi-tvl ; https://www.hedgethink.com/aave-leads-defi-commands-20-of-total-tvl/",
       "confidence": "medium"
     },
     {
@@ -287,7 +287,7 @@
       "value": "380+ protocols",
       "as_of": "2026-04",
       "source_name": "eco.com (citing DefiLlama)",
-      "source_url": "https://eco.com/support/en/articles/15254000-best-defi-lending-protocols-2026-tvl-rates-risk-compared",
+      "source_url": "https://eco.com/support/en/articles/15254000-best-defi-lending-protocols-2026-tvl-rates-risk-compared ; https://eco.com/support/en/articles/14800882-best-defi-lending-protocols-2026-tvl-rates-risk",
       "confidence": "medium"
     },
     {
@@ -308,7 +308,7 @@
     },
     {
       "claim": "Current mid-2026 market is in a drawdown from the Oct/Nov 2025 peak (Aave family TVL ~$12.8B vs ~$45.8B ATH)",
-      "value": "12.79 USD billions",
+      "value": "12.79 USD billions (snapshot 2026-06-16; DefiLlama backfill now reads ~12.54B family for that date)",
       "as_of": "2026-06-16",
       "source_name": "DefiLlama API",
       "source_url": "https://api.llama.fi/protocol/aave-v3",

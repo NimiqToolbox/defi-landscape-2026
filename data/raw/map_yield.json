@@ -27,7 +27,7 @@
       "name": "Convex Finance",
       "chain": "Ethereum",
       "metric": "TVL",
-      "value": "~$1.28B (up from ~$1.0B Nov 2025); 2022 peak >$20B",
+      "value": "~$0.51B (DefiLlama aggregate, Jun 2026; note: DefiLlama no longer double-counts Convex's Curve-LP TVL); 2022 peak >$20B",
       "note": "Yield optimizer / vote-aggregator for Curve. Routes user CRV into permanent locks for cvxCRV, making it the largest single veCRV holder (~40%+) and the 'kingmaker' of Curve emissions. Convex + Yearn wallets accounted for ~90% of votes in a Dec 2025 Curve DAO vote. TVL collapsed alongside Curve (Curve ~$1.5-2.6B vs 2022 peak >$24B)."
     },
     {
@@ -80,6 +80,7 @@
     "https://lagoon.finance/blog/state-of-onchain-vaults-2026",
     "https://eco.com/support/en/articles/15254002-ethena-usde-and-susde-2026-delta-neutral-yield",
     "https://stablecoininsider.org/ethena-usde-q1-2026-report/",
+    "https://www.coindesk.com/business/2026/06/09/ethena-lands-janus-henderson-backing-as-asset-manager-invests-in-ena-eyes-usde-distribution",
     "https://www.cryptonewsnavigator.com/academy/article/three-on-chain-metrics-explain-cvxs-2026-trajectory",
     "https://pontem.network/posts/curve-and-the-convex-wars-2",
     "https://thedefiant.io/yearn-finance-struggles-to-find-its-footing-as-rates-rise"
