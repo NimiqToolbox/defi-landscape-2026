@@ -8,6 +8,7 @@
 <meta name="theme-color" content="#F4F4F4" />
 <meta name="color-scheme" content="light" />
 <link rel="stylesheet" href="assets/styles.css" />
+<link rel="preload" href="assets/fonts/Muli-Regular.woff" as="font" type="font/woff" crossorigin />
 </head>
 <body>
 
@@ -15,6 +16,7 @@
 <nav class="nav">
   <div class="nav-inner">
     <div class="brand">The <span>DeFi</span> Landscape</div>
+    <div class="navlinks">
     <a class="navlink" href="#overview">Overview</a>
     <a class="navlink" href="#cycles">Cycles</a>
     <a class="navlink" href="#chains">Chains</a>
@@ -30,6 +32,7 @@
     <a class="navlink" href="#conferences">Conferences</a>
     <a class="navlink" href="#data">Data &amp; sources</a>
     <a class="navlink" href="#methodology">Methodology</a>
+    </div>
   </div>
 </nav>
 
@@ -123,7 +126,7 @@
     <div class="card">
       <h3>Category mix today (gross)</h3>
       <div class="cap">USD billions · 16 Jun 2026 · DefiLlama category sums</div>
-      <div id="c-cat-now" class="chart tall"></div>
+      <div id="c-cat-now" class="chart tall chart-hbar"></div>
       <div class="note">Gross sums double-count where assets are wrapped/restaked — Bridge (★) is inflated by wrapped BTC/ETH; restaking + LRTs overlap. Treat as upper bounds.</div>
     </div>
   </div>
@@ -284,7 +287,7 @@
     <div class="card">
       <h3>Leading RWA products today</h3>
       <div class="cap">USD billions · 16 Jun 2026</div>
-      <div id="c-rwa-leaders" class="chart"></div>
+      <div id="c-rwa-leaders" class="chart chart-hbar"></div>
       <div class="note">Circle's USYC overtook BlackRock's BUIDL in Mar-2026. Tokenized gold (Tether Gold, PAXG) surged on the 2025 metals rally.</div>
     </div>
   </div>
@@ -310,7 +313,7 @@
     <div class="card">
       <h3>Bridge category leaders today</h3>
       <div class="cap">USD billions · 16 Jun 2026 · DefiLlama</div>
-      <div id="c-bridges" class="chart"></div>
+      <div id="c-bridges" class="chart chart-hbar"></div>
       <div class="note">Total ~$46.7B mixes custodial/wrapped bridges. Multichain (ATH $10.5B) collapsed in 2023; bridges were ~69% of all 2022 crypto theft.</div>
     </div>
   </div>
@@ -368,7 +371,7 @@
     <div class="card">
       <h3>Largest single incidents</h3>
       <div class="cap">USD millions</div>
-      <div id="c-bighacks" class="chart"></div>
+      <div id="c-bighacks" class="chart chart-hbar"></div>
       <div class="note">North Korea's Lazarus Group is tied to the largest events (Bybit, Ronin). Poly Network and Euler funds were largely returned.</div>
     </div>
   </div>
@@ -414,11 +417,12 @@
   <div class="card">
     <h3>Theme frequency across conferences</h3>
     <div class="cap">number of surveyed conferences foregrounding each DeFi theme (editor's tally)</div>
-    <div id="c-conf-themes" class="chart"></div>
+    <div id="c-conf-themes" class="chart chart-hbar"></div>
   </div>
   <div class="card" style="margin-top:18px">
     <h3>The 12-month conference circuit</h3>
     <div class="cap">major + regional flagships · DeFi themes &amp; headline speakers · ✓ in window / ✗ adjacent</div>
+    <div class="cap scroll-hint">← swipe table →</div>
     <div class="tablewrap"><table id="conf-table"><!-- populated --></table></div>
     <div class="src">Raw: per-event files in <a href="https://github.com/NimiqToolbox/defi-landscape-2026/tree/main/data/raw">data/raw/conf_*.json</a></div>
   </div>

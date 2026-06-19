@@ -16,6 +16,8 @@
       AXISLINE = "rgba(31,35,72,.16)", TIP_BG = "#1F2348", TIP_BORDER = "rgba(31,35,72,.16)",
       TIP_TXT = "rgba(255,255,255,.92)", LEGEND_OFF = "rgba(31,35,72,.25)", CARD_BG = "#FFFFFF";
   var instances = [];
+  var renderThunks = {};                 // id -> render fn; populated by defer(), drained on scroll into view
+  function defer(id, fn) { renderThunks[id] = fn; }
 
   /* ---- Register the Nimiq theme: owns palette, font, axis/legend/tooltip "look" ---- */
   if (hasECharts) {
@@ -64,6 +66,47 @@
   function catAxis(cats) { return { type: "category", data: cats }; }
   function valAxis(name, fmt) { return { type: "value", name: name || "", nameGap: 12, axisLabel: { formatter: fmt } }; }
 
+  /* ---- responsive(): wrap a base option with ECharts native `media` overrides keyed off the
+     chart's CONTAINER width (getWidth() of the init node, NOT the viewport). ECharts re-picks the
+     matching media query on every c.resize() — already wired below — so rotation/resize "just works".
+     maxWidth 430 = chart-div px: phones measure ~280–350 (match), desktop 2-col charts ~521 (no match). ---- */
+  var MOBILE_W = 430;
+  function arrN(n, obj) { var a = []; for (var i = 0; i < n; i++) a.push(obj); return a; }
+  function responsive(kind, base, o) {
+    o = o || {};
+    var nS = (base.series || []).length || 1;
+    var nY = [].concat(base.yAxis || []).length || 1;
+    var multi = nS > 1, m;
+    if (kind === "line") {
+      m = { grid: { left: 4, right: 10, top: multi ? 64 : 36, bottom: 4 },
+            xAxis: { axisLabel: { fontSize: 11, hideOverlap: true } },
+            yAxis: arrN(nY, { axisLabel: { fontSize: 11 }, name: "", nameGap: 8 }),
+            legend: multi ? { top: 4, itemWidth: 12, itemHeight: 8, itemGap: 8, textStyle: { fontSize: 11 } } : undefined };
+    } else if (kind === "barV") {
+      m = { grid: { left: 4, right: 8, top: multi ? 60 : 34, bottom: 4 },
+            xAxis: { axisLabel: { fontSize: 11, hideOverlap: true, interval: 0 } },
+            yAxis: arrN(nY, { axisLabel: { fontSize: 11 }, name: "", nameGap: 8 }),
+            legend: multi ? { top: 4, itemWidth: 12, itemHeight: 8, textStyle: { fontSize: 11 } } : undefined,
+            series: arrN(nS, { barMaxWidth: 28 }) };
+    } else if (kind === "barH") {
+      m = { grid: { left: 4, right: 44, top: 8, bottom: 4 },
+            xAxis: { name: "" },   // drop the value-axis name on phones (the card caption carries units)
+            yAxis: { axisLabel: { fontSize: 11, width: 96, overflow: "truncate" } },
+            series: arrN(nS, { label: { fontSize: 10 } }) };
+    } else if (kind === "pie") {
+      m = { legend: { orient: "horizontal", left: "center", right: "auto", top: "auto", bottom: 4,
+                      itemWidth: 12, itemHeight: 8, textStyle: { fontSize: 11 } },
+            series: [{ center: ["50%", "42%"], radius: ["42%", "66%"], label: { fontSize: 11 } }] };
+    } else if (kind === "dual") {
+      m = { grid: { left: 2, right: 2, top: 60, bottom: 4 },
+            legend: { top: 4, itemWidth: 12, itemHeight: 8, textStyle: { fontSize: 11 } },
+            xAxis: { axisLabel: { fontSize: 11, hideOverlap: true } },
+            yAxis: arrN(nY, { axisLabel: { fontSize: 11 }, name: "", nameGap: 6 }),
+            series: o.mobileSeries || arrN(nS, {}) };
+    }
+    return { baseOption: base, media: [{ query: { maxWidth: MOBILE_W }, option: m }] };
+  }
+
   var fmtUSDb = function (v) { return v == null ? "" : "$" + (v >= 100 ? Math.round(v) : v) + "B"; };
   var fmtUSDt = function (v) { return v == null ? "" : "$" + v + "T"; };
   var fmtPct = function (v) { return v == null ? "" : v + "%"; };
@@ -91,87 +134,93 @@
   function srcByRaw(raw) { return (D.sourcesByRaw && raw) ? D.sourcesByRaw[raw] : null; }
 
   function lineChart(id, cats, series, o) {
-    var c = mk(id); if (!c) return;
-    o = o || {};
-    var multi = series.length > 1;
-    var ser = series.map(function (s, i) {
-      var col = s.color || PAL[i % PAL.length];
-      var stacked = !!s.stack;
-      var area = null;
-      if (s.area) {
-        area = stacked
-          ? { color: hexA(col, 0.85) }
-          : { color: new window.echarts.graphic.LinearGradient(0, 0, 0, 1, [
-              { offset: 0, color: hexA(col, 0.22) }, { offset: 1, color: hexA(col, 0.04) }]) };
-      }
-      var showSym = s.symbol === true ? true : (s.symbol === false ? false : !multi);
-      return {
-        name: s.name, type: s.type || "line", data: s.data, smooth: s.smooth !== false,
-        showSymbol: showSym, symbolSize: 6, stack: s.stack, yAxisIndex: s.yAxisIndex || 0,
-        lineStyle: { width: s.width || (stacked ? 1.6 : 2.6), type: s.dashed ? "dashed" : "solid", color: col },
-        itemStyle: { color: col },
-        areaStyle: area,
-        emphasis: { focus: "series" }
-      };
-    });
-    var yAxes = o.yAxes || [valAxis(o.yName, o.yFmt || fmtUSDb)];
-    c.setOption({
-      grid: baseGrid(o.gridBottom),
-      tooltip: tip({ trigger: "axis", valueFormatter: o.tipFmt, order: o.tipOrder }),
-      legend: multi ? legend() : undefined,
-      xAxis: catAxis(cats), yAxis: yAxes, series: ser
+    defer(id, function () {
+      var c = mk(id); if (!c) return;
+      o = o || {};
+      var multi = series.length > 1;
+      var ser = series.map(function (s, i) {
+        var col = s.color || PAL[i % PAL.length];
+        var stacked = !!s.stack;
+        var area = null;
+        if (s.area) {
+          area = stacked
+            ? { color: hexA(col, 0.85) }
+            : { color: new window.echarts.graphic.LinearGradient(0, 0, 0, 1, [
+                { offset: 0, color: hexA(col, 0.22) }, { offset: 1, color: hexA(col, 0.04) }]) };
+        }
+        var showSym = s.symbol === true ? true : (s.symbol === false ? false : !multi);
+        return {
+          name: s.name, type: s.type || "line", data: s.data, smooth: s.smooth !== false,
+          showSymbol: showSym, symbolSize: 6, stack: s.stack, yAxisIndex: s.yAxisIndex || 0,
+          lineStyle: { width: s.width || (stacked ? 1.6 : 2.6), type: s.dashed ? "dashed" : "solid", color: col },
+          itemStyle: { color: col },
+          areaStyle: area,
+          emphasis: { focus: "series" }
+        };
+      });
+      var yAxes = o.yAxes || [valAxis(o.yName, o.yFmt || fmtUSDb)];
+      c.setOption(responsive("line", {
+        grid: baseGrid(o.gridBottom),
+        tooltip: tip({ trigger: "axis", valueFormatter: o.tipFmt, order: o.tipOrder }),
+        legend: multi ? legend() : undefined,
+        xAxis: catAxis(cats), yAxis: yAxes, series: ser
+      }, o));
     });
   }
 
   function barChart(id, cats, series, o) {
-    var c = mk(id); if (!c) return;
-    o = o || {};
-    var labelFmt = o.labelFmt || o.yFmt;
-    var ser = series.map(function (s, i) {
-      var col = s.color || PAL[i % PAL.length];
-      var lbl = s.label;
-      if (lbl == null && o.horizontal && o.valueLabels !== false) {
-        lbl = { show: true, position: "right", color: TXT, fontFamily: FONT, fontSize: 12,
-                formatter: function (p) { return labelFmt ? labelFmt(p.value) : p.value; } };
-      }
-      return { name: s.name, type: "bar", data: s.data, stack: s.stack, barMaxWidth: o.barMax || 46,
-               itemStyle: { color: col, borderRadius: o.round == null ? [4, 4, 0, 0] : o.round },
-               emphasis: { focus: "series" }, label: lbl };
-    });
-    var valAx = valAxis(o.yName, o.yFmt);
-    if (o.horizontal) valAx = Object.assign(valAx, { axisLabel: { show: false }, splitLine: { show: false } });
-    var grid = baseGrid(o.gridBottom);
-    if (o.horizontal) grid.right = 60; // headroom for end-of-bar value labels (containLabel ignores series labels)
-    c.setOption({
-      grid: grid,
-      tooltip: tip({ trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: o.tipFmt }),
-      legend: series.length > 1 ? legend() : undefined,
-      xAxis: o.horizontal ? valAx : catAxis(cats),
-      yAxis: o.horizontal ? catAxis(cats) : (o.yAxes || [valAxis(o.yName, o.yFmt || fmtUSDb)]),
-      series: ser
+    defer(id, function () {
+      var c = mk(id); if (!c) return;
+      o = o || {};
+      var labelFmt = o.labelFmt || o.yFmt;
+      var ser = series.map(function (s, i) {
+        var col = s.color || PAL[i % PAL.length];
+        var lbl = s.label;
+        if (lbl == null && o.horizontal && o.valueLabels !== false) {
+          lbl = { show: true, position: "right", color: TXT, fontFamily: FONT, fontSize: 12,
+                  formatter: function (p) { return labelFmt ? labelFmt(p.value) : p.value; } };
+        }
+        return { name: s.name, type: "bar", data: s.data, stack: s.stack, barMaxWidth: o.barMax || 46,
+                 itemStyle: { color: col, borderRadius: o.round == null ? [4, 4, 0, 0] : o.round },
+                 emphasis: { focus: "series" }, label: lbl };
+      });
+      var valAx = valAxis(o.yName, o.yFmt);
+      if (o.horizontal) valAx = Object.assign(valAx, { axisLabel: { show: false }, splitLine: { show: false } });
+      var grid = baseGrid(o.gridBottom);
+      if (o.horizontal) grid.right = 60; // headroom for end-of-bar value labels (containLabel ignores series labels)
+      c.setOption(responsive(o.horizontal ? "barH" : "barV", {
+        grid: grid,
+        tooltip: tip({ trigger: "axis", axisPointer: { type: "shadow" }, valueFormatter: o.tipFmt }),
+        legend: series.length > 1 ? legend() : undefined,
+        xAxis: o.horizontal ? valAx : catAxis(cats),
+        yAxis: o.horizontal ? catAxis(cats) : (o.yAxes || [valAxis(o.yName, o.yFmt || fmtUSDb)]),
+        series: ser
+      }, o));
     });
   }
 
   function pieChart(id, data, o) {
-    var c = mk(id); if (!c) return;
-    o = o || {};
-    var dense = !!(data && data.length > 6);
-    c.setOption({
-      tooltip: tip({ trigger: "item", formatter: function (p) {
-        return p.name + "<br/><b>" + (o.fmt ? o.fmt(p.value) : p.value) + "</b> (" + p.percent + "%)"; } }),
-      legend: { type: "scroll", orient: "vertical", right: 6, top: "middle", itemWidth: 14, itemHeight: 9,
-                icon: "roundRect", textStyle: { color: TXT, fontSize: 12.5 }, inactiveColor: LEGEND_OFF,
-                pageIconColor: TXT, pageIconInactiveColor: LEGEND_OFF, pageTextStyle: { color: TXT } },
-      series: [{
-        type: "pie", radius: ["46%", "72%"], center: ["40%", "52%"], avoidLabelOverlap: true,
-        itemStyle: { borderColor: CARD_BG, borderWidth: 2 },
-        label: dense ? { show: false } : { color: TXT, fontSize: 13, fontWeight: 600, formatter: "{d}%" },
-        labelLine: { lineStyle: { color: SPLIT } },
-        emphasis: dense
-          ? { scale: true, scaleSize: 6, label: { show: true, color: "#1F2348", fontSize: 13, fontWeight: 700, formatter: "{b}  {d}%" } }
-          : { scale: true, scaleSize: 6 },
-        data: data
-      }]
+    defer(id, function () {
+      var c = mk(id); if (!c) return;
+      o = o || {};
+      var dense = !!(data && data.length > 6);
+      c.setOption(responsive("pie", {
+        tooltip: tip({ trigger: "item", formatter: function (p) {
+          return p.name + "<br/><b>" + (o.fmt ? o.fmt(p.value) : p.value) + "</b> (" + p.percent + "%)"; } }),
+        legend: { type: "scroll", orient: "vertical", right: 6, top: "middle", itemWidth: 14, itemHeight: 9,
+                  icon: "roundRect", textStyle: { color: TXT, fontSize: 12.5 }, inactiveColor: LEGEND_OFF,
+                  pageIconColor: TXT, pageIconInactiveColor: LEGEND_OFF, pageTextStyle: { color: TXT } },
+        series: [{
+          type: "pie", radius: ["46%", "72%"], center: ["40%", "52%"], avoidLabelOverlap: true,
+          itemStyle: { borderColor: CARD_BG, borderWidth: 2 },
+          label: dense ? { show: false } : { color: TXT, fontSize: 13, fontWeight: 600, formatter: "{d}%" },
+          labelLine: { lineStyle: { color: SPLIT } },
+          emphasis: dense
+            ? { scale: true, scaleSize: 6, label: { show: true, color: "#1F2348", fontSize: 13, fontWeight: 700, formatter: "{b}  {d}%" } }
+            : { scale: true, scaleSize: 6 },
+          data: data
+        }]
+      }, o));
     });
   }
 
@@ -360,9 +409,9 @@
       { name: "Jito (Solana)", data: D.liquidStaking.jito, color: "#21BCA5" }
     ], { yName: "USD B", tipFmt: fmtUSDb });
     // eth staked dual axis — axis names colored to match their series
-    (function () {
+    defer("c-ethstaked", function () {
       var c = mk("c-ethstaked"); if (!c) return;
-      c.setOption({
+      c.setOption(responsive("dual", {
         grid: baseGrid(),
         tooltip: tip({ trigger: "axis" }),
         legend: legend(),
@@ -377,8 +426,8 @@
           { name: "Staking ratio (%)", type: "line", yAxisIndex: 1, data: D.ethStaked.ratioPct, smooth: true,
             showSymbol: true, symbolSize: 6, lineStyle: { color: "#21BCA5", width: 2.8 }, itemStyle: { color: "#21BCA5" } }
         ]
-      });
-    })();
+      }, { mobileSeries: [{ barMaxWidth: 22 }, {}] }));
+    });
     // restaking
     lineChart("c-restake", D.restaking.years, [
       { name: "EigenLayer", data: D.restaking.eigenlayer, area: true, color: "#0582CA" },
@@ -417,9 +466,9 @@
       { name: "Protocol revenue", data: D.feesRevenue.revenue, color: "#21BCA5" }
     ], { yName: "USD B", yFmt: fmtUSDb, tipFmt: fmtUSDb });
     // developers dual line — axis names colored to match their series
-    (function () {
+    defer("c-devs", function () {
       var c = mk("c-devs"); if (!c) return;
-      c.setOption({
+      c.setOption(responsive("dual", {
         grid: baseGrid(), tooltip: tip({ trigger: "axis" }), legend: legend(),
         xAxis: catAxis(D.developers.years),
         yAxis: [
@@ -430,8 +479,8 @@
           { name: "All crypto devs", type: "line", data: D.developers.monthlyActive, smooth: true, areaStyle: { color: hexA("#0582CA", 0.16) }, lineStyle: { color: "#0582CA", width: 2.8 }, itemStyle: { color: "#0582CA" } },
           { name: "DeFi devs", type: "line", yAxisIndex: 1, data: D.developers.defiDevs, smooth: true, lineStyle: { color: "#FC8702", width: 2.8 }, itemStyle: { color: "#FC8702" } }
         ]
-      });
-    })();
+      }, {}));
+    });
     // users
     lineChart("c-users", D.users.years, [
       { name: "Cumulative DeFi addresses (M) — overestimate", data: D.users.cumulativeAddressesM, area: true, color: "#0582CA" }
@@ -484,9 +533,34 @@
     });
   }
 
+  /* ---- lazy render: build a chart's canvas only when it scrolls near the viewport.
+     renderCharts() now just registers thunks; observeCharts() drains them on intersection.
+     Falls back to rendering everything where IntersectionObserver / ECharts is unavailable. ---- */
+  function renderOne(id) {
+    var fn = renderThunks[id];
+    if (!fn) return;
+    delete renderThunks[id];                 // one-shot: never init the same chart twice
+    try { fn(); } catch (e) { /* keep the other charts alive */ }
+  }
+  function observeCharts() {
+    var ids = Object.keys(renderThunks);
+    if (!hasECharts || !("IntersectionObserver" in window)) { ids.forEach(renderOne); return; }
+    var io = new window.IntersectionObserver(function (entries) {
+      entries.forEach(function (en) {
+        if (en.isIntersecting) { io.unobserve(en.target); renderOne(en.target.id); }
+      });
+    }, { rootMargin: "300px 0px", threshold: 0 });
+    ids.forEach(function (id) { var node = el(id); if (node) io.observe(node); });
+  }
+
   // Render once Muli is ready (canvas text won't reflow on a late font swap); 1.5s safety net.
   var started = false;
-  function start() { if (started) return; started = true; renderCharts(); injectChartSources(); }
+  function start() {
+    if (started) return; started = true;
+    renderCharts();          // registers all chart thunks (cheap; no canvas work yet)
+    injectChartSources();    // eager: citation lines sit below every chart node regardless of render state
+    observeCharts();         // above-the-fold charts intersect immediately and paint; rest paint on scroll
+  }
   if (window.document && document.fonts && document.fonts.ready && typeof document.fonts.ready.then === "function") {
     document.fonts.ready.then(start);
     setTimeout(start, 1500);
@@ -494,10 +568,35 @@
     start();
   }
 
-  /* ---------------- RESIZE ---------------- */
+  /* ---------------- TABLE SCROLL HINT ---------------- */
+  // JS-built tables overflow horizontally on phones; flag which actually scroll (and whether they're
+  // at the end) so the CSS right-edge fade only appears when there's more to reveal.
+  (function () {
+    var wraps = [].slice.call(document.querySelectorAll(".tablewrap"));
+    if (!wraps.length) return;
+    function upd(w) {
+      var scrollable = w.scrollWidth > w.clientWidth + 1;
+      w.classList.toggle("scrollable", scrollable);
+      w.classList.toggle("at-end", scrollable && w.scrollLeft + w.clientWidth >= w.scrollWidth - 1);
+    }
+    function updAll() { wraps.forEach(upd); }
+    wraps.forEach(function (w) { w.addEventListener("scroll", function () { upd(w); }, { passive: true }); });
+    window.addEventListener("resize", updAll);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(updAll);
+    updAll();
+  })();
+
+  /* ---------------- RESIZE / ORIENTATION ---------------- */
+  // c.resize() re-fits the canvas AND re-evaluates the `media` overrides; funnel rotation +
+  // visual-viewport changes through one debounce. Only already-rendered instances need resizing.
   var rt;
-  window.addEventListener("resize", function () {
+  function resizeAll() {
     clearTimeout(rt);
     rt = setTimeout(function () { instances.forEach(function (c) { try { c.resize(); } catch (e) {} }); }, 120);
-  });
+  }
+  window.addEventListener("resize", resizeAll);
+  window.addEventListener("orientationchange", resizeAll);
+  if (window.visualViewport && window.visualViewport.addEventListener) {
+    window.visualViewport.addEventListener("resize", resizeAll);
+  }
 })();

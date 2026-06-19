@@ -74,6 +74,7 @@ a:hover { text-decoration: underline; }
 .nav a.navlink { color: var(--text-dim); font-size: 13px; font-weight: 600; padding: 5px 11px; border-radius: 999px;
   transition: color .2s var(--ease), background-color .2s var(--ease); }
 .nav a.navlink:hover { color: var(--text); background: var(--border-soft); text-decoration: none; }
+.navlinks { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; min-width: 0; }
 
 /* ---------- LAYOUT ---------- */
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
@@ -172,9 +173,74 @@ hr.div { border: none; border-top: 1px solid var(--border); margin: 36px 0; }
 /* ---------- DISCLAIMER ---------- */
 .disclaimer { background: rgba(252,135,2,.09); border:1px solid rgba(252,135,2,.28); color:#8a5413; border-radius:10px; padding:12px 14px; font-size:12.5px; }
 
+.scroll-hint { display: none; }
+
 /* ---------- RESPONSIVE ---------- */
+/* Tablet (≤900): collapse grids; nav links become a horizontal scroll rail instead of vanishing. */
 @media (max-width: 900px) {
   .kpis { grid-template-columns: repeat(2, 1fr); }
   .g2, .g3 { grid-template-columns: 1fr; }
-  .nav .navlink { display: none; }
+
+  .nav-inner { flex-wrap: nowrap; gap: 12px; padding: 10px 0 10px 16px; }
+  .nav .brand { flex: 0 0 auto; }
+  .navlinks {
+    flex: 1 1 auto; flex-wrap: nowrap; overflow-x: auto; overflow-y: hidden;
+    -webkit-overflow-scrolling: touch; scrollbar-width: none; padding-right: 16px;
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+            mask-image: linear-gradient(to right, #000 calc(100% - 28px), transparent);
+  }
+  .navlinks::-webkit-scrollbar { display: none; }
+  .nav a.navlink { flex: 0 0 auto; white-space: nowrap; padding: 11px 13px; }  /* ~44px tap target */
+
+  section, .hero { scroll-margin-top: 72px; }
+  section { padding: 40px 0 8px; }
+}
+
+/* Phone (≤600): tighter chrome, KPI value shrink, table density + scroll hint, shorter charts. */
+@media (max-width: 600px) {
+  .wrap { padding: 0 14px; }
+  section { padding: 34px 0 8px; }
+  .hero { padding-top: 30px; }
+  h1 { font-size: clamp(26px, 7vw, 52px); }
+  p.lead { font-size: 15.5px; }
+
+  .kpis { grid-template-columns: repeat(2, 1fr); gap: 12px; margin: 20px 0 4px; }
+  .kpi { padding: 14px 14px 12px; }
+  .kpi .v { font-size: 24px; }
+  .kpi .l { font-size: 12px; }
+  .kpi .s { font-size: 11px; }
+
+  .grid { gap: 14px; }
+  .card { padding: 16px 16px 14px; border-radius: 14px; }
+  hr.div { margin: 24px 0; }
+  footer { padding: 22px 0 44px; }
+
+  table { font-size: 12px; }
+  th, td { padding: 9px 10px; }
+  td:nth-child(3) { font-size: 11px; }
+  td .chip { font-size: 10.5px; padding: 2px 6px; }
+  .badge { font-size: 10px; padding: 2px 7px; }
+  .tablewrap.scrollable:not(.at-end) {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
+            mask-image: linear-gradient(to right, #000 calc(100% - 24px), transparent);
+  }
+  .scroll-hint { display: block; }
+
+  .chart { height: 300px; }
+  .chart.tall { height: 360px; }
+  .chart.short { height: 240px; }
+  .chart.chart-hbar { height: 360px; }
+  .chart.chart-hbar.tall { height: 400px; }
+}
+
+/* Small phone (≤400): tightest gutters; shrink the mono KPI value so $-figures don't clip. */
+@media (max-width: 400px) {
+  .wrap { padding: 0 12px; }
+  section { padding: 28px 0 6px; }
+  .kpi .v { font-size: 21px; letter-spacing: -.4px; }
+  .chart { height: 280px; }
+  .chart.tall { height: 340px; }
+  .chart.short { height: 220px; }
+  .chart.chart-hbar { height: 340px; }
+  .chart.chart-hbar.tall { height: 360px; }
 }
